@@ -5,6 +5,7 @@
     
     background-color: $component-global-alert-background-color;
     color: $component-global-alert-text-color;
+    flex-shrink: 0;
     padding-bottom: space(1);
     padding-top: space(1);
     position: relative;

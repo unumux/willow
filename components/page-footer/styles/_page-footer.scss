@@ -3,6 +3,7 @@
     background-color: $component-page-footer-background-color;
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
     flex-wrap: wrap;
     padding-bottom: space(1);
     padding-top: space(1);

@@ -3,6 +3,7 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    height: 100%;
 }
 
 *,
@@ -22,6 +23,7 @@ body {
     color: $component-body-text-color;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+    height: 100%;
     min-height: 100%;
     overflow-x: hidden;
     
