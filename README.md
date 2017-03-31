@@ -70,8 +70,6 @@ If you have node installed on your machine, you can use npm to install **Willow*
 1 - npm install components
 2 - npm install theme of your choice
 
-...
-
 #### Need Installation Help
 
 Do you have questions or need help with setup? Did you run into any weird errors while following these instructions? Feel free to open an issue here:
@@ -154,6 +152,14 @@ You can customize the **Willow** components via two methods
 - Method 2: Change the look of only one instances of a component
   - _Example: I want to change just the **willow-button** that is in my **willow-modal**_
   - Add a unique class to the one component you want to change then target that class and add your styling
+  ```HTML
+  <button class="willow-button modal-button">
+  ```
+  ```SCSS
+    .modal-button {
+      background-color: orange;
+    }
+  ```
 
 ---
 
