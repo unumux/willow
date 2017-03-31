@@ -3,12 +3,11 @@
     flex-grow: 0;
     flex-shrink: 0;
     padding-bottom: space(1);
-    padding-left: space(2);
+    padding-left: space(1);
     padding-right: space(1);
     padding-top: space(1);
 
     @media screen and (min-width: breakpoint(medium)) {
-        padding-bottom: space(2);
         padding-left: 0;
         padding-top: 0;
     }

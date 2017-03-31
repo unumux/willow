@@ -1,5 +1,7 @@
 @mixin base() {
-    display: block;
+    height: auto;
+    max-height: 40px;
+    width: 100%;
 }
 
 &__image {
