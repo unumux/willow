@@ -67,8 +67,19 @@ The library consists of semantic and accessible markup for a variety of componen
 
 If you have node installed on your machine, you can use npm to install **Willow**.
 
-1 - npm install components
-2 - npm install theme of your choice
+From your project directory in terminal run the following:
+
+Step 1 - Install Willow Components
+
+```
+  npm install @unumux/willow
+```
+
+Step 2 - Install a Theme - you will need the theme's name to do this
+
+```
+  npm install @unumux/theme-name-goes-here
+```
 
 #### Need Installation Help
 
