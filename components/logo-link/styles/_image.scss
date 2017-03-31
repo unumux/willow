@@ -1,0 +1,7 @@
+@mixin base() {
+    display: block;
+}
+
+&__image {
+    @include base;
+}

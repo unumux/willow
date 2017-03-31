@@ -1,0 +1,33 @@
+// make background full-width
+
+@mixin base() {
+    background-color: $component-page-header-background-color;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: space(-2);
+    margin-right: space(-2);
+    padding-bottom: 0;
+    padding-top: space(1);
+    position: relative;
+
+    @media screen and (min-width: breakpoint(medium)) {
+        @include escape-container;  
+
+        align-items: flex-end;
+        padding-bottom: 0;
+        padding-top: space(2);
+    }
+}
+
+&-page-header {
+    @include base;
+
+    @import "branding";
+    @import "content";
+    @import "content-controls";
+    @import "content-open";
+    @import "content-close";
+    @import "navigation";
+    @import "site-context";
+}

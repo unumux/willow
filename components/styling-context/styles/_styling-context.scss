@@ -1,0 +1,7 @@
+@mixin base() {
+    margin-bottom: space(2);
+}
+
+&-styling-context {
+    @include base;
+}

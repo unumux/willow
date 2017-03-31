@@ -1,0 +1,11 @@
+@mixin base() {
+    background-color: $component-page-header-site-context-background-color;
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+&__site-context {
+    @include base;
+    @include escape-container;
+}

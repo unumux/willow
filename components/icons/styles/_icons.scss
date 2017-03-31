@@ -1,0 +1,79 @@
+@mixin base() {
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+&-icon {
+
+    &--menu {
+        @include base;
+        @include icon($icon-menu);
+    }
+
+    &--menu-inverse {
+        @include base;
+        @include icon($icon-menu-inverse);
+    }
+
+    &--menu-close {
+        @include base;
+        @include icon($icon-menu-close);
+    }
+
+    &--menu-close-inverse {
+        @include base;
+        @include icon($icon-menu-close-inverse);
+    }
+
+    &--close {
+        @include base;
+        @include icon($icon-close);
+    }
+
+    &--close-inverse {
+        @include base;
+        @include icon($icon-close-inverse);
+    }
+
+    &--info {
+        @include base;
+        @include icon($icon-info);
+    }
+
+    &--info-inverse {
+        @include base;
+        @include icon($icon-info-inverse);
+    }
+
+    &--success {
+        @include base;
+        @include icon($icon-success);
+    }
+
+    &--success-inverse {
+        @include base;
+        @include icon($icon-success-inverse);
+    }
+
+    &--warning {
+        @include base;
+        @include icon($icon-warning);
+    }
+
+    &--warning-inverse {
+        @include base;
+        @include icon($icon-warning-inverse);
+    }
+
+    &--error {
+        @include base;
+        @include icon($icon-error);
+    }
+
+    &--error-inverse {
+        @include base;
+        @include icon($icon-error-inverse);
+    }
+}

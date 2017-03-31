@@ -1,0 +1,154 @@
+@mixin base() {
+    @include set-text-style($text-style-heading-4);
+
+    background-color: $component-button-background-color;
+    border: $component-button-border;
+    border-radius: $component-button-border-radius;
+    color: $component-button-text-color;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: space(1);
+    padding-bottom: space(1);
+    padding-left: space(2);
+    padding-right: space(2);
+    padding-top: space(1);
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:visited {
+        background-color: $component-button-background-color-visited;
+        color: $component-button-text-color-visited;
+    }
+
+    &:focus {
+        background-color: $component-button-background-color-focus;
+        color: $component-button-text-color-focus;
+    }
+
+    &:hover {
+        background-color: $component-button-background-color-hover;
+        color: $component-button-text-color-hover;
+    }
+
+    &:active {
+        background-color: $component-button-background-color-active;
+        color: $component-button-text-color-active;
+    }
+
+    &[disabled],
+    &[data-disabled="true"] {
+        background-color: $component-button-background-color-disabled;
+        border-color: $component-button-border-disabled;
+        color: $component-button-text-color-disabled;
+        cursor: $component-cursor-disabled;
+    }
+}
+
+&-button {
+    @include base;
+
+    &--primary {
+        @include base;
+
+        background-color: $component-button-primary-background-color;
+        border: $component-button-primary-border;
+        color: $component-button-primary-text-color;
+
+        &:visited {
+            background-color: $component-button-primary-background-color-visited;
+            color: $component-button-primary-text-color-visited;
+        }
+
+        &:focus {
+            background-color: $component-button-primary-background-color-focus;
+            color: $component-button-primary-text-color-focus;
+        }
+
+        &:hover {
+            background-color: $component-button-primary-background-color-hover;
+            color: $component-button-primary-text-color-hover;
+        }
+
+        &:active {
+            background-color: $component-button-primary-background-color-active;
+            color: $component-button-primary-text-color-active;
+        }
+
+        &[disabled] {
+            background-color: $component-button-primary-background-color-disabled;
+            border-color: $component-button-primary-border-disabled;            
+            color: $component-button-primary-text-color-disabled;
+        }
+    }
+
+    &--positive {
+        @include base;
+                
+        background-color: $component-button-positive-background-color;
+        border: $component-button-positive-border;
+        color: $component-button-positive-text-color;
+
+        &:visited {
+            background-color: $component-button-positive-background-color-visited;
+            color: $component-button-positive-text-color-visited;
+        }
+
+
+        &:focus {
+            background-color: $component-button-positive-background-color-focus;
+            color: $component-button-positive-text-color-focus;
+        }
+
+        &:hover {
+            background-color: $component-button-positive-background-color-hover;
+            color: $component-button-positive-text-color-hover;
+        }
+
+        &:active {
+            background-color: $component-button-positive-background-color-active;
+            color: $component-button-positive-text-color-active;
+        }
+
+        &[disabled] {
+            background-color: $component-button-positive-background-color-disabled;
+            border-color: $component-button-positive-border-disabled; 
+            color: $component-button-positive-text-color-disabled;
+        }
+    }
+
+    &--negative {
+        @include base;
+                
+        background-color: $component-button-negative-background-color;
+        border: $component-button-negative-border;
+        color: $component-button-negative-text-color;
+
+        &:visited {
+            background-color: $component-button-negative-background-color-visited;
+            color: $component-button-negative-text-color-visited;
+        }
+
+        
+        &:focus {
+            background-color: $component-button-negative-background-color-focus;
+            color: $component-button-negative-text-color-focus;
+        }
+
+        &:hover {
+            background-color: $component-button-negative-background-color-hover;
+            color: $component-button-negative-text-color-hover;
+        }
+
+        &:active {
+            background-color: $component-button-negative-background-color-active;
+            color: $component-button-negative-text-color-active;
+        }
+
+        &[disabled] {
+            background-color: $component-button-negative-background-color-disabled;
+            border-color: $component-button-negative-border-disabled; 
+            color: $component-button-negative-text-color-disabled;
+        }
+    }
+}

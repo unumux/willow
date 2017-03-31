@@ -1,0 +1,9 @@
+@mixin base() {
+    @media screen and (min-width: breakpoint(medium)) {
+        display: inline-block;
+    }
+}
+
+&__item {
+    @include base;
+}

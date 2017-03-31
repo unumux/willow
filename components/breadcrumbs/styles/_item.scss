@@ -1,0 +1,25 @@
+@mixin base() {
+    display: inline-block;
+    
+    &::after {
+        content: "/";
+        margin-bottom: 0;
+        margin-left: calc(5px + 5px);
+        margin-right: 5px;
+        margin-top: 0;
+    }
+}
+
+&__item {
+    @include base;
+    @include set-text-style($text-style-content-2);
+
+    &--active {
+        @include base;
+        @include set-text-style($text-style-content-2);
+
+        &::after {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+@mixin base() {
+    @include set-text-style($text-style-heading-3);
+}
+
+&__heading {
+    @include base;
+
+    &--sr {
+        @include sr-only;
+    }
+}

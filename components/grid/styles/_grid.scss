@@ -1,0 +1,15 @@
+@mixin base() {
+    margin-bottom: space(2);
+
+    @media screen and (min-width: breakpoint(small)) {
+        align-items: stretch;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+&-grid {
+    @include base;
+    
+    @import "item";
+}

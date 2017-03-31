@@ -1,0 +1,63 @@
+@mixin base() {
+    border-radius: $component-inline-alert-border-radius;
+    margin-bottom: space(2);
+    padding-bottom: space(2);
+    padding-left: space(5);
+    padding-right: space(2);
+    padding-top: space(2);
+    position: relative;
+
+    &::before {
+        @include icon($component-inline-alert-icon);
+
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: "";
+        left: space(1);
+        position: absolute;
+    }
+}
+
+&-alert {
+    @include base;
+
+    background-color: $component-inline-alert-background-color;
+    color: $component-inline-alert-text-color;
+
+    &--positive {
+        @include base;
+
+        background-color: $component-inline-alert-positive-background-color;
+        color: $component-inline-alert-positive-text-color;
+
+        &::before {
+            @include icon($component-inline-alert-positive-icon);
+        }
+    }
+
+    &--warning {
+        @include base;
+        
+        background-color: $component-inline-alert-warning-background-color;
+        color: $component-inline-alert-warning-text-color;
+
+        &::before {
+            @include icon($component-inline-alert-warning-icon);
+        }
+    }
+
+    &--negative {
+        @include base;
+        
+        background-color: $component-inline-alert-negative-background-color;
+        color: $component-inline-alert-negative-text-color;
+
+        &::before {
+            @include icon($component-inline-alert-negative-icon);
+        }
+    }
+
+
+    @import "heading";
+    @import "content";
+}

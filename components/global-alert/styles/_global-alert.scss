@@ -1,0 +1,37 @@
+// make background full-width
+
+@mixin base() {
+    @include escape-container();
+    
+    background-color: $component-global-alert-background-color;
+    color: $component-global-alert-text-color;
+    padding-bottom: space(1);
+    padding-top: space(1);
+    position: relative;
+}
+
+&-global-alert {
+    @include base;
+
+    &--positive {
+        @include base;
+        background-color: $component-global-alert-positive-background-color;
+        color: $component-global-alert-positive-text-color;
+    }
+
+    &--warning {
+        @include base;
+        background-color: $component-global-alert-warning-background-color;
+        color: $component-global-alert-warning-text-color;
+    }
+
+    &--negative {
+        @include base;
+        background-color: $component-global-alert-negative-background-color;
+        color: $component-global-alert-negative-text-color;
+    }
+
+    @import "heading";
+    @import "content";
+    @import "close";
+}

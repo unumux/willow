@@ -1,0 +1,36 @@
+@mixin base() {
+    @include set-text-style($text-style-heading-4);
+
+    color: $component-page-header-content-close-color;
+    display: none;
+    text-decoration: none;
+
+    &:visited {
+        color: $component-page-header-content-close-color-visited;
+        text-decoration: none;
+    }
+
+    &:hover {
+        color: $component-page-header-content-close-color-hover;
+        text-decoration: none;
+    }
+    
+    &:active {
+        color: $component-page-header-content-close-color-active;
+        text-decoration: none;
+    }
+
+    [data-content-open="true"] & {
+        display: block;
+    }
+
+    @media screen and (min-width: breakpoint(medium)) {
+        [data-content-open="true"] & {
+            display: none;
+        }
+    }
+}
+
+&__content-close {
+    @include base;
+}

@@ -1,0 +1,11 @@
+@mixin base() {
+    margin-bottom: space(2);
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+&__site-context {
+    @include base;
+}

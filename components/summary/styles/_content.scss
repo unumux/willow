@@ -1,0 +1,9 @@
+@mixin base() {
+
+}
+
+&__content {
+    @include base;
+
+    @import "styling-contexts/content";
+}

@@ -1,0 +1,7 @@
+@mixin base() {
+    margin-bottom: space(1);
+}
+
+&__content {
+    @include base;
+}

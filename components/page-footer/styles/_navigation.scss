@@ -1,0 +1,21 @@
+@mixin base() {
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-bottom: 25px;
+    order: 0;
+    text-align: center;
+
+    @media screen and (min-width: breakpoint(medium)) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-end;
+        order: 2;
+        text-align: right;
+    }
+}
+
+&__navigation {
+    @include base;
+}

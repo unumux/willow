@@ -1,0 +1,24 @@
+@mixin base() {
+    background-color: $component-modal-overlay-background-color;
+    bottom: 0;
+    display: none;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+
+    &[data-modal-close="false"] {
+        display: block;
+    }
+}
+
+&-modal {
+    @include base;
+
+    @import "container";
+    @import "heading";
+    @import "content";
+    @import "actions";
+    @import "action";
+}

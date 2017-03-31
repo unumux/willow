@@ -1,0 +1,32 @@
+@mixin base() {
+    @include set-text-style($text-style-heading-4);
+
+    background-color: $component-skip-nav-background-color;
+    color: $component-skip-nav-link-color;
+    left: -2000px;
+    padding: 15px 20px;
+    position: absolute;
+    text-decoration: none;    
+    top: 0;
+
+    &:focus {
+        left: 0;
+    }
+
+    &:visited {
+        color: $component-skip-nav-link-color-visited;
+    }
+
+    &:hover {
+        color: $component-skip-nav-link-color-hover;
+    }
+
+    &:active {
+        color: $component-skip-nav-link-color-active;
+    }
+
+}
+
+&__link {
+    @include base;
+}

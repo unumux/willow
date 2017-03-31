@@ -1,0 +1,8 @@
+@mixin base() {
+}
+
+&-skip-nav {
+    @include base;
+
+    @import "link";
+}

@@ -1,0 +1,19 @@
+@mixin base() {
+    color: $component-footer-nav-link-color;
+
+    &:visited {
+        color: $component-footer-nav-link-color-visited;
+    }
+    
+    &:hover {
+        color: $component-footer-nav-link-color-hover;
+    }
+    
+    &:active {
+        color: $component-footer-nav-link-color-active;
+    }
+}
+
+&__link {
+    @include base;
+}

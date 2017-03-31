@@ -1,0 +1,7 @@
+@mixin base() {
+}
+
+&__heading {
+    @include base;
+    @include sr-only;
+}

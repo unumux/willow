@@ -1,0 +1,27 @@
+@mixin base() {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    &::after {
+        color: $component-footer-nav-text-color;
+        content: "|";
+        margin-bottom: 0;
+        margin-left: calc(5px + 0.32em);
+        margin-right: 5px;
+        margin-top: 0;
+    }
+
+    &:last-of-type {
+        margin-right: 5px;
+
+        &::after {
+            display: none;
+        }
+    }
+}
+
+&__item {
+    @include base;
+    @include set-text-style($text-style-content-2);
+}

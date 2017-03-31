@@ -1,0 +1,38 @@
+@mixin base() {    
+    background-color: $component-banner-background-color;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    color: $component-banner-text-color;
+    margin-bottom: space(3);
+    padding-bottom: space(10);
+    padding-top: space(8);
+    position: relative;
+    text-align: center;
+    z-index: 1;
+
+    &:after {
+        background-color: inherit;
+        bottom: 0;
+        content: "";
+        left: 0;
+        opacity: 0.8;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+&-banner {
+    @include base;
+    @include escape-container;
+
+    @import "heading";
+    @import "content";
+    @import "actions";
+    @import "action";
+}

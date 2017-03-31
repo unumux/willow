@@ -1,0 +1,24 @@
+@mixin base {
+    align-items: center;
+    background-color: $component-page-footer-background-color;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: space(1);
+    padding-top: space(1);
+
+    @media screen and (min-width: breakpoint(medium)) {
+        flex-direction: row;
+        padding-bottom: space(3);
+        padding-top: space(2);
+    }
+}
+
+&-page-footer {
+    @include base;
+    @include escape-container;
+
+    @import "branding";
+    @import "copyright";
+    @import "navigation";
+}

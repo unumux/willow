@@ -1,0 +1,7 @@
+@mixin base() {
+
+}
+
+&__content {
+    @include base;
+}

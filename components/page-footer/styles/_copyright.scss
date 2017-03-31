@@ -1,0 +1,17 @@
+@mixin base() {
+    color: $component-page-footer-copyright-text-color;
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 0;
+    order: 3;
+    text-align: center;
+
+    @media screen and (min-width: breakpoint(medium)) {
+        flex-basis: 100%;
+        text-align: left;
+    }
+}
+
+&__copyright {
+    @include base;
+}

@@ -1,0 +1,39 @@
+@mixin flexWidths($items: 1) {
+    flex-basis: calc(#{100/$items}% - 24px);
+
+    &:nth-child(#{$items}n) {
+        margin-right: 0;
+    }
+}
+
+@mixin base() {
+    margin-bottom: space(2);
+
+    @media screen and (min-width: breakpoint(small)) {
+        flex-grow: 0;
+        flex-shrink: 0;
+        margin-right: space(2);
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    @media screen and (min-width: breakpoint(small)) and (max-width: breakpoint(medium)) {
+        @include flexWidths(2);
+    }
+
+    @media screen and (min-width: breakpoint(medium)) and (max-width: breakpoint(large)) {
+        @include flexWidths(3);
+    }
+
+    @media screen and (min-width: breakpoint(large)) {
+        @include flexWidths(4);
+    }
+}
+
+&__item {
+    @include base;
+
+    @import "styling-contexts/item";
+}

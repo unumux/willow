@@ -1,0 +1,12 @@
+@mixin base() {
+    margin-bottom: space(2);
+}
+
+&-summary {
+    @include base;
+
+    @import "heading";
+    @import "content";
+    @import "actions";
+    @import "action";
+}

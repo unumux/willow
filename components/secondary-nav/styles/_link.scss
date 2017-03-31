@@ -1,0 +1,48 @@
+@mixin base() {
+    @include set-text-style($text-style-heading-5);
+    
+    background-color: $component-secondary-nav-link-background-color;
+    border-left: 4px solid transparent;
+    color: $component-secondary-nav-link-color;
+    display: block;
+    margin-bottom: 0;
+    padding-bottom: space(1);
+    padding-left: space(2);
+    padding-right: space(2);
+    padding-top: space(1);
+    text-decoration: none;
+
+    &:focus {
+        background-color: $component-secondary-nav-link-background-color-focus;
+        color: $component-secondary-nav-link-color-focus;
+    }
+    
+    &:visited {
+        color: $component-secondary-nav-link-color-visited;
+    }
+
+    &:hover {
+        background-color: $component-secondary-nav-link-background-color-hover;
+        color: $component-secondary-nav-link-color-hover;
+    }
+    
+    &:active {
+        background-color: $component-secondary-nav-link-background-color-active;
+        color: $component-secondary-nav-link-color-active;
+    }
+
+    @media screen and (min-width: breakpoint(medium)) {
+        margin-bottom: 0;
+    }
+    
+}
+
+&__link {
+    @include base;
+
+    &--active {
+        @include base;
+        background-color: $component-secondary-nav-link-background-color-active;        
+        border-left: 4px solid $component-secondary-nav-link-border-color-active;
+    }
+}
