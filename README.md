@@ -72,13 +72,13 @@ From your project directory in terminal run the following:
 Step 1 - Install Willow Components
 
 ```
-  npm install @unumux/willow
+npm install save-dev @unumux/willow
 ```
 
 Step 2 - Install a Theme - you will need the theme's name to do this
 
 ```
-  npm install @unumux/theme-name-goes-here
+npm install save-dev theme-name-goes-here
 ```
 
 #### Need Installation Help
@@ -91,14 +91,14 @@ Do you have questions or need help with setup? Did you run into any weird errors
 
 ### Including in a Project
 
-_If you downloaded a minified css file_, you can include the CSS file in your project and reference it in your index.html file. Then as you add **Willow** HTML they will automatically inherit their styles.
+- _If you downloaded a minified css file_, you can include the CSS file in your project and reference it in your index.html file. Then as you add **Willow** HTML they will automatically inherit their styles.
 
 _If you installed via NPM and are using SCSS_ you can include **Willow** and a theme in your project's primary SCSS file like so:
 
 ```SCSS
 // Your project's primary scss file - recommended name _styles.scss
 //-----------------------------------
-// Import Themes and Custom Styles
+// Import Themes and Custom Theme Styles
 //-----------------------------------
 //Willow theme variables are needed first
 //the file path for this may look something like "../node_modules/@unumux/theme-enterprise-default/styles"
@@ -109,7 +109,7 @@ _If you installed via NPM and are using SCSS_ you can include **Willow** and a t
 @import "path/to/my-project/styles/theme/theme.scss";
 
 //-----------------------------------
-// Component Imports
+// Imports the Components
 //-----------------------------------
 //Willow Components use the variables you imported above
 //the file path for this may look something like "../node_modules/@unumux/components/styles"
