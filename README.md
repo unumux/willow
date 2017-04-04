@@ -5,7 +5,7 @@ collection:
   - home
 permalink: false
 ---
-# **Willow UI Components**
+# **Willow UI**
 
 - [Introduction](#introduction)
 
@@ -29,12 +29,13 @@ permalink: false
 
 ## Introduction
 
-**Willow** UI Component Library is a collection of reusable components built with front-end code (HTML and CSS) to allow for faster, more consistent product development.
+**Willow** UI is a library of reusable components built with front-end code (HTML and SCSS) to allow for faster, more consistent product development.
 
-The library consists of semantic and accessible markup for a variety of components that can be paired with a [theme](#available-themes) to quickly give components a consistent and brand compliant appearance.
+The library consists of semantic and accessible markup for a variety of components that can be paired with a [theme](#available-themes) to give components a consistent and branded appearance.
 
 ### **Willow** is...
 
+- an evolving open source library that will have frequent updates and encourages [contributions](CONTRIBUTING.md)
 - written to meet UnumUX [CSS/SCSS](https://github.com/unumux/ux-standards/wiki/CSS-&-SCSS-Standards) and [Accessibility](https://unumux.github.io/enterprise-accessibility-standards/) Standards
 - built to work with all modern browsers (IE 10, Chrome, Firefox, Safari)
 - based on the principles of:
@@ -54,36 +55,38 @@ The library consists of semantic and accessible markup for a variety of componen
 
 ### Installation
 
-#### Download a Compiled and Minified CSS File
+There are 2 methods for installing **Willow** for your project
 
-**Willow** CSS files provide a compiled and minified stylesheet for each theme that can be add to a project and referenced in the index.html files. Then when **Willow** HTML is added they will inherit the styling accordingly.
+#### 1. Download a Compiled and Minified CSS File
+
+**Willow** CSS files are compiled and minified stylesheets for each theme that can be add to a project and referenced in the index.html file. Then as you add **Willow** HTML the components will inherit styling.
 
 - [Theme-Enterprise-Default](https://github.com/unumux/theme-enterprise-default) - [download](...)
 - [Theme-Unum-Default](https://github.com/unumux/theme-unum-default) - [download](...)
 - [Theme-Coloniallife-Default](https://github.com/unumux/theme-coloniallife-default) - [download](...)
 
 
-#### Install Components and A Theme with NPM
+#### 2. Install Components and A Theme with NPM
 
 If you have node installed on your machine, you can use npm to install **Willow**.
 
-From your project directory in terminal run the following:
+From Terminal in your project directory run the following:
 
-Step 1 - Install Willow Components
-
-```
-npm install save-dev @unumux/willow
-```
-
-Step 2 - Install a Theme - you will need the theme's name to do this
+- **Install Willow UI**
 
 ```
-npm install save-dev theme-name-goes-here
+npm install --save-dev @unumux/willow
+```
+
+- **Install a Theme - you will need the [theme's name](#available-themes) to do this**
+
+```
+npm install --save-dev theme-name-goes-here
 ```
 
 #### Need Installation Help
 
-Do you have questions or need help with setup? Did you run into any weird errors while following these instructions? Feel free to open an issue here:
+Do you have questions or need help with setup? Did you run into errors while following these instructions? Feel free to open an issue here:
 
 [Open An Issue](https://github.com/unumux/willow/issues/new)
 
@@ -91,9 +94,9 @@ Do you have questions or need help with setup? Did you run into any weird errors
 
 ### Including in a Project
 
-- _If you downloaded a minified css file_, you can include the CSS file in your project and reference it in your index.html file. Then as you add **Willow** HTML they will automatically inherit their styles.
+- **If you downloaded a minified css file**, you can include the CSS file in your project and reference it in your index.html file. Then as you add **Willow** HTML the components will inherit styling.
 
-_If you installed via NPM and are using SCSS_ you can include **Willow** and a theme in your project's primary SCSS file like so:
+- **If you installed via NPM and are using SCSS** you can include **Willow** and a theme in your project's primary SCSS file like so:
 
 ```SCSS
 // Your project's primary scss file - recommended name _styles.scss
