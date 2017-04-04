@@ -53,36 +53,29 @@ The library consists of semantic and accessible markup for a variety of componen
 
 ---
 
-### Installation
+### Install
 
 There are 2 methods for installing **Willow** for your project
 
-#### 1. Download a Compiled and Minified CSS File
-
-**Willow** CSS files are compiled and minified stylesheets for each theme that can be add to a project and referenced in the index.html file. Then as you add **Willow** HTML the components will inherit styling.
-
-- [Theme-Enterprise-Default](https://github.com/unumux/theme-enterprise-default) - [download](...)
-- [Theme-Unum-Default](https://github.com/unumux/theme-unum-default) - [download](...)
-- [Theme-Coloniallife-Default](https://github.com/unumux/theme-coloniallife-default) - [download](...)
+1. **Download a Compiled and Minified CSS File**
+   - **Willow** CSS files can be added to a project and referenced in the index.html file. Then as you add **Willow** HTML the components will inherit styling.
+     - [Theme-Enterprise-Default](https://github.com/unumux/theme-enterprise-default) - [download](...)
+     - [Theme-Unum-Default](https://github.com/unumux/theme-unum-default) - [download](...)
+     - [Theme-Coloniallife-Default](https://github.com/unumux/theme-coloniallife-default) - [download](...)
 
 
-#### 2. Install Components and A Theme with NPM
+1. Install Components and A Theme with NPM'
 
-If you have node installed on your machine, you can use npm to install **Willow**.
-
-From Terminal in your project directory run the following:
-
-- **Install Willow UI**
-
-```
-npm install --save-dev @unumux/willow
-```
-
-- **Install a Theme - you will need the [theme's name](#available-themes) to do this**
-
-```
-npm install --save-dev theme-name-goes-here
-```
+   - If you have [node](https://nodejs.org) installed on your machine, you can use npm to install **Willow**.
+   - From Terminal in your project directory run the following:
+     - **Install Willow UI**
+        ```
+        npm install --save-dev @unumux/willow
+        ```
+     - **Install a Theme - you will need the [theme's name](#available-themes) to do this**
+        ```
+        npm install --save-dev theme-name-goes-here
+        ```
 
 #### Need Installation Help
 
@@ -92,11 +85,13 @@ Do you have questions or need help with setup? Did you run into errors while fol
 
 ---
 
-### Including in a Project
+### Usage
 
-- **If you downloaded a minified css file**, you can include the CSS file in your project and reference it in your index.html file. Then as you add **Willow** HTML the components will inherit styling.
+There are 2 options for including **Willow** and themes in your project
 
-- **If you installed via NPM and are using SCSS** you can include **Willow** and a theme in your project's primary SCSS file like so:
+1. **If you downloaded a minified css file**, you can include the CSS file in your project and reference it in your index.html file. Then as you add **Willow** HTML the components will inherit styling.
+
+1. **If you installed via NPM and are using SCSS** you can include **Willow** and a theme in your project's primary SCSS file like so:
 
 ```SCSS
 // Your project's primary scss file - recommended name _styles.scss
