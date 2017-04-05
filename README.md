@@ -59,12 +59,11 @@ There are 2 methods for installing **Willow** for your project
 
 1. **Download a Compiled and Minified CSS File**
    - **Willow** CSS files can be added to a project and referenced in the index.html file. Then as you add **Willow** HTML the components will inherit styling.
-     - [Theme-Enterprise-Default](https://github.com/unumux/theme-enterprise-default) - [download](...)
-     - [Theme-Unum-Default](https://github.com/unumux/theme-unum-default) - [download](...)
-     - [Theme-Coloniallife-Default](https://github.com/unumux/theme-coloniallife-default) - [download](...)
+     - [Theme-Enterprise-Default](https://github.com/unumux/theme-enterprise-default) - [download](https://github.com/unumux/theme-enterprise-default/releases/download/0.1.1/theme-enterprise-default.min.css)
+     - [Theme-Unum-Default](https://github.com/unumux/theme-unum-default) - [download](https://github.com/unumux/theme-unum-default/releases/download/0.1.1/theme-unum-default.min.css)
+     - [Theme-Coloniallife-Default](https://github.com/unumux/theme-coloniallife-default) - [download](https://github.com/unumux/theme-coloniallife-default/releases/download/0.1.1/theme-coloniallife-default.min.css)
 
-
-1. Install Components and A Theme with NPM'
+1. **Install Components and A Theme with NPM**
 
    - If you have [node](https://nodejs.org) installed on your machine, you can use npm to install **Willow**.
    - From Terminal in your project directory run the following:
@@ -89,34 +88,35 @@ Do you have questions or need help with setup? Did you run into errors while fol
 
 There are 2 options for including **Willow** and themes in your project
 
-1. **If you downloaded a minified css file**, you can include the CSS file in your project and reference it in your index.html file. Then as you add **Willow** HTML the components will inherit styling.
+1. **If you downloaded a minified css file**,
+   - you can include the CSS file in your project and reference it in your index.html file. Then as you add **Willow** HTML the components will inherit styling.
 
-1. **If you installed via NPM and are using SCSS** you can include **Willow** and a theme in your project's primary SCSS file like so:
+1. **If you installed via NPM and are using SCSS**
+   - you can include **Willow** and a theme in your project's primary SCSS file like so:
+      ```SCSS
+      // Your project's primary scss file
+      //--------------------------------------------------
+      //  1. Import Themes and Custom Theme Styles
+      //--------------------------------------------------
+      // Willow theme variables are needed first
+      // the file path for this may look something like "../node_modules/@unumux/theme-enterprise-default/styles"
+      @import "path/to/willow/theme/root/scss/file";
 
-```SCSS
-// Your project's primary scss file - recommended name _styles.scss
-//-----------------------------------
-// Import Themes and Custom Theme Styles
-//-----------------------------------
-//Willow theme variables are needed first
-//the file path for this may look something like "../node_modules/@unumux/theme-enterprise-default/styles"
-@import "path/to/willow/theme/root/scss/file";
+      // this is your custom style variables
+      // here you can overwrite Willow variable or create new variables
+      @import "path/to/my-project/styles/theme/theme.scss";
 
-//this is your custom style variables
-//here you can overwrite Willow variable or create new variables
-@import "path/to/my-project/styles/theme/theme.scss";
+      //--------------------------------------------------
+      // 2. Imports Willow and Custom Components
+      //--------------------------------------------------
+      // Willow Components use the theme variables imported above
+      // the file path for this may look something like "../node_modules/@unumux/components/styles"
+      @import "path/to/willow/components/root/scss/file";
 
-//-----------------------------------
-// Imports the Components
-//-----------------------------------
-//Willow Components use the variables you imported above
-//the file path for this may look something like "../node_modules/@unumux/components/styles"
-@import "path/to/willow/components/root/scss/file";
-
-//here you can style any new components you wrote to use the above variables
-//you can also target existing Willow Components and change their default styling
-@import "path/to/my-project/styles/components/components.scss";
-```
+      // here you can style new components you created to use the above theme variables
+      // you can also target existing Willow Components and customize their default styling
+      @import "path/to/my-project/styles/components/components.scss";
+      ```
 
 ---
 
@@ -134,7 +134,7 @@ There are 2 options for including **Willow** and themes in your project
 
 ### Recommended SCSS Directory Structure For Your Project
 
-In your project we recommend you setup your styling using the following directory pattern.
+We recommend you setup your project's styling using the following directory pattern.
 
 [Project Structure Example](https://github.com/unumux/standard-project-structure)
 
@@ -144,32 +144,36 @@ In your project we recommend you setup your styling using the following director
 
 You can customize the **Willow** components via two methods
 
-- Method 1: Change the look of a component globally
-  - _Example: I want to change the size of all **willow-buttons** everywhere they appears_
-  - Target the component class name and add the styling you want
-  ```SCSS
-    .willow-button,
-    .willow-button--primary,
-    .willow-button--positive,
-    .willow-button--negative,
-    .willow-button[disabled],
-    .willow-button[data-disabled="true"] {
-      padding: 30px 45px;
-    }
-  ```
+1. **Change the look of a component globally**
+   - _Example: You want to change the size of all **willow-buttons** everywhere they appear_
+   - Target the component's **Willow** class name and add the styling you want
+   - **Note**: This method may require targeting multiple component versions such as willow-button and willow-button--primary
 
-- Method 2: Change the look of only one instances of a component
-  - _Example: I want to change just the **willow-button** that is in my **willow-modal**_
-  - Add a unique class to the one component you want to change then target that class and add your styling
-  ```HTML
-  <button class="willow-button modal-button">
-  ```
-  ```SCSS
-    .modal-button {
-      background-color: orange;
-    }
-  ```
+      ```SCSS
+      // file: styles/components/overrides/willow/button/_button.scss
+      .willow-button,
+      .willow-button--primary,
+      .willow-button--positive,
+      .willow-button--negative,
+      .willow-button[disabled],
+      .willow-button[data-disabled="true"] {
+        padding: 30px 45px;
+      }
+      ```
 
+
+1. **Change the look of only one instances of a component**
+    - _Example: I want to change just the **willow-button** that is in my **willow-modal**_
+    - Add a unique class to the one component you want to change then target that class and add your styling
+      ```HTML
+      <button class="willow-button modal-button">
+      ```
+      ```SCSS
+      // file: styles/components/overrides/willow/button/_button.scss
+      .modal-button {
+        background-color: orange;
+      }
+      ```
 ---
 
 ### So you need to make a new component
