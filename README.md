@@ -72,7 +72,7 @@ If you have [node](https://nodejs.org) on your machine, you can use npm to insta
   - Install a Theme - you will need the [theme's name](#available-themes)
     - From Terminal in your project directory run the following:
       ```node
-      npm install --save-dev theme-name-goes-here
+      npm install --save-dev @unumux/theme-name-goes-here
       ```
 
 - Usage
