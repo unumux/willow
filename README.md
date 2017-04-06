@@ -124,46 +124,50 @@ Do you have questions or need help with setup? Did you run into errors while fol
 
 ### Recommended SCSS Directory Structure For Your Project
 
-We recommend you setup your project's styling using the following directory pattern.
-
-[Project Structure Example](https://github.com/unumux/standard-project-structure)
+We recommend you setup your project's styling folders and files using this [pattern](https://github.com/unumux/standard-project-structure).
 
 ---
 
 ### So you need to customize a component
 
-You can customize the **Willow** components via two methods
+You can customize **Willow** components via two methods
 
-1. **Change the look of a component globally**
-   - _Example: You want to change the size of all **willow-buttons** everywhere they appear_
-   - Target the component's **Willow** class name and add the styling you want
-   - **Note**: This method may require targeting multiple component versions such as willow-button and willow-button--primary
+#### Method 1: Change the look of a component globally
 
-      ```SCSS
-      // file: styles/components/overrides/willow/button/_button.scss
-      .willow-button,
-      .willow-button--primary,
-      .willow-button--positive,
-      .willow-button--negative,
-      .willow-button[disabled],
-      .willow-button[data-disabled="true"] {
-        padding: 30px 45px;
-      }
-      ```
+_Example: You want to change the size of all **willow-buttons** everywhere they appear_
 
+- In your SCSS/CSS, select the component's class name and add the styling you want
+- **Note**: This method may require targeting multiple component versions such as willow-button and willow-button--primary
 
-1. **Change the look of only one instances of a component**
-    - _Example: I want to change just the **willow-button** that is in my **willow-modal**_
-    - Add a unique class to the one component you want to change then target that class and add your styling
-      ```HTML
-      <button class="willow-button modal-button">
-      ```
-      ```SCSS
-      // file: styles/components/overrides/willow/button/_button.scss
-      .modal-button {
-        background-color: orange;
-      }
-      ```
+```SCSS
+// file: styles/components/overrides/willow/button/_button.scss
+.willow-button,
+.willow-button--primary,
+.willow-button--positive,
+.willow-button--negative,
+.willow-button[disabled],
+.willow-button[data-disabled="true"] {
+  padding: 30px 45px;
+}
+```
+
+#### Method 2: Change the look of only one instances of a component
+
+_Example: I want to change just the **willow-button** that is in my **willow-modal**_
+
+- Add a unique class to the specific component(s) you want to change then select that class and add your styling
+
+```HTML
+<button class="willow-button modal-button">
+```
+
+```SCSS
+// file: styles/components/overrides/willow/button/_button.scss
+.modal-button {
+  background-color: orange;
+}
+```
+
 ---
 
 ### So you need to make a new component
@@ -174,7 +178,12 @@ You can customize the **Willow** components via two methods
 
 ### So you need to change a theme
 
-You can change the theme by updating the values of the theme variables.  Note: These changes will be inherited throughout the html across many components.
+Themes are created to allow you to override the values of variables from your own SCSS.
+
+Note: Changes to theme variables will be inherited throughout the html across many components, so tread lightly.
+
+- In your project's SCSS
+  - we recommend the ```styles/theme/variables/theme-specific/theme-specific.scss``` file
 
 ---
 
