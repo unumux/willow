@@ -5,7 +5,7 @@ collection:
   - home
 permalink: false
 ---
-# **Willow UI**
+# **Willow**
 
 - [Introduction](#introduction)
 
@@ -27,7 +27,7 @@ permalink: false
 
 ## Introduction
 
-**Willow** UI is a library of reusable components built with front-end code (HTML and SCSS) to allow for faster, more consistent product development.
+**Willow** is a library of reusable user interface components built with front-end code (HTML and SCSS) to allow for faster, more consistent product development.
 
 The library consists of semantic and accessible markup for a variety of components that can be paired with a [theme](#available-themes) to give components a consistent and branded appearance.
 
