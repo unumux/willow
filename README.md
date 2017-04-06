@@ -110,6 +110,41 @@ Do you have questions or need help with setup? Did you run into errors while fol
 
 ---
 
+## Components
+
+- [Banner](./components/banner)
+- [Breadcrumbs](./components/breadcrumbs)
+- [Button](./components/button)
+- [Dialog](./components/dialog)
+- [Footer Navigation](./components/footer-nav)
+- [Global Alerts](./components/global-alert)
+- [Grid](./components/grid)
+- [Icons](./components/icons)
+- [Inline Alerts](./components/inline-alert)
+- [Logo Link](./components/logo-link)
+- [Modal](./components/modal)
+- [Page](./components/page)
+- [Page Content](./components/page-content)
+- [Page Footer](./components/page-footer)
+- [Page Header](./components/page-header)
+- [Primary Navigation](./components/primary-nav)
+- [Secondary Navigation](./components/secondary-nav)
+- [Skip Link](./components/skip-nav)
+- [Styling Context](./components/styling-context)
+- [Summary](./components/summary)
+
+---
+
+## Available Themes
+
+### Company Specific
+
+- [Theme-Enterprise-Default](https://github.com/unumux/theme-enterprise-default)
+- [Theme-Unum-Default](https://github.com/unumux/theme-unum-default)
+- [Theme-Coloniallife-Default](https://github.com/unumux/theme-coloniallife-default)
+
+---
+
 ## Customizing
 
 [Recommended SCSS Directory Structure For Your Project](#recommended-scss-directory-structure-for-your-project)
@@ -190,41 +225,6 @@ Note: Changes to theme variables will be inherited throughout the html across ma
 ### Main Variables That Can Be Overridden
 
 ...
-
----
-
-## Components
-
-- [Banner](./components/banner)
-- [Breadcrumbs](./components/breadcrumbs)
-- [Button](./components/button)
-- [Dialog](./components/dialog)
-- [Footer Navigation](./components/footer-nav)
-- [Global Alerts](./components/global-alert)
-- [Grid](./components/grid)
-- [Icons](./components/icons)
-- [Inline Alerts](./components/inline-alert)
-- [Logo Link](./components/logo-link)
-- [Modal](./components/modal)
-- [Page](./components/page)
-- [Page Content](./components/page-content)
-- [Page Footer](./components/page-footer)
-- [Page Header](./components/page-header)
-- [Primary Navigation](./components/primary-nav)
-- [Secondary Navigation](./components/secondary-nav)
-- [Skip Link](./components/skip-nav)
-- [Styling Context](./components/styling-context)
-- [Summary](./components/summary)
-
----
-
-## Available Themes
-
-### Company Specific
-
-- [Theme-Enterprise-Default](https://github.com/unumux/theme-enterprise-default)
-- [Theme-Unum-Default](https://github.com/unumux/theme-unum-default)
-- [Theme-Coloniallife-Default](https://github.com/unumux/theme-coloniallife-default)
 
 ---
 
