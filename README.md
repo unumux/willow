@@ -9,9 +9,7 @@ permalink: false
 
 - [Introduction](#introduction)
 
-- [Getting Started](#getting-started)
-  - [installation](#installation)
-  - [Including **Willow** in a Project](#including-in-a-project)
+- [Installation and Usage](#installation-and-usage)
 
 - [Components](#components)
 
@@ -42,81 +40,73 @@ The library consists of semantic and accessible markup for a variety of componen
   - [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) : small, independent - atomic - parts, can be combined into larger molecular structures. Molecular structures can be combined into larger organisms, which can then serve as the foundation for templates and full pages
   - [BEM](http://getbem.com) : a naming convention that makes front-end code easier to read, understand, work with, maintain and scale
 
-
 ---
 
-## Getting Started
+## Installation and Usage
 
-[Installation](#installation)
+There are 2 methods for installing and using **Willow** for your project
 
-[Including **Willow** in a Project](#including-in-a-project)
+### Method 1: Compiled and Minified CSS Files
 
----
+- Installation
+  - Download a theme's CSS file, and add it to your project's styles folder
+    - [Theme-Enterprise-Default](https://github.com/unumux/theme-enterprise-default) - [download](https://github.com/unumux/theme-enterprise-default/releases/download/0.1.1/theme-enterprise-default.min.css)
+    - [Theme-Unum-Default](https://github.com/unumux/theme-unum-default) - [download](https://github.com/unumux/theme-unum-default/releases/download/0.1.1/theme-unum-default.min.css)
+    - [Theme-Coloniallife-Default](https://github.com/unumux/theme-coloniallife-default) - [download](https://github.com/unumux/theme-coloniallife-default/releases/download/0.1.1/theme-coloniallife-default.min.css)
 
-### Install
+- Usage
+  - After you include the CSS file in your style folder, you can reference it in your index.html file
+    - ```<link rel="stylesheet" href="styles/theme-cl-default.min.css">```
+  - Then as you add **Willow** HTML the components will inherit styling.
 
-There are 2 methods for installing **Willow** for your project
+### Method 2: NPM
 
-1. **Download a Compiled and Minified CSS File**
-   - **Willow** CSS files can be added to a project and referenced in the index.html file. Then as you add **Willow** HTML the components will inherit styling.
-     - [Theme-Enterprise-Default](https://github.com/unumux/theme-enterprise-default) - [download](https://github.com/unumux/theme-enterprise-default/releases/download/0.1.1/theme-enterprise-default.min.css)
-     - [Theme-Unum-Default](https://github.com/unumux/theme-unum-default) - [download](https://github.com/unumux/theme-unum-default/releases/download/0.1.1/theme-unum-default.min.css)
-     - [Theme-Coloniallife-Default](https://github.com/unumux/theme-coloniallife-default) - [download](https://github.com/unumux/theme-coloniallife-default/releases/download/0.1.1/theme-coloniallife-default.min.css)
+If you have [node](https://nodejs.org) on your machine, you can use npm to install **Willow** themes and components.
 
-1. **Install Components and A Theme with NPM**
+- Installation
+  - Install **Willow** components
+    - From Terminal in your project directory run the following:
+      ```node
+      npm install --save-dev @unumux/willow
+      ```
+  - Install a Theme - you will need the [theme's name](#available-themes)
+    - From Terminal in your project directory run the following:
+      ```node
+      npm install --save-dev theme-name-goes-here
+      ```
 
-   - If you have [node](https://nodejs.org) installed on your machine, you can use npm to install **Willow**.
-   - From Terminal in your project directory run the following:
-     - **Install Willow UI**
-        ```
-        npm install --save-dev @unumux/willow
-        ```
-     - **Install a Theme - you will need the [theme's name](#available-themes) to do this**
-        ```
-        npm install --save-dev theme-name-goes-here
-        ```
+- Usage
+  - Include a theme and **Willow** components in your project's primary SCSS file like so:
+    ```SCSS
+    // Your project's primary scss file
+    //--------------------------------------------------
+    //  1. Import Themes and Custom Theme Styles
+    //--------------------------------------------------
+    // Willow theme variables are needed first
+    // the file path for this may look something like "../node_modules/@unumux/theme-enterprise-default/styles"
+    @import "path/to/willow/theme/root/scss/file";
 
-#### Need Installation Help
+    // this is your custom style variables
+    // here you can overwrite Willow variable or create new variables
+    @import "path/to/my-project/styles/theme/theme.scss";
+
+    //--------------------------------------------------
+    // 2. Imports Willow and Custom Components
+    //--------------------------------------------------
+    // Willow Components use the theme variables imported above
+    // the file path for this may look something like "../node_modules/@unumux/components/styles"
+    @import "path/to/willow/components/root/scss/file";
+
+    // here you can style new components you created to use the above theme variables
+    // you can also target existing Willow Components and customize their default styling
+    @import "path/to/my-project/styles/components/components.scss";
+    ```
+
+### Need Installation Help
 
 Do you have questions or need help with setup? Did you run into errors while following these instructions? Feel free to open an issue here:
 
 [Open An Issue](https://github.com/unumux/willow/issues/new)
-
----
-
-### Usage
-
-There are 2 options for including **Willow** and themes in your project
-
-1. **If you downloaded a minified css file**,
-   - you can include the CSS file in your project and reference it in your index.html file. Then as you add **Willow** HTML the components will inherit styling.
-
-1. **If you installed via NPM and are using SCSS**
-   - you can include **Willow** and a theme in your project's primary SCSS file like so:
-      ```SCSS
-      // Your project's primary scss file
-      //--------------------------------------------------
-      //  1. Import Themes and Custom Theme Styles
-      //--------------------------------------------------
-      // Willow theme variables are needed first
-      // the file path for this may look something like "../node_modules/@unumux/theme-enterprise-default/styles"
-      @import "path/to/willow/theme/root/scss/file";
-
-      // this is your custom style variables
-      // here you can overwrite Willow variable or create new variables
-      @import "path/to/my-project/styles/theme/theme.scss";
-
-      //--------------------------------------------------
-      // 2. Imports Willow and Custom Components
-      //--------------------------------------------------
-      // Willow Components use the theme variables imported above
-      // the file path for this may look something like "../node_modules/@unumux/components/styles"
-      @import "path/to/willow/components/root/scss/file";
-
-      // here you can style new components you created to use the above theme variables
-      // you can also target existing Willow Components and customize their default styling
-      @import "path/to/my-project/styles/components/components.scss";
-      ```
 
 ---
 
