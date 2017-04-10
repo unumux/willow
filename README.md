@@ -51,8 +51,10 @@ There are 2 methods for installing and using **Willow** for your project
 If you have [node](https://nodejs.org) on your machine, you can use npm to install **Willow** themes and components.
 
 - Installation
-  - Install a Theme - you will need the [theme's name](#available-themes)
-    - ```npm install --save-dev @unumux/theme-name-goes-here```
+  - Install a Theme as a development dependency for your project. You will need the [theme's name](#available-themes)
+    ```bash
+    npm install --save-dev @unumux/theme-name-goes-here
+    ```
 
 - Usage
   - Include the theme in your project's primary SCSS file:
