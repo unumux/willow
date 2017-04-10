@@ -52,7 +52,7 @@ If you have [node](https://nodejs.org) on your machine, you can use npm to insta
 
 - Installation
   - Install a Theme - you will need the [theme's name](#available-themes)
-    - From Terminal in your project directory run ```npm install --save-dev @unumux/theme-name-goes-here```
+    - Run ```npm install --save-dev @unumux/theme-name-goes-here``` from your project's directory
 
 - Usage
   - Include the theme in your project's primary SCSS file:
@@ -71,7 +71,7 @@ If you have [node](https://nodejs.org) on your machine, you can use npm to insta
     ```HTML
     <link rel="stylesheet" href="styles/theme-name.min.css">
     ```
-  - Then as you add **Willow** HTML the components will inherit styling.
+  - Then as you add **Willow** components to your HTML file they will inherit styling
 
 ### Need Installation Help
 
@@ -130,7 +130,7 @@ Do you have questions or need help with setup? Did you run into errors while fol
 
 ### Recommended SCSS Directory Structure For Your Project
 
-We recommend you setup your project's styling folders and files using this [pattern](https://github.com/unumux/standard-project-structure).
+We recommend you setup your project's styling folders and files using this project [pattern](https://github.com/unumux/standard-project-structure).
 
 ---
 
