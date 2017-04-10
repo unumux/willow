@@ -46,29 +46,11 @@ The library consists of semantic and accessible markup for a variety of componen
 
 There are 2 methods for installing and using **Willow** for your project
 
-### Method 1: Compiled and Minified CSS Files
-
-- Installation
-  - Download a theme's CSS file, and add it to your project's styles folder
-    - [Theme-Enterprise-Default](https://github.com/unumux/theme-enterprise-default) - [download](https://github.com/unumux/theme-enterprise-default/releases/download/0.1.1/theme-enterprise-default.min.css)
-    - [Theme-Unum-Default](https://github.com/unumux/theme-unum-default) - [download](https://github.com/unumux/theme-unum-default/releases/download/0.1.1/theme-unum-default.min.css)
-    - [Theme-Coloniallife-Default](https://github.com/unumux/theme-coloniallife-default) - [download](https://github.com/unumux/theme-coloniallife-default/releases/download/0.1.1/theme-coloniallife-default.min.css)
-
-- Usage
-  - After you include the CSS file in your style folder, you can reference it in your index.html file
-    - ```<link rel="stylesheet" href="styles/theme-cl-default.min.css">```
-  - Then as you add **Willow** HTML the components will inherit styling.
-
-### Method 2: NPM
+### Method 1: NPM
 
 If you have [node](https://nodejs.org) on your machine, you can use npm to install **Willow** themes and components.
 
 - Installation
-  - Install **Willow** components
-    - From Terminal in your project directory run the following:
-      ```node
-      npm install --save-dev @unumux/willow
-      ```
   - Install a Theme - you will need the [theme's name](#available-themes)
     - From Terminal in your project directory run the following:
       ```node
@@ -101,6 +83,19 @@ If you have [node](https://nodejs.org) on your machine, you can use npm to insta
     // you can also target existing Willow Components and customize their default styling
     @import "path/to/my-project/styles/components/components.scss";
     ```
+
+### Method 2: Compiled and Minified CSS Files
+
+- Installation
+  - Download a theme's CSS file, and add it to your project's styles folder
+    - [Theme-Enterprise-Default](https://github.com/unumux/theme-enterprise-default) - [download](https://github.com/unumux/theme-enterprise-default/releases/download/0.1.1/theme-enterprise-default.min.css)
+    - [Theme-Unum-Default](https://github.com/unumux/theme-unum-default) - [download](https://github.com/unumux/theme-unum-default/releases/download/0.1.1/theme-unum-default.min.css)
+    - [Theme-Coloniallife-Default](https://github.com/unumux/theme-coloniallife-default) - [download](https://github.com/unumux/theme-coloniallife-default/releases/download/0.1.1/theme-coloniallife-default.min.css)
+
+- Usage
+  - After you include the CSS file in your style folder, you can reference it in your index.html file
+    - ```<link rel="stylesheet" href="styles/theme-cl-default.min.css">```
+  - Then as you add **Willow** HTML the components will inherit styling.
 
 ### Need Installation Help
 
@@ -137,11 +132,11 @@ Do you have questions or need help with setup? Did you run into errors while fol
 
 ## Available Themes
 
-### Company Specific
-
-- [Theme-Enterprise-Default](https://github.com/unumux/theme-enterprise-default)
-- [Theme-Unum-Default](https://github.com/unumux/theme-unum-default)
-- [Theme-Coloniallife-Default](https://github.com/unumux/theme-coloniallife-default)
+|         Theme Name         | Documentation                                               | CSS Download |
+|:-------------------------- |:-----------------------------------------------------------:|:------------:|
+|  theme-enterprise-default  |[docs](https://github.com/unumux/theme-enterprise-default)   |[download](https://github.com/unumux/theme-enterprise-default/releases/download/0.1.1/theme-enterprise-default.min.css)|
+|     theme-unum-default     |[docs](https://github.com/unumux/theme-unum-default)         |[download](https://github.com/unumux/theme-unum-default/releases/download/0.1.1/theme-unum-default.min.css)|
+| theme-coloniallife-default |[docs](https://github.com/unumux/theme-coloniallife-default) |[download](https://github.com/unumux/theme-coloniallife-default/releases/download/0.1.1/theme-coloniallife-default.min.css)|
 
 ---
 
