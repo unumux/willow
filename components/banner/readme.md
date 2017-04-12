@@ -24,7 +24,7 @@ A banner either spans the width of the [willow-page-content](../page-content) co
       <!-- insert components here -->
   </div>
   <ul class="willow-banner__actions">
-      <li class="banner__action"><!-- insert action component here --></li>
+      <li class="willow-banner__action"><!-- insert action component here --></li>
   </ul>
 </section>
 ```
@@ -78,7 +78,7 @@ A banner either spans the width of the [willow-page-content](../page-content) co
 
 ---
 
-### banner__action
+### willow-banner__action
 
 - Optional
 - Repeatable
