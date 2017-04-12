@@ -51,8 +51,10 @@ There are 2 methods for installing and using **Willow** for your project
 If you have [node](https://nodejs.org) on your machine, you can use npm to install **Willow** themes and components.
 
 - Installation
-  - Install a Theme - you will need the [theme's name](#available-themes)
-    - Run ```npm install --save-dev @unumux/theme-name-goes-here``` from your project's directory
+  - Install a Theme as a development dependency for your project. You will need the [theme's name](#available-themes)
+    ```bash
+    npm install --save-dev @unumux/theme-name-goes-here
+    ```
 
 - Usage
   - Include the theme in your project's primary SCSS file:
@@ -85,9 +87,9 @@ Do you have questions or need help with setup? Did you run into errors while fol
 
 |         Theme Name         | Documentation                                               | CSS Download |
 |:-------------------------- |:-----------------------------------------------------------:|:------------:|
-|  theme-enterprise-default  |[docs](https://github.com/unumux/theme-enterprise-default)   |[download](https://github.com/unumux/theme-enterprise-default/releases/download/0.1.1/theme-enterprise-default.min.css)|
-|     theme-unum-default     |[docs](https://github.com/unumux/theme-unum-default)         |[download](https://github.com/unumux/theme-unum-default/releases/download/0.1.1/theme-unum-default.min.css)|
-| theme-coloniallife-default |[docs](https://github.com/unumux/theme-coloniallife-default) |[download](https://github.com/unumux/theme-coloniallife-default/releases/download/0.1.1/theme-coloniallife-default.min.css)|
+|  theme-enterprise-default  |[docs](https://github.com/unumux/theme-enterprise-default)   |[theme-enterprise-default.min.css](https://github.com/unumux/theme-enterprise-default/releases/download/0.1.1/theme-enterprise-default.min.css)|
+|     theme-unum-default     |[docs](https://github.com/unumux/theme-unum-default)         |[theme-unum-default.min.css](https://github.com/unumux/theme-unum-default/releases/download/0.1.1/theme-unum-default.min.css)|
+| theme-coloniallife-default |[docs](https://github.com/unumux/theme-coloniallife-default) |[theme-coloniallife-default.min.css](https://github.com/unumux/theme-coloniallife-default/releases/download/0.1.1/theme-coloniallife-default.min.css)|
 
 ---
 
