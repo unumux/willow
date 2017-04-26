@@ -1,0 +1,12 @@
+@mixin base() {
+    
+}
+
+&__row {
+    @include base;
+
+    @media screen and (min-width: breakpoint(large)) {
+        align-items: stretch;
+        display: flex;
+    }
+}

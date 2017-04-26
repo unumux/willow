@@ -1,0 +1,43 @@
+@mixin base() {
+}
+
+&__column {
+    @for $i from 1 through 12 {
+        &--#{$i} {
+            @include base;
+
+            @media screen and (min-width: breakpoint(large)) {
+                flex-basis: $i*(100%/12);
+                flex-grow: 0;
+                flex-shrink: 0;
+                padding-left: space(1);
+                padding-right: space(1);
+
+                //Option 1
+                //removes padding from columns when they are nested to prevent extra column padding
+                //not the perferred option - see option 2 below
+                .row .row & {
+                    &:first-child {
+                        margin-left: -10px;
+                    }
+                    
+                    &:last-child {
+                        margin-right: -10px;
+                    }
+                }
+
+                //Option 2
+                //preferred option
+                //when used this causes components using the escape-container mixin...
+                //such as page-header to have extra space on the right side of the browser
+                &:first-child {
+                    // margin-left: space(-1);
+                }
+                
+                &:last-child {
+                    // margin-right: space(-1);
+                }
+            }
+        }
+    }
+}

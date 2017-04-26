@@ -1,0 +1,23 @@
+@mixin base() {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $content-max-width;
+    min-height: 100vh;
+    padding-left: space(2);
+    padding-right: space(2);
+
+    @media screen and (min-width: breakpoint(large)) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+&-layout {
+    @include base;
+
+    @import "row";
+    @import "column";
+}
