@@ -17,13 +17,6 @@ A component for positioning/layout purposes.  **Willow-Page-Content** should onl
 ```html
 <main class="willow-page-content" id="" role="main">
     <!-- insert components here -->
-    <div class="willow-page-content__site-context">
-        <!-- insert Willow-Breadcrumbs here -->
-    </div>
-    <div class="willow-page-content__page-context">
-        <!-- insert components here-->
-    </div>
-    <!-- insert components here -->
 </main>
 ```
 
@@ -41,19 +34,3 @@ A component for positioning/layout purposes.  **Willow-Page-Content** should onl
 
 - **willow-page-content** `id` attribute should be set and the [willow-skip-nav](../skip-nav) component should have an `href` equal to this value
 - **willow-page-content** has a `role="main"` for accessibility
-
----
-
-### willow-page-content__site-context
-
-- Optional
-- Restrictions
-  - Should Contain: one or more site level components such as [willow-breadcrumbs](../breadcrumbs)
-
----
-
-### willow-page-content__page-context
-
-- Optional
-- Restrictions
-  - Should Contain: one or more page-related components such as [willow-secondary-nav](../secondary-nav)

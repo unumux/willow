@@ -1,9 +1,13 @@
 @mixin base() {
-    
+    margin-bottom: space(2);
 }
 
 &__row {
     @include base;
+
+    &--remove-margin-bottom {
+        margin-bottom: 0;
+    }
 
     @media screen and (min-width: breakpoint(large)) {
         align-items: stretch;

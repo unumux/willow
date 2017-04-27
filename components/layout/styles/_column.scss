@@ -7,22 +7,24 @@
             @include base;
 
             @media screen and (min-width: breakpoint(large)) {
-                flex-basis: $i*(100%/12);
+                $width: $i*(100%/12);
+                flex-basis: $width;
                 flex-grow: 0;
                 flex-shrink: 0;
                 padding-left: space(1);
                 padding-right: space(1);
+                width: $width;
 
                 //Option 1
                 //removes padding from columns when they are nested to prevent extra column padding
                 //not the perferred option - see option 2 below
-                .row .row & {
+                .willow-layout__row .willow-layout__row & {
                     &:first-child {
-                        margin-left: -10px;
+                        margin-left: space(-1);
                     }
                     
                     &:last-child {
-                        margin-right: -10px;
+                        margin-right: space(-1);
                     }
                 }
 

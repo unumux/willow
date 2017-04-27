@@ -49,6 +49,10 @@ A layout component, **willow-layout** should be used to constrict the page's con
 - Restrictions
   - Should Contain: **willow-layout__column** elements
 
+#### _Modifiers_
+
+`--remove-margin-bottom`: Removes the margin beneath a row
+
 #### _Notes_
 
 - **willow-layout__row** can hold between 1 and 12 columns
