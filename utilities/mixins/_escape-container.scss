@@ -1,6 +1,12 @@
-@mixin escape-container($additional-padding: 0px) {
+// go update all the calls to escape-container
+
+@mixin full-width() {
     margin-left: calc(0px - (100vw - 100%) / 2);
     margin-right: calc(0px - (100vw - 100%) / 2);
+}
+    
+@mixin full-bleed($additional-padding: 0px) {
+    @include name-1;
     padding-left: calc(#{$additional-padding} + (100vw - 100%) / 2);
     padding-right: calc(#{$additional-padding} + (100vw - 100%) / 2);
 }
