@@ -1,5 +1,13 @@
 @mixin base() {
     margin-bottom: space(2);
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 1;
+
+    @media screen and (min-width: breakpoint(large)) {
+        align-items: stretch;
+        display: flex;
+    }
 }
 
 &__row {
@@ -9,8 +17,9 @@
         margin-bottom: 0;
     }
 
-    @media screen and (min-width: breakpoint(large)) {
-        align-items: stretch;
-        display: flex;
+    &--grow {
+        @include base;
+        
+        flex-grow: 1;
     }
 }
