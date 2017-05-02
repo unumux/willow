@@ -10,8 +10,6 @@
     padding-top: space(1);
 
     @media screen and (min-width: breakpoint(medium)) {
-        @include escape-container;  
-
         align-items: flex-end;
         padding-bottom: 0;
         padding-top: space(2);
@@ -20,6 +18,7 @@
 
 &-page-header {
     @include base;
+    @include full-bleed;
 
     @import "branding";
     @import "content";
@@ -27,5 +26,4 @@
     @import "content-open";
     @import "content-close";
     @import "navigation";
-    @import "site-context";
 }

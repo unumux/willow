@@ -17,7 +17,7 @@
 
 &-page-footer {
     @include base;
-    @include escape-container;
+    @include full-bleed;
 
     @import "branding";
     @import "copyright";

@@ -1,6 +1,0 @@
-@mixin escape-container($additional-padding: 0px) {
-    margin-left: calc(0px - (100vw - 100%) / 2);
-    margin-right: calc(0px - (100vw - 100%) / 2);
-    padding-left: calc(#{$additional-padding} + (100vw - 100%) / 2);
-    padding-right: calc(#{$additional-padding} + (100vw - 100%) / 2);
-}

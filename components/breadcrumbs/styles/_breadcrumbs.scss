@@ -3,15 +3,11 @@
     padding-left: space(2);
     padding-right: space(2);
     padding-top: space(1);
-
-    @media screen and (min-width: breakpoint(medium)) {
-        padding-left: 0;
-        padding-right: 0;
-    }
 }
 
 &-breadcrumbs {
     @include base;
+    @include full-bleed;
 
     @import "heading";
     @import "list";
