@@ -1,6 +1,6 @@
 @mixin base() {
-    height: $component-logo-link-image-height;
     display: block;
+    height: $component-logo-link-image-height;
 }
 
 &__image {
