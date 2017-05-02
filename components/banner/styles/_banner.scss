@@ -29,7 +29,7 @@
 
 &-banner {
     @include base;
-    @include escape-container;
+    @include full-bleed;
 
     @import "heading";
     @import "content";
