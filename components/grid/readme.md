@@ -8,7 +8,7 @@ collection:
 
 [Demo](http://codepen.io/team/UnumUX/pen/PpWzpY)
 
-A layout component, the **willow-grid** should be used within other components such as [willow-page-content](../page-content) or [willow-summary](../summary) to present content in a multi-column evenly distributed grid.
+The **willow-grid** should be used within other components such as [willow-page-content](../page-content) or [willow-summary](../summary) to present content in a multi-column evenly distributed grid. This component does not serve as a page level grid system - see [Willow Layout](../layout) for a page wide grid.
 
 ---
 
