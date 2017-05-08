@@ -21,7 +21,7 @@ permalink: false
   - [So you need to customize a component](#so-you-need-to-customize-a-component)
   - [So you need to change a theme](#so-you-need-to-change-a-theme)
 
-- [Contributing](#contributing)
+- [Issues and Feedback](#issues-and-feedback)
 
 ---
 
@@ -201,8 +201,6 @@ Note: Changes to theme variables will be inherited throughout the html across ma
 
 ---
 
-## Contributing
-
-Everyone is encouraged [to contribute](https://github.com/unumux/willow/blob/master/CONTRIBUTING.md) to the project by [forking](https://help.github.com/articles/fork-a-repo) and submitting a pull request. (If you are new to GitHub, you might start with a [basic tutorial](https://help.github.com/articles/set-up-git).)
+## Issues and Feedback
 
 Found an issue of have an idea for enhancement? Open an [issue](https://github.com/unumux/willow/issues/new).
