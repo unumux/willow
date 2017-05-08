@@ -17,8 +17,8 @@ _Examples: Confirming deletion of information, entering an email address to down
 ## HTML Snippet
 
 ```html
-<section class="willow-modal" role="alertdialog">
-  <div class="willow-modal__container">
+<div class="willow-modal">
+  <section class="willow-modal__container" role="alertdialog">
     <h1 class="willow-modal__heading">Modal</h1>
     <div class="willow-modal__content">
         <!-- insert content components here -->
@@ -26,8 +26,8 @@ _Examples: Confirming deletion of information, entering an email address to down
     <ul class="willow-modal__actions">
       <li class="willow-modal__action"><!-- insert action component here --></li>
     </ul>
-  </div>
-</section>
+  </section>
+</div>
 ```
 
 ---
