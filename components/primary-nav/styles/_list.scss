@@ -1,6 +1,7 @@
 @mixin base() {
     list-style: none;
     margin: 0;
+    overflow: hidden; // fixes IE bug that adds blank space on :hover
     padding: 0;
 
     @media screen and (min-width: breakpoint(medium)) {
