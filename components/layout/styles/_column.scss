@@ -7,13 +7,12 @@
             @include base;
 
             @media screen and (min-width: breakpoint(large)) {
-                $width: $i*(100%/12);
-                flex-basis: $width;
+                flex-basis: auto;
                 flex-grow: 0;
                 flex-shrink: 0;
                 padding-left: space(1);
                 padding-right: space(1);
-                width: $width;
+                width: $i*(100%/12);
 
                 //Option 1
                 //removes padding from columns when they are nested to prevent extra column padding
