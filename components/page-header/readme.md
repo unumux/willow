@@ -16,14 +16,14 @@ A component for positioning/layout purposes.  **Willow-Page-Header** should only
 
 ```html
 <header class="willow-page-header" role="banner">
-  <div class="willow-page-header__branding"><!-- insert Willow-Logo-Link Component Here --></div>
-  <div class="willow-page-header__content-controls">
-      <a href="" class="willow-page-header__content-open">menu</a>
-      <a href="" class="willow-page-header__content-close">close</a>
-  </div>
-  <div class="willow-page-header__content">
-      <div class="willow-page-header__navigation"><!-- insert Willow-Primary-Nav Component Here --></div>
-  </div>
+    <div class="willow-page-header__branding"><!-- insert Willow-Logo-Link Component Here --></div>
+    <div class="willow-page-header__content-controls">
+        <a class="willow-page-header__content-open" aria-label="Open Menu" href="">menu</a>
+        <a class="willow-page-header__content-close" aria-label="Close Menu"href="">close</a>
+    </div>
+    <div class="willow-page-header__content">
+        <div class="willow-page-header__navigation"><!-- insert Willow-Primary-Nav Component Here --></div>
+    </div>
 </header>
 ```
 
@@ -74,6 +74,8 @@ A component for positioning/layout purposes.  **Willow-Page-Header** should only
 #### _Notes_
 
 - clicking **willow-page-header__content-open** should set **willow-page-header** `data-content-open` state attribute to `true`
+- **willow-page-header__content-open** needs an `aria-label` attribute to define what the link does
+  - This is required for low or no sight users or if the key word "Menu" is removed from the link
 
 ---
 
@@ -86,6 +88,8 @@ A component for positioning/layout purposes.  **Willow-Page-Header** should only
 #### _Notes_
 
 - clicking **willow-page-header__content-close** should set **willow-page-header** `data-content-open` state attribute to `false`
+- **willow-page-header__content-close** needs an `aria-label` attribute to define what the link does
+  - This is required for low or no sight users or if the key word "Close" is removed from the link
 
 ---
 
