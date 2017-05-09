@@ -1,11 +1,13 @@
 @mixin base() {
+    display: flex;
+    flex-direction: column;
     list-style: none;
     margin: 0;
     overflow: hidden; // fixes IE bug that adds blank space on :hover
     padding: 0;
 
     @media screen and (min-width: breakpoint(medium)) {
-        font-size: 0; // remove whitespace between list items
+        flex-direction: row;
     }
 }
 
