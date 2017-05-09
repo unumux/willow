@@ -53,9 +53,12 @@ A layout component, **willow-layout** should be used to constrict the page's con
 
 `--remove-margin-bottom`: Removes the margin beneath a row
 
+`--grow`: Expands a row to fill the browser's remaining vertical space
+
 #### _Notes_
 
 - **willow-layout__row** can hold between 1 and 12 columns
+- Use the `--grow` modifier on the row that contains a site's main content. This will expand this row vertically and cause the footer to go to the bottom of the viewport
 
 ---
 
