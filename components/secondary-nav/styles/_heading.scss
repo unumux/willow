@@ -4,4 +4,10 @@
 &__heading {
     @include base;
     @include sr-only;
+
+    &--visible {
+        @include base;
+
+        // background-color: $component-secondary-nav-heading-background-color;
+    }
 }
