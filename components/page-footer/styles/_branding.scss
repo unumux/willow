@@ -1,5 +1,6 @@
 @mixin base() {
-    flex-basis: 100%;
+    display: block;
+    flex-basis: auto;
     flex-grow: 0;
     flex-shrink: 0;
     margin-bottom: 25px;
