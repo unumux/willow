@@ -1,3 +1,12 @@
+/* Bootstrap Integration */
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins/breakpoints";
+@import "node_modules/bootstrap/scss/mixins/grid-framework";
+@import "node_modules/bootstrap/scss/mixins/grid";
+@import "node_modules/bootstrap/scss/grid";
+/* End Bootstrap Integration */
+
+
 @import "./utilities/utilities";
 @import "./base-elements/base-elements";
 @import "./components/components";
