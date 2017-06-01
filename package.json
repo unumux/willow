@@ -46,6 +46,7 @@
     "stylelint": "^7.5.0"
   },
   "dependencies": {
+    "bootstrap": "4.0.0-alpha.6",
     "normalize.css": "^4.0.0"
   }
 }
