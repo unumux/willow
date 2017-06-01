@@ -11,7 +11,7 @@ permalink: false
 
 A banner is a highlighted area of a page used to call out a single piece of information or action. This area is typically styled to stand out visually from the rest of the page’s content and can contain a concise heading, sentence and action component such as a [willow-button](../button).
 
-A banner either spans the width of the [willow-page-content](../page-content) component or the full width of the screen/viewport. It cannot contain multiple columns. The banner component can have a background image set by the developer. If one is not set a fallback color will be displayed.
+A banner spans the full width of the screen/viewport. It cannot contain multiple columns. The banner component can have a background image set by the developer. If one is not set a fallback color will be displayed.
 
 ---
 
