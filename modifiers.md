@@ -30,9 +30,8 @@ A list of modifiers used by Willow components
 - [Willow Dialog](./components/dialog)
 - [Willow Global Alert](./components/global-alert)
 - [Willow Modal](./components/modal)
-
-
 - [Willow Icons](./components/icons)
+
 `--menu` : displays a collapsed menu icon often called a hamburger
 
 `--menu-inverse` : same as `--menu` but in an inverse color
