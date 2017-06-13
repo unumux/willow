@@ -17,8 +17,8 @@ Primary Nav should contain a limited number of items, the shorter the better for
 ## HTML Snippet
 
 ```html
-<nav class="willow-primary-nav" role="navigation" aria-label="Primary Navigation">
-    <h1 class="willow-primary-nav__heading sr-only">Primary Navigation</h1>
+<nav class="willow-primary-nav" role="navigation" aria-label="primary">
+    <h1 class="willow-primary-nav__heading sr-only">Site Primary Menu</h1>
     <ul class="willow-primary-nav__list">
         <li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="" aria-label="">Menu Item 1</a></li>
         <li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="" aria-label="">Menu Item 2</a></li>
