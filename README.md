@@ -59,7 +59,7 @@ If you have [node](https://nodejs.org) on your machine, you can use npm to insta
 - Usage
   - Include the theme in your project's primary SCSS file:
     ```SCSS
-    @import "../node_modules/@unumux/theme-name-here/styles";
+    @import "node_modules/@unumux/theme-name-here/styles";
     ```
 
 ### Method 2: Compiled and Minified CSS Files
@@ -104,9 +104,9 @@ Do you have questions or need help with setup? Did you run into errors while fol
 - [Grid](./components/grid)
 - [Icons](./components/icons)
 - [Inline Alerts](./components/inline-alert)
+- [Layout](./components/layout)
 - [Logo Link](./components/logo-link)
 - [Modal](./components/modal)
-- [Page](./components/page)
 - [Page Content](./components/page-content)
 - [Page Footer](./components/page-footer)
 - [Page Header](./components/page-header)

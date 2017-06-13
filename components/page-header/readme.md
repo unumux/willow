@@ -8,7 +8,7 @@ collection:
 
 [Demo](http://codepen.io/team/UnumUX/pen/qrRNjM)
 
-A component for positioning/layout purposes.  **Willow-Page-Header** should only be used once per page and should be placed before [willow-page-content](../page-content). This component should appear on every page of your site and contain the main header content for the site such as [willow-logo-link](../logo-link) and [willow-primary-nav](../primary-nav). The header can also contain contextually related components that display content to a user based on their location, such as [willow-breadcrumbs](../breadcrumbs).
+The **Willow-Page-Header** component should be used on every page of your site (no more than once) and contain the main header content for the site such as [willow-logo-link](../logo-link) and [willow-primary-nav](../primary-nav).
 
 ---
 
