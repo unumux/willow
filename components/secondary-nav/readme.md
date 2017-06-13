@@ -17,7 +17,7 @@ Secondary Navigation provides navigational links that are separate from links pr
 
 ```html
 <nav class="willow-secondary-nav" role="navigation" aria-label="Secondary Navigation">
-    <h1 class="willow-secondary-nav__heading">Secondary Navigation</h1>
+    <h1 class="willow-secondary-nav__heading sr-only">Secondary Navigation</h1>
     <ul class="willow-secondary-nav__list">
         <li class="willow-secondary-nav__item"><a class="willow-secondary-nav__link" href="" aria-label="">Menu Item 1</a></li>
         <li class="willow-secondary-nav__item"><a class="willow-secondary-nav__link" href="" aria-label="">Menu Item 2</a></li>
@@ -52,7 +52,7 @@ Secondary Navigation provides navigational links that are separate from links pr
 
 #### _Notes_
 
-- **willow-secondary-nav__heading** is hidden by default, and is required to meet accessibility standards
+- **willow-secondary-nav__heading** is hidden by default with the `sr-only` utility class, and is required to meet accessibility standards
 
 ---
 
