@@ -8,9 +8,20 @@ collection:
 
 [Demo](http://codepen.io/team/UnumUX/pen/JWEKRZ)
 
-**Willow-Dialog** is a small window that overlays (pops up over) the content of a webpage. Dialogs communicate information to a user and can prompt them with questions that **do not** require a response. If any of your questions require an answer use the [willow-modal](../modal) component instead. The dialog should disappear once the user has entered the requested information, pressed the `esc` key, or clicked outside of the response area/window.
+**Willow-Dialog** is a small window that overlays (pops up over) the content of a webpage. Dialogs communicate information to a user and can prompt them with questions that **do not** require a response. If any of your questions require an answer use the [willow-modal](../modal) component instead. The dialog should disappear if the user has completed the task or action, pressed the `esc` key, or clicked outside of the dialog.
 
 _Examples: errors, warnings, to collect data, to inform users of important information, to provide opt-in options like email signup_
+
+---
+
+## Willow Dialog vs Willow Modal
+
+|           Dialog                  |      |               Modal                       |
+|:----------------------------------|:----:|:------------------------------------------|
+|         Contains a Message        |      |     Contains a Message                    |
+| Can Contain an Action or Question |      |   Must Contain an Action or Question      |
+|Does Not Require Action or Answer  |      |     Requires Action or Answer             |
+|    Multiple Ways to Close Window  |      | Action or Answer Required to Close Window |
 
 ---
 
