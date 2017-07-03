@@ -45,13 +45,13 @@
     }
 }
 
-&-button--cta {
-    @include set-text-style($text-style-heading-3);
-    padding-bottom: space(1);
-    padding-left: space(2);
-    padding-right: space(2);
-    padding-top: space(1);
-}
+// &-button--cta {
+//     @include set-text-style($text-style-heading-3);
+//     padding-bottom: space(1);
+//     padding-left: space(2);
+//     padding-right: space(2);
+//     padding-top: space(1);
+// }
 
 &-button--primary {
     background-color: $component-button-primary-background-color;
