@@ -14,6 +14,17 @@ _Examples: Confirming deletion of information, entering an email address to down
 
 ---
 
+## Willow Dialog vs Willow Modal
+
+|           Dialog                  |      |               Modal                       |
+|:----------------------------------|:----:|:------------------------------------------|
+|         Contains a Message        |      |     Contains a Message                    |
+| Can Contain an Action or Question |      |   Must Contain an Action or Question      |
+|Does Not Require Action or Answer  |      |     Requires Action or Answer             |
+|    Multiple Ways to Close Window  |      | Action or Answer Required to Close Window |
+
+---
+
 ## HTML Snippet
 
 ```html
