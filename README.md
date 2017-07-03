@@ -145,7 +145,7 @@ A common example of a column layout would be a page section contains secondary n
 
 ### Customize the Bootstrap Grid
 
-**Willow** takes the bootstrap breakpoint, container width and gutter values as they come. If you want to update these checkout the section on [customizing the grid](#so-you-need-to-change-the-grid).
+**Willow** takes the bootstrap breakpoint, container width and gutter values as they come. If you want to update these checkout the [Bootstrap Docs](https://v4-alpha.getbootstrap.com/layout/grid/#customizing-the-grid) and our section on [customizing the grid](#so-you-need-to-change-the-grid).
 
 ### Willow's Bootstrap Customization
 
@@ -289,7 +289,7 @@ _Example: I want to change just the **willow-button** that is in my **willow-mod
 ```
 
 ```SCSS
-// file: styles/components/overrides/willow/button/_button.scss
+// file: styles/components/button/_button.scss
 .modal-button {
   background-color: orange;
 }
@@ -318,7 +318,7 @@ Note: Changes to theme variables will be inherited throughout the html across ma
 
 Bootstrap uses [variables](https://v4-alpha.getbootstrap.com/layout/grid/#variables) to control the grid. You can override these to customize how the system works.
 
-#### Method 1: Override Variable in your Project
+#### Method 1: Override Variables in your Project
 
 In your main styles file where you import the theme for Willow. You can declare the variables and override them like so:
 

@@ -12,8 +12,8 @@ Buttons are used as triggers for actions. Depending on the use case, buttons con
 
 Buttons can be created by adding the **willow-button** class to a `<button>` or `<a>` html element.
 
-- `<button>` should be used as a form of action for the user to accomplish something
-- `<a>` should be used as a form of action for the user to go somewhere
+- `<button>` should be used for the user to accomplish something
+- `<a>` should be used for the user to go somewhere
 
 ---
 
