@@ -74,14 +74,10 @@ _Examples: “Due to the hurricane, our Call Center is currently closed”, “O
 - Restrictions
   - Should Contain: text
 
-
-#### _Modifiers_
-
-`--sr`: hides **willow-global-alert__heading**
-
 #### _Notes_
 
-- **willow-global-alert__heading** is visible by default and even if it is hidden, it is required to meet accessibility standards
+- **willow-global-alert__heading** is visible by default, and even if it is hidden it is required to meet accessibility standards
+- To hide the **willow-global-alert__heading** add the `sr-only` utility class to the element
 
 ---
 

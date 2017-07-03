@@ -52,13 +52,10 @@ A banner spans the full width of the screen/viewport. It cannot contain multiple
 - Restrictions
   - Should Contain: text
 
-#### _Modifiers_
-
-`--sr`: hides **willow-banner__heading**
-
 #### _Notes_
 
 - **willow-banner__heading** is visible by default and even if it is hidden, it is required to meet accessibility standards
+- To hide the **willow-banner__heading** add the `sr-only` utility class to the element
 
 ---
 

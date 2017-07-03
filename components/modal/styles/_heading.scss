@@ -4,8 +4,4 @@
 
 &__heading {
     @include base;
-
-    &--sr {
-        @include sr-only;
-    }
 }

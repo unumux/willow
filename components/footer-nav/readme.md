@@ -17,12 +17,12 @@ _Example Page Links: Sitemap, Frequently Asked Questions, Legal, Privacy Policy,
 ## HTML Snippet
 
 ```html
-<nav class="willow-footer-nav" role="navigation" aria-label="Footer Navigation">
-  <h1 class="willow-footer-nav__heading">Footer Navigation</h1>
-  <ul class="willow-footer-nav__list">
-      <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 1</a></li>
-      <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 2</a></li>
-  </ul>
+<nav class="willow-footer-nav" role="navigation" aria-label="footer">
+    <h1 class="willow-footer-nav__heading sr-only">Site Footer Menu</h1>
+    <ul class="willow-footer-nav__list">
+        <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 1</a></li>
+        <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 2</a></li>
+    </ul>
 </nav>
 ```
 
@@ -50,7 +50,7 @@ _Example Page Links: Sitemap, Frequently Asked Questions, Legal, Privacy Policy,
 
 #### _Notes_
 
-- **willow-footer-nav__heading** is hidden by default, and is required to meet accessibility standards
+- **willow-footer-nav__heading** is hidden by default with the `sr-only` utility class, and is required to meet accessibility standards
 
 ---
 

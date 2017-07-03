@@ -56,13 +56,10 @@ _Examples: Presented on the user’s account page - “Your account is about to 
 - Restrictions
   - Should Contain: text
 
-#### _Modifiers_
-
-`--sr`: hides **willow-alert__heading**
-
 #### _Notes_
 
-- **willow-alert__heading** is visible by default and even if it is hidden it is required to meet accessibility standards
+- **willow-alert__heading** is visible by default, and even if it is hidden it is required to meet accessibility standards
+- To hide the **willow-alert__heading** add the `sr-only` utility class to the element
 
 ---
 
