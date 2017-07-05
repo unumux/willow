@@ -83,13 +83,10 @@ _Examples: errors, warnings, to collect data, to inform users of important infor
 - Restrictions
   - Should Contain: text
 
-#### _Modifiers_
-
-`--sr`: hides **willow-dialog__heading**
-
 #### _Notes_
 
-- **willow-dialog__heading** is visible by default and even if it is hidden, it is required to meet accessibility standards
+- **willow-dialog__heading** is visible by default, and even if it is hidden, it is required to meet accessibility standards
+- To hide the **willow-dialog__heading** add the `sr-only` utility class to the element
 
 ---
 

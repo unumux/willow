@@ -48,13 +48,10 @@ collection:
 - Restrictions
   - Should Contain: text
 
-#### _Modifiers_
-
-`--sr`: hides **willow-summary__heading**
-
 #### _Notes_
 
 - **willow-summary__heading** is visible by default and even if it is hidden, it is required to meet accessibility standards
+- To hide the **willow-summary__heading** add the `sr-only` utility class to the element
 
 ---
 

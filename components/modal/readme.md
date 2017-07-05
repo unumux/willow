@@ -82,13 +82,10 @@ _Examples: Confirming deletion of information, entering an email address to down
 - Restrictions
   - Should Contain: text
 
-#### _Modifiers_
-
-`--sr`: hides **willow-modal__heading**
-
 #### _Notes_
 
-- **willow-modal__heading** is visible by default and even if it is hidden, it is required to meet accessibility standards
+- **willow-modal__heading** is visible by default, and even if it is hidden, it is required to meet accessibility standards
+- To hide the **willow-modal__heading** add the `sr-only` utility class to the element
 
 ---
 
