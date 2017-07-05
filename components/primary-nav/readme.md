@@ -39,7 +39,7 @@ Primary Nav should contain a limited number of items, the shorter the better for
 
 #### _Notes_
 
-- **willow-primary-nav** has a `role="navigation"` for accessibility
+- The use of `role="navigation"` with the `<nav>` element ensures that **willow-primary-nav** is accessible for user agents that do not support HTML5. The use of both `<nav>` and `<role="navigation">` together will create a warning in an [HTML validator](https://validator.w3.org/) but we left this pattern intact for now to cover all of our accessibility bases.
 
 ---
 

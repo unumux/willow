@@ -34,7 +34,7 @@ A component for positioning/layout purposes. **Willow-Page-Footer** should only 
 
 #### _Notes_
 
-- **willow-page-footer** has a `role="contentinfo"` for accessibility
+- The use of `role="contentinfo"` with the `<footer>` element ensures that **willow-page-footer** is accessible for user agents that do not support HTML5. The use of both `<footer>` and `<role="contentinfo">` together will create a warning in an [HTML validator](https://validator.w3.org/) but we left this pattern intact for now to cover all of our accessibility bases.
 
 ---
 
