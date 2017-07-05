@@ -52,7 +52,8 @@ _Examples: “Due to the hurricane, our Call Center is currently closed”, “O
 
 - **willow-global-alert** should be used only once and be placed immediately after the opening [willow-page](../page) tag or the opening `<body>` tag if not using **willow-page**. 
 - **willow-global-alert** should come before the[willow-skip-nav](../skip-nav) component
-- **willow-global-alert** has a `role="alert"` for accessibility
+- The use of `role="alert"` with the `<section>` element ensures that **willow-global-alert** is accessible for user agents that do not support HTML5. The use of both `<section>` and `<role="alert">` together may create a warning in an [HTML validator](https://validator.w3.org/) but we left this pattern intact for now to cover all of our accessibility bases.
+
 
 ---
 

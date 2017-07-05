@@ -38,7 +38,7 @@ Breadcrumbs are a specialized secondary navigation that show users their locatio
 
 #### _Notes_
 
-- The use of `role="navigation"` with the `<nav>` element ensures that **willow-breadcrumbs** is accessible for user agents that do not support HTML5. The use of both `<nav>` and `<role="navigation">` together will create a warning in an [HTML validator](https://validator.w3.org/) but we left this pattern intact for now to cover all of our accessibility bases.
+- The use of `role="navigation"` with the `<nav>` element ensures that **willow-breadcrumbs** is accessible for user agents that do not support HTML5. The use of both `<nav>` and `<role="navigation">` together may create a warning in an [HTML validator](https://validator.w3.org/) but we left this pattern intact for now to cover all of our accessibility bases.
 
 ---
 

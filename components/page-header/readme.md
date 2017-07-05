@@ -45,7 +45,7 @@ The **Willow-Page-Header** component should be used on every page of your site (
 
 #### _Notes_
 
-- The use of `role="banner"` with the `<header>` element ensures that **willow-page-header** is accessible for user agents that do not support HTML5. The use of both `<header>` and `<role="banner">` together will create a warning in an [HTML validator](https://validator.w3.org/) but we left this pattern intact for now to cover all of our accessibility bases.
+- The use of `role="banner"` with the `<header>` element ensures that **willow-page-header** is accessible for user agents that do not support HTML5. The use of both `<header>` and `<role="banner">` together may create a warning in an [HTML validator](https://validator.w3.org/) but we left this pattern intact for now to cover all of our accessibility bases.
 
 ---
 

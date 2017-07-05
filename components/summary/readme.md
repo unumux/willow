@@ -38,7 +38,7 @@ collection:
 
 #### _Notes_
 
-- The use of `role="region"` with the `<section>` element ensures that **willow-summary** is accessible for user agents that do not support HTML5. The use of both `<section>` and `<role="region">` together will create a warning in an [HTML validator](https://validator.w3.org/) but we left this pattern intact for now to cover all of our accessibility bases.
+- The use of `role="region"` with the `<section>` element ensures that **willow-summary** is accessible for user agents that do not support HTML5. The use of both `<section>` and `<role="region">` together may create a warning in an [HTML validator](https://validator.w3.org/) but we left this pattern intact for now to cover all of our accessibility bases.
 
 ---
 
