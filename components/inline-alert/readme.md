@@ -45,7 +45,7 @@ _Examples: Presented on the user’s account page - “Your account is about to 
 
 #### _Notes_
 
-- **willow-alert** has a `role="alert"` for accessibility
+- The use of `role="alert"` with the `<section>` element ensures that **willow-alert** is accessible for user agents that do not support HTML5. The use of both `<section>` and `<role="alert">` together may create a warning in an [HTML validator](https://validator.w3.org/) but we left this pattern intact for now to cover all of our accessibility bases.
 - **willow-alerts** should be contained in the [willow-page-content](../page-content) component of a site, and will usually appear in forms, dialogs or modals
 
 ---

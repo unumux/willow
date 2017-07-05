@@ -1,6 +1,6 @@
 {
   "name": "@unumux/willow",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "description": "component library",
   "main": "_index.scss",
   "scripts": {

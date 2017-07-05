@@ -28,17 +28,17 @@ _Examples: errors, warnings, to collect data, to inform users of important infor
 ## HTML Snippet
 
 ```html
-<section class="willow-dialog" role="dialog">
-  <div class="willow-dialog__container">
-    <h1 class="willow-dialog__heading">Heading Text</h1>
-    <div class="willow-dialog__content">
-        <!-- insert content components here-->
-    </div>
-    <ul class="willow-dialog__actions">
-        <li class="willow-dialog__action"><!-- insert action component here --></li>
-    </ul>
-  </div>
-</section>
+<div class="willow-dialog">
+    <section class="willow-dialog__container" role="dialog">
+        <h1 class="willow-dialog__heading">Heading Text</h1>
+        <div class="willow-dialog__content">
+            <!-- insert content components here-->
+        </div>
+        <ul class="willow-dialog__actions">
+            <li class="willow-dialog__action"><!-- insert action component here --></li>
+        </ul>
+    </section>
+</div>
 ```
 
 ---
@@ -73,7 +73,7 @@ _Examples: errors, warnings, to collect data, to inform users of important infor
 
 - **willow-dialog__container** contains all content and action based items for the dialog
 - clicking outside of the **willow-dialog__container** window should trigger the **willow-dialog** to close
-- **willow-dialog__container** has a `role="dialog"` for accessibility
+- The use of `role="dialog"` with the `<section>` element ensures that **willow-dialog__container** is accessible for user agents that do not support HTML5. The use of both `<section>` and `<role="dialog">` together may create a warning in an [HTML validator](https://validator.w3.org/) but we left this pattern intact for now to cover all of our accessibility bases.
 
 ---
 
