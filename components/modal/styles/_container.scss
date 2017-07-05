@@ -1,4 +1,4 @@
-@mixin base() {
+&__container {
     background-color: $component-modal-background-color;
     border-radius: $component-modal-border-radius;
     left: 50%;
@@ -11,8 +11,4 @@
     top: 50%;
     transform: translate(-50%, -50%);
     width: 95%;
-}
-
-&__container {
-    @include base;
 }

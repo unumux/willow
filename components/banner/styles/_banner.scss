@@ -1,4 +1,6 @@
-@mixin base() {    
+&-banner {
+    @include full-bleed;
+    
     background-color: $component-banner-background-color;
     background-repeat: no-repeat; 
     background-size: cover;
@@ -25,11 +27,6 @@
     > :last-child {
         margin-bottom: 0;
     }
-}
-
-&-banner {
-    @include base;
-    @include full-bleed;
 
     @import "heading";
     @import "content";

@@ -1,4 +1,4 @@
-@mixin base() {
+&__list {
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -9,8 +9,4 @@
     @media screen and (min-width: breakpoint(medium)) {
         flex-direction: row;
     }
-}
-
-&__list {
-    @include base;
 }

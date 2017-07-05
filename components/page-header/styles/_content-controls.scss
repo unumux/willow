@@ -1,4 +1,4 @@
-@mixin base {
+&__content-controls {
     display: flex;
     flex-grow: 0;
     justify-content: flex-end;
@@ -10,8 +10,4 @@
     @media screen and (min-width: breakpoint(medium)) {
         display: none;
     }
-}
-
-&__content-controls {
-    @include base;
 }

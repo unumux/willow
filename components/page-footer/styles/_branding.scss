@@ -1,4 +1,4 @@
-@mixin base() {
+&__branding {
     display: block;
     flex-basis: auto;
     flex-grow: 0;
@@ -10,8 +10,4 @@
         flex-basis: auto;
         order: 1;
     }
-}
-
-&__branding {
-    @include base;
 }

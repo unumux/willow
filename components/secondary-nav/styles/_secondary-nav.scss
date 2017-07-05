@@ -1,11 +1,7 @@
-@mixin base() {
+&-secondary-nav {
     background-color: $component-secondary-nav-background-color;
     border: $component-secondary-nav-border;
     margin-bottom: space(2);
-}
-
-&-secondary-nav {
-    @include base;
     
     @import "heading";
     @import "list";

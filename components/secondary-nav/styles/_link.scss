@@ -1,4 +1,4 @@
-@mixin base() {
+&__link {
     @include set-text-style($text-style-heading-5);
     
     background-color: $component-secondary-nav-link-background-color;
@@ -34,21 +34,14 @@
     @media screen and (min-width: breakpoint(medium)) {
         margin-bottom: 0;
     }
-    
 }
 
-&__link {
-    @include base;
+&__link--active {
+    background-color: $component-secondary-nav-link-background-color-active;        
+    border-left: 4px solid $component-secondary-nav-link-border-color-active;
 
-    &--active {
-        @include base;
-
-        background-color: $component-secondary-nav-link-background-color-active;        
-        border-left: 4px solid $component-secondary-nav-link-border-color-active;
-
-        &:focus {
-            background-color: $component-secondary-nav-link-background-color-active;
-            color: $component-secondary-nav-link-color-active;
-        }
+    &:focus {
+        background-color: $component-secondary-nav-link-background-color-active;
+        color: $component-secondary-nav-link-color-active;
     }
 }

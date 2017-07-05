@@ -1,4 +1,6 @@
-@mixin base {
+&-page-footer {
+    @include full-bleed;
+    
     align-items: center;
     background-color: $component-page-footer-background-color;
     display: flex;
@@ -13,11 +15,6 @@
         padding-bottom: space(3);
         padding-top: space(2);
     }
-}
-
-&-page-footer {
-    @include base;
-    @include full-bleed;
 
     @import "branding";
     @import "copyright";

@@ -1,4 +1,4 @@
-@mixin base() {
+&-modal {
     background-color: $component-modal-overlay-background-color;
     bottom: 0;
     display: none;
@@ -11,10 +11,6 @@
     &[data-modal-close="false"] {
         display: block;
     }
-}
-
-&-modal {
-    @include base;
 
     @import "container";
     @import "heading";

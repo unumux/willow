@@ -1,4 +1,4 @@
-@mixin base() {
+&__action {
     display: inline-block;
     font-size: inherit;
     margin-left: space(2);
@@ -6,8 +6,4 @@
     &:first-of-type {
         margin-left: 0;
     }
-}
-
-&__action {
-    @include base;
 }

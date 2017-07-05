@@ -1,4 +1,4 @@
-@mixin base() {
+&__content-open {
     @include set-text-style($text-style-heading-4);
 
     color: $component-page-header-content-open-color;
@@ -26,8 +26,4 @@
     @media screen and (min-width: breakpoint(medium)) {
         display: none;
     }
-}
-
-&__content-open {
-    @include base;
 }

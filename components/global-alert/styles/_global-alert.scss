@@ -1,4 +1,6 @@
 &-global-alert {
+    @include full-bleed;
+    
     background-color: $component-global-alert-background-color;
     color: $component-global-alert-text-color;
     flex-shrink: 0;
@@ -6,27 +8,22 @@
     padding-top: space(1);
     position: relative;
 
-    @include full-bleed;
-
     @import "heading";
     @import "content";
     @import "close";
 }
 
 &-global-alert--positive {
-
     background-color: $component-global-alert-positive-background-color;
     color: $component-global-alert-positive-text-color;
 }
 
 &-global-alert--warning {
-
     background-color: $component-global-alert-warning-background-color;
     color: $component-global-alert-warning-text-color;
 }
 
 &-global-alert--negative {
-    
     background-color: $component-global-alert-negative-background-color;
     color: $component-global-alert-negative-text-color;
 }

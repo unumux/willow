@@ -1,4 +1,4 @@
-@mixin base() {
+&__copyright {
     color: $component-page-footer-copyright-text-color;
     flex-basis: auto;
     flex-grow: 1;
@@ -11,8 +11,4 @@
         flex-basis: 100%;
         text-align: left;
     }
-}
-
-&__copyright {
-    @include base;
 }

@@ -31,29 +31,9 @@
         padding-right: 16px;
         padding-top: 16px;
     }
-
-    .willow-primary-nav--underline & {
-        background-color: $component-primary-nav-link-background-color;
-
-        &:hover {
-            border-bottom: 4px solid $component-primary-nav-link-background-color-active;
-        }
-
-        @media screen and (min-width: breakpoint(medium)) {
-            padding-left: 36px;
-            padding-right: 36px;
-        }
-    }
 }
 
 &__link--active {
     background-color: $component-primary-nav-link-background-color-active;
     color: $component-primary-nav-link-color-active;
-
-    .willow-primary-nav--underline & {
-        @media screen and (min-width: breakpoint(medium)) {
-            background-color: $component-primary-nav-link-background-color;
-            border-bottom: 4px solid $component-primary-nav-link-color-active;
-        }
-    }
 }

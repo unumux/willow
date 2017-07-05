@@ -1,4 +1,4 @@
-@mixin base() {
+&__heading {
     @include set-text-style($text-style-heading-4);
         
     background-color: $component-secondary-nav-heading-background-color;
@@ -8,8 +8,4 @@
     padding-right: space(1);
     padding-top: space(1);
     margin-bottom: 0;
-}
-
-&__heading {
-    @include base;
 }

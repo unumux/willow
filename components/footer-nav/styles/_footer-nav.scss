@@ -1,9 +1,4 @@
-@mixin base() {
-}
-
 &-footer-nav {
-    @include base;
-    
     @import "heading";
     @import "list";
     @import "item";

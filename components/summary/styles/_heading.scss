@@ -1,7 +1,3 @@
-@mixin base() {
-}
-
 &__heading {
-    @include base;
     @include set-text-style($text-style-heading-2);
 }
