@@ -38,7 +38,7 @@ _Example Page Links: Sitemap, Frequently Asked Questions, Legal, Privacy Policy,
 
 #### _Notes_
 
-- **willow-footer-nav** has a `role="navigation"` for accessibility
+- The use of `role="navigation"` with the `<nav>` element ensures that **willow-footer-nav** is accessible for user agents that do not support HTML5. The use of both `<nav>` and `<role="navigation">` together may create a warning in an [HTML validator](https://validator.w3.org/) but we left this pattern intact for now to cover all of our accessibility bases.
 
 ---
 
