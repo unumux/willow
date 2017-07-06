@@ -16,8 +16,8 @@ Secondary Navigation provides navigational links that are separate from links pr
 ## HTML Snippet
 
 ```html
-<nav class="willow-secondary-nav" role="navigation" aria-label="Secondary Navigation">
-    <h1 class="willow-secondary-nav__heading">Secondary Navigation</h1>
+<nav class="willow-secondary-nav" role="navigation" aria-label="secondary">
+    <h1 class="willow-secondary-nav__heading sr-only">Page Secondary Menu</h1>
     <ul class="willow-secondary-nav__list">
         <li class="willow-secondary-nav__item"><a class="willow-secondary-nav__link" href="" aria-label="">Menu Item 1</a></li>
         <li class="willow-secondary-nav__item"><a class="willow-secondary-nav__link" href="" aria-label="">Menu Item 2</a></li>
@@ -39,8 +39,8 @@ Secondary Navigation provides navigational links that are separate from links pr
 #### _Notes_
 
 - **willow-secondary-nav** should be located within the **willow-page-header__contextual-content** element (a sub-element of the **willow-page-header** component)
-- If using more than one **willow-secondary-nav** on a page update the **willow-secondary-nav** elements aria-label attribute to be more descriptive such as "Account Navigation" or "Product Navigation"
-- **willow-secondary-nav** has a `role="navigation"` for accessibility
+- If using more than one **willow-secondary-nav** on a page update the **willow-secondary-nav** elements aria-label attribute to be more descriptive such as "account" or "products"
+- The use of `role="navigation"` with the `<nav>` element ensures that **willow-secondary-nav** is accessible for user agents that do not support HTML5. The use of both `<nav>` and `<role="navigation">` together may create a warning in an [HTML validator](https://validator.w3.org/) but we left this pattern intact for now to cover all of our accessibility bases.
 
 ---
 
@@ -52,7 +52,8 @@ Secondary Navigation provides navigational links that are separate from links pr
 
 #### _Notes_
 
-- **willow-secondary-nav__heading** is hidden by default, and is required to meet accessibility standards
+- **willow-secondary-nav__heading** is hidden by default with the `sr-only` utility class, and is required to meet accessibility standards
+- Replace the text in this element with text that helps a user understand the context of this menu. _e.g. "Product Page Menu, About Page Menu"_
 
 ---
 

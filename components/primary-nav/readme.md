@@ -17,8 +17,8 @@ Primary Nav should contain a limited number of items, the shorter the better for
 ## HTML Snippet
 
 ```html
-<nav class="willow-primary-nav" role="navigation" aria-label="Primary Navigation">
-    <h1 class="willow-primary-nav__heading">Primary Navigation</h1>
+<nav class="willow-primary-nav" role="navigation" aria-label="primary">
+    <h1 class="willow-primary-nav__heading sr-only">Site Primary Menu</h1>
     <ul class="willow-primary-nav__list">
         <li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="" aria-label="">Menu Item 1</a></li>
         <li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="" aria-label="">Menu Item 2</a></li>
@@ -39,7 +39,7 @@ Primary Nav should contain a limited number of items, the shorter the better for
 
 #### _Notes_
 
-- **willow-primary-nav** has a `role="navigation"` for accessibility
+- The use of `role="navigation"` with the `<nav>` element ensures that **willow-primary-nav** is accessible for user agents that do not support HTML5. The use of both `<nav>` and `<role="navigation">` together may create a warning in an [HTML validator](https://validator.w3.org/) but we left this pattern intact for now to cover all of our accessibility bases.
 
 ---
 
@@ -51,7 +51,7 @@ Primary Nav should contain a limited number of items, the shorter the better for
 
 #### _Notes_
 
-- **willow-primary-nav__heading** is hidden by default, and is required to meet accessibility standards
+- **willow-primary-nav__heading** is hidden by default with the `sr-only` utility class, and is required to meet accessibility standards
 
 ---
 

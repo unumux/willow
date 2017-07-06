@@ -72,7 +72,7 @@ _Examples: Confirming deletion of information, entering an email address to down
 
 - **willow-modal__container** contains all content and action based items for the modal
 - clicking outside of the **willow-modal__container** window should **NOT** trigger the **willow-modal** to close
-- **willow-modal__container** has a `role="alertdialog"` for accessibility
+- The use of `role="alertdialog"` with the `<section>` element ensures that **willow-modal__container** is accessible for user agents that do not support HTML5. The use of both `<section>` and `<role="alertdialog">` together may create a warning in an [HTML validator](https://validator.w3.org/) but we left this pattern intact for now to cover all of our accessibility bases.
 
 ---
 
@@ -82,13 +82,10 @@ _Examples: Confirming deletion of information, entering an email address to down
 - Restrictions
   - Should Contain: text
 
-#### _Modifiers_
-
-`--sr`: hides **willow-modal__heading**
-
 #### _Notes_
 
-- **willow-modal__heading** is visible by default and even if it is hidden, it is required to meet accessibility standards
+- **willow-modal__heading** is visible by default, and even if it is hidden, it is required to meet accessibility standards
+- To hide the **willow-modal__heading** add the `sr-only` utility class to the element
 
 ---
 

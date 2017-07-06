@@ -41,7 +41,7 @@ A banner spans the full width of the screen/viewport. It cannot contain multiple
 
 #### _Notes_
 
-- **willow-banner** has a `role="region"` for accessibility
+- The use of `role="region"` with the `<section>` element ensures that **willow-banner** is accessible for user agents that do not support HTML5. The use of both `<section>` and `<role="region">` together may create a warning in an [HTML validator](https://validator.w3.org/) but we left this pattern intact for now to cover all of our accessibility bases.
 - To include a background image on **willow-banner** you will need to target the banner in your SCSS/CSS and set the `background-image` property. If you use the `.willow-banner` class, you will be targeting all banners on the site, so be sure to be more specific by adding your own class to the **willow-banner** component.
 
 ---
@@ -52,13 +52,10 @@ A banner spans the full width of the screen/viewport. It cannot contain multiple
 - Restrictions
   - Should Contain: text
 
-#### _Modifiers_
-
-`--sr`: hides **willow-banner__heading**
-
 #### _Notes_
 
 - **willow-banner__heading** is visible by default and even if it is hidden, it is required to meet accessibility standards
+- To hide the **willow-banner__heading** add the `sr-only` utility class to the element
 
 ---
 

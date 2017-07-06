@@ -45,7 +45,7 @@ _Examples: Presented on the user’s account page - “Your account is about to 
 
 #### _Notes_
 
-- **willow-alert** has a `role="alert"` for accessibility
+- The use of `role="alert"` with the `<section>` element ensures that **willow-alert** is accessible for user agents that do not support HTML5. The use of both `<section>` and `<role="alert">` together may create a warning in an [HTML validator](https://validator.w3.org/) but we left this pattern intact for now to cover all of our accessibility bases.
 - **willow-alerts** should be contained in the [willow-page-content](../page-content) component of a site, and will usually appear in forms, dialogs or modals
 
 ---
@@ -56,13 +56,10 @@ _Examples: Presented on the user’s account page - “Your account is about to 
 - Restrictions
   - Should Contain: text
 
-#### _Modifiers_
-
-`--sr`: hides **willow-alert__heading**
-
 #### _Notes_
 
-- **willow-alert__heading** is visible by default and even if it is hidden it is required to meet accessibility standards
+- **willow-alert__heading** is visible by default, and even if it is hidden it is required to meet accessibility standards
+- To hide the **willow-alert__heading** add the `sr-only` utility class to the element
 
 ---
 
