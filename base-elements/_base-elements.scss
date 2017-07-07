@@ -185,6 +185,7 @@ figure {
 }
 
 pre {
+    color: $component-body-text-color-monospace;
     font-family: $component-body-text-monospace;
     margin-bottom: space(2);
     margin-left: space(2);
@@ -194,7 +195,7 @@ pre {
 }
 
 code {
-    color: $component-body-text-color-secondary;
+    color: $component-body-text-color-monospace;
     font-family: $component-body-text-monospace;    
 }
 
@@ -206,11 +207,13 @@ form {
 
 kbd,
 samp {
+    color: $component-body-text-color-monospace;
     font-family: $component-body-text-monospace;
 }
 
 mark {
     background-color: $component-highlighted-text-background-color;
+    color: $component-highlighted-text-color;
 }
 
 video {
