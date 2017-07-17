@@ -162,7 +162,7 @@ A common example of a column layout would be a page section contains secondary n
 **Willow** also adds margin to the bottom of each column with the following:
 
 ```scss
-.col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-lg, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-md, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-sm, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-xl, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
+all-bootstrap-column-classes {
   margin-bottom: space(1);
 }
 ```
@@ -217,9 +217,9 @@ There are 3 groups of variables:
 
 |         Theme Name         | Documentation                                               | CSS Download |
 |:-------------------------- |:-----------------------------------------------------------:|:------------:|
-|  theme-enterprise-default  |[docs](https://github.com/unumux/theme-enterprise-default)   |[theme-enterprise-default.min.css](https://github.com/unumux/theme-enterprise-default/releases/download/0.2.8/theme-enterprise-default.min.css)|
-|     theme-unum-default     |[docs](https://github.com/unumux/theme-unum-default)         |[theme-unum-default.min.css](https://github.com/unumux/theme-unum-default/releases/download/0.2.9/theme-unum-default.min.css)|
-| theme-coloniallife-default |[docs](https://github.com/unumux/theme-coloniallife-default) |[theme-coloniallife-default.min.css](https://github.com/unumux/theme-coloniallife-default/releases/download/0.2.9/theme-coloniallife-default.min.css)|
+|  theme-enterprise-default  |[docs](https://github.com/unumux/theme-enterprise-default)   |[theme-enterprise-default.min.css](https://github.com/unumux/theme-enterprise-default/releases/download/0.3.10/theme-enterprise-default.min.css)|
+|     theme-unum-default     |[docs](https://github.com/unumux/theme-unum-default)         |[theme-unum-default.min.css](https://github.com/unumux/theme-unum-default/releases/download/0.3.11/theme-unum-default.min.css)|
+| theme-coloniallife-default |[docs](https://github.com/unumux/theme-coloniallife-default) |[theme-coloniallife-default.min.css](https://github.com/unumux/theme-coloniallife-default/releases/download/0.3.11/theme-coloniallife-default.min.css)|
 
 ---
 
