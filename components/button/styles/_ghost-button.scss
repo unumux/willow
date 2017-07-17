@@ -1,0 +1,78 @@
+&-ghost-button {    
+    @include set-text-style($text-style-heading-4);
+
+    background-color: $component-button-ghost-background-color;
+    border: $component-button-ghost-border;
+    border-radius: $component-button-border-radius;
+    color: $component-button-ghost-text-color;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: space(1);
+    padding-bottom: space(1);
+    padding-left: space(1);
+    padding-right: space(1);
+    padding-top: space(1);
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+
+    &:visited {
+        background-color: $component-button-ghost-background-color-visited;
+        color: $component-button-ghost-text-color-visited;
+    }
+
+    &:focus {
+        background-color: $component-button-ghost-background-color-focus;
+        color: $component-button-ghost-text-color-focus;
+    }
+
+    &:hover {
+        background-color: $component-button-ghost-background-color-hover;
+        color: $component-button-ghost-text-color-hover;
+    }
+
+    &:active {
+        background-color: $component-button-ghost-background-color-active;
+        color: $component-button-ghost-text-color-active;
+    }
+}
+
+&-ghost-button--positive {
+    &:hover {
+        color: $theme-accent;
+    }
+
+    &:active {
+        background-color: $component-button-ghost-positive-background-color-active;
+    }
+}
+
+&-ghost-button--negative {
+    &:hover {
+        color: $theme-action-negative;
+    }
+
+    &:active {
+        background-color: $component-button-ghost-positive-background-color-active;
+    }
+}
+
+&-ghost-button--inverse {
+    background-color: $component-button-ghost-inverse-background-color;
+    border: $component-button-ghost-inverse-border;
+    color: $component-button-ghost-inverse-text-color;
+
+    &:focus {
+        color: $component-button-ghost-inverse-text-color;
+    }
+
+    &:hover {
+        background-color: $component-button-ghost-inverse-background-color-hover;
+        color: $theme-base;
+    }
+
+    &:active {
+        background-color: $component-button-ghost-inverse-background-color-active;
+    }
+}
