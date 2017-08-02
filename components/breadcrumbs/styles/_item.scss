@@ -1,4 +1,6 @@
-@mixin base() {
+&__item {
+    @include set-text-style($text-style-content-2);
+
     display: inline-block;
     
     &::after {
@@ -10,16 +12,8 @@
     }
 }
 
-&__item {
-    @include base;
-    @include set-text-style($text-style-content-2);
-
-    &--active {
-        @include base;
-        @include set-text-style($text-style-content-2);
-
-        &::after {
-            display: none;
-        }
+&__item--active {
+    &::after {
+        display: none;
     }
 }

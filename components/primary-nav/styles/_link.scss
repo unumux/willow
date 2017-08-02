@@ -1,4 +1,4 @@
-@mixin base() {
+&__link {
     background-color: $component-primary-nav-link-background-color;
     color: $component-primary-nav-link-color;
     display: block;
@@ -33,12 +33,7 @@
     }
 }
 
-&__link {
-    @include base;
-
-    &--active {
-        @include base;
-        background-color: $component-primary-nav-link-background-color-active;
-        color: $component-primary-nav-link-color-active;
-    }
+&__link--active {
+    background-color: $component-primary-nav-link-background-color-active;
+    color: $component-primary-nav-link-color-active;
 }

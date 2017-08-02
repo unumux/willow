@@ -21,7 +21,7 @@ Breadcrumbs are a specialized secondary navigation that show users their locatio
     <ol class="willow-breadcrumbs__list">
         <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="" aria-label="">Nav Item 1</a></li>
         <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="" aria-label="">Nav Item 2</a></li>
-        <li class="willow-breadcrumbs__item--active">Current Item</li>
+        <li class="willow-breadcrumbs__item willow-breadcrumbs__item--active">Current Item</li>
     </ol>
 </nav>
 ```

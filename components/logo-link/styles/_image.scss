@@ -1,8 +1,4 @@
-@mixin base() {
+&__image {
     display: block;
     height: $component-logo-link-image-height;
-}
-
-&__image {
-    @include base;
 }

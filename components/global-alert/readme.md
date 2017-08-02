@@ -18,11 +18,36 @@ _Examples: “Due to the hurricane, our Call Center is currently closed”, “O
 
 ```html
 <section class="willow-global-alert" role="alert">
-  <button class="willow-global-alert__close">Button Text</button>
-  <h1 class="willow-global-alert__heading">Heading Text</h1>
-  <div class="willow-global-alert__content">
-      <!-- insert components here -->
-  </div>
+    <button class="willow-global-alert__close">Button Text</button>
+    <h1 class="willow-global-alert__heading">Heading Text</h1>
+    <div class="willow-global-alert__content">
+        <!-- insert components here -->
+    </div>
+</section>
+
+<!-- modified versions -->
+<section class="willow-global-alert willow-global-alert--positive" role="alert">
+    <button class="willow-global-alert__close">Button Text</button>
+    <h1 class="willow-global-alert__heading">Heading Text</h1>
+    <div class="willow-global-alert__content">
+        <!-- insert components here -->
+    </div>
+</section>
+
+<section class="willow-global-alert willow-global-alert--warning" role="alert">
+    <button class="willow-global-alert__close">Button Text</button>
+    <h1 class="willow-global-alert__heading">Heading Text</h1>
+    <div class="willow-global-alert__content">
+        <!-- insert components here -->
+    </div>
+</section>
+
+<section class="willow-global-alert willow-global-alert--negative" role="alert">
+    <button class="willow-global-alert__close">Button Text</button>
+    <h1 class="willow-global-alert__heading">Heading Text</h1>
+    <div class="willow-global-alert__content">
+        <!-- insert components here -->
+    </div>
 </section>
 ```
 

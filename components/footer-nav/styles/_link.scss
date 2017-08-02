@@ -1,4 +1,4 @@
-@mixin base() {
+&__link {
     color: $component-footer-nav-link-color;
 
     &:visited {
@@ -12,8 +12,4 @@
     &:active {
         color: $component-footer-nav-link-color-active;
     }
-}
-
-&__link {
-    @include base;
 }

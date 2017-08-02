@@ -1,11 +1,7 @@
-@mixin base() {
+&__action {
     margin-left: space(2);
 
     &:first-of-type {
         margin-left: 0;
     }
-}
-
-&__action {
-    @include base;
 }

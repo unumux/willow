@@ -1,6 +1,6 @@
-@mixin base() {
-    @include set-text-style($text-style-content-1);
+&__content {
     @include full-width;
+    @include set-text-style($text-style-content-1);
 
     border-top: 2px solid $component-page-header-navigation-border-color;
     display: none;
@@ -29,8 +29,4 @@
             display: block;
         }
     }
-}
-
-&__content {
-    @include base;
 }

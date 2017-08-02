@@ -20,7 +20,21 @@ When **Willow-Icons** are used inside of actionable components or elements, such
 ## HTML Snippet
 
 ```html
-<span class="willow-icon"></span>
+<!-- modified versions -->
+<span class="willow-icon willow-icon--menu"></span>
+<span class="willow-icon willow-icon--menu-inverse"></span>
+<span class="willow-icon willow-icon--menu-close"></span>
+<span class="willow-icon willow-icon--menu-close-inverse"></span>
+<span class="willow-icon willow-icon--close"></span>
+<span class="willow-icon willow-icon--close-inverse"></span>
+<span class="willow-icon willow-icon--info"></span>
+<span class="willow-icon willow-icon--info-inverse"></span>
+<span class="willow-icon willow-icon--success"></span>
+<span class="willow-icon willow-icon--success-inverse"></span>
+<span class="willow-icon willow-icon--warning"></span>
+<span class="willow-icon willow-icon--warning-inverse"></span>
+<span class="willow-icon willow-icon--error"></span>
+<span class="willow-icon willow-icon--error-inverse"></span>
 ```
 
 ---

@@ -1,9 +1,5 @@
-@mixin base() {
-    margin-bottom: space(2);
-}
-
 &-summary {
-    @include base;
+    margin-bottom: space(2);
 
     @import "heading";
     @import "content";

@@ -1,4 +1,4 @@
-@mixin base() {
+&__navigation {
     flex-basis: auto;
     flex-grow: 1;
     flex-shrink: 1;
@@ -14,8 +14,4 @@
         order: 2;
         text-align: right;
     }
-}
-
-&__navigation {
-    @include base;
 }

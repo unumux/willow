@@ -1,10 +1,5 @@
-@mixin base() {
-
+&__navigation {
     @media screen and (min-width: breakpoint(medium)) {
         text-align: right;
     }
-}
-
-&__navigation {
-    @include base;
 }

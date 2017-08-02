@@ -18,10 +18,32 @@ _Examples: Presented on the user’s account page - “Your account is about to 
 
 ```html
 <section class="willow-alert" role="alert">
-  <h1 class="willow-alert__heading">Heading Text</h1>
-  <div class="willow-alert__content">
-      <!-- insert components here -->
-  </div>
+    <h1 class="willow-alert__heading">Heading Text</h1>
+    <div class="willow-alert__content">
+        <!-- insert components here -->
+    </div>
+</section>
+
+<!-- modified versions -->
+<section class="willow-alert willow-alert--positive" role="alert">
+    <h1 class="willow-alert__heading">Heading Text</h1>
+    <div class="willow-alert__content">
+        <!-- insert components here -->
+    </div>
+</section>
+
+<section class="willow-alert willow-alert--warning" role="alert">
+    <h1 class="willow-alert__heading">Heading Text</h1>
+    <div class="willow-alert__content">
+        <!-- insert components here -->
+    </div>
+</section>
+
+<section class="willow-alert willow-alert--negative" role="alert">
+    <h1 class="willow-alert__heading">Heading Text</h1>
+    <div class="willow-alert__content">
+        <!-- insert components here -->
+    </div>
 </section>
 ```
 
