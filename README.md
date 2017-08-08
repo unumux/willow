@@ -101,6 +101,7 @@ Do you have questions or need help with setup? Did you run into errors while fol
 - [Banner](./components/banner)
 - [Breadcrumbs](./components/breadcrumbs)
 - [Button](./components/button)
+- [Cards](./components/cards)
 - [Dialog](./components/dialog)
 - [Footer Navigation](./components/footer-nav)
 - [Global Alerts](./components/global-alert)
