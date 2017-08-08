@@ -1,0 +1,53 @@
+&-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-bottom: space(2);
+    max-width: 100%;
+    width: 380px;
+
+    .willow-card-columns & {
+        display: inline-block; //necessary for column break
+    }
+
+    .willow-card-grid & {
+        margin-bottom: space(2);
+
+        @media screen and (min-width: breakpoint(md, $grid-breakpoints)) {
+            flex-grow: 0;
+            flex-shrink: 0;
+            margin-right: space(2);
+
+            &:last-child {
+                margin-right: 0;
+                margin-bottom: space(2) !important; //important to beat setting of last-child margin-bottom
+            }
+        }
+
+        @media screen and (min-width: breakpoint(md, $grid-breakpoints)) {
+            @include flexWidths(2);
+        }
+
+        @media screen and (min-width: breakpoint(lg, $grid-breakpoints)) {
+            @include flexWidths(3);
+        }
+    }
+
+    @import "actions";
+    @import "content";
+    @import "description";
+    @import "image";
+    @import "heading";
+    @import "icon";
+}
+
+&-card--link {
+    color: $component-card-text-color;
+    text-decoration: none;
+    
+    &:visited,
+    &:hover, 
+    &:active {
+        color: $component-card-text-color;
+    }
+}

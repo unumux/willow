@@ -1,0 +1,6 @@
+&-card-columns {
+    column-count: 3;
+    column-gap: space(2);
+    column-width: auto;
+    max-height: 1500px; // better way to control this?
+}

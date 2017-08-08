@@ -1,9 +1,9 @@
-@function breakpoint($breakpoint) {    
+@function breakpoint($breakpoint, $breakpoint-map: $breakpoints) {    
     @if type-of($breakpoint) != "string" 
-    or  not map-has-key($breakpoints, $breakpoint) {
+    or  not map-has-key($breakpoint-map, $breakpoint) {
         @warn "`#{$breakpoint} is not a string or a valid key in the '$breakpoints' map.";
         @return false;
     }
 
-    @return map-get($breakpoints, $breakpoint);
+    @return map-get($breakpoint-map, $breakpoint);
 }

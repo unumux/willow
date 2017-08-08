@@ -1,0 +1,18 @@
+$theme-border-radius-lg: 8px;
+
+$component-card-background-color-hover: $theme-base-3;
+$component-card-border-radius: $theme-border-radius-lg;
+$component-card-box-shadow-color: $theme-base-4;
+$component-card-content-background-color: $theme-base;
+$component-card-icon-height: 60px;
+$component-card-image-height: 250px;
+$component-card-image-height-sm: 150px;
+$component-card-text-color: $theme-text-primary;
+
+@mixin flexWidths($items: 1) {
+    flex-basis: calc(#{100/$items}% - 24px);
+    width: calc(#{100/$items}% - 24px);
+}
+
+@import "./layouts/layouts";
+@import "./card/card";

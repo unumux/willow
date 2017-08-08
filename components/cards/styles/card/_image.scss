@@ -1,0 +1,18 @@
+&__image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: $component-card-border-radius;
+    border-top-right-radius: $component-card-border-radius;
+    display: block;
+    height: $component-card-image-height;
+    overflow: hidden;
+    width: 100%;
+
+    @media screen and (min-width: breakpoint(md, $grid-breakpoints)) {
+        border-radius: $component-card-border-radius;
+        box-shadow: 0 5px 10px $component-card-box-shadow-color;
+        height: $component-card-image-height-sm;
+        margin-bottom: space(1);
+    }
+}
