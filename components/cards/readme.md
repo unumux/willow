@@ -16,6 +16,8 @@ collection:
 1. Cards present a summary and link to additional details..
 1. Cards resemble physical cards.
 
+_Note:_ The content in a card should be kept brief. Remember a card should give just enough content to entice a user to click or tap on the card to view more. Truncating content on cards is also acceptable and is represented by adding ellipsis ("...") at the end of the content.
+
 _Examples: Articles on a news website, products on an eCommerce site, or posts on a social app._
 
 **Willow-Card** has two html options for providing the user an action, `<article>` and `<a>`.
@@ -155,4 +157,4 @@ _Examples: Articles on a news website, products on an eCommerce site, or posts o
 
 ## Resources
 
-Page Laubheimer. "Cards: UI-Component Definition." Nielsen Norman Group. [https://www.nngroup.com/articles/cards-component/](https://www.nngroup.com/articles/cards-component/) (accessed August 7, 2017).
+Laubheimer, Page. "Cards: UI-Component Definition." Nielsen Norman Group. [https://www.nngroup.com/articles/cards-component/](https://www.nngroup.com/articles/cards-component/) (accessed August 7, 2017).

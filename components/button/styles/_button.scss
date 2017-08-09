@@ -1,4 +1,5 @@
-&-button {
+&-button,
+&-button[href] {
     @include set-text-style($text-style-heading-4);
 
     background-color: $component-button-background-color;
@@ -16,16 +17,6 @@
     text-decoration: none;
     text-transform: uppercase;
     width: 100%;
-
-    &:visited {
-        background-color: $component-button-background-color-visited;
-        color: $component-button-text-color-visited;
-    }
-
-    &:focus {
-        background-color: $component-button-background-color-focus;
-        color: $component-button-text-color-focus;
-    }
 
     &:hover {
         background-color: $component-button-background-color-hover;
@@ -51,20 +42,11 @@
     width: auto;
 }
 
-&-button--primary {
+&-button--primary,
+&-button--primary[href] {
     background-color: $component-button-primary-background-color;
     border: $component-button-primary-border;
     color: $component-button-primary-text-color;
-
-    &:visited {
-        background-color: $component-button-primary-background-color-visited;
-        color: $component-button-primary-text-color-visited;
-    }
-
-    &:focus {
-        background-color: $component-button-primary-background-color-focus;
-        color: $component-button-primary-text-color-focus;
-    }
 
     &:hover {
         background-color: $component-button-primary-background-color-hover;
@@ -83,21 +65,11 @@
     }
 }
 
-&-button--positive {                
+&-button--positive,
+&-button--positive[href] {                
     background-color: $component-button-positive-background-color;
     border: $component-button-positive-border;
     color: $component-button-positive-text-color;
-
-    &:visited {
-        background-color: $component-button-positive-background-color-visited;
-        color: $component-button-positive-text-color-visited;
-    }
-
-
-    &:focus {
-        background-color: $component-button-positive-background-color-focus;
-        color: $component-button-positive-text-color-focus;
-    }
 
     &:hover {
         background-color: $component-button-positive-background-color-hover;
@@ -116,21 +88,11 @@
     }
 }
 
-&-button--negative {            
+&-button--negative,
+&-button--negative[href] {            
     background-color: $component-button-negative-background-color;
     border: $component-button-negative-border;
     color: $component-button-negative-text-color;
-
-    &:visited {
-        background-color: $component-button-negative-background-color-visited;
-        color: $component-button-negative-text-color-visited;
-    }
-
-    
-    &:focus {
-        background-color: $component-button-negative-background-color-focus;
-        color: $component-button-negative-text-color-focus;
-    }
 
     &:hover {
         background-color: $component-button-negative-background-color-hover;
