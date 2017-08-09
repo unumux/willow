@@ -6,7 +6,7 @@
     border-radius: $component-button-border-radius;
     color: $component-button-text-color;
     cursor: pointer;
-    display: inline-block;
+    display: block;
     margin-bottom: space(1);
     padding-bottom: space(1);
     padding-left: space(1);
@@ -15,6 +15,7 @@
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    width: 100%;
 
     &:visited {
         background-color: $component-button-background-color-visited;
@@ -43,6 +44,11 @@
         color: $component-button-text-color-disabled;
         cursor: $component-cursor-disabled;
     }
+}
+
+&-button--inline {
+    display: inline-block;
+    width: auto;
 }
 
 &-button--primary {

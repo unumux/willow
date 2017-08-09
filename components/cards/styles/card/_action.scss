@@ -1,0 +1,7 @@
+&__action {
+    flex-grow: 1;
+
+    &:last-of-type {
+        margin-left: $space-inline-s;
+    }
+}

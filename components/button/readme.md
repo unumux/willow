@@ -51,6 +51,8 @@ Buttons can be created by adding the **willow-button** class to a `<button>` or 
 
 #### _Modifiers_
 
+`--inline` : use to restrict a button's width based on its content
+
 `--primary` : use to call attention to a primary or common action such as _Learn More_
 
 `--positive`: use to signify a positive action such as _Submit Form_

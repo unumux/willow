@@ -1,10 +1,17 @@
+@mixin flexWidths($items: 1) {
+    flex-basis: calc(#{100/$items}% - 24px);
+    width: calc(#{100/$items}% - 24px);
+}
+
 &-card {
+    border-radius: $component-card-border-radius;
+    box-shadow: 1px 3px 10px $component-card-box-shadow-color;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     margin-bottom: space(2);
-    max-width: 100%;
-    width: 380px;
+    max-width: 380px;
+    overflow: hidden;
 
     .willow-card-columns & {
         display: inline-block; //necessary for column break
@@ -14,7 +21,7 @@
         margin-bottom: space(2);
 
         @media screen and (min-width: breakpoint(md, $grid-breakpoints)) {
-            flex-grow: 0;
+            flex-grow: 1;
             flex-shrink: 0;
             margin-right: space(2);
 
@@ -33,21 +40,32 @@
         }
     }
 
-    @import "actions";
-    @import "content";
-    @import "description";
     @import "image";
-    @import "heading";
+    @import "content";
     @import "icon";
+    @import "heading";
+    @import "description";
+    @import "actions";
+    @import "action";
 }
 
-&-card--link {
+&-card[href]{
     color: $component-card-text-color;
     text-decoration: none;
+    transform: scale(1);
+    transition: 0.2s transform;
     
     &:visited,
     &:hover, 
     &:active {
         color: $component-card-text-color;
+    }
+
+    &:hover {
+        transform: scale(1.01);
+    }
+
+    &:active {
+        transform: scale(0.99);
     }
 }

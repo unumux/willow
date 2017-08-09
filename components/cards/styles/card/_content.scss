@@ -1,18 +1,8 @@
 &__content {
     background-color: $component-card-content-background-color;
-    border-bottom-left-radius: $component-card-border-radius;
-    border-bottom-right-radius: $component-card-border-radius;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    padding: space(2);
+    padding: $space-inset-m;
     text-align: center;
-
-    @media screen and (min-width: breakpoint(md, $grid-breakpoints)) {
-        border-radius: $component-card-border-radius;
-    }
-
-    .willow-card--link:hover & {
-        background-color: $component-card-background-color-hover;
-    }
 }
