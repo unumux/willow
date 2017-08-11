@@ -146,7 +146,7 @@ A common example of a column layout would be a page section contains secondary n
 
 ### Customize the Bootstrap Grid
 
-**Willow** takes the bootstrap breakpoint, container width and gutter values as they come. If you want to update these checkout the section on [customizing the grid](#so-you-need-to-change-the-grid).
+**Willow** takes the bootstrap breakpoint, container width and gutter values as they come. If you want to update these checkout the section on [customizing the grid](#so-you-need-to-change-the-bootstrap-grid).
 
 ### Willow's Bootstrap Customization
 
