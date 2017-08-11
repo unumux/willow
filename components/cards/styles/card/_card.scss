@@ -6,12 +6,14 @@
 &-card {
     border-radius: $component-card-border-radius;
     box-shadow: 1px 3px 10px $component-card-box-shadow-color;
+    color: $component-card-text-color;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin-bottom: space(2);
+    margin: $space-stack-l;
     max-width: 380px;
     overflow: hidden;
+    text-decoration: none;
 
     .willow-card-columns & {
         display: inline-block; //necessary for column break
@@ -50,8 +52,6 @@
 }
 
 &-card[href]{
-    color: $component-card-text-color;
-    text-decoration: none;
     transform: scale(1);
     transition: 0.2s transform;
     

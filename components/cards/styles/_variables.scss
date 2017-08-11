@@ -1,55 +1,14 @@
 ////////////////////////////////////////////////////////////////
-// GLOBAL SPACING VARIABLES
-////////////////////////////////////////////////////////////////
-$base-size: 12px;
-
-$space-xxs: $base-size / 3;
-$space-xs: $base-size / 2;
-$space-s: $base-size;
-$space-m: $base-size * 2;
-$space-l: $base-size * 3;
-$space-xl: $base-size * 4;
-$space-xxl: $base-size * 5;
-
-//vertical spacing between elements and components
-$space-stack-xxs: $space-xxs;
-$space-stack-xs: $space-xs;
-$space-stack-s: $space-s;
-$space-stack-m: $space-m;
-$space-stack-l: $space-l;
-$space-stack-xl: $space-xl;
-$space-stack-xxl: $space-xxl;
-
-//horizontal spacing between inline elements and components
-$space-inline-xxs: $space-xxs;
-$space-inline-xs: $space-xs;
-$space-inline-s: $space-s;
-$space-inline-m: $space-m;
-$space-inline-l: $space-l;
-$space-inline-xl: $space-xl;
-$space-inline-xxl: $space-xxl;
-
-//surrounding spacing (think padding) for components
-$space-inset-xxs: $space-xxs;
-$space-inset-xs: $space-xs;
-$space-inset-s: $space-s;
-$space-inset-m: $space-m;
-$space-inset-l: $space-l;
-$space-inset-xl: $space-xl;
-$space-inset-xxl: $space-xxl;
-
-////////////////////////////////////////////////////////////////
 // CARD SPECIFIC VARIABLES
 ////////////////////////////////////////////////////////////////
-$component-card-columns-count-s: 1;
-$component-card-columns-count-m: 2;
-$component-card-columns-count-l: 3;
+$component-card-columns-count-s: 1 !default;
+$component-card-columns-count-m: 2 !default;
+$component-card-columns-count-l: 3 !default;
 
-$component-card-background-color-hover: $theme-base-3 !default;
 $component-card-border-radius: 8px !default;
-$component-card-box-shadow-color: $theme-base-3 !default;
-$component-card-content-background-color: $theme-base !default;
+$component-card-box-shadow-color: rgba(#000, 0.1) !default;
+$component-card-content-background-color: #fff !default;
 $component-card-icon-height: 60px !default;
 $component-card-image-height: 250px !default;
 $component-card-image-height-sm: 150px !default;
-$component-card-text-color: $theme-text-primary !default;
+$component-card-text-color: #000 !default;

@@ -62,6 +62,30 @@ _Examples: Articles on a news website, products on an eCommerce site, or posts o
 
 ## Elements
 
+### willow-card-grid
+
+- Optional
+- Restrictions
+  - Should Contain: Multiple **willow-card** components
+
+#### _Notes_
+
+- Cards wrapped in **willow-card-grid** will take the layout of a standard grid that sets its column count based on the device/browser size.
+
+---
+
+#### willow-card-columns
+
+- Optional
+- Restrictions
+  - Should Contain: Multiple **willow-card** components
+
+#### _Notes_
+
+- Cards wrapped in **willow-card-columns** will have a column layout that orders them from top to bottom and left to right.
+
+---
+
 ### willow-card
 
 - Required
