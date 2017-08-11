@@ -1,0 +1,78 @@
+$component-button-border-radius: 4px !default;
+$component-button-border-color: transparent !default;
+$space-button-squish: #{$space - 4} #{$space + 4};
+
+////////BACKGROUND COLORS
+//NEUTRAL
+$component-button-background-color: #999 !default;
+$component-button-background-color-focus: #888 !default;
+$component-button-background-color-hover: #888 !default;
+$component-button-background-color-active: #888 !default;
+$component-button-background-color-disabled: #ddd!default;
+
+//PRIMARY
+$component-button-primary-background-color: #555 !default;
+$component-button-primary-background-color-focus: #444 !default;
+$component-button-primary-background-color-hover: #444 !default;
+$component-button-primary-background-color-active: #444 !default;
+$component-button-primary-background-color-disabled: #ddd !default;
+
+//POSITIVE
+$component-button-positive-background-color: #61a044 !default;
+$component-button-positive-background-color-focus: #61a044!default;
+$component-button-positive-background-color-hover: #4a8a2c !default;
+$component-button-positive-background-color-active: #3b781e !default;
+$component-button-positive-background-color-disabled: #ddd !default;
+
+//NEGATIVE
+$component-button-negative-background-color: #e75656 !default;
+$component-button-negative-background-color-focus: #e75656 !default;
+$component-button-negative-background-color-hover: #cd3e3e !default;
+$component-button-negative-background-color-active: #b33535 !default;
+$component-button-negative-background-color-disabled: #ddd !default;
+
+////////TEXT COLORS
+//NEUTRAL
+$component-button-text-color: #fff !default;
+$component-button-text-color-focus: #fff !default;
+$component-button-text-color-hover: #fff !default;
+$component-button-text-color-active: #fff !default;
+$component-button-text-color-disabled: #666 !default;
+
+//PRIMARY
+$component-button-primary-text-color: #fff !default;
+$component-button-primary-text-color-focus: #fff !default;
+$component-button-primary-text-color-hover: #fff !default;
+$component-button-primary-text-color-active: #fff !default;
+$component-button-primary-text-color-disabled: #666 !default;
+
+//POSITIVE
+$component-button-positive-text-color: #fff !default;
+$component-button-positive-text-color-focus: #fff !default;
+$component-button-positive-text-color-hover: #fff !default;
+$component-button-positive-text-color-active: #fff !default;
+$component-button-positive-text-color-disabled: #666 !default;
+
+//NEGATIVE
+$component-button-negative-text-color: #fff !default;
+$component-button-negative-text-color-focus: #fff !default;
+$component-button-negative-text-color-hover: #fff !default;
+$component-button-negative-text-color-active: #fff !default;
+$component-button-negative-text-color-disabled: #666 !default;
+
+////////BORDERS
+//NEUTRAL 
+$component-button-border: 1px solid transparent !default;
+$component-button-border-disabled: transparent !default;
+
+//PRIMARY
+$component-button-primary-border: 1px solid transparent !default;
+$component-button-primary-border-disabled: transparent !default;
+
+//POSITIVE
+$component-button-positive-border: 1px solid transparent !default;
+$component-button-positive-border-disabled: transparent !default;
+
+//NEGATIVE
+$component-button-negative-border: 1px solid transparent !default;
+$component-button-negative-border-disabled: transparent !default;

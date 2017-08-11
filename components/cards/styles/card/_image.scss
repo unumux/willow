@@ -1,0 +1,14 @@
+&__image {
+    background-image: url(http://fillmurray.com/200/200);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: $component-card-image-height;
+    overflow: hidden;
+    width: 100%;
+
+    @media screen and (min-width: breakpoint(md, $grid-breakpoints)) {
+        height: $component-card-image-height-sm;
+    }
+}
