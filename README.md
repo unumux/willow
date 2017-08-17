@@ -218,9 +218,9 @@ There are 3 groups of variables:
 
 |         Theme Name         | Documentation                                               | CSS Download |
 |:-------------------------- |:-----------------------------------------------------------:|:------------:|
-|  theme-enterprise-default  |[docs](https://github.com/unumux/theme-enterprise-default)   |[theme-enterprise-default.min.css](https://github.com/unumux/theme-enterprise-default/releases/download/0.3.10/theme-enterprise-default.min.css)|
-|     theme-unum-default     |[docs](https://github.com/unumux/theme-unum-default)         |[theme-unum-default.min.css](https://github.com/unumux/theme-unum-default/releases/download/0.3.11/theme-unum-default.min.css)|
-| theme-coloniallife-default |[docs](https://github.com/unumux/theme-coloniallife-default) |[theme-coloniallife-default.min.css](https://github.com/unumux/theme-coloniallife-default/releases/download/0.3.11/theme-coloniallife-default.min.css)|
+|  theme-enterprise-default  |[docs](https://github.com/unumux/theme-enterprise-default)   |[theme-enterprise-default.min.css](https://github.com/unumux/theme-enterprise-default/releases/download/0.4.0/theme-enterprise-default.min.css)|
+|     theme-unum-default     |[docs](https://github.com/unumux/theme-unum-default)         |[theme-unum-default.min.css](https://github.com/unumux/theme-unum-default/releases/download/0.4.0/theme-unum-default.min.css)|
+| theme-coloniallife-default |[docs](https://github.com/unumux/theme-coloniallife-default) |[theme-coloniallife-default.min.css](https://github.com/unumux/theme-coloniallife-default/releases/download/0.5.0/theme-coloniallife-default.min.css)|
 
 ---
 
