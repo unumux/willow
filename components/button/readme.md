@@ -28,6 +28,10 @@ Buttons can be created by adding the **willow-button** class to a `<button>` or 
 <button class="willow-button willow-button--primary">Button Text</button>
 <button class="willow-button willow-button--positive">Button Text</button>
 <button class="willow-button willow-button--negative">Button Text</button>
+<button class="willow-button willow-button--cta">Button Text</button>
+<button class="willow-button willow-button--inline">Button Text</button>
+<button class="willow-button willow-button--ghost">Button Text</button>
+<button class="willow-button willow-button--ghost-secondary">Button Text</button>
 
 <!-- anchor tag version -->
 <a href="" class="willow-button" aria-label="">Button Text</a>
@@ -37,6 +41,10 @@ Buttons can be created by adding the **willow-button** class to a `<button>` or 
 <a href="" class="willow-button willow-button--primary" aria-label="">Button Text</a>
 <a href="" class="willow-button willow-button--positive" aria-label="">Button Text</a>
 <a href="" class="willow-button willow-button--negative" aria-label="">Button Text</a>
+<a href="" class="willow-button willow-button--cta" aria-label="">Button Text</a>
+<a href="" class="willow-button willow-button--inline" aria-label="">Button Text</a>
+<a href="" class="willow-button willow-button--ghost" aria-label="">Button Text</a>
+<a href="" class="willow-button willow-button--ghost-secondary" aria-label="">Button Text</a>
 ```
 
 ---
@@ -57,9 +65,13 @@ Buttons can be created by adding the **willow-button** class to a `<button>` or 
 
 `--negative`: use to signify a negative action such as _Delete Account_
 
+`--cta` : use to emphasize a button by making it larger and the primary call to action color
+
 `--inline` : use to restrict a button's width based on its content
 
-`--cta` : use to emphasize a button by making it larger and the primary call to action color
+`--ghost` : use on a dark-colored background for a deemphasized action
+
+`--ghost-secondary` : use on a dark-colored background for a secondary deemphasized action
 
 #### _States_
 
