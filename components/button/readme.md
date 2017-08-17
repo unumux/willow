@@ -57,6 +57,10 @@ Buttons can be created by adding the **willow-button** class to a `<button>` or 
 
 `--negative`: use to signify a negative action such as _Delete Account_
 
+`--inline` : use to restrict a button's width based on its content
+
+`--cta` : use to emphasize a button by making it larger and the primary call to action color
+
 #### _States_
 
 `<button disabled>` : disables `<button>`

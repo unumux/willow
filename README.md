@@ -101,6 +101,7 @@ Do you have questions or need help with setup? Did you run into errors while fol
 - [Banner](./components/banner)
 - [Breadcrumbs](./components/breadcrumbs)
 - [Button](./components/button)
+- [Cards](./components/cards)
 - [Dialog](./components/dialog)
 - [Footer Navigation](./components/footer-nav)
 - [Global Alerts](./components/global-alert)
@@ -145,7 +146,7 @@ A common example of a column layout would be a page section contains secondary n
 
 ### Customize the Bootstrap Grid
 
-**Willow** takes the bootstrap breakpoint, container width and gutter values as they come. If you want to update these checkout the section on [customizing the grid](#so-you-need-to-change-the-grid).
+**Willow** takes the bootstrap breakpoint, container width and gutter values as they come. If you want to update these checkout the section on [customizing the grid](#so-you-need-to-change-the-bootstrap-grid).
 
 ### Willow's Bootstrap Customization
 

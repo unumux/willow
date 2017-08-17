@@ -1,0 +1,9 @@
+&-card-grid {
+    margin-bottom: space(2);
+
+    @media screen and (min-width: breakpoint(sm, $grid-breakpoints)) {
+        align-items: stretch;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

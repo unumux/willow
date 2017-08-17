@@ -1,4 +1,7 @@
-&-button {
+@import "variables";
+
+&-button,
+&-button[href] {
     @include set-text-style($text-style-heading-4);
 
     background-color: $component-button-background-color;
@@ -6,20 +9,13 @@
     border-radius: $component-button-border-radius;
     color: $component-button-text-color;
     cursor: pointer;
-    display: inline-block;
-    margin-bottom: space(1);
-    padding-bottom: space(1);
-    padding-left: space(1);
-    padding-right: space(1);
-    padding-top: space(1);
+    display: block;
+    margin: $space-stack;
+    padding: $space-button-squish;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-
-    &:visited {
-        background-color: $component-button-background-color-visited;
-        color: $component-button-text-color-visited;
-    }
+    width: 100%;
 
     &:focus {
         background-color: $component-button-background-color-focus;
@@ -45,15 +41,11 @@
     }
 }
 
-&-button--primary {
+&-button--primary,
+&-button--primary[href] {
     background-color: $component-button-primary-background-color;
     border: $component-button-primary-border;
     color: $component-button-primary-text-color;
-
-    &:visited {
-        background-color: $component-button-primary-background-color-visited;
-        color: $component-button-primary-text-color-visited;
-    }
 
     &:focus {
         background-color: $component-button-primary-background-color-focus;
@@ -77,16 +69,11 @@
     }
 }
 
-&-button--positive {                
+&-button--positive,
+&-button--positive[href] {                
     background-color: $component-button-positive-background-color;
     border: $component-button-positive-border;
     color: $component-button-positive-text-color;
-
-    &:visited {
-        background-color: $component-button-positive-background-color-visited;
-        color: $component-button-positive-text-color-visited;
-    }
-
 
     &:focus {
         background-color: $component-button-positive-background-color-focus;
@@ -110,22 +97,17 @@
     }
 }
 
-&-button--negative {            
+&-button--negative,
+&-button--negative[href] {            
     background-color: $component-button-negative-background-color;
     border: $component-button-negative-border;
     color: $component-button-negative-text-color;
 
-    &:visited {
-        background-color: $component-button-negative-background-color-visited;
-        color: $component-button-negative-text-color-visited;
-    }
-
-    
     &:focus {
         background-color: $component-button-negative-background-color-focus;
         color: $component-button-negative-text-color-focus;
     }
-
+    
     &:hover {
         background-color: $component-button-negative-background-color-hover;
         color: $component-button-negative-text-color-hover;
@@ -140,5 +122,41 @@
         background-color: $component-button-negative-background-color-disabled;
         border-color: $component-button-negative-border-disabled; 
         color: $component-button-negative-text-color-disabled;
+    }
+}
+
+
+&-button--inline,
+&-button--inline[href] {
+    display: inline-block;
+    width: auto;
+}
+
+&-button--cta,
+&-button--cta[href] {
+    background-color: $component-button-primary-background-color;
+    border: $component-button-primary-border;
+    color: $component-button-primary-text-color;
+    padding: $space-inset-squish-l;    
+
+    &:focus {
+        background-color: $component-button-primary-background-color-focus;
+        color: $component-button-primary-text-color-focus;
+    }
+
+    &:hover {
+        background-color: $component-button-primary-background-color-hover;
+        color: $component-button-primary-text-color-hover;
+    }
+
+    &:active {
+        background-color: $component-button-primary-background-color-active;
+        color: $component-button-primary-text-color-active;
+    }
+
+    &[disabled] {
+        background-color: $component-button-primary-background-color-disabled;
+        border-color: $component-button-primary-border-disabled;            
+        color: $component-button-primary-text-color-disabled;
     }
 }
