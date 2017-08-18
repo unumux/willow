@@ -101,24 +101,24 @@ $component-button-ghost-text-color-active: #444 !default;
 $component-button-ghost-text-color-disabled: #666 !default;
 
 // =============================================================================
-//      SECONDARY GHOST BUTTONS
+//      ALTERNATE GHOST BUTTONS
 // =============================================================================
 // Backgrounds
-$component-button-ghost-secondary-background-color: rgba(220, 220, 220, 0.30) !default;
-$component-button-ghost-secondary-background-color-focus: rgba(220, 220, 220, 0.30) !default;
-$component-button-ghost-secondary-background-color-hover: rgba(255, 255, 255, 0.70) !default;
-$component-button-ghost-secondary-background-color-active: rgba(255, 255, 255, 1) !default;
-$component-button-ghost-secondary-background-color-disabled: #ddd !default;
+$component-button-ghost-alternate-background-color: rgba(220, 220, 220, 0.30) !default;
+$component-button-ghost-alternate-background-color-focus: rgba(220, 220, 220, 0.30) !default;
+$component-button-ghost-alternate-background-color-hover: rgba(255, 255, 255, 0.70) !default;
+$component-button-ghost-alternate-background-color-active: rgba(255, 255, 255, 1) !default;
+$component-button-ghost-alternate-background-color-disabled: #ddd !default;
 
 // Borders 
-$component-button-ghost-secondary-border: 2px solid #fff !default;
-$component-button-ghost-secondary-border-hover: 2px solid #fff !default;
-$component-button-ghost-secondary-border-active: 2px solid #fff !default;
-$component-button-ghost-secondary-border-disabled: transparent !default;
+$component-button-ghost-alternate-border: 2px solid #fff !default;
+$component-button-ghost-alternate-border-hover: 2px solid #fff !default;
+$component-button-ghost-alternate-border-active: 2px solid #fff !default;
+$component-button-ghost-alternate-border-disabled: transparent !default;
 
 // Text
-$component-button-ghost-secondary-text-color: #666 !default;
-$component-button-ghost-secondary-text-color-focus: #444 !default;
-$component-button-ghost-secondary-text-color-hover: #444 !default;
-$component-button-ghost-secondary-text-color-active: #222 !default;
-$component-button-ghost-secondary-text-color-disabled: #666 !default;
+$component-button-ghost-alternate-text-color: #666 !default;
+$component-button-ghost-alternate-text-color-focus: #444 !default;
+$component-button-ghost-alternate-text-color-hover: #444 !default;
+$component-button-ghost-alternate-text-color-active: #222 !default;
+$component-button-ghost-alternate-text-color-disabled: #666 !default;

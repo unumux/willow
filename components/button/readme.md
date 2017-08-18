@@ -31,7 +31,7 @@ Buttons can be created by adding the **willow-button** class to a `<button>` or 
 <button class="willow-button willow-button--cta">Button Text</button>
 <button class="willow-button willow-button--inline">Button Text</button>
 <button class="willow-button willow-button--ghost">Button Text</button>
-<button class="willow-button willow-button--ghost-secondary">Button Text</button>
+<button class="willow-button willow-button--ghost-alternate">Button Text</button>
 
 <!-- anchor tag version -->
 <a href="" class="willow-button" aria-label="">Button Text</a>
@@ -44,7 +44,7 @@ Buttons can be created by adding the **willow-button** class to a `<button>` or 
 <a href="" class="willow-button willow-button--cta" aria-label="">Button Text</a>
 <a href="" class="willow-button willow-button--inline" aria-label="">Button Text</a>
 <a href="" class="willow-button willow-button--ghost" aria-label="">Button Text</a>
-<a href="" class="willow-button willow-button--ghost-secondary" aria-label="">Button Text</a>
+<a href="" class="willow-button willow-button--ghost-alternate" aria-label="">Button Text</a>
 ```
 
 ---
@@ -71,7 +71,7 @@ Buttons can be created by adding the **willow-button** class to a `<button>` or 
 
 `--ghost` : use on a dark-colored background for a deemphasized action
 
-`--ghost-secondary` : use on a dark-colored background for a secondary deemphasized action
+`--ghost-alternate` : use on a dark-colored background for an alternately styled deemphasized action
 
 #### _States_
 

@@ -193,25 +193,25 @@
     }
 }
 
-&-button--ghost-secondary,
-&-button--ghost-secondary[href] {
-    background-color: $component-button-ghost-secondary-background-color;
-    border: $component-button-ghost-secondary-border;
-    color: $component-button-ghost-secondary-text-color;
+&-button--ghost-alternate,
+&-button--ghost-alternate[href] {
+    background-color: $component-button-ghost-alternate-background-color;
+    border: $component-button-ghost-alternate-border;
+    color: $component-button-ghost-alternate-text-color;
 
     &:focus {
-        background-color: $component-button-ghost-secondary-background-color-focus;
-        color: $component-button-ghost-secondary-text-color-focus;
+        background-color: $component-button-ghost-alternate-background-color-focus;
+        color: $component-button-ghost-alternate-text-color-focus;
     }
 
     &:hover {
-        background-color: $component-button-ghost-secondary-background-color-hover;
-        color: $component-button-ghost-secondary-text-color-hover;
+        background-color: $component-button-ghost-alternate-background-color-hover;
+        color: $component-button-ghost-alternate-text-color-hover;
     }
 
     &:active {
-        background-color: $component-button-ghost-secondary-background-color-active;
-        color: $component-button-ghost-secondary-text-color-active;
+        background-color: $component-button-ghost-alternate-background-color-active;
+        color: $component-button-ghost-alternate-text-color-active;
     }
 
     &[disabled],
