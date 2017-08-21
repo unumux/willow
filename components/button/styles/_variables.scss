@@ -89,6 +89,7 @@ $component-button-ghost-background-color-disabled: #ddd !default;
 
 // Borders 
 $component-button-ghost-border: 2px solid #fff !default;
+$component-button-ghost-border-focus: 2px solid #fff !default;
 $component-button-ghost-border-hover: 2px solid #fff !default;
 $component-button-ghost-border-active: 2px solid #fff !default;
 $component-button-ghost-border-disabled: transparent !default;
@@ -112,6 +113,7 @@ $component-button-ghost-alternate-background-color-disabled: #ddd !default;
 
 // Borders 
 $component-button-ghost-alternate-border: 2px solid #fff !default;
+$component-button-ghost-alternate-border-focus: 2px solid #fff !default;
 $component-button-ghost-alternate-border-hover: 2px solid #fff !default;
 $component-button-ghost-alternate-border-active: 2px solid #fff !default;
 $component-button-ghost-alternate-border-disabled: transparent !default;

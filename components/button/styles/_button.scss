@@ -170,6 +170,7 @@
     
     &:focus {
         background-color: $component-button-ghost-background-color-focus;
+        border: $component-button-ghost-border-focus;
         color: $component-button-ghost-text-color-focus;
     }
     
@@ -198,19 +199,22 @@
     background-color: $component-button-ghost-alternate-background-color;
     border: $component-button-ghost-alternate-border;
     color: $component-button-ghost-alternate-text-color;
-
+    
     &:focus {
         background-color: $component-button-ghost-alternate-background-color-focus;
+        border: $component-button-ghost-alternate-border-focus;
         color: $component-button-ghost-alternate-text-color-focus;
     }
 
     &:hover {
         background-color: $component-button-ghost-alternate-background-color-hover;
+        border: $component-button-ghost-alternate-border-hover;        
         color: $component-button-ghost-alternate-text-color-hover;
     }
 
     &:active {
         background-color: $component-button-ghost-alternate-background-color-active;
+        border: $component-button-ghost-alternate-border-active;        
         color: $component-button-ghost-alternate-text-color-active;
     }
 
