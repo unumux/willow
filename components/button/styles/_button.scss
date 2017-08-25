@@ -15,6 +15,7 @@
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    transition: 0.15s all;
     width: 100%;
 
     &:focus {
@@ -158,5 +159,69 @@
         background-color: $component-button-primary-background-color-disabled;
         border-color: $component-button-primary-border-disabled;            
         color: $component-button-primary-text-color-disabled;
+    }
+}
+
+&-button--ghost,
+&-button--ghost[href] {
+    background-color: $component-button-ghost-background-color;
+    border: $component-button-ghost-border;
+    color: $component-button-ghost-text-color;
+    
+    &:focus {
+        background-color: $component-button-ghost-background-color-focus;
+        border: $component-button-ghost-border-focus;
+        color: $component-button-ghost-text-color-focus;
+    }
+    
+    &:hover {
+        background-color: $component-button-ghost-background-color-hover;
+        border: $component-button-ghost-border-hover;
+        color: $component-button-ghost-text-color-hover;
+    }
+    
+    &:active {
+        background-color: $component-button-ghost-background-color-active;
+        border: $component-button-ghost-border-active;
+        color: $component-button-ghost-text-color-active;
+    }
+
+    &[disabled],
+    &[data-disabled="true"] {
+        background-color: $component-button-ghost-background-color-disabled;
+        border-color: $component-button-ghost-border-disabled;
+        color: $component-button-ghost-text-color-disabled;        
+    }
+}
+
+&-button--ghost-inverse,
+&-button--ghost-inverse[href] {
+    background-color: $component-button-ghost-inverse-background-color;
+    border: $component-button-ghost-inverse-border;
+    color: $component-button-ghost-inverse-text-color;
+    
+    &:focus {
+        background-color: $component-button-ghost-inverse-background-color-focus;
+        border: $component-button-ghost-inverse-border-focus;
+        color: $component-button-ghost-inverse-text-color-focus;
+    }
+
+    &:hover {
+        background-color: $component-button-ghost-inverse-background-color-hover;
+        border: $component-button-ghost-inverse-border-hover;        
+        color: $component-button-ghost-inverse-text-color-hover;
+    }
+
+    &:active {
+        background-color: $component-button-ghost-inverse-background-color-active;
+        border: $component-button-ghost-inverse-border-active;        
+        color: $component-button-ghost-inverse-text-color-active;
+    }
+
+    &[disabled],
+    &[data-disabled="true"] {
+        background-color: $component-button-ghost-background-color-disabled;
+        border-color: $component-button-ghost-border-disabled;
+        color: $component-button-ghost-text-color-disabled;        
     }
 }
