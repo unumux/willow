@@ -13,10 +13,6 @@
         box-sizing: inherit;
     }
 
-    :last-child {
-        margin-bottom: 0 !important;
-    }
-
     body {
         @include set-text-style($component-body-style-default);
 
