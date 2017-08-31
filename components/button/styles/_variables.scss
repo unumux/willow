@@ -2,79 +2,112 @@ $component-button-border-radius: 4px !default;
 $component-button-border-color: transparent !default;
 $space-button-squish: #{$space - 4} #{$space + 4};
 
-////////BACKGROUND COLORS
-//NEUTRAL
+// =============================================================================
+//      NEUTRAL BUTTONS
+// =============================================================================
+// Backgrounds
 $component-button-background-color: #999 !default;
-$component-button-background-color-focus: #888 !default;
+$component-button-background-color-visited: #888 !default;
 $component-button-background-color-hover: #888 !default;
 $component-button-background-color-active: #888 !default;
+$component-button-background-color-focus: #888 !default;
 $component-button-background-color-disabled: #ddd!default;
 
-//PRIMARY
-$component-button-primary-background-color: #555 !default;
-$component-button-primary-background-color-focus: #444 !default;
-$component-button-primary-background-color-hover: #444 !default;
-$component-button-primary-background-color-active: #444 !default;
-$component-button-primary-background-color-disabled: #ddd !default;
-
-//POSITIVE
-$component-button-positive-background-color: #61a044 !default;
-$component-button-positive-background-color-focus: #61a044!default;
-$component-button-positive-background-color-hover: #4a8a2c !default;
-$component-button-positive-background-color-active: #3b781e !default;
-$component-button-positive-background-color-disabled: #ddd !default;
-
-//NEGATIVE
-$component-button-negative-background-color: #e75656 !default;
-$component-button-negative-background-color-focus: #e75656 !default;
-$component-button-negative-background-color-hover: #cd3e3e !default;
-$component-button-negative-background-color-active: #b33535 !default;
-$component-button-negative-background-color-disabled: #ddd !default;
-
-////////TEXT COLORS
-//NEUTRAL
+// Text
 $component-button-text-color: #fff !default;
-$component-button-text-color-focus: #fff !default;
+$component-button-text-color-visited: #fff !default;
 $component-button-text-color-hover: #fff !default;
 $component-button-text-color-active: #fff !default;
+$component-button-text-color-focus: #fff !default;
 $component-button-text-color-disabled: #666 !default;
 
-//PRIMARY
-$component-button-primary-text-color: #fff !default;
-$component-button-primary-text-color-focus: #fff !default;
-$component-button-primary-text-color-hover: #fff !default;
-$component-button-primary-text-color-active: #fff !default;
-$component-button-primary-text-color-disabled: #666 !default;
-
-//POSITIVE
-$component-button-positive-text-color: #fff !default;
-$component-button-positive-text-color-focus: #fff !default;
-$component-button-positive-text-color-hover: #fff !default;
-$component-button-positive-text-color-active: #fff !default;
-$component-button-positive-text-color-disabled: #666 !default;
-
-//NEGATIVE
-$component-button-negative-text-color: #fff !default;
-$component-button-negative-text-color-focus: #fff !default;
-$component-button-negative-text-color-hover: #fff !default;
-$component-button-negative-text-color-active: #fff !default;
-$component-button-negative-text-color-disabled: #666 !default;
-
-////////BORDERS
-//NEUTRAL 
+// Border
 $component-button-border: 1px solid transparent !default;
+$component-button-border-visited: 1px solid transparent !default;
+$component-button-border-hover: 1px solid transparent !default;
+$component-button-border-active: 1px solid transparent !default;
+$component-button-border-focus: 1px solid transparent !default;
 $component-button-border-disabled: transparent !default;
 
-//PRIMARY
+// =============================================================================
+//      PRIMARY BUTTONS
+// =============================================================================
+// Backgrounds
+$component-button-primary-background-color: #555 !default;
+$component-button-primary-background-color-visited: #444 !default;
+$component-button-primary-background-color-hover: #444 !default;
+$component-button-primary-background-color-active: #444 !default;
+$component-button-primary-background-color-focus: #444 !default;
+$component-button-primary-background-color-disabled: #ddd !default;
+
+// Text
+$component-button-primary-text-color: #fff !default;
+$component-button-primary-text-color-visited: #fff !default;
+$component-button-primary-text-color-hover: #fff !default;
+$component-button-primary-text-color-active: #fff !default;
+$component-button-primary-text-color-focus: #fff !default;
+$component-button-primary-text-color-disabled: #666 !default;
+
+// Borders
 $component-button-primary-border: 1px solid transparent !default;
+$component-button-primary-border-visited: 1px solid transparent !default;
+$component-button-primary-border-hover: 1px solid transparent !default;
+$component-button-primary-border-active: 1px solid transparent !default;
+$component-button-primary-border-focus: 1px solid transparent !default;
 $component-button-primary-border-disabled: transparent !default;
 
-//POSITIVE
+// =============================================================================
+//      POSITIVE BUTTONS
+// =============================================================================
+// Backgrounds
+$component-button-positive-background-color: #61a044 !default;
+$component-button-positive-background-color-visited: #61a044!default;
+$component-button-positive-background-color-hover: #4a8a2c !default;
+$component-button-positive-background-color-active: #3b781e !default;
+$component-button-positive-background-color-focus: #61a044!default;
+$component-button-positive-background-color-disabled: #ddd !default;
+
+// Text
+$component-button-positive-text-color: #fff !default;
+$component-button-positive-text-color-visited: #fff !default;
+$component-button-positive-text-color-hover: #fff !default;
+$component-button-positive-text-color-active: #fff !default;
+$component-button-positive-text-color-focus: #fff !default;
+$component-button-positive-text-color-disabled: #666 !default;
+
+// Borders
 $component-button-positive-border: 1px solid transparent !default;
+$component-button-positive-border-visited: 1px solid transparent !default;
+$component-button-positive-border-hover: 1px solid transparent !default;
+$component-button-positive-border-active: 1px solid transparent !default;
+$component-button-positive-border-focus: 1px solid transparent !default;
 $component-button-positive-border-disabled: transparent !default;
 
-//NEGATIVE
+// =============================================================================
+//      NEGATIVE BUTTONS
+// =============================================================================
+// Backgrounds
+$component-button-negative-background-color: #e75656 !default;
+$component-button-negative-background-color-visited: #e75656 !default;
+$component-button-negative-background-color-hover: #cd3e3e !default;
+$component-button-negative-background-color-active: #b33535 !default;
+$component-button-negative-background-color-focus: #e75656 !default;
+$component-button-negative-background-color-disabled: #ddd !default;
+
+// Text
+$component-button-negative-text-color: #fff !default;
+$component-button-negative-text-color-visited: #fff !default;
+$component-button-negative-text-color-hover: #fff !default;
+$component-button-negative-text-color-active: #fff !default;
+$component-button-negative-text-color-focus: #fff !default;
+$component-button-negative-text-color-disabled: #666 !default;
+
+// Borders
 $component-button-negative-border: 1px solid transparent !default;
+$component-button-negative-border-visited: 1px solid transparent !default;
+$component-button-negative-border-hover: 1px solid transparent !default;
+$component-button-negative-border-active: 1px solid transparent !default;
+$component-button-negative-border-focus: 1px solid transparent !default;
 $component-button-negative-border-disabled: transparent !default;
 
 // =============================================================================
@@ -82,45 +115,201 @@ $component-button-negative-border-disabled: transparent !default;
 // =============================================================================
 // Backgrounds
 $component-button-ghost-background-color: transparent !default;
-$component-button-ghost-background-color-focus: rgba(225, 225, 225, 1) !default;
+$component-button-ghost-background-color-visited: rgba(225, 225, 225, 1) !default;
 $component-button-ghost-background-color-hover: rgba(255, 255, 255, 1) !default;
 $component-button-ghost-background-color-active: rgba(255, 255, 255, 0.9) !default;
+$component-button-ghost-background-color-focus: rgba(225, 225, 225, 1) !default;
 $component-button-ghost-background-color-disabled: #ddd !default;
-
-// Borders 
-$component-button-ghost-border: 2px solid #fff !default;
-$component-button-ghost-border-focus: 2px solid transparent !default;
-$component-button-ghost-border-hover: 2px solid transparent !default;
-$component-button-ghost-border-active: 2px solid transparent !default;
-$component-button-ghost-border-disabled: transparent !default;
 
 // Text
 $component-button-ghost-text-color: #fff !default;
-$component-button-ghost-text-color-focus: #333 !default;
+$component-button-ghost-text-color-visited: #333 !default;
 $component-button-ghost-text-color-hover: #333 !default;
 $component-button-ghost-text-color-active: #000 !default;
+$component-button-ghost-text-color-focus: #333 !default;
 $component-button-ghost-text-color-disabled: #666 !default;
+
+// Borders 
+$component-button-ghost-border: 2px solid #fff !default;
+$component-button-ghost-border-visited: 2px solid transparent !default;
+$component-button-ghost-border-hover: 2px solid transparent !default;
+$component-button-ghost-border-active: 2px solid transparent !default;
+$component-button-ghost-border-focus: 2px solid transparent !default;
+$component-button-ghost-border-disabled: transparent !default;
 
 // =============================================================================
 //      INVERSE GHOST BUTTONS
 // =============================================================================
 // Backgrounds
 $component-button-ghost-inverse-background-color: transparent !default;
-$component-button-ghost-inverse-background-color-focus: rgba(0, 0, 0, 0.30) !default;
+$component-button-ghost-inverse-background-color-visited: rgba(0, 0, 0, 0.70) !default;
 $component-button-ghost-inverse-background-color-hover: rgba(0, 0, 0, 0.70) !default;
 $component-button-ghost-inverse-background-color-active: #000 !default;
+$component-button-ghost-inverse-background-color-focus: rgba(0, 0, 0, 0.30) !default;
 $component-button-ghost-inverse-background-color-disabled: #ddd !default;
-
-// Borders 
-$component-button-ghost-inverse-border: 2px solid #000 !default;
-$component-button-ghost-inverse-border-focus: 2px solid transparent !default;
-$component-button-ghost-inverse-border-hover: 2px solid transparent !default;
-$component-button-ghost-inverse-border-active: 2px solid transparent !default;
-$component-button-ghost-inverse-border-disabled: transparent !default;
 
 // Text
 $component-button-ghost-inverse-text-color: #000 !default;
-$component-button-ghost-inverse-text-color-focus: #fff !default;
+$component-button-ghost-inverse-text-color-visited: #fff !default;
 $component-button-ghost-inverse-text-color-hover: #fff !default;
 $component-button-ghost-inverse-text-color-active: #fff !default;
+$component-button-ghost-inverse-text-color-focus: #fff !default;
 $component-button-ghost-inverse-text-color-disabled: #666 !default;
+
+// Borders 
+$component-button-ghost-inverse-border: 2px solid #000 !default;
+$component-button-ghost-inverse-border-visited: 2px solid transparent !default;
+$component-button-ghost-inverse-border-hover: 2px solid transparent !default;
+$component-button-ghost-inverse-border-active: 2px solid transparent !default;
+$component-button-ghost-inverse-border-focus: 2px solid transparent !default;
+$component-button-ghost-inverse-border-disabled: transparent !default;
+
+// =============================================================================
+//      BUTTON MAPS
+// =============================================================================
+$neutral: (
+    bg: $component-button-background-color,
+    bg-visited: $component-button-background-color-visited,
+    bg-hover: $component-button-background-color-hover,
+    bg-active: $component-button-background-color-active,
+    bg-focus: $component-button-background-color-focus,
+    bg-disabled: $component-button-background-color-disabled,
+    color:$component-button-text-color,
+    color-visited:$component-button-text-color-visited,
+    color-hover:$component-button-text-color-hover,
+    color-active:$component-button-text-color-active,
+    color-focus:$component-button-text-color-focus,
+    color-disabled:$component-button-text-color-disabled,
+    border:$component-button-border,
+    border-visited:$component-button-border-visited,
+    border-hover:$component-button-border-hover,
+    border-active:$component-button-border-active,
+    border-focus:$component-button-border-focus,
+    border-disabled:$component-button-border-disabled
+);
+
+$primary: (
+    bg: $component-button-primary-background-color,
+    bg-visited: $component-button-primary-background-color-visited,
+    bg-hover: $component-button-primary-background-color-hover,
+    bg-active: $component-button-primary-background-color-active,
+    bg-focus: $component-button-primary-background-color-focus,
+    bg-disabled: $component-button-primary-background-color-disabled,
+    color:$component-button-primary-text-color,
+    color-visited:$component-button-primary-text-color-visited,
+    color-hover:$component-button-primary-text-color-hover,
+    color-active:$component-button-primary-text-color-active,
+    color-focus:$component-button-primary-text-color-focus,
+    color-disabled:$component-button-primary-text-color-disabled,
+    border:$component-button-primary-border,
+    border-visited:$component-button-primary-border-visited,
+    border-hover:$component-button-primary-border-hover,
+    border-active:$component-button-primary-border-active,
+    border-focus:$component-button-primary-border-focus,
+    border-disabled:$component-button-primary-border-disabled
+);
+
+$negative: (
+    bg: $component-button-negative-background-color,
+    bg-visited: $component-button-negative-background-color-visited,
+    bg-hover: $component-button-negative-background-color-hover,
+    bg-active: $component-button-negative-background-color-active,
+    bg-focus: $component-button-negative-background-color-focus,
+    bg-disabled: $component-button-negative-background-color-disabled,
+    color:$component-button-negative-text-color,
+    color-visited:$component-button-negative-text-color-visited,
+    color-hover:$component-button-negative-text-color-hover,
+    color-active:$component-button-negative-text-color-active,
+    color-focus:$component-button-negative-text-color-focus,
+    color-disabled:$component-button-negative-text-color-disabled,
+    border:$component-button-negative-border,
+    border-visited:$component-button-negative-border-visited,
+    border-hover:$component-button-negative-border-hover,
+    border-active:$component-button-negative-border-active,
+    border-focus:$component-button-negative-border-focus,
+    border-disabled:$component-button-negative-border-disabled
+);
+
+$positive: (
+    bg: $component-button-positive-background-color,
+    bg-visited: $component-button-positive-background-color-visited,
+    bg-hover: $component-button-positive-background-color-hover,
+    bg-active: $component-button-positive-background-color-active,
+    bg-focus: $component-button-positive-background-color-focus,
+    bg-disabled: $component-button-positive-background-color-disabled,
+    color:$component-button-positive-text-color,
+    color-visited:$component-button-positive-text-color-visited,
+    color-hover:$component-button-positive-text-color-hover,
+    color-active:$component-button-positive-text-color-active,
+    color-focus:$component-button-positive-text-color-focus,
+    color-disabled:$component-button-positive-text-color-disabled,
+    border:$component-button-positive-border,
+    border-visited:$component-button-positive-border-visited,
+    border-hover:$component-button-positive-border-hover,
+    border-active:$component-button-positive-border-active,
+    border-focus:$component-button-positive-border-focus,
+    border-disabled:$component-button-positive-border-disabled
+);
+
+$ghost: (
+    bg: $component-button-ghost-background-color,
+    bg-visited: $component-button-ghost-background-color-visited,
+    bg-hover: $component-button-ghost-background-color-hover,
+    bg-active: $component-button-ghost-background-color-active,
+    bg-focus: $component-button-ghost-background-color-focus,
+    bg-disabled: $component-button-ghost-background-color-disabled,
+    color: $component-button-ghost-text-color,
+    color-visited: $component-button-ghost-text-color-visited,
+    color-focus: $component-button-ghost-text-color-focus,
+    color-hover: $component-button-ghost-text-color-hover,
+    color-active: $component-button-ghost-text-color-active,
+    color-disabled: $component-button-ghost-text-color-disabled,
+    border: $component-button-ghost-border,
+    border-visited: $component-button-ghost-border-visited,
+    border-focus: $component-button-ghost-border-focus,
+    border-hover: $component-button-ghost-border-hover,
+    border-active: $component-button-ghost-border-active,
+    border-disabled: $component-button-ghost-border-disabled
+);
+
+$ghost-inverse: (
+    bg: $component-button-ghost-inverse-background-color,
+    bg-visited: $component-button-ghost-inverse-background-color-visited,
+    bg-hover: $component-button-ghost-inverse-background-color-hover,
+    bg-active: $component-button-ghost-inverse-background-color-active,
+    bg-focus: $component-button-ghost-inverse-background-color-focus,
+    bg-disabled: $component-button-ghost-inverse-background-color-disabled,
+    color: $component-button-ghost-inverse-text-color,
+    color-visited: $component-button-ghost-inverse-text-color-visited,
+    color-focus: $component-button-ghost-inverse-text-color-focus,
+    color-hover: $component-button-ghost-inverse-text-color-hover,
+    color-active: $component-button-ghost-inverse-text-color-active,
+    color-disabled: $component-button-ghost-inverse-text-color-disabled,
+    border: $component-button-ghost-inverse-border,
+    border-visited: $component-button-ghost-inverse-border-visited,
+    border-focus: $component-button-ghost-inverse-border-focus,
+    border-hover: $component-button-ghost-inverse-border-hover,
+    border-active: $component-button-ghost-inverse-border-active,
+    border-disabled: $component-button-ghost-inverse-border-disabled
+);
+
+$cta: (
+    bg: $component-button-primary-background-color,
+    bg-visited: $component-button-primary-background-color-visited,
+    bg-hover: $component-button-primary-background-color-hover,
+    bg-active: $component-button-primary-background-color-active,
+    bg-focus: $component-button-primary-background-color-focus,
+    bg-disabled: $component-button-primary-background-color-disabled,
+    color:$component-button-primary-text-color,
+    color-visited:$component-button-primary-text-color-visited,
+    color-hover:$component-button-primary-text-color-hover,
+    color-active:$component-button-primary-text-color-active,
+    color-focus:$component-button-primary-text-color-focus,
+    color-disabled:$component-button-primary-text-color-disabled,
+    border:$component-button-primary-border,
+    border-visited:$component-button-primary-border-visited,
+    border-hover:$component-button-primary-border-hover,
+    border-active:$component-button-primary-border-active,
+    border-focus:$component-button-primary-border-focus,
+    border-disabled:$component-button-primary-border-disabled
+);
