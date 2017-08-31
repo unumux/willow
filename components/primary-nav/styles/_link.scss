@@ -8,19 +8,27 @@
     padding-top: space(2);
     text-decoration: none;
 
+    &:visited {
+        color: $component-primary-nav-link-color-visited;
+    }
+    
     &:hover {
         background-color: $component-primary-nav-link-background-color-hover;
         color: $component-primary-nav-link-color-hover;
         text-decoration: none;
     }
-
+    
+    
     &:active {
         background-color: $component-primary-nav-link-background-color-active;
         color: $component-primary-nav-link-color-active;
     }
-
-    &:visited {
-        color: $component-primary-nav-link-color-visited;
+    
+    &:focus {
+        background-color: $component-primary-nav-link-background-color-hover;
+        color: $component-primary-nav-link-color-hover;
+        outline: none;
+        text-decoration: none;
     }
 
     @media screen and (min-width: breakpoint(medium)) {
