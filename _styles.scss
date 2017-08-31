@@ -3,7 +3,8 @@
 @import "./base-elements/base-elements";
 @import "./components/components";
 
-
+// moved from base-elements.scss file
+// to allow easier overriding of this setting
 :last-child {
     margin-bottom: 0;
 }
