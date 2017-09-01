@@ -12,8 +12,24 @@ Buttons are used as triggers for actions. Depending on the use case, buttons con
 
 Buttons can be created by adding the **willow-button** class to a `<button>` or `<a>` html element.
 
-- `<button>` should be used as a form of action for the user to accomplish something
-- `<a>` should be used as a form of action for the user to go somewhere
+## Should I use `<button>` or `<a>`???
+
+`<button>` should be used as a form of action for the user to provide a change or information to your app/website.
+`<a>` should be used for navigation actions. Navigation means revealing or moving a user to different content.
+
+|Use `<button>` buttons to...         |Use `<a>` buttons to...                        |
+|------------------------------------ |---------------------------------------------- |
+|login/logout                         |take a user to a new page                      |
+|save                                 |open or closes a modal, dialog or other pop-up |
+|submit                               |initiate a download                            |
+|delete                               |                                               |
+|cancel                               |                                               |
+|reset                                |                                               |
+|clear                                |                                               |
+
+## What if my button is an action and navigation?!?!
+
+Use a `<button>` becuase the primary purpose of these buttons is often the action (Example: **Save** and Continue in a wizard or multi-page form).
 
 ---
 
