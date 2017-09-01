@@ -1,9 +1,11 @@
 @mixin make-grid() {
+    margin: $space-stack-l;
+
     @media screen and (min-width: breakpoint(sm, $grid-breakpoints)) {
         align-items: stretch;
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;        
+        justify-content: flex-start;
     }
 }
 
