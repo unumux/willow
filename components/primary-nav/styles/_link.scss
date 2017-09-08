@@ -5,6 +5,13 @@
     padding: $space-inset-l;
     text-decoration: none;
 
+    &:focus {
+        background-color: $component-primary-nav-link-background-color-focus;
+        color: $component-primary-nav-link-color-focus;
+        outline: none;
+        text-decoration: none;
+    }
+   
     &:visited {
         color: $component-primary-nav-link-color-visited;
     }
@@ -15,17 +22,9 @@
         text-decoration: none;
     }
     
-    
     &:active {
         background-color: $component-primary-nav-link-background-color-active;
         color: $component-primary-nav-link-color-active;
-    }
-    
-    &:focus {
-        background-color: $component-primary-nav-link-background-color-hover;
-        color: $component-primary-nav-link-color-hover;
-        outline: none;
-        text-decoration: none;
     }
 
     @media screen and (min-width: breakpoint(medium)) {
