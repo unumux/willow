@@ -1,9 +1,11 @@
 &-breadcrumbs {
     @include full-bleed;
 
-    padding-bottom: space(1);
-    padding-top: space(1);
-
+    background-color: lightgrey;
+    padding-bottom: $space;
+    padding-top: $space;
+    margin-bottom: $space-l;
+    
     @import "heading";
     @import "list";
     @import "item";

@@ -5,10 +5,8 @@
     
     &::after {
         content: "/";
-        margin-bottom: 0;
-        margin-left: calc(5px + 5px);
-        margin-right: 5px;
-        margin-top: 0;
+        margin: $space-inline;
+        margin-left: 12px;
     }
 }
 

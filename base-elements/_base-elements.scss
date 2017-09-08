@@ -33,43 +33,43 @@
 h1 {
     @include set-text-style($text-style-heading-1);
 
-    margin-bottom: space(1);
+    margin: $space-stack;
 }
 
 h2 {
     @include set-text-style($text-style-heading-2);
 
-    margin-bottom: space(1);
+    margin: $space-stack;
 }
 
 h3 {
     @include set-text-style($text-style-heading-3);
 
-    margin-bottom: space(1);
+    margin: $space-stack;
 }
 
 h4 {
     @include set-text-style($text-style-heading-4);
 
-    margin-bottom: space(1);
+    margin: $space-stack-s;
 }
 
 h5 {
     @include set-text-style($text-style-heading-5);
 
-    margin-bottom: space(1);
+    margin: $space-stack-s;
 }
 
 h6 {
     @include set-text-style($text-style-heading-6);
 
-    margin-bottom: space(1);
+    margin: $space-stack-s;
 }
 
 p {
     @include set-text-style($text-style-content-1);
 
-    margin-bottom: space(1);
+    margin: $space-stack-l;
 }
 
 a {
@@ -90,16 +90,14 @@ a {
 
 ol,
 ul {
-    margin-bottom: space(1);
-    margin-top: 0;
+    margin: $space-stack;
 }
 
 table {
     border: $component-border-width solid $component-table-border-color;
     border-collapse: collapse;
     display: table;
-    margin-bottom: space(2);
-    margin-top: space(2);
+    margin: $space-stack-l;
     width: 100%;
 }
 
@@ -151,10 +149,7 @@ th {
 th, 
 td {
     display: table-cell;
-    padding-bottom: space(1);
-    padding-left: space(1);   
-    padding-right: space(3);
-    padding-top: space(1);
+    padding: $space-inset;
     text-align: left;
 }
 
@@ -166,41 +161,28 @@ blockquote {
     border-left: 2px solid $component-blockquote-border-color;
     color: $component-blockquote-text-color;
     font-weight: $component-blockquote-font-weight;
-    margin-bottom: space(2);
-    margin-left: space(4);
-    margin-right: space(2);
-    padding-left: space(2);
+    padding: $space-inset-squish;
 }
 
 hr {
-    margin-bottom: space(1);
+    margin: $space-stack;
 }
 
 figure {
-    margin-bottom: space(1);
-    margin-left: space(2);
-    margin-right: space(2);
+    background-color: lightgrey;
+    margin: $space-stack;
+    padding: $space-inset-squish-xl;
 }
 
 pre {
     color: $component-body-text-color-monospace;
     font-family: $component-body-text-monospace;
-    margin-bottom: space(2);
-    margin-left: space(2);
-    margin-right: space(2);
-    margin-top: space(2);
     overflow-x: scroll;
 }
 
 code {
     color: $component-body-text-color-monospace;
     font-family: $component-body-text-monospace;    
-}
-
-form {
-    margin-top: 0;
-    margin-bottom: space(2);
-    margin-top: space(2);
 }
 
 kbd,
@@ -218,9 +200,20 @@ video {
     max-width: 100%;
 }
 
+form {
+    margin: $space-stack-l;
+}
+
+label {
+    display: inline-block;
+    margin: $space-stack-xxs;
+}
+
 input,
+select,
 textarea {
     display: block;
+    margin: $space-stack;
 }
 
 //not needed for this theme...yet

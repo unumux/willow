@@ -3,9 +3,6 @@
         
     background-color: $component-secondary-nav-heading-background-color;
     color: $component-secondary-nav-heading-color;
-    padding-bottom: space(1);
-    padding-left: space(1);
-    padding-right: space(1);
-    padding-top: space(1);
+    padding: $space-inset;
     margin-bottom: 0;
 }

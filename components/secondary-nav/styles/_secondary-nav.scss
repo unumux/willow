@@ -1,7 +1,7 @@
 &-secondary-nav {
     background-color: $component-secondary-nav-background-color;
     border: $component-secondary-nav-border;
-    margin-bottom: space(2);
+    margin: $space-stack-l;
     
     @import "heading";
     @import "list";
