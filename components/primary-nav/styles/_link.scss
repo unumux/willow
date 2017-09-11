@@ -30,7 +30,7 @@
     @media screen and (min-width: breakpoint(medium)) {
         @include set-text-style($text-style-heading-4);
         
-        padding: $space-inset-squish-xl;
+        padding: $space-inset-squish-l;
     }
 }
 

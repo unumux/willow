@@ -14,7 +14,7 @@
     }
 
     body {
-        @include set-text-style($component-body-style-default);
+        @include set-text-style($text-style-content-1);
 
         background-color: $component-body-background-color;
         color: $component-body-text-color;
@@ -91,6 +91,10 @@ a {
 ol,
 ul {
     margin: $space-stack;
+}
+
+ul {
+    list-style-type: $list-style-type;
 }
 
 table {
@@ -201,19 +205,74 @@ video {
 }
 
 form {
+    background-color: $component-form-background-color;
+    border-radius: $component-border-radius;
+    padding: $space-inset;
     margin: $space-stack-l;
 }
 
 label {
-    display: inline-block;
-    margin: $space-stack-xxs;
+    @include set-text-style($text-style-heading-4);
+
+    display: block;
+    margin: $space-stack;
 }
 
 input,
-select,
+select, 
 textarea {
-    display: block;
-    margin: $space-stack;
+    background-color: $component-input-background-color;
+    border-color: $component-input-border-color;
+    border-radius: $component-border-radius;
+    border-style: solid;
+    border-width: $component-input-border-width;
+    margin: $space-stack-l;
+    padding: $space-inset;
+    width: 100%;
+    
+    &[disabled] {
+        background-color: $component-input-background-color-disabled;
+        border-color: $component-input-border-color;
+        cursor: not-allowed;
+    }
+}
+
+input[type="range"],
+input[type="file"] {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: auto;
+}
+
+input[type="color"] {
+    padding: $space-inset-xs;
+    height: $component-dropdown-height;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    border-width: 1px;
+    box-shadow: inset 0 1px 2px $component-input-box-shadow-color;
+    width: auto;
+}
+
+
+input[type="radio"] {
+    border-radius: 50%;
+    
+    &:checked:after {
+        border-radius: 50%;
+    }
+}
+
+select {
+    height: $component-dropdown-height;
+}
+
+textarea {
+    cursor: ns-resize;
+    resize: vertical;
 }
 
 //not needed for this theme...yet

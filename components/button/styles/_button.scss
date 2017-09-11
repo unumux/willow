@@ -1,42 +1,5 @@
 @import "variables";
 
-@mixin set-button-style($modifier) {    
-    background-color: map-get($modifier, bg);
-    border: map-get($modifier, border);
-    color: map-get($modifier, color);
-    
-    &:visited {
-        background-color: map-get($modifier, bg-visited);
-        border: map-get($modifier, border-visited);
-        color: map-get($modifier, color-visited);
-    }
-    
-    &:hover {
-        background-color: map-get($modifier, bg-hover);
-        border: map-get($modifier, border-hover);
-        color: map-get($modifier, color-hover);
-    }
-    
-    &:active {
-        background-color: map-get($modifier, bg-active);
-        border: map-get($modifier, border-active);
-        color: map-get($modifier, color-active);
-    }
-    
-    &:focus {
-        background-color: map-get($modifier, bg-focus);
-        border: map-get($modifier, border-focus);
-        color: map-get($modifier, color-focus);
-    }
-
-    &[disabled],
-    &[data-disabled="true"] {
-        background-color: map-get($modifier, bg-disabled);
-        border: map-get($modifier, border-disabled);
-        color: map-get($modifier, color-disabled);     
-    }
-}
-
 &-button {
     @include set-text-style($text-style-heading-4);
     @include set-button-style($neutral);

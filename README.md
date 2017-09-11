@@ -115,7 +115,6 @@ Do you have questions or need help with setup? Did you run into errors while fol
 - [Primary Navigation](./components/primary-nav)
 - [Secondary Navigation](./components/secondary-nav)
 - [Styling Context](./components/styling-context)
-- [Summary](./components/summary)
 
 ---
 

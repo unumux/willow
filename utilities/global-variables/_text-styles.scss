@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+
+$font-family-primary: "Oswald", "helvetica", "arial", "sans-serif" !default;
+$font-family-secondary: "Open Sans", "helvetica", "arial", "sans-serif" !default;
+$font-family-monospace: "Source Code Pro", monospace !default;
+
+$font-ratio: 1.2;
+
+$min-font-size: strip-unit(1rem) !default;
+$max-font-size: strip-unit(5rem) !default;
+$min-line-height: 1.2 !default;
+$max-line-height: 1.8 !default;
+
+$font-size-xs: 1.2rem;
+$font-size-s: $font-size-xs * $font-ratio; // 1.44
+$font-size: $font-size-s * $font-ratio; //1.728
+$font-size-l: $font-size * $font-ratio; //2.0736
+$font-size-xl: $font-size-l * $font-ratio; //2.48832
+$font-size-2xl: $font-size-xl * $font-ratio; //2.98598
+$font-size-3xl: $font-size-2xl * $font-ratio; //3.58318
+$font-size-4xl: $font-size-3xl * $font-ratio; //4.29982
+
+// =============================================================================
+//      TEXT STYLE PROPERTY SETS
+//
+//      Use with set-text-style mixin to set properties on a component or element
+//      Example: @include set-text-style($text-style-heading-2);
+//
+// =============================================================================
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//      HEADING STYLES
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+$text-style-heading-1: (
+  family: $font-family-primary,
+  desktop-size: $font-size-4xl,
+  desktop-line-height: line-height($font-size-4xl),
+  desktop-margin-bottom: 1,
+  mobile-size: $font-size-3xl,
+  mobile-line-height: line-height($font-size-3xl),
+  mobile-margin-bottom: 1,
+  weight: 400
+);
+
+$text-style-heading-2: (
+  family: $font-family-primary,
+  desktop-size: $font-size-2xl,
+  desktop-line-height: line-height($font-size-2xl),
+  desktop-margin-bottom: 1,
+  mobile-size: $font-size-xl,
+  mobile-line-height: line-height($font-size-xl),
+  mobile-margin-bottom: 1,
+  weight: 400
+);
+
+$text-style-heading-3: (
+  family: $font-family-secondary,
+  desktop-size: $font-size-xl,
+  desktop-line-height: line-height($font-size-xl),
+  desktop-margin-bottom: 1,
+  mobile-size: $font-size-l,
+  mobile-line-height: line-height($font-size-l),
+  mobile-margin-bottom: 1,
+  weight: 600
+);
+
+$text-style-heading-4: (
+  family: $font-family-secondary,
+  desktop-size: $font-size-l,
+  desktop-line-height: line-height($font-size-l),
+  desktop-margin-bottom: 1,
+  mobile-size: $font-size,
+  mobile-line-height: line-height($font-size),
+  mobile-margin-bottom: 1,
+  weight: 600
+);
+
+$text-style-heading-5: (
+  family: $font-family-secondary,
+  desktop-size: $font-size,
+  desktop-line-height: line-height($font-size),
+  desktop-margin-bottom: 1,
+  mobile-size: $font-size,
+  mobile-line-height: line-height($font-size),
+  mobile-margin-bottom: 1,
+  weight: 600
+);
+
+$text-style-heading-6: (
+  family: $font-family-secondary,
+  desktop-size: $font-size-s,
+  desktop-line-height: line-height($font-size-s),
+  desktop-margin-bottom: 1,
+  mobile-size: $font-size-s,
+  mobile-line-height: line-height($font-size-s),
+  mobile-margin-bottom: 1,
+  weight: 600
+);
+
+// // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// //      STANDARD CONTENT STYLES
+// // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+$text-style-content-1: (
+  family: $font-family-secondary,
+  desktop-size: $font-size,
+  desktop-line-height: line-height($font-size),
+  desktop-margin-bottom: 1,
+  mobile-size: $font-size,
+  mobile-line-height: line-height($font-size),
+  mobile-margin-bottom: 1,
+  weight: 400
+);
+
+$text-style-content-2: (
+  family: $font-family-secondary,
+  desktop-size: $font-size-s,
+  desktop-line-height: line-height($font-size-s),
+  desktop-margin-bottom: 1,
+  mobile-size: $font-size-s,
+  mobile-line-height: line-height($font-size-s),
+  mobile-margin-bottom: 1,
+  weight: 400
+);
+
+$text-style-content-3: (
+  family: $font-family-secondary,
+  desktop-size: $font-size-xs,
+  desktop-line-height: line-height($font-size-xs),
+  desktop-margin-bottom: 1,
+  mobile-size: $font-size-xs,
+  mobile-line-height: line-height($font-size-xs),
+  mobile-margin-bottom: 1,
+  weight: 400
+);
