@@ -3,7 +3,6 @@
     font-size: map-get($style, mobile-size);
     font-weight: map-get($style, weight);
     line-height: map-get($style, mobile-line-height);
-    text-transform: map-get($style, transform);
 
     @media screen and (min-width: breakpoint(medium)) {
         font-size: map-get($style, desktop-size);

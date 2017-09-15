@@ -3,6 +3,12 @@
     border: map-get($modifier, border);
     color: map-get($modifier, color);
     
+    &:focus {
+        background-color: map-get($modifier, bg-focus);
+        border: map-get($modifier, border-focus);
+        color: map-get($modifier, color-focus);
+    }
+    
     &:visited {
         background-color: map-get($modifier, bg-visited);
         border: map-get($modifier, border-visited);
@@ -19,12 +25,6 @@
         background-color: map-get($modifier, bg-active);
         border: map-get($modifier, border-active);
         color: map-get($modifier, color-active);
-    }
-    
-    &:focus {
-        background-color: map-get($modifier, bg-focus);
-        border: map-get($modifier, border-focus);
-        color: map-get($modifier, color-focus);
     }
 
     &[disabled],

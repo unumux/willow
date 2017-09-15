@@ -14,7 +14,7 @@
     }
 
     body {
-        @include set-text-style($text-style-content-1);
+        @include set-text-style($component-body-style-default);
 
         background-color: $component-body-background-color;
         color: $component-body-text-color;
@@ -173,7 +173,6 @@ hr {
 }
 
 figure {
-    background-color: lightgrey;
     margin: $space-stack;
     padding: $space-inset-squish-xl;
 }
@@ -207,14 +206,22 @@ video {
 form {
     background-color: $component-form-background-color;
     border-radius: $component-border-radius;
-    padding: $space-inset;
+    padding: $component-form-padding;
     margin: $space-stack-l;
 }
 
 label {
-    @include set-text-style($text-style-heading-4);
+    @include set-text-style($text-style-heading-5);
 
     display: block;
+    margin: $space-stack-xxs;
+}
+
+legend {
+    @include set-text-style($text-style-heading-5);
+}
+
+fieldset {
     margin: $space-stack;
 }
 
@@ -226,23 +233,43 @@ textarea {
     border-radius: $component-border-radius;
     border-style: solid;
     border-width: $component-input-border-width;
-    margin: $space-stack-l;
-    padding: $space-inset;
+    margin: $space-stack;
+    padding: $space-inset-s;
     width: 100%;
     
     &[disabled] {
         background-color: $component-input-background-color-disabled;
         border-color: $component-input-border-color;
-        cursor: not-allowed;
+        cursor: $component-cursor-disabled;
     }
+
+    &:invalid {
+        background-color: $component-input-background-color-invalid;
+        border-color: $component-input-border-color-invalid;
+        box-shadow: none;
+    }
+    
+    &[value=""][checked]:valid {
+        background-color: $component-input-background-color-valid;
+        border-color: $component-input-border-color-valid;
+    }
+
+    &:last-child {
+        margin: $space-stack;
+    }
+    
 }
 
 input[type="range"],
 input[type="file"] {
+    display: block;
+    width: auto;
+}
+
+input[type="range"] {
     background-color: transparent;
     border: none;
     padding: 0;
-    width: auto;
 }
 
 input[type="color"] {
@@ -260,10 +287,6 @@ input[type="radio"] {
 
 input[type="radio"] {
     border-radius: 50%;
-    
-    &:checked:after {
-        border-radius: 50%;
-    }
 }
 
 select {

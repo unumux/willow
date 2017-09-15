@@ -1,0 +1,7 @@
+@function golden($scale: 1) {
+    @if $scale < 1 {
+        @return $base * pow($golden-inverse, floor(1 / $scale));
+    }
+
+    @return $base * pow($golden, $scale);
+}

@@ -1,8 +1,18 @@
 &__action {
+    flex-basis: 100%;
     flex-grow: 1;
-    margin: $space-inline;
+    margin: $space-stack-s;
 
     &:last-of-type {
-        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width: breakpoint(md, $grid-breakpoints)) {
+        flex-basis: calc(50% - #{$space-s});
+        margin: $space-inline-s;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
     }
 }

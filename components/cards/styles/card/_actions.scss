@@ -4,4 +4,8 @@
     flex-wrap: wrap;
     list-style: none;
     padding-left: 0;
+
+    @media screen and (min-width: breakpoint(lg, $grid-breakpoints)) {
+        flex-wrap: nowrap;
+    }
 }

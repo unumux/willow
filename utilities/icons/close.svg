@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Close: Small@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="12.79057 0.000364 0.000195000001 0.000364 0.000195000001 12.790804 12.79057 12.790804 12.79057 0.000364"></polygon>
+    </defs>
+    <g id="Components" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-703.000000, -245.000000)">
+            <g id="White" transform="translate(76.000000, 164.000000)">
+                <g id="Close:-Small" transform="translate(627.000000, 81.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M8.07807,6.406504 L12.43957,2.099604 C12.90757,1.639404 12.90757,0.891904 12.43957,0.431704 C11.97157,-0.029796 11.21107,-0.029796 10.74307,0.431704 L6.40627,4.712604 L2.09937,0.351104 C1.63917,-0.116896 0.89297,-0.116896 0.43147,0.351104 C-0.02873,0.820404 -0.02873,1.579604 0.43147,2.047604 L4.71367,6.384404 L0.35217,10.691304 C-0.11713,11.151504 -0.11713,11.899004 0.35217,12.359204 C0.82017,12.820704 1.57937,12.820704 2.04867,12.359204 L6.38417,8.078304 L10.69107,12.439804 C11.15127,12.907804 11.89877,12.907804 12.35897,12.439804 C12.82047,11.970504 12.82047,11.211304 12.35897,10.742004 L8.07807,6.406504 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

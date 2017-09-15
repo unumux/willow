@@ -72,6 +72,8 @@ $list-style-type: disc !default;
 
 //// FORMS ////////////////////////////////////////////////////////////////////////////////////////////////
 $component-form-background-color: #eee !default;
+$component-form-padding: $space-inset !default;
+
 $component-input-border-color: #555 !default;
 $component-input-border-color-invalid: #000 !default;
 $component-input-border-color-valid: #aaa !default;
