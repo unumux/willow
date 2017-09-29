@@ -1,27 +1,29 @@
-@mixin set-button-style($modifier) {    
-    background-color: map-get($modifier, bg);
-    border: map-get($modifier, border);
-    color: map-get($modifier, color);
+@mixin set-button-style($modifier, $state) {
+    @if $state == "default" {
+        background-color: map-get($modifier, bg);
+        border: map-get($modifier, border);
+        color: map-get($modifier, color);
+    } 
     
-    &:focus {
+    @if $state == "focus" {
         background-color: map-get($modifier, bg-focus);
         border: map-get($modifier, border-focus);
         color: map-get($modifier, color-focus);
     }
     
-    &:visited {
+    @if $state == "visited" {
         background-color: map-get($modifier, bg-visited);
         border: map-get($modifier, border-visited);
         color: map-get($modifier, color-visited);
     }
     
-    &:hover {
+    @if $state == "hover" {
         background-color: map-get($modifier, bg-hover);
         border: map-get($modifier, border-hover);
         color: map-get($modifier, color-hover);
     }
     
-    &:active {
+    @if $state == "active" {
         background-color: map-get($modifier, bg-active);
         border: map-get($modifier, border-active);
         color: map-get($modifier, color-active);

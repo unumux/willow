@@ -2,7 +2,7 @@
 
 &-button {
     @include set-text-style($text-style-heading-4);
-    @include set-button-style($neutral);
+    @include set-button-style($neutral, "default");
 
     border-radius: $component-button-border-radius;
     cursor: pointer;
@@ -15,6 +15,22 @@
     transition: 0.15s all;
     width: 100%;
 
+    &:focus {
+        @include set-button-style($neutral, "focus");
+    }
+
+    &:visited {
+        @include set-button-style($neutral, "visited");
+    }
+
+    &:hover {
+        @include set-button-style($neutral, "hover");
+    }
+
+    &:active {
+        @include set-button-style($neutral, "active");
+    }
+
     &[disabled],
     &[data-disabled="true"] {
         cursor: $component-cursor-disabled;
@@ -22,28 +38,124 @@
 }
 
 &-button--primary {
-    @include set-button-style($primary);
+    @include set-button-style($primary, "default");
+
+    &:focus {
+        @include set-button-style($primary, "focus");
+    }
+
+    &:visited {
+        @include set-button-style($primary, "visited");
+    }
+
+    &:hover {
+        @include set-button-style($primary, "hover");
+    }
+
+    &:active {
+        @include set-button-style($primary, "active");
+    }
 }
 
 &-button--negative {
-    @include set-button-style($negative);
+    @include set-button-style($negative, "default");
+
+    &:focus {
+        @include set-button-style($negative, "focus");
+    }
+
+    &:visited {
+        @include set-button-style($negative, "visited");
+    }
+
+    &:hover {
+        @include set-button-style($negative, "hover");
+    }
+
+    &:active {
+        @include set-button-style($negative, "active");
+    }
 }
 
 &-button--positive {
-    @include set-button-style($positive);
+    @include set-button-style($positive, "default");
+
+    &:focus {
+        @include set-button-style($positive, "focus");
+    }
+
+    &:visited {
+        @include set-button-style($positive, "visited");
+    }
+
+    &:hover {
+        @include set-button-style($positive, "hover");
+    }
+
+    &:active {
+        @include set-button-style($positive, "active");
+    }
 }
 
 &-button--ghost {
-    @include set-button-style($ghost);
+    @include set-button-style($ghost, "default");
+
+    &:focus {
+        @include set-button-style($ghost, "focus");
+    }
+
+    &:visited {
+        @include set-button-style($ghost, "visited");
+    }
+
+    &:hover {
+        @include set-button-style($ghost, "hover");
+    }
+
+    &:active {
+        @include set-button-style($ghost, "active");
+    }
 }
 
 &-button--ghost-inverse {
-    @include set-button-style($ghost-inverse);
+    @include set-button-style($ghost-inverse, "default");
+
+    &:focus {
+        @include set-button-style($ghost-inverse, "focus");
+    }
+
+    &:visited {
+        @include set-button-style($ghost-inverse, "visited");
+    }
+
+    &:hover {
+        @include set-button-style($ghost-inverse, "hover");
+    }
+
+    &:active {
+        @include set-button-style($ghost-inverse, "active");
+    }
 }
 
 &-button--cta {
-    @include set-button-style($cta);
+    @include set-button-style($cta, "default");
     padding: $space-inset-squish-l;
+
+    &:focus {
+        @include set-button-style($cta, "focus");
+    }
+
+    &:visited {
+        @include set-button-style($cta, "visited");
+    }
+
+    &:hover {
+        @include set-button-style($cta, "hover");
+    }
+
+    &:active {
+        @include set-button-style($cta, "active");
+    }
 }
 
 &-button--inline {
