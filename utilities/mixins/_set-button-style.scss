@@ -29,8 +29,7 @@
         color: map-get($modifier, color-active);
     }
 
-    &[disabled],
-    &[data-disabled="true"] {
+    @if $state == "disabled" {
         background-color: map-get($modifier, bg-disabled);
         border: map-get($modifier, border-disabled);
         color: map-get($modifier, color-disabled);     
