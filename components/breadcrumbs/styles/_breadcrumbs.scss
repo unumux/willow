@@ -1,4 +1,4 @@
-@import "variables";
+@import "default-variables";
 
 &-breadcrumbs {
     @include full-bleed;
@@ -6,7 +6,6 @@
     background-color: $component-breadcrumb-background-color;
     padding-bottom: $space;
     padding-top: $space;
-    margin-bottom: $space-l;
     
     @import "heading";
     @import "list";

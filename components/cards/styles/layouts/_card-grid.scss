@@ -10,7 +10,7 @@
 }
 
 @mixin cols($items: 1) {
-    flex-basis: calc(#{100/$items}% - 1rem + (1rem/#{$items}));
+    flex-basis: calc(#{100/$items}% - #{$space} + (#{$space}/#{$items}));
 
     &:nth-child(#{$items}n) {
         margin-right: 0;
@@ -22,27 +22,27 @@
 }
 
 @mixin make-grid-item() {
-    margin-top: 1rem;
+    margin-top: $space;
     
     &:first-child {
         margin-top: 0;
     }
     
-    @media (min-width: breakpoint(sm, $grid-breakpoints)) {
+    @media (min-width: breakpoint(xs, $grid-breakpoints)) {
         flex-shrink: 0;
         flex-grow: 0;
         display: flex;
-        margin-right: 1rem;
+        margin-right: $space;
 
         &:last-child {
             margin-right: 0;
         }
     }
-
+    
     @media (min-width: breakpoint(md, $grid-breakpoints)) and (max-width: breakpoint(lg, $grid-breakpoints)) {
         @include cols(2);
     }
-    
+
     @media (min-width: breakpoint(lg, $grid-breakpoints)) {
         @include cols(3);
     }

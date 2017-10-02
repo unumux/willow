@@ -4,4 +4,8 @@
     flex-shrink: 0;
     margin-bottom: $space-l;
     margin-top: $space-l;
+
+    &:first-child {
+        margin-top: $space-l;
+    }
 }

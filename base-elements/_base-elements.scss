@@ -21,6 +21,7 @@
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased;
         height: 100%;
+        margin: 0;
         min-height: 100%;
         overflow-x: hidden;
         
@@ -32,44 +33,39 @@
 
 h1 {
     @include set-text-style($text-style-heading-1);
-
-    margin: $space-stack;
 }
 
 h2 {
     @include set-text-style($text-style-heading-2);
-
-    margin: $space-stack;
 }
 
 h3 {
     @include set-text-style($text-style-heading-3);
-
-    margin: $space-stack;
 }
 
 h4 {
     @include set-text-style($text-style-heading-4);
-
-    margin: $space-stack-s;
 }
 
 h5 {
     @include set-text-style($text-style-heading-5);
-
-    margin: $space-stack-s;
 }
 
 h6 {
     @include set-text-style($text-style-heading-6);
+}
 
+h1, h2, {
+    margin: $space-stack;
+}
+
+h3, h4, h5, h6 {
     margin: $space-stack-s;
 }
 
 p {
     @include set-text-style($text-style-content-1);
-
-    margin: $space-stack-l;
+    margin: $space-stack;
 }
 
 a {
@@ -90,7 +86,14 @@ a {
 
 ol,
 ul {
-    margin: $space-stack;
+    margin-bottom: $space;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+    margin-bottom: 0;
 }
 
 ul {
@@ -101,8 +104,12 @@ table {
     border: $component-border-width solid $component-table-border-color;
     border-collapse: collapse;
     display: table;
-    margin: $space-stack-l;
+    // margin: $space-stack-l;
     width: 100%;
+
+    &:first-child {
+        // margin: $space-stack-l;
+    }
 }
 
 thead {
@@ -165,27 +172,33 @@ blockquote {
     border-left: 2px solid $component-blockquote-border-color;
     color: $component-blockquote-text-color;
     font-weight: $component-blockquote-font-weight;
+    margin-bottom: $space;
+    margin-left: $space-l;
+    margin-right: $space-l;
     padding: $space-inset-squish;
 }
 
 hr {
-    margin: $space-stack;
+    margin-bottom: $space;
 }
 
 figure {
-    margin: $space-stack;
+    margin-bottom: $space;
     padding: $space-inset-squish-xl;
+    background-color: #ddd;
 }
 
 pre {
     color: $component-body-text-color-monospace;
     font-family: $component-body-text-monospace;
+    margin-bottom: $space;
     overflow-x: scroll;
 }
 
 code {
     color: $component-body-text-color-monospace;
     font-family: $component-body-text-monospace;    
+    margin-bottom: $space;
 }
 
 kbd,
@@ -214,7 +227,7 @@ label {
     @include set-text-style($text-style-heading-5);
 
     display: block;
-    margin: $space-stack-xxs;
+    margin: $space-stack-xs;
 }
 
 legend {
@@ -233,7 +246,7 @@ textarea {
     border-radius: $component-border-radius;
     border-style: solid;
     border-width: $component-input-border-width;
-    margin: $space-stack;
+    margin: $space-stack-s;
     padding: $space-inset-s;
     width: 100%;
     
@@ -253,11 +266,6 @@ textarea {
         background-color: $component-input-background-color-valid;
         border-color: $component-input-border-color-valid;
     }
-
-    &:last-child {
-        margin: $space-stack;
-    }
-    
 }
 
 input[type="range"],

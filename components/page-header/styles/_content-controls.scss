@@ -3,7 +3,7 @@
     flex-grow: 0;
     justify-content: flex-end;
     padding-bottom: $space-l;
-    padding-top: $space-xl;
+    padding-top: $space-l;
 
     @media screen and (min-width: breakpoint(medium)) {
         display: none;

@@ -16,7 +16,7 @@ $text-style-heading-1: (
   mobile-line-height: line-height($font-size-3xl),
   weight: 400
 ) !default;
-
+  
 $text-style-heading-2: (
   family: $font-family-primary,
   desktop-size: $font-size-2xl,
@@ -25,7 +25,7 @@ $text-style-heading-2: (
   mobile-line-height: line-height($font-size-xl),
   weight: 400
 ) !default;
-
+  
 $text-style-heading-3: (
   family: $font-family-secondary,
   desktop-size: $font-size-xl,
