@@ -159,14 +159,6 @@ A common example of a column layout would be a page section contains secondary n
 }
 ```
 
-**Willow** also adds margin to the bottom of each column with the following:
-
-```scss
-all-bootstrap-column-classes {
-  margin-bottom: space(1);
-}
-```
-
 ---
 
 ## Understanding Themes
