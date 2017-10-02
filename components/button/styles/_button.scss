@@ -1,4 +1,5 @@
-@import "variables";
+@import "default-variables";
+@import "variable-maps";
 
 &-button {
     @include set-text-style($text-style-heading-4);
