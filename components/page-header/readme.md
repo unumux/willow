@@ -19,7 +19,7 @@ The **Willow-Page-Header** component should be used on every page of your site (
     <div class="willow-page-header__branding"><!-- insert Willow-Logo-Link Component Here --></div>
     <div class="willow-page-header__content-controls">
         <a class="willow-page-header__content-open" aria-label="Open Menu" href="">menu</a>
-        <a class="willow-page-header__content-close" aria-label="Close Menu"href="">close</a>
+        <a class="willow-page-header__content-close" aria-label="Close Menu" href="">close</a>
     </div>
     <div class="willow-page-header__content">
         <div class="willow-page-header__navigation"><!-- insert Willow-Primary-Nav Component Here --></div>
