@@ -1,7 +1,7 @@
 &-card-columns {
     column-count: $component-card-columns-count-s;
     column-gap: $space;
-    column-width: auto;
+    column-width: 280px;
 
     @media screen and (min-width: breakpoint(md, $grid-breakpoints)) {
         column-count: $component-card-columns-count-m;

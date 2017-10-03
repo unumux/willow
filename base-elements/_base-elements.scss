@@ -104,11 +104,11 @@ table {
     border: $component-border-width solid $component-table-border-color;
     border-collapse: collapse;
     display: table;
-    // margin: $space-stack-l;
+    margin: $space-stack;
     width: 100%;
 
     &:first-child {
-        // margin: $space-stack-l;
+        margin: $space-stack;
     }
 }
 
@@ -219,8 +219,8 @@ video {
 form {
     background-color: $component-form-background-color;
     border-radius: $component-border-radius;
+    margin: $space-stack;
     padding: $component-form-padding;
-    margin: $space-stack-l;
 }
 
 label {
@@ -301,9 +301,13 @@ select {
     height: $component-dropdown-height;
 }
 
+// 1. vertical resize cursor to show textarea only resizes vertically - not horizontally (see comment 2)
+// 2. textareas should only resize vertically to prevent breaking container horizontally
+// 3. prevents extra space beneath the textarea in chrome and safari - https://stackoverflow.com/questions/7144843/extra-space-under-textarea-differs-along-browsers 
 textarea {
-    cursor: ns-resize;
-    resize: vertical;
+    cursor: ns-resize; // 1
+    resize: vertical; // 2
+    vertical-align: top; // 3
 }
 
 //not needed for this theme...yet
