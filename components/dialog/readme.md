@@ -1,9 +1,3 @@
----
-component: willow-dialog
-collection: 
-    - component
-    - information
----
 # **Willow-Dialog**
 
 [Demo](http://codepen.io/team/UnumUX/pen/JWEKRZ)

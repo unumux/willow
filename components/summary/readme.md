@@ -1,9 +1,3 @@
----
-component: Summary Container
-collection: 
-    - component
-    - misc
----
 # **Willow-Summary**
 
 [Demo](http://codepen.io/team/UnumUX/pen/zZNBEW)

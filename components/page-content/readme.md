@@ -1,9 +1,3 @@
----
-component: willow-page-content
-collection: 
-    - component
-    - misc
----
 # **Willow-Page-Content**
 
 [Demo](http://codepen.io/team/UnumUX/pen/vxgKmM)

@@ -1,9 +1,3 @@
----
-component: willow-button
-collection: 
-    - component
-    - action
----
 # **Willow-Button**
 
 [Demo](http://codepen.io/team/UnumUX/pen/BWpzLa)

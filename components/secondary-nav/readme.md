@@ -1,9 +1,3 @@
----
-component: willow-secondary-nav
-collection: 		
-    - component 		
-    - navigation
----
 # **Willow-Secondary-Nav**
 
 [Demo](http://codepen.io/team/UnumUX/pen/MpJevo)

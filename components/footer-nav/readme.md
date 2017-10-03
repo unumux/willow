@@ -1,9 +1,3 @@
----
-component: willow-footer-nav
-collection: 
-    - component
-    - navigation
----
 # **Willow-Footer-Nav**
 
 [Demo](http://codepen.io/team/UnumUX/pen/VpPjmq)

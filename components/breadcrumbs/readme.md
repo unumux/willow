@@ -1,10 +1,3 @@
----
-component: willow-breadcrumb
-collection: 
-    - component
-    - navigation
-permalink: false
----
 # **Willow-Breadcrumb**
 
 [Demo](http://codepen.io/team/UnumUX/pen/aJpbyK)

@@ -9,10 +9,6 @@
     max-width: 380px;
     overflow: hidden;
     text-decoration: none;
-    
-    .willow-card-columns & {
-        display: inline-block; //necessary for column break
-    }
 
     .willow-card-grid__item & {
         flex-grow: 1;

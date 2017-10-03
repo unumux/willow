@@ -1,9 +1,3 @@
----
-component: Styling Context
-collection: 
-    - component
-    - misc
----
 # **Willow-Styling-Context**
 
 [Demo](http://codepen.io/team/UnumUX/pen/wJgWrM)

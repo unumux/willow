@@ -1,10 +1,3 @@
----
-component: willow-banner
-collection:
-    - component
-    - navigation
-permalink: false
----
 # **Willow-Banner**
 
 [Demo](http://codepen.io/team/UnumUX/pen/YZNzQM)

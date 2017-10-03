@@ -1,9 +1,3 @@
----
-component: willow-page-header
-collection: 
-    - component
-    - misc
----
 # **Willow-Page-Header**
 
 [Demo](http://codepen.io/team/UnumUX/pen/qrRNjM)
