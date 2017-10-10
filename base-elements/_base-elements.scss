@@ -1,4 +1,5 @@
 @import "normalize";
+@import "default-variables";
 
 @at-root {
     html {
@@ -55,16 +56,21 @@ h6 {
     @include set-text-style($text-style-heading-6);
 }
 
-h1, h2, {
+h1,
+h2 {
     margin: $space-stack;
 }
 
-h3, h4, h5, h6 {
+h3, 
+h4, 
+h5, 
+h6 {
     margin: $space-stack-s;
 }
 
 p {
     @include set-text-style($text-style-content-1);
+
     margin: $space-stack;
 }
 
@@ -107,6 +113,7 @@ table {
     margin: $space-stack;
     width: 100%;
 
+    // necessary since table elements need to be wrapped in a container that can scroll on x
     &:first-child {
         margin: $space-stack;
     }
