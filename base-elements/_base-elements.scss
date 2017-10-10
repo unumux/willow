@@ -57,10 +57,7 @@ h6 {
 }
 
 h1,
-h2 {
-    margin: $space-stack;
-}
-
+h2,
 h3, 
 h4, 
 h5, 
@@ -93,13 +90,11 @@ a {
 ol,
 ul {
     margin-bottom: $space;
-}
 
-ol ol,
-ul ul,
-ol ul,
-ul ol {
-    margin-bottom: 0;
+    ol,
+    ul {
+        margin-bottom: 0;
+    }
 }
 
 ul {
@@ -192,7 +187,6 @@ hr {
 figure {
     margin-bottom: $space;
     padding: $space-inset-squish-xl;
-    background-color: #ddd;
 }
 
 pre {
@@ -259,7 +253,7 @@ textarea {
     
     &[disabled] {
         background-color: $component-input-background-color-disabled;
-        border-color: $component-input-border-color;
+        border-color: $component-input-border-color-disabled;
         cursor: $component-cursor-disabled;
     }
 
@@ -267,11 +261,6 @@ textarea {
         background-color: $component-input-background-color-invalid;
         border-color: $component-input-border-color-invalid;
         box-shadow: none;
-    }
-    
-    &[value=""][checked]:valid {
-        background-color: $component-input-background-color-valid;
-        border-color: $component-input-border-color-valid;
     }
 }
 
