@@ -1,5 +1,3 @@
 &__heading {
     @include set-text-style($text-style-heading-3);
-
-    margin: $space-stack-s;
 }
