@@ -1,2 +1,6 @@
+@import "default-variables";
+
 &-page-content {
+    padding-bottom: $space-l;
+    padding-top: $space-l;
 }

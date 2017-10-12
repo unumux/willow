@@ -115,7 +115,6 @@ Do you have questions or need help with setup? Did you run into errors while fol
 - [Primary Navigation](./components/primary-nav)
 - [Secondary Navigation](./components/secondary-nav)
 - [Styling Context](./components/styling-context)
-- [Summary](./components/summary)
 
 ---
 
@@ -157,14 +156,6 @@ A common example of a column layout would be a page section contains secondary n
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-```
-
-**Willow** also adds margin to the bottom of each column with the following:
-
-```scss
-all-bootstrap-column-classes {
-  margin-bottom: space(1);
 }
 ```
 

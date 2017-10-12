@@ -1,3 +1,5 @@
+@import "default-variables";
+
 &-page-header {
     @include full-bleed;
 
@@ -6,13 +8,9 @@
     flex-shrink: 0;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 0;
-    padding-top: space(1);
 
     @media screen and (min-width: breakpoint(medium)) {
         align-items: flex-end;
-        padding-bottom: 0;
-        padding-top: space(2);
     }
 
     @import "branding";

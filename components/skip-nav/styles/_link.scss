@@ -10,7 +10,8 @@
     top: 0;
 
     &:focus {
-        left: 0;
+        left: auto;
+        z-index: 1;
     }
 
     &:visited {

@@ -1,14 +1,13 @@
 &__item {
     @include set-text-style($text-style-content-2);
-
+    
     display: inline-block;
+    margin: 0;
     
     &::after {
         content: "/";
-        margin-bottom: 0;
-        margin-left: calc(5px + 5px);
-        margin-right: 5px;
-        margin-top: 0;
+        margin-left: $space;
+        margin-right: $space;
     }
 }
 

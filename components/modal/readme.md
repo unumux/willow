@@ -1,9 +1,3 @@
----
-component: willow-modal
-collection: 
-    - component
-    - information
----
 # **Willow-Modal**
 
 [Demo](http://codepen.io/team/UnumUX/pen/yMgJbb)

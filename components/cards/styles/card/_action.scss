@@ -1,8 +1,7 @@
 &__action {
-    flex-grow: 1;
-    margin: $space-inline;
+    margin: $space-stack-s;
 
     &:last-of-type {
-        margin-right: 0;
+        margin-bottom: 0;
     }
 }

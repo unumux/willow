@@ -1,9 +1,3 @@
----
-component: willow-global-alert
-collection: 
-    - component
-    - information
----
 # **Willow-Global-Alert**
 
 [Demo](http://codepen.io/team/UnumUX/pen/XMpKpz)

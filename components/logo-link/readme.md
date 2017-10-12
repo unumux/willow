@@ -1,9 +1,3 @@
----
-component: willow-logo-link
-collection: 
-    - component
-    - navigation
----
 # **Willow-Logo-Link**
 
 [Demo](http://codepen.io/team/UnumUX/pen/RpKRpm)
