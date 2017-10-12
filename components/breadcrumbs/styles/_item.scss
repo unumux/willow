@@ -6,8 +6,8 @@
     
     &::after {
         content: "/";
-        margin: $space-inline;
-        margin-left: 12px;
+        margin-left: $space;
+        margin-right: $space;
     }
 }
 

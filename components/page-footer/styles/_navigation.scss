@@ -5,7 +5,6 @@
     margin: $space-stack-xl;    
     max-width: 100%;
     order: 0;
-    text-align: center;
 
     @media screen and (min-width: breakpoint(medium)) {
         display: flex;
@@ -13,6 +12,5 @@
         align-items: center;
         justify-content: flex-end;
         order: 2;
-        text-align: right;
     }
 }
