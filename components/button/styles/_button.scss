@@ -1,17 +1,15 @@
-@import "variables";
+@import "default-variables";
+@import "variable-maps";
 
-&-button,
-&-button[href] {
+&-button {
     @include set-text-style($text-style-heading-4);
+    @include set-button-style($neutral, "default");
 
-    background-color: $component-button-background-color;
-    border: $component-button-border;
     border-radius: $component-button-border-radius;
-    color: $component-button-text-color;
     cursor: pointer;
     display: block;
     margin: $space-stack;
-    padding: $space-button-squish;
+    padding: $space-inset-squish;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -19,209 +17,180 @@
     width: 100%;
 
     &:focus {
-        background-color: $component-button-background-color-focus;
-        color: $component-button-text-color-focus;
+        @include set-button-style($neutral, "focus");
+    }
+
+    &:visited {
+        @include set-button-style($neutral, "visited");
     }
 
     &:hover {
-        background-color: $component-button-background-color-hover;
-        color: $component-button-text-color-hover;
+        @include set-button-style($neutral, "hover");
     }
 
     &:active {
-        background-color: $component-button-background-color-active;
-        color: $component-button-text-color-active;
+        @include set-button-style($neutral, "active");
     }
 
     &[disabled],
     &[data-disabled="true"] {
-        background-color: $component-button-background-color-disabled;
-        border-color: $component-button-border-disabled;
-        color: $component-button-text-color-disabled;
-        cursor: $component-cursor-disabled;
+        @include set-button-style($neutral, "disabled");
+        cursor: $component-cursor-disabled;        
     }
 }
 
-&-button--primary,
-&-button--primary[href] {
-    background-color: $component-button-primary-background-color;
-    border: $component-button-primary-border;
-    color: $component-button-primary-text-color;
+&-button--primary {
+    @include set-button-style($primary, "default");
 
     &:focus {
-        background-color: $component-button-primary-background-color-focus;
-        color: $component-button-primary-text-color-focus;
+        @include set-button-style($primary, "focus");
+    }
+
+    &:visited {
+        @include set-button-style($primary, "visited");
     }
 
     &:hover {
-        background-color: $component-button-primary-background-color-hover;
-        color: $component-button-primary-text-color-hover;
+        @include set-button-style($primary, "hover");
     }
 
     &:active {
-        background-color: $component-button-primary-background-color-active;
-        color: $component-button-primary-text-color-active;
+        @include set-button-style($primary, "active");
     }
 
-    &[disabled] {
-        background-color: $component-button-primary-background-color-disabled;
-        border-color: $component-button-primary-border-disabled;            
-        color: $component-button-primary-text-color-disabled;
+    &[disabled],
+    &[data-disabled="true"] {
+        @include set-button-style($primary, "disabled");
     }
 }
 
-&-button--positive,
-&-button--positive[href] {                
-    background-color: $component-button-positive-background-color;
-    border: $component-button-positive-border;
-    color: $component-button-positive-text-color;
+&-button--negative {
+    @include set-button-style($negative, "default");
 
     &:focus {
-        background-color: $component-button-positive-background-color-focus;
-        color: $component-button-positive-text-color-focus;
+        @include set-button-style($negative, "focus");
+    }
+
+    &:visited {
+        @include set-button-style($negative, "visited");
     }
 
     &:hover {
-        background-color: $component-button-positive-background-color-hover;
-        color: $component-button-positive-text-color-hover;
+        @include set-button-style($negative, "hover");
     }
 
     &:active {
-        background-color: $component-button-positive-background-color-active;
-        color: $component-button-positive-text-color-active;
+        @include set-button-style($negative, "active");
     }
 
-    &[disabled] {
-        background-color: $component-button-positive-background-color-disabled;
-        border-color: $component-button-positive-border-disabled; 
-        color: $component-button-positive-text-color-disabled;
+    &[disabled],
+    &[data-disabled="true"] {
+        @include set-button-style($negative, "disabled");
     }
 }
 
-&-button--negative,
-&-button--negative[href] {            
-    background-color: $component-button-negative-background-color;
-    border: $component-button-negative-border;
-    color: $component-button-negative-text-color;
+&-button--positive {
+    @include set-button-style($positive, "default");
 
     &:focus {
-        background-color: $component-button-negative-background-color-focus;
-        color: $component-button-negative-text-color-focus;
+        @include set-button-style($positive, "focus");
     }
-    
+
+    &:visited {
+        @include set-button-style($positive, "visited");
+    }
+
     &:hover {
-        background-color: $component-button-negative-background-color-hover;
-        color: $component-button-negative-text-color-hover;
+        @include set-button-style($positive, "hover");
     }
 
     &:active {
-        background-color: $component-button-negative-background-color-active;
-        color: $component-button-negative-text-color-active;
+        @include set-button-style($positive, "active");
     }
 
-    &[disabled] {
-        background-color: $component-button-negative-background-color-disabled;
-        border-color: $component-button-negative-border-disabled; 
-        color: $component-button-negative-text-color-disabled;
+    &[disabled],
+    &[data-disabled="true"] {
+        @include set-button-style($positive, "disabled");
     }
 }
 
+&-button--ghost {
+    @include set-button-style($ghost, "default");
 
-&-button--inline,
-&-button--inline[href] {
+    &:focus {
+        @include set-button-style($ghost, "focus");
+    }
+
+    &:visited {
+        @include set-button-style($ghost, "visited");
+    }
+
+    &:hover {
+        @include set-button-style($ghost, "hover");
+    }
+
+    &:active {
+        @include set-button-style($ghost, "active");
+    }
+
+    &[disabled],
+    &[data-disabled="true"] {
+        @include set-button-style($ghost, "disabled");
+    }
+}
+
+&-button--ghost-inverse {
+    @include set-button-style($ghost-inverse, "default");
+
+    &:focus {
+        @include set-button-style($ghost-inverse, "focus");
+    }
+
+    &:visited {
+        @include set-button-style($ghost-inverse, "visited");
+    }
+
+    &:hover {
+        @include set-button-style($ghost-inverse, "hover");
+    }
+
+    &:active {
+        @include set-button-style($ghost-inverse, "active");
+    }
+
+    &[disabled],
+    &[data-disabled="true"] {
+        @include set-button-style($ghost-inverse, "disabled");
+    }
+}
+
+&-button--cta {
+    @include set-button-style($cta, "default");
+    padding: $space-inset-squish-l;
+
+    &:focus {
+        @include set-button-style($cta, "focus");
+    }
+
+    &:visited {
+        @include set-button-style($cta, "visited");
+    }
+
+    &:hover {
+        @include set-button-style($cta, "hover");
+    }
+
+    &:active {
+        @include set-button-style($cta, "active");
+    }
+
+    &[disabled],
+    &[data-disabled="true"] {
+        @include set-button-style($cta, "disabled");
+    }
+}
+
+&-button--inline {
     display: inline-block;
     width: auto;
-}
-
-&-button--cta,
-&-button--cta[href] {
-    background-color: $component-button-primary-background-color;
-    border: $component-button-primary-border;
-    color: $component-button-primary-text-color;
-    padding: $space-inset-squish-l;    
-
-    &:focus {
-        background-color: $component-button-primary-background-color-focus;
-        color: $component-button-primary-text-color-focus;
-    }
-
-    &:hover {
-        background-color: $component-button-primary-background-color-hover;
-        color: $component-button-primary-text-color-hover;
-    }
-
-    &:active {
-        background-color: $component-button-primary-background-color-active;
-        color: $component-button-primary-text-color-active;
-    }
-
-    &[disabled] {
-        background-color: $component-button-primary-background-color-disabled;
-        border-color: $component-button-primary-border-disabled;            
-        color: $component-button-primary-text-color-disabled;
-    }
-}
-
-&-button--ghost,
-&-button--ghost[href] {
-    background-color: $component-button-ghost-background-color;
-    border: $component-button-ghost-border;
-    color: $component-button-ghost-text-color;
-    
-    &:focus {
-        background-color: $component-button-ghost-background-color-focus;
-        border: $component-button-ghost-border-focus;
-        color: $component-button-ghost-text-color-focus;
-    }
-    
-    &:hover {
-        background-color: $component-button-ghost-background-color-hover;
-        border: $component-button-ghost-border-hover;
-        color: $component-button-ghost-text-color-hover;
-    }
-    
-    &:active {
-        background-color: $component-button-ghost-background-color-active;
-        border: $component-button-ghost-border-active;
-        color: $component-button-ghost-text-color-active;
-    }
-
-    &[disabled],
-    &[data-disabled="true"] {
-        background-color: $component-button-ghost-background-color-disabled;
-        border-color: $component-button-ghost-border-disabled;
-        color: $component-button-ghost-text-color-disabled;        
-    }
-}
-
-&-button--ghost-inverse,
-&-button--ghost-inverse[href] {
-    background-color: $component-button-ghost-inverse-background-color;
-    border: $component-button-ghost-inverse-border;
-    color: $component-button-ghost-inverse-text-color;
-    
-    &:focus {
-        background-color: $component-button-ghost-inverse-background-color-focus;
-        border: $component-button-ghost-inverse-border-focus;
-        color: $component-button-ghost-inverse-text-color-focus;
-    }
-
-    &:hover {
-        background-color: $component-button-ghost-inverse-background-color-hover;
-        border: $component-button-ghost-inverse-border-hover;        
-        color: $component-button-ghost-inverse-text-color-hover;
-    }
-
-    &:active {
-        background-color: $component-button-ghost-inverse-background-color-active;
-        border: $component-button-ghost-inverse-border-active;        
-        color: $component-button-ghost-inverse-text-color-active;
-    }
-
-    &[disabled],
-    &[data-disabled="true"] {
-        background-color: $component-button-ghost-background-color-disabled;
-        border-color: $component-button-ghost-border-disabled;
-        color: $component-button-ghost-text-color-disabled;        
-    }
 }

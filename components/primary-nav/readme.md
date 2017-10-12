@@ -1,9 +1,3 @@
----
-component: willow-primary-nav
-collection: 
-    - component
-    - navigation
----
 # **Willow-Primary-Nav**
 
 [Demo](http://codepen.io/team/UnumUX/pen/gmgMxY)

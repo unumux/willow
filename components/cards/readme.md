@@ -1,9 +1,3 @@
----
-component: willow-card
-collection: 
-    - component
-    - information
----
 # **Willow-Card**
 
 <!-- [Demo](http://codepen.io/team/UnumUX/pen/yMgJbb) -->

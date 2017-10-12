@@ -6,10 +6,7 @@
     color: $component-secondary-nav-link-color;
     display: block;
     margin-bottom: 0;
-    padding-bottom: space(1);
-    padding-left: space(2);
-    padding-right: space(2);
-    padding-top: space(1);
+    padding: $space-inset-squish-l;
     text-decoration: none;
 
     &:focus {

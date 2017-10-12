@@ -1,9 +1,3 @@
----
-component: willow-footer-nav
-collection: 
-    - component
-    - navigation
----
 # **Willow-Footer-Nav**
 
 [Demo](http://codepen.io/team/UnumUX/pen/VpPjmq)
@@ -18,11 +12,11 @@ _Example Page Links: Sitemap, Frequently Asked Questions, Legal, Privacy Policy,
 
 ```html
 <nav class="willow-footer-nav" role="navigation" aria-label="footer">
-    <h1 class="willow-footer-nav__heading sr-only">Site Footer Menu</h1>
-    <ul class="willow-footer-nav__list">
-        <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 1</a></li>
-        <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 2</a></li>
-    </ul>
+  <h1 class="willow-footer-nav__heading sr-only">Site Footer Menu</h1>
+  <ul class="willow-footer-nav__list">
+      <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 1</a></li>
+      <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 2</a></li>
+  </ul>
 </nav>
 ```
 

@@ -1,9 +1,3 @@
----
-component: willow-inline-alert
-collection: 
-    - component
-    - information
----
 # **Willow-Inline-Alert**
 
 [Demo](http://codepen.io/team/UnumUX/pen/yMgJMM)

@@ -1,6 +1,5 @@
 @mixin icon($type) {
     background-image: map-get($type, icon);
     height: map-get($type, height);
-    margin: map-get($type, margin);
     width: map-get($type, width);
 }

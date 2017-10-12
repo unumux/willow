@@ -2,23 +2,23 @@
     @include set-text-style($text-style-content-2);
     
     display: inline-block;
-    margin-top: 5px;
-    margin-bottom: 5px;
-
-    &::after {
-        color: $component-footer-nav-text-color;
-        content: "|";
-        margin-bottom: 0;
-        margin-left: calc(5px + 0.32em);
-        margin-right: 5px;
-        margin-top: 0;
-    }
+    margin: $space-stack;
+    margin-right: $space;
 
     &:last-of-type {
-        margin-right: 5px;
-
+        margin-right: 0;
+        
         &::after {
             display: none;
+        }
+    }
+
+    @media screen and (min-width: breakpoint(lg, $grid-breakpoints)) {
+        &::after {
+            color: $component-footer-nav-text-color;
+            content: "|";
+            margin-left: $space;
+            margin-right: $space;
         }
     }
 }

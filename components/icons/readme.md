@@ -1,8 +1,3 @@
----
-component: willow-icon
-collection:
-    - component
----
 # **Willow-Icon**
 
 [Demo](http://codepen.io/team/UnumUX/pen/gmXRWg)

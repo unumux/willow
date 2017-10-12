@@ -1,6 +1,6 @@
 {
   "name": "@unumux/willow",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "component library",
   "main": "_index.scss",
   "scripts": {
@@ -46,7 +46,7 @@
     "stylelint": "^7.5.0"
   },
   "dependencies": {
-    "bootstrap": "4.0.0-alpha.6",
+    "bootstrap": "4.0.0-beta",
     "normalize.css": "^4.0.0"
   }
 }

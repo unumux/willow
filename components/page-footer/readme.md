@@ -1,9 +1,3 @@
----
-component: willow-page-footer
-collection: 
-    - component
-    - misc
----
 # **Willow-Page-Footer**
 
 [Demo](http://codepen.io/team/UnumUX/pen/yMgJXb)

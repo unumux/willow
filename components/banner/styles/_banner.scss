@@ -1,3 +1,5 @@
+@import "default-variables";
+
 &-banner {
     @include full-bleed;
     
@@ -5,9 +7,9 @@
     background-repeat: no-repeat; 
     background-size: cover;
     color: $component-banner-text-color;
-    margin-bottom: space(3);
-    padding-bottom: space(10);
-    padding-top: space(8);
+    margin-bottom: $space;
+    padding-bottom: space(4);
+    padding-top: space(4);
     position: relative;
     text-align: center;
     z-index: 1;

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+
+$font-family-primary: "Oswald", "helvetica", "arial", "sans-serif" !default;
+$font-family-secondary: "Open Sans", "helvetica", "arial", "sans-serif" !default;
+$font-family-monospace: "Source Code Pro", monospace !default;
+
+$font-ratio: 1.2;
+
+$min-font-size: 1rem !default;
+$max-font-size: 5rem !default;
+$min-line-height: 1.2 !default;
+$max-line-height: 1.6 !default;
+
+$font-size-xs: 1.2rem !default;
+$font-size-s: $font-size-xs * $font-ratio !default; // 1.44
+$font-size: $font-size-s * $font-ratio !default; //1.728
+$font-size-l: $font-size * $font-ratio !default; //2.0736
+$font-size-xl: $font-size-l * $font-ratio !default; //2.48832
+$font-size-2xl: $font-size-xl * $font-ratio !default; //2.98598
+$font-size-3xl: $font-size-2xl * $font-ratio !default; //3.58318
+$font-size-4xl: $font-size-3xl * $font-ratio !default; //4.29982
+
+$line-height-font-size-xs: line-height($font-size-xs) !default;
+$line-height-font-size-s: line-height($font-size-s) !default;
+$line-height-font-size: line-height($font-size) !default;
+$line-height-font-size-l: line-height($font-size-l) !default;
+$line-height-font-size-xl: line-height($font-size-xl) !default;
+$line-height-font-size-2xl: line-height($font-size-2xl) !default;
+$line-height-font-size-3xl: line-height($font-size-3xl) !default;
+$line-height-font-size-4xl: line-height($font-size-4xl) !default;

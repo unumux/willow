@@ -1,0 +1,27 @@
+// exponentially increase a value
+@function pow($ratio, $exponent) {
+    $value: 1;
+
+    @if type-of($ratio) != "number" {
+        @warn "`#{$ratio}` is not a number. The 'pow' function requires a number for the ratio value";
+        @return false;
+    }
+
+    @if type-of($exponent) != "number" {
+        @warn "`#{$exponent}` is not a number. The 'pow' function requires a number for the exponent value";
+        @return false;
+    }
+
+    @if $exponent < 0 {
+        @warn "`#{$exponent}` must be greater than 0";
+        @return false;
+    }
+
+    @if $exponent > 0 {
+        @for $i from 1 through $exponent {
+            $value: $value * $ratio;
+        }
+    }
+
+    @return $value;
+}

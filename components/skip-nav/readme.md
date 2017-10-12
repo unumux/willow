@@ -1,9 +1,3 @@
----
-component: willow-skip-link
-collection: 
-    - component
-    - navigation
----
 # **Willow-Skip-Nav**
 
 [Demo](http://codepen.io/team/UnumUX/pen/YZNWxM)
