@@ -82,13 +82,13 @@ NOTE: This method requires [node](https://nodejs.org) be installed and that your
 ### **Method 2: As Compiled and Minified CSS Files**
 
 - Installation
-  - To use **Willow** without a theme, download **Willow's** CSS file and add it to your project's styles folder
+  - To use **Willow** without a theme, download **Willow's** minified CSS file and add it to your project's styles folder
     - [Willow CSS](https://github.com/unumux/willow/releases/download/0.3.0/willow.min.css)
-  - To add a theme, download a theme's CSS file, and add it to your project's styles folder. You can delete the **Willow** CSS file if you previously included it.
+  - To add a theme, download a theme's minified CSS file, and add it to your project's styles folder. You can delete the **Willow** CSS file if you previously included it.
     - [Minified CSS Downloads](#minified-css-downloads)
 
 - Usage
-  - After you include a CSS file in your styles folder, you can reference it in your index.html file
+  - After you include a minified CSS file in your styles folder, you can reference it in your index.html file
     ```HTML
     <!-- If using Willow without a theme -->
     <link rel="stylesheet" href="styles/willow.min.css">
