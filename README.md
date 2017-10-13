@@ -51,7 +51,7 @@ Willow is built to work with modern browsers
 
 There are 2 methods for installing and using **Willow** in a project
 
-### Method 1: As an NPM Package
+### **Method 1: As an NPM Package**
 
 NOTE: This method requires [node](https://nodejs.org) be installed and that your project use a tool to compile the SCSS into CSS, such as Gulp, Webpack or Grunt.
 
@@ -70,30 +70,43 @@ NOTE: This method requires [node](https://nodejs.org) be installed and that your
     ```SCSS
     @import "node_modules/@unumux/willow/styles";
     ```
-  - Optional: To use a provided theme, include the theme's stylsheet in your primary SCSS file **BEFORE the line that imports Willow**:
+  - Optional: To use a provided theme, include the theme's stylesheet in your primary SCSS file **BEFORE the line that imports Willow**:
     ```SCSS
     @import "node_modules/@unumux/theme-name-here/styles";
-    @import "node_modules/@unumux/willow/styles";    
+    @import "node_modules/@unumux/willow/styles";
     ```
+  - Now as you add [**Willow** components](#components) to your HTML your compiler should run and you will see styled components in your browser.
 
-Now as you add [**Willow** components](#components) to your HTML file they will inherit styling
-
-### Method 2: As Compiled and Minified CSS Files
+### **Method 2: As Compiled and Minified CSS Files**
 
 - Installation
-  - To useDownload **Willow's** CSS file and add it to your project's styles folder
+  - To use **Willow** without a theme, download **Willow's** CSS file and add it to your project's styles folder
     - []()
-  - Download a theme's CSS file, and add it to your project's styles folder
+  - To add a theme, download a theme's CSS file, and add it to your project's styles folder. You can delete the **Willow** CSS file if you previously included it.
     - [Available Themes](#available-themes)
 
 - Usage
-  - After you include the CSS file in your styles folder, you can reference it in your index.html file
+  - After you include a CSS file in your styles folder, you can reference it in your index.html file
     ```HTML
+    <!-- If using Willow without a theme -->
+    <link rel="stylesheet" href="styles/willow.min.css">
+    ```
+
+    ```HTML
+    <!-- If using a theme you only need to include the theme's min file -->
     <link rel="stylesheet" href="styles/theme-name.min.css">
     ```
-  - Then as you add [**Willow** components](#components) to your HTML file they will inherit styling
+  - Now as you add [**Willow** components](#components) to your HTML file they will inherit styling
 
-### Need Installation Help
+### **Minified CSS Downloads**
+
+|            File            | CSS Download |
+|:-------------------------- |:------------:|
+|Willow                      |              |
+|Unum Theme                  |[theme-unum-default.min.css](https://github.com/unumux/theme-unum-default/releases/download/0.4.0/theme-unum-default.min.css)|
+|Colonial Life Theme         |[theme-coloniallife-default.min.css](https://github.com/unumux/theme-coloniallife-default/releases/download/0.5.0/theme-coloniallife-default.min.css)|
+
+### **Need Installation Help**
 
 Do you have questions or need help with setup? Did you run into errors while following these instructions? Feel free to open an issue here:
 
@@ -177,6 +190,8 @@ A common example of a column layout would be a page section contains secondary n
 
 Themes for **Willow** only contain SCSS variables. These variables are then used in the **Willow** library components which makes them theme-able.
 
+**Willow** comes with default settings for all necessary variables, so the library can be installed and utilized without a theme. Using **Willow** without a theme will produce components styled in grayscale colors and simple/common fonts - somewhat like a [wireframe](https://en.wikipedia.org/wiki/Website_wireframe).  You can choose to override these styles by [importing a theme](#installation-and-usage) or by creating your own them that sets new values for the variables.
+
 There are 3 groups of variables:
 
 - Constants
@@ -219,11 +234,10 @@ There are 3 groups of variables:
 
 ## Available Themes
 
-|         Theme Name         | Documentation                                               | CSS Download |
-|:-------------------------- |:-----------------------------------------------------------:|:------------:|
-|  theme-enterprise-default  |[docs](https://github.com/unumux/theme-enterprise-default)   |[theme-enterprise-default.min.css](https://github.com/unumux/theme-enterprise-default/releases/download/0.4.0/theme-enterprise-default.min.css)|
-|     theme-unum-default     |[docs](https://github.com/unumux/theme-unum-default)         |[theme-unum-default.min.css](https://github.com/unumux/theme-unum-default/releases/download/0.4.0/theme-unum-default.min.css)|
-| theme-coloniallife-default |[docs](https://github.com/unumux/theme-coloniallife-default) |[theme-coloniallife-default.min.css](https://github.com/unumux/theme-coloniallife-default/releases/download/0.5.0/theme-coloniallife-default.min.css)|
+|         Theme Name         | Documentation                                               |
+|:-------------------------- |:-----------------------------------------------------------:|
+|     theme-unum-default     |[docs](https://github.com/unumux/theme-unum-default)         |
+| theme-coloniallife-default |[docs](https://github.com/unumux/theme-coloniallife-default) |
 
 ---
 
@@ -259,7 +273,7 @@ _Example 1: You want to change the size of all **willow-buttons** everywhere the
 - **Note**: This method may require targeting multiple component versions such as willow-button and willow-button--primary
 
 ```SCSS
-// file: styles/components/overrides/willow/button/_button.scss
+// file: my-project/styles/components/overrides/willow/button/_button.scss
 .willow-button,
 .willow-button--primary,
 .willow-button--positive,
@@ -273,9 +287,9 @@ _Example 1: You want to change the size of all **willow-buttons** everywhere the
 _Example 2: You want to change the background color of positive buttons_
 
 - You would accomplish this by overriding a 'component-specific' variable for the positive buttons
-- Find the variable you want to override in the theme repo specifically in the `theme-name/variables/component-specific/_component-name.scss` file
+- Find the variable you want to override by looking at the component's `_default-variables.scss` file located in the styles folder in every component folder. [**Willow** Repo](https://github.com/unumux/willow) 
 - Override the value of that variable in your `_styles.scss` file above the import for the theme
-  ```scss
+  ```SCSS
   $my-color: #37c0e3;
   $component-button-positive-background-color: $my-color;
 
@@ -303,18 +317,18 @@ _Example: I want to change just the **willow-button** that is in my **willow-mod
 
 ### So you need to make a new component
 
-You can make your own components and utilize variables from the **Willow** themes to make your component have the same look and feel.
+You can make your own components and utilize variables from **Willow** to make your component have the same look and feel.
 
 ---
 
 ### So you need to change a theme
 
-Themes are created to allow you to override the values of variables from your own SCSS.
+Themes are made with `!default` flags to allow you to override the values with your own SCSS.
 
-Note: Changes to theme variables will be inherited throughout the html across many components, so tread lightly.
+Note: Changes to theme variables are used across many components, so tread lightly.
 
 - In your project's SCSS
-  - we recommend the `styles/theme/variables/theme-specific/theme-specific.scss` file
+  - we recommend the `my-project/styles/theme/variables/theme-specific/theme-specific.scss` file
 
 ---
 
