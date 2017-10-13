@@ -3,4 +3,6 @@
 &-page-content {
     padding-bottom: $space-l;
     padding-top: $space-l;
+
+    @import "heading";
 }
