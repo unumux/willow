@@ -102,7 +102,7 @@ NOTE: This method requires [node](https://nodejs.org) be installed and that your
 
 |            File            | CSS Download |
 |:-------------------------- |:------------:|
-|Willow                      |[Willow](https://github.com/unumux/willow/releases/download/0.3.0/willow.min.css)|
+|Willow                      |[willow.min.css](https://github.com/unumux/willow/releases/download/0.3.0/willow.min.css)|
 |Unum Theme                  |[theme-unum-default.min.css](https://github.com/unumux/theme-unum-default/releases/download/0.5.0/theme-unum-default.min.css)|
 |Colonial Life Theme         |[theme-coloniallife-default.min.css](https://github.com/unumux/theme-coloniallife-default/releases/download/0.6.0/theme-coloniallife-default.min.css)|
 
