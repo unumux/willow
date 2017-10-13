@@ -21,6 +21,8 @@
 
 - [Issues and Feedback](#issues-and-feedback)
 
+- [Glossaries](#glossaries)
+
 ---
 
 ## Introduction
@@ -385,3 +387,10 @@ $grid-breakpoints: (
 ## Issues and Feedback
 
 Found an issue of have an idea for enhancement? Open an [issue](https://github.com/unumux/willow/issues/new).
+
+---
+
+## Glossaries
+
+- [Component Modifiers](modifiers.md)
+- [Utitility Classes, Functions and Mixins](utilities.md)
