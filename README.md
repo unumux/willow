@@ -1,10 +1,3 @@
----
-title: Component Library
-collection: 
-  - index
-  - home
-permalink: false
----
 # **Willow**
 
 - [Introduction](#introduction)
@@ -34,43 +27,62 @@ permalink: false
 
 **Willow** is a library of reusable user interface components built with front-end code (HTML and SCSS) to allow for faster, more consistent product development.
 
-The library consists of semantic and accessible markup for a variety of components that can be paired with a [theme](#available-themes) to give components a consistent and branded appearance.
+The library consists of semantic and accessible markup for a variety of components that can be paired with your own custom theme or a provided [theme](#available-themes) to give components a consistent and branded appearance.
 
 ### **Willow** is...
 
 - written to meet UnumUX [CSS/SCSS](https://github.com/unumux/ux-standards/wiki/CSS-&-SCSS-Standards) and [Accessibility](https://unumux.github.io/enterprise-accessibility-standards/) Standards
-- built to work with all modern browsers (IE 10, Chrome, Firefox, Safari)
 - influenced by the principles of:
   - [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) : small, independent - atomic - parts, can be combined into larger molecular structures. Molecular structures can be combined into larger organisms, which can then serve as the foundation for templates and full pages
   - [BEM](http://getbem.com) : a naming convention that makes front-end code easier to read, understand, work with, maintain and scale
+
+### Browser Support
+
+Willow is built to work with modern browsers
+
+- Internet Explorer 10, 11 and Edge
+- Chrome, Safari, Firefox
 
 ---
 
 ## Installation and Usage
 
-There are 2 methods for installing and using **Willow** for your project
+**Willow** components come styled with default colors and font stylings, so the library can be installed and utilized without a theme. Using **Willow** without a theme will produce components styled in grayscale colors and simple/common fonts - somewhat like a [wireframe](https://en.wikipedia.org/wiki/Website_wireframe).
 
-### Method 1: NPM
+There are 2 methods for installing and using **Willow** in a project
 
-If you have [node](https://nodejs.org) on your machine, you can use npm to install **Willow** themes and components.
+### Method 1: As an NPM Package
+
+NOTE: This method requires [node](https://nodejs.org) be installed and that your project use a tool to compile the SCSS into CSS, such as Gulp, Webpack or Grunt.
 
 - Installation
-  - Install a Theme as a development dependency for your project. You will need the [theme's name](#available-themes):
+  - Install **Willow** as a development dependency in your project.
+    ```bash
+    npm install --save-dev @unumux/willow
+    ```
+  - Optional: To install a provided theme, you will need the [theme's name](#available-themes):
     ```bash
     npm install --save-dev @unumux/theme-name-goes-here
     ```
 
 - Usage
-  - Include the theme in your project's primary SCSS file. You will need the [theme's name](#available-themes):
+  - Include **Willow's** stylesheet in your primary SCSS file.
+    ```SCSS
+    @import "node_modules/@unumux/willow/styles";
+    ```
+  - Optional: To use a provided theme, include the theme's stylsheet in your primary SCSS file **BEFORE the line that imports Willow**:
     ```SCSS
     @import "node_modules/@unumux/theme-name-here/styles";
+    @import "node_modules/@unumux/willow/styles";    
     ```
 
-    - Then as you add [**Willow** components](#components) to your HTML file they will inherit styling
+Now as you add [**Willow** components](#components) to your HTML file they will inherit styling
 
-### Method 2: Compiled and Minified CSS Files
+### Method 2: As Compiled and Minified CSS Files
 
 - Installation
+  - To useDownload **Willow's** CSS file and add it to your project's styles folder
+    - []()
   - Download a theme's CSS file, and add it to your project's styles folder
     - [Available Themes](#available-themes)
 
