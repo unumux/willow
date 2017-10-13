@@ -81,9 +81,9 @@ NOTE: This method requires [node](https://nodejs.org) be installed and that your
 
 - Installation
   - To use **Willow** without a theme, download **Willow's** CSS file and add it to your project's styles folder
-    - []()
+    - [Willow CSS](https://github.com/unumux/willow/releases/download/0.3.0/willow.min.css)
   - To add a theme, download a theme's CSS file, and add it to your project's styles folder. You can delete the **Willow** CSS file if you previously included it.
-    - [Available Themes](#available-themes)
+    - [Minified CSS Downloads](#minified-css-downloads)
 
 - Usage
   - After you include a CSS file in your styles folder, you can reference it in your index.html file
@@ -102,9 +102,9 @@ NOTE: This method requires [node](https://nodejs.org) be installed and that your
 
 |            File            | CSS Download |
 |:-------------------------- |:------------:|
-|Willow                      |              |
-|Unum Theme                  |[theme-unum-default.min.css](https://github.com/unumux/theme-unum-default/releases/download/0.4.0/theme-unum-default.min.css)|
-|Colonial Life Theme         |[theme-coloniallife-default.min.css](https://github.com/unumux/theme-coloniallife-default/releases/download/0.5.0/theme-coloniallife-default.min.css)|
+|Willow                      |[Willow](https://github.com/unumux/willow/releases/download/0.3.0/willow.min.css)|
+|Unum Theme                  |[theme-unum-default.min.css](https://github.com/unumux/theme-unum-default/releases/download/0.5.0/theme-unum-default.min.css)|
+|Colonial Life Theme         |[theme-coloniallife-default.min.css](https://github.com/unumux/theme-coloniallife-default/releases/download/0.6.0/theme-coloniallife-default.min.css)|
 
 ### **Need Installation Help**
 
