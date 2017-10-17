@@ -1,31 +1,31 @@
 &__link {
-    @include set-text-style($text-style-heading-5);
+    @include set-text-style($willow-text-style-heading-5);
     
-    background-color: $component-secondary-nav-link-background-color;
+    background-color: $willow-component-secondary-nav-link-background-color;
     border-left: 4px solid transparent;
-    color: $component-secondary-nav-link-color;
+    color: $willow-component-secondary-nav-link-color;
     display: block;
     margin-bottom: 0;
-    padding: $space-inset-squish-l;
+    padding: $willow-space-inset-squish-l;
     text-decoration: none;
 
     &:focus {
-        background-color: $component-secondary-nav-link-background-color-focus;
-        color: $component-secondary-nav-link-color-focus;
+        background-color: $willow-component-secondary-nav-link-background-color-focus;
+        color: $willow-component-secondary-nav-link-color-focus;
     }
     
     &:visited {
-        color: $component-secondary-nav-link-color-visited;
+        color: $willow-component-secondary-nav-link-color-visited;
     }
 
     &:hover {
-        background-color: $component-secondary-nav-link-background-color-hover;
-        color: $component-secondary-nav-link-color-hover;
+        background-color: $willow-component-secondary-nav-link-background-color-hover;
+        color: $willow-component-secondary-nav-link-color-hover;
     }
     
     &:active {
-        background-color: $component-secondary-nav-link-background-color-active;
-        color: $component-secondary-nav-link-color-active;
+        background-color: $willow-component-secondary-nav-link-background-color-active;
+        color: $willow-component-secondary-nav-link-color-active;
     }
 
     @media screen and (min-width: breakpoint(medium)) {
@@ -34,11 +34,11 @@
 }
 
 &__link--active {
-    background-color: $component-secondary-nav-link-background-color-active;        
-    border-left: 4px solid $component-secondary-nav-link-border-color-active;
+    background-color: $willow-component-secondary-nav-link-background-color-active;        
+    border-left: 4px solid $willow-component-secondary-nav-link-border-color-active;
 
     &:focus {
-        background-color: $component-secondary-nav-link-background-color-active;
-        color: $component-secondary-nav-link-color-active;
+        background-color: $willow-component-secondary-nav-link-background-color-active;
+        color: $willow-component-secondary-nav-link-color-active;
     }
 }

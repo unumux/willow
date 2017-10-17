@@ -1,7 +1,7 @@
 // calculate line height for a provided font-size
 // requires rem value - 1.2rem vs 12px
 @function line-height($font-size) {
-    $increment: ($max-line-height - $min-line-height) / ($max-font-size - $min-font-size);
+    $increment: ($willow-max-line-height - $willow-min-line-height) / ($willow-max-font-size - $willow-min-font-size);
 
-    @return $min-line-height + (($max-font-size - strip-unit($font-size)) * $increment);
+    @return $willow-min-line-height + (($willow-max-font-size - strip-unit($font-size)) * $increment);
 }

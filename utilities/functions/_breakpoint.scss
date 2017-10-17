@@ -1,9 +1,9 @@
-@function breakpoint($breakpoint, $breakpoint-map: $breakpoints) {    
-    @if type-of($breakpoint) != "string" 
-    or  not map-has-key($breakpoint-map, $breakpoint) {
-        @warn "`#{$breakpoint} is not a string or a valid key in the '$breakpoints' map.";
+@function breakpoint($willow-breakpoint, $willow-breakpoint-map: $willow-breakpoints) {    
+    @if type-of($willow-breakpoint) != "string" 
+    or  not map-has-key($willow-breakpoint-map, $willow-breakpoint) {
+        @warn "`#{$willow-breakpoint} is not a string or a valid key in the '$willow-breakpoints' map.";
         @return false;
     }
 
-    @return map-get($breakpoint-map, $breakpoint);
+    @return map-get($willow-breakpoint-map, $willow-breakpoint);
 }

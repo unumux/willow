@@ -6,57 +6,57 @@
 }
 
 &-icon--menu {
-    @include icon($icon-menu);
+    @include icon($willow-icon-menu);
 }
 
 &-icon--menu-inverse {
-    @include icon($icon-menu-inverse);
+    @include icon($willow-icon-menu-inverse);
 }
 
 &-icon--menu-close {
-    @include icon($icon-menu-close);
+    @include icon($willow-icon-menu-close);
 }
 
 &-icon--menu-close-inverse {
-    @include icon($icon-menu-close-inverse);
+    @include icon($willow-icon-menu-close-inverse);
 }
 
 &-icon--close {
-    @include icon($icon-close);
+    @include icon($willow-icon-close);
 }
 
 &-icon--close-inverse {
-    @include icon($icon-close-inverse);
+    @include icon($willow-icon-close-inverse);
 }
 
 &-icon--info {
-    @include icon($icon-info);
+    @include icon($willow-icon-info);
 }
 
 &-icon--info-inverse {
-    @include icon($icon-info-inverse);
+    @include icon($willow-icon-info-inverse);
 }
 
 &-icon--success {
-    @include icon($icon-success);
+    @include icon($willow-icon-success);
 }
 
 &-icon--success-inverse {
-    @include icon($icon-success-inverse);
+    @include icon($willow-icon-success-inverse);
 }
 
 &-icon--warning {
-    @include icon($icon-warning);
+    @include icon($willow-icon-warning);
 }
 
 &-icon--warning-inverse {
-    @include icon($icon-warning-inverse);
+    @include icon($willow-icon-warning-inverse);
 }
 
 &-icon--error {
-    @include icon($icon-error);
+    @include icon($willow-icon-error);
 }
 
 &-icon--error-inverse {
-    @include icon($icon-error-inverse);
+    @include icon($willow-icon-error-inverse);
 }

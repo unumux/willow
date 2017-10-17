@@ -2,14 +2,14 @@
 @import "variable-maps";
 
 &-button {
-    @include set-text-style($text-style-heading-4);
-    @include set-button-style($neutral, "default");
+    @include set-text-style($willow-text-style-heading-4);
+    @include set-button-style($willow-neutral, "default");
 
-    border-radius: $component-button-border-radius;
+    border-radius: $willow-component-button-border-radius;
     cursor: pointer;
     display: block;
-    margin: $space-stack;
-    padding: $space-inset-squish;
+    margin: $willow-space-stack;
+    padding: $willow-space-inset-squish;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -17,176 +17,176 @@
     width: 100%;
 
     &:focus {
-        @include set-button-style($neutral, "focus");
+        @include set-button-style($willow-neutral, "focus");
     }
 
     &:visited {
-        @include set-button-style($neutral, "visited");
+        @include set-button-style($willow-neutral, "visited");
     }
 
     &:hover {
-        @include set-button-style($neutral, "hover");
+        @include set-button-style($willow-neutral, "hover");
     }
 
     &:active {
-        @include set-button-style($neutral, "active");
+        @include set-button-style($willow-neutral, "active");
     }
 
     &[disabled],
     &[data-disabled="true"] {
-        @include set-button-style($neutral, "disabled");
-        cursor: $component-cursor-disabled;        
+        @include set-button-style($willow-neutral, "disabled");
+        cursor: $willow-component-cursor-disabled;        
     }
 }
 
 &-button--primary {
-    @include set-button-style($primary, "default");
+    @include set-button-style($willow-primary, "default");
 
     &:focus {
-        @include set-button-style($primary, "focus");
+        @include set-button-style($willow-primary, "focus");
     }
 
     &:visited {
-        @include set-button-style($primary, "visited");
+        @include set-button-style($willow-primary, "visited");
     }
 
     &:hover {
-        @include set-button-style($primary, "hover");
+        @include set-button-style($willow-primary, "hover");
     }
 
     &:active {
-        @include set-button-style($primary, "active");
+        @include set-button-style($willow-primary, "active");
     }
 
     &[disabled],
     &[data-disabled="true"] {
-        @include set-button-style($primary, "disabled");
+        @include set-button-style($willow-primary, "disabled");
     }
 }
 
 &-button--negative {
-    @include set-button-style($negative, "default");
+    @include set-button-style($willow-negative, "default");
 
     &:focus {
-        @include set-button-style($negative, "focus");
+        @include set-button-style($willow-negative, "focus");
     }
 
     &:visited {
-        @include set-button-style($negative, "visited");
+        @include set-button-style($willow-negative, "visited");
     }
 
     &:hover {
-        @include set-button-style($negative, "hover");
+        @include set-button-style($willow-negative, "hover");
     }
 
     &:active {
-        @include set-button-style($negative, "active");
+        @include set-button-style($willow-negative, "active");
     }
 
     &[disabled],
     &[data-disabled="true"] {
-        @include set-button-style($negative, "disabled");
+        @include set-button-style($willow-negative, "disabled");
     }
 }
 
 &-button--positive {
-    @include set-button-style($positive, "default");
+    @include set-button-style($willow-positive, "default");
 
     &:focus {
-        @include set-button-style($positive, "focus");
+        @include set-button-style($willow-positive, "focus");
     }
 
     &:visited {
-        @include set-button-style($positive, "visited");
+        @include set-button-style($willow-positive, "visited");
     }
 
     &:hover {
-        @include set-button-style($positive, "hover");
+        @include set-button-style($willow-positive, "hover");
     }
 
     &:active {
-        @include set-button-style($positive, "active");
+        @include set-button-style($willow-positive, "active");
     }
 
     &[disabled],
     &[data-disabled="true"] {
-        @include set-button-style($positive, "disabled");
+        @include set-button-style($willow-positive, "disabled");
     }
 }
 
 &-button--ghost {
-    @include set-button-style($ghost, "default");
+    @include set-button-style($willow-ghost, "default");
 
     &:focus {
-        @include set-button-style($ghost, "focus");
+        @include set-button-style($willow-ghost, "focus");
     }
 
     &:visited {
-        @include set-button-style($ghost, "visited");
+        @include set-button-style($willow-ghost, "visited");
     }
 
     &:hover {
-        @include set-button-style($ghost, "hover");
+        @include set-button-style($willow-ghost, "hover");
     }
 
     &:active {
-        @include set-button-style($ghost, "active");
+        @include set-button-style($willow-ghost, "active");
     }
 
     &[disabled],
     &[data-disabled="true"] {
-        @include set-button-style($ghost, "disabled");
+        @include set-button-style($willow-ghost, "disabled");
     }
 }
 
 &-button--ghost-inverse {
-    @include set-button-style($ghost-inverse, "default");
+    @include set-button-style($willow-ghost-inverse, "default");
 
     &:focus {
-        @include set-button-style($ghost-inverse, "focus");
+        @include set-button-style($willow-ghost-inverse, "focus");
     }
 
     &:visited {
-        @include set-button-style($ghost-inverse, "visited");
+        @include set-button-style($willow-ghost-inverse, "visited");
     }
 
     &:hover {
-        @include set-button-style($ghost-inverse, "hover");
+        @include set-button-style($willow-ghost-inverse, "hover");
     }
 
     &:active {
-        @include set-button-style($ghost-inverse, "active");
+        @include set-button-style($willow-ghost-inverse, "active");
     }
 
     &[disabled],
     &[data-disabled="true"] {
-        @include set-button-style($ghost-inverse, "disabled");
+        @include set-button-style($willow-ghost-inverse, "disabled");
     }
 }
 
 &-button--cta {
-    @include set-button-style($cta, "default");
-    padding: $space-inset-squish-l;
+    @include set-button-style($willow-cta, "default");
+    padding: $willow-space-inset-squish-l;
 
     &:focus {
-        @include set-button-style($cta, "focus");
+        @include set-button-style($willow-cta, "focus");
     }
 
     &:visited {
-        @include set-button-style($cta, "visited");
+        @include set-button-style($willow-cta, "visited");
     }
 
     &:hover {
-        @include set-button-style($cta, "hover");
+        @include set-button-style($willow-cta, "hover");
     }
 
     &:active {
-        @include set-button-style($cta, "active");
+        @include set-button-style($willow-cta, "active");
     }
 
     &[disabled],
     &[data-disabled="true"] {
-        @include set-button-style($cta, "disabled");
+        @include set-button-style($willow-cta, "disabled");
     }
 }
 

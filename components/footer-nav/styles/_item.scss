@@ -1,9 +1,9 @@
 &__item {
-    @include set-text-style($text-style-content-2);
+    @include set-text-style($willow-text-style-content-2);
     
     display: inline-block;
-    margin: $space-stack;
-    margin-right: $space;
+    margin: $willow-space-stack;
+    margin-right: $willow-space;
 
     &:last-of-type {
         margin-right: 0;
@@ -15,10 +15,10 @@
 
     @media screen and (min-width: breakpoint(lg, $grid-breakpoints)) {
         &::after {
-            color: $component-footer-nav-text-color;
+            color: $willow-component-footer-nav-text-color;
             content: "|";
-            margin-left: $space;
-            margin-right: $space;
+            margin-left: $willow-space;
+            margin-right: $willow-space;
         }
     }
 }

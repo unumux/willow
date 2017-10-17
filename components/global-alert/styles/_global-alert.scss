@@ -3,11 +3,11 @@
 &-global-alert {
     @include full-bleed;
     
-    background-color: $component-global-alert-background-color;
-    color: $component-global-alert-text-color;
+    background-color: $willow-component-global-alert-background-color;
+    color: $willow-component-global-alert-text-color;
     flex-shrink: 0;
-    padding-bottom: $space;
-    padding-top: $space;
+    padding-bottom: $willow-space;
+    padding-top: $willow-space;
     position: relative;
 
     @import "heading";
@@ -16,16 +16,16 @@
 }
 
 &-global-alert--positive {
-    background-color: $component-global-alert-positive-background-color;
-    color: $component-global-alert-positive-text-color;
+    background-color: $willow-component-global-alert-positive-background-color;
+    color: $willow-component-global-alert-positive-text-color;
 }
 
 &-global-alert--warning {
-    background-color: $component-global-alert-warning-background-color;
-    color: $component-global-alert-warning-text-color;
+    background-color: $willow-component-global-alert-warning-background-color;
+    color: $willow-component-global-alert-warning-text-color;
 }
 
 &-global-alert--negative {
-    background-color: $component-global-alert-negative-background-color;
-    color: $component-global-alert-negative-text-color;
+    background-color: $willow-component-global-alert-negative-background-color;
+    color: $willow-component-global-alert-negative-text-color;
 }

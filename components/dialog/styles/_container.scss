@@ -1,10 +1,10 @@
 &__container {
-    background-color: $component-dialog-background-color;
-    border-radius: $component-dialog-border-radius;
+    background-color: $willow-component-dialog-background-color;
+    border-radius: $willow-component-dialog-border-radius;
     left: 50%;
     max-width: 575px;
     position: absolute;
-    padding: $space-inset-xl;
+    padding: $willow-space-inset-xl;
     top: 50%;
     transform: translate(-50%, -50%);
     width: 95%;

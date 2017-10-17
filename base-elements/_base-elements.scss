@@ -15,10 +15,10 @@
     }
 
     body {
-        @include set-text-style($component-body-style-default);
+        @include set-text-style($willow-component-body-style-default);
 
-        background-color: $component-body-background-color;
-        color: $component-body-text-color;
+        background-color: $willow-component-body-background-color;
+        color: $willow-component-body-text-color;
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased;
         height: 100%;
@@ -32,27 +32,27 @@
 }
 
 h1 {
-    @include set-text-style($text-style-heading-1);
+    @include set-text-style($willow-text-style-heading-1);
 }
 
 h2 {
-    @include set-text-style($text-style-heading-2);
+    @include set-text-style($willow-text-style-heading-2);
 }
 
 h3 {
-    @include set-text-style($text-style-heading-3);
+    @include set-text-style($willow-text-style-heading-3);
 }
 
 h4 {
-    @include set-text-style($text-style-heading-4);
+    @include set-text-style($willow-text-style-heading-4);
 }
 
 h5 {
-    @include set-text-style($text-style-heading-5);
+    @include set-text-style($willow-text-style-heading-5);
 }
 
 h6 {
-    @include set-text-style($text-style-heading-6);
+    @include set-text-style($willow-text-style-heading-6);
 }
 
 h1,
@@ -61,34 +61,34 @@ h3,
 h4, 
 h5, 
 h6 {
-    margin: $space-stack-s;
+    margin: $willow-space-stack-s;
 }
 
 p {
-    @include set-text-style($text-style-content-1);
+    @include set-text-style($willow-text-style-content-1);
 
-    margin: $space-stack;
+    margin: $willow-space-stack;
 }
 
 a {
-    color: $component-link-color;
+    color: $willow-component-link-color;
     
     &:visited {
-        color: $component-link-color-visited;
+        color: $willow-component-link-color-visited;
     }
 
     &:hover {
-        color: $component-link-color-hover;
+        color: $willow-component-link-color-hover;
     }
 
     &:active {
-        color: $component-link-color-active;
+        color: $willow-component-link-color-active;
     }
 }
 
 ol,
 ul {
-    margin-bottom: $space;
+    margin-bottom: $willow-space;
 
     ol,
     ul {
@@ -97,30 +97,30 @@ ul {
 }
 
 ul {
-    list-style-type: $list-style-type;
+    list-style-type: $willow-list-style-type;
 }
 
 table {
-    border: $component-border-width solid $component-table-border-color;
+    border: $willow-component-border-width solid $willow-component-table-border-color;
     border-collapse: collapse;
     display: table;
-    margin: $space-stack;
+    margin: $willow-space-stack;
     width: 100%;
 
     // necessary since table elements need to be wrapped in a container that can scroll on x
     &:first-child {
-        margin: $space-stack;
+        margin: $willow-space-stack;
     }
 }
 
 thead {
-    background-color: $component-table-header-background-color;
-    color: $component-table-header-text-color;
+    background-color: $willow-component-table-header-background-color;
+    color: $willow-component-table-header-text-color;
     display: table-header-group;
 }
 
 tbody {
-    color: $component-table-body-text-color;
+    color: $willow-component-table-body-text-color;
     display: table-row-group;
 }
 
@@ -138,11 +138,11 @@ colgroup {
 
 tbody {
     tr:nth-child(odd) {
-        background-color: $component-table-row-background-color-odd;
+        background-color: $willow-component-table-row-background-color-odd;
     }
 
     tr:nth-child(even) {
-        background-color: $component-table-row-background-color-even;
+        background-color: $willow-component-table-row-background-color-even;
     }
 }
 
@@ -155,61 +155,61 @@ caption {
 }
 
 th {
-    @include set-text-style($text-style-heading-4);
+    @include set-text-style($willow-text-style-heading-4);
 }
 
 th, 
 td {
     display: table-cell;
-    padding: $space-inset;
+    padding: $willow-space-inset;
     text-align: left;
 }
 
 small {
-    @include set-text-style($text-style-content-3);
+    @include set-text-style($willow-text-style-content-3);
 }
 
 blockquote {
-    border-left: 2px solid $component-blockquote-border-color;
-    color: $component-blockquote-text-color;
-    font-weight: $component-blockquote-font-weight;
-    margin-bottom: $space;
-    margin-left: $space-l;
-    margin-right: $space-l;
-    padding: $space-inset-squish;
+    border-left: 2px solid $willow-component-blockquote-border-color;
+    color: $willow-component-blockquote-text-color;
+    font-weight: $willow-component-blockquote-font-weight;
+    margin-bottom: $willow-space;
+    margin-left: $willow-space-l;
+    margin-right: $willow-space-l;
+    padding: $willow-space-inset-squish;
 }
 
 hr {
-    margin-bottom: $space;
+    margin-bottom: $willow-space;
 }
 
 figure {
-    margin-bottom: $space;
-    padding: $space-inset-squish-xl;
+    margin-bottom: $willow-space;
+    padding: $willow-space-inset-squish-xl;
 }
 
 pre {
-    color: $component-body-text-color-monospace;
-    font-family: $component-body-text-monospace;
-    margin-bottom: $space;
+    color: $willow-component-body-text-color-monospace;
+    font-family: $willow-component-body-text-monospace;
+    margin-bottom: $willow-space;
     overflow-x: scroll;
 }
 
 code {
-    color: $component-body-text-color-monospace;
-    font-family: $component-body-text-monospace;    
-    margin-bottom: $space;
+    color: $willow-component-body-text-color-monospace;
+    font-family: $willow-component-body-text-monospace;    
+    margin-bottom: $willow-space;
 }
 
 kbd,
 samp {
-    color: $component-body-text-color-monospace;
-    font-family: $component-body-text-monospace;
+    color: $willow-component-body-text-color-monospace;
+    font-family: $willow-component-body-text-monospace;
 }
 
 mark {
-    background-color: $component-highlighted-text-background-color;
-    color: $component-highlighted-text-color;
+    background-color: $willow-component-highlighted-text-background-color;
+    color: $willow-component-highlighted-text-color;
 }
 
 video {
@@ -217,48 +217,48 @@ video {
 }
 
 form {
-    background-color: $component-form-background-color;
-    border-radius: $component-border-radius;
-    margin: $space-stack;
-    padding: $component-form-padding;
+    background-color: $willow-component-form-background-color;
+    border-radius: $willow-component-border-radius;
+    margin: $willow-space-stack;
+    padding: $willow-component-form-padding;
 }
 
 label {
-    @include set-text-style($text-style-heading-5);
+    @include set-text-style($willow-text-style-heading-5);
 
     display: block;
-    margin: $space-stack-xs;
+    margin: $willow-space-stack-xs;
 }
 
 legend {
-    @include set-text-style($text-style-heading-5);
+    @include set-text-style($willow-text-style-heading-5);
 }
 
 fieldset {
-    margin: $space-stack;
+    margin: $willow-space-stack;
 }
 
 input,
 select, 
 textarea {
-    background-color: $component-input-background-color;
-    border-color: $component-input-border-color;
-    border-radius: $component-border-radius;
+    background-color: $willow-component-input-background-color;
+    border-color: $willow-component-input-border-color;
+    border-radius: $willow-component-border-radius;
     border-style: solid;
-    border-width: $component-input-border-width;
-    margin: $space-stack-s;
-    padding: $space-inset-s;
+    border-width: $willow-component-input-border-width;
+    margin: $willow-space-stack-s;
+    padding: $willow-space-inset-s;
     width: 100%;
     
     &[disabled] {
-        background-color: $component-input-background-color-disabled;
-        border-color: $component-input-border-color-disabled;
-        cursor: $component-cursor-disabled;
+        background-color: $willow-component-input-background-color-disabled;
+        border-color: $willow-component-input-border-color-disabled;
+        cursor: $willow-component-cursor-disabled;
     }
 
     &:invalid {
-        background-color: $component-input-background-color-invalid;
-        border-color: $component-input-border-color-invalid;
+        background-color: $willow-component-input-background-color-invalid;
+        border-color: $willow-component-input-border-color-invalid;
         box-shadow: none;
     }
 }
@@ -276,14 +276,14 @@ input[type="range"] {
 }
 
 input[type="color"] {
-    padding: $space-inset-xs;
-    height: $component-dropdown-height;
+    padding: $willow-space-inset-xs;
+    height: $willow-component-dropdown-height;
 }
 
 input[type="checkbox"],
 input[type="radio"] {
     border-width: 1px;
-    box-shadow: inset 0 1px 2px $component-input-box-shadow-color;
+    box-shadow: inset 0 1px 2px $willow-component-input-box-shadow-color;
     width: auto;
 }
 
@@ -293,7 +293,7 @@ input[type="radio"] {
 }
 
 select {
-    height: $component-dropdown-height;
+    height: $willow-component-dropdown-height;
 }
 
 // 1. vertical resize cursor to show textarea only resizes vertically - not horizontally (see comment 2)

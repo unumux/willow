@@ -1,8 +1,8 @@
 &__content {
     @include full-width;
-    @include set-text-style($text-style-content-1);
+    @include set-text-style($willow-text-style-content-1);
 
-    border-top: 2px solid $component-page-header-navigation-border-color;
+    border-top: 2px solid $willow-component-page-header-navigation-border-color;
     display: none;
     flex-basis: 100vw;
     flex-grow: 0;

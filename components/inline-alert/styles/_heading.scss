@@ -1,5 +1,5 @@
 &__heading {
-    @include set-text-style($text-style-heading-3);
+    @include set-text-style($willow-text-style-heading-3);
 
-    margin: $space-stack-s;
+    margin: $willow-space-stack-s;
 }

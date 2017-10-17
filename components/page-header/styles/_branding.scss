@@ -2,10 +2,10 @@
     flex-basis: auto;
     flex-grow: 0;
     flex-shrink: 0;
-    margin-bottom: $space-l;
-    margin-top: $space-l;
+    margin-bottom: $willow-space-l;
+    margin-top: $willow-space-l;
 
     &:first-child {
-        margin-top: $space-l;
+        margin-top: $willow-space-l;
     }
 }

@@ -3,9 +3,9 @@
 &-breadcrumbs {
     @include full-bleed;
 
-    background-color: $component-breadcrumb-background-color;
-    padding-bottom: $space;
-    padding-top: $space;
+    background-color: $willow-component-breadcrumb-background-color;
+    padding-bottom: $willow-space;
+    padding-top: $willow-space;
     
     @import "heading";
     @import "list";

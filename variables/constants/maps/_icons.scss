@@ -1,98 +1,98 @@
-$icons-folder: "../node_modules/@unumux/willow/icons" !default;
+$willow-icons-folder: "../node_modules/@unumux/willow/icons" !default;
 
-$icon-menu: (
-    icon: url("#{$icons-folder}/menu.svg"),
+$willow-icon-menu: (
+    icon: url("#{$willow-icons-folder}/menu.svg"),
     height: 24px,
     margin: 12px,
     width: 24px
 ) !default;
 
-$icon-menu-inverse: (
-    icon: url("#{$icons-folder}/menu-inverse.svg"),
+$willow-icon-menu-inverse: (
+    icon: url("#{$willow-icons-folder}/menu-inverse.svg"),
     height: 24px,
     margin: 12px,
     width: 24px
 ) !default;
 
-$icon-menu-close: (
-    icon: url("#{$icons-folder}/menu-close.svg"),
+$willow-icon-menu-close: (
+    icon: url("#{$willow-icons-folder}/menu-close.svg"),
     height: 24px,
     margin: 12px,
     width: 24px
 ) !default;
 
-$icon-menu-close-inverse: (
-    icon: url("#{$icons-folder}/menu-close-inverse.svg"),
+$willow-icon-menu-close-inverse: (
+    icon: url("#{$willow-icons-folder}/menu-close-inverse.svg"),
     height: 24px,
     margin: 12px,
     width: 24px
 ) !default;
 
-$icon-close: (
-    icon: url("#{$icons-folder}/close.svg"),
+$willow-icon-close: (
+    icon: url("#{$willow-icons-folder}/close.svg"),
     height: 14px,
     margin: 12px,
     width: 14px
 ) !default;
 
-$icon-close-inverse: (
-    icon: url("#{$icons-folder}/close-inverse.svg"),
+$willow-icon-close-inverse: (
+    icon: url("#{$willow-icons-folder}/close-inverse.svg"),
     height: 14px,
     margin: 12px,
     width: 14px
 ) !default;
 
-$icon-info: (
-    icon: url("#{$icons-folder}/info.svg"),
+$willow-icon-info: (
+    icon: url("#{$willow-icons-folder}/info.svg"),
     height: 24px,
     margin: 12px,
     width: 24px
 ) !default;
 
-$icon-info-inverse: (
-    icon: url("#{$icons-folder}/info-inverse.svg"),
+$willow-icon-info-inverse: (
+    icon: url("#{$willow-icons-folder}/info-inverse.svg"),
     height: 24px,
     margin: 12px,
     width: 24px
 ) !default;
 
-$icon-success: (
-    icon: url("#{$icons-folder}/success.svg"),
+$willow-icon-success: (
+    icon: url("#{$willow-icons-folder}/success.svg"),
     height: 24px,
     margin: 12px,
     width: 24px
 ) !default;
 
-$icon-success-inverse: (
-    icon: url("#{$icons-folder}/success-inverse.svg"),
+$willow-icon-success-inverse: (
+    icon: url("#{$willow-icons-folder}/success-inverse.svg"),
     height: 24px,
     margin: 12px,
     width: 24px
 ) !default;
 
-$icon-warning: (
-    icon: url("#{$icons-folder}/warning.svg"),
+$willow-icon-warning: (
+    icon: url("#{$willow-icons-folder}/warning.svg"),
     height: 24px,
     margin: 12px,
     width: 24px
 ) !default;
 
-$icon-warning-inverse: (
-    icon: url("#{$icons-folder}/warning-inverse.svg"),
+$willow-icon-warning-inverse: (
+    icon: url("#{$willow-icons-folder}/warning-inverse.svg"),
     height: 24px,
     margin: 12px,
     width: 24px
 ) !default;
 
-$icon-error: (
-    icon: url("#{$icons-folder}/error.svg"),
+$willow-icon-error: (
+    icon: url("#{$willow-icons-folder}/error.svg"),
     height: 24px,
     margin: 12px,
     width: 24px
 ) !default;
 
-$icon-error-inverse: (
-    icon: url("#{$icons-folder}/error-inverse.svg"),
+$willow-icon-error-inverse: (
+    icon: url("#{$willow-icons-folder}/error-inverse.svg"),
     height: 24px,
     margin: 12px,
     width: 24px

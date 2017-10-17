@@ -1,11 +1,11 @@
 &-card {
-    border-radius: $component-card-border-radius;
-    box-shadow: 1px 3px 10px $component-card-box-shadow-color;
-    color: $component-card-text-color;
+    border-radius: $willow-component-card-border-radius;
+    box-shadow: 1px 3px 10px $willow-component-card-box-shadow-color;
+    color: $willow-component-card-text-color;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin: $space-stack-l;
+    margin: $willow-space-stack-l;
     max-width: 380px;
     overflow: hidden;
     text-decoration: none;
@@ -32,7 +32,7 @@
     &:visited,
     &:hover, 
     &:active {
-        color: $component-card-text-color;
+        color: $willow-component-card-text-color;
     }
 
     &:hover {

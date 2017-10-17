@@ -1,10 +1,10 @@
 &__container {
-    background-color: $component-modal-background-color;
-    border-radius: $component-modal-border-radius;
+    background-color: $willow-component-modal-background-color;
+    border-radius: $willow-component-modal-border-radius;
     left: 50%;
     max-width: 575px;
     position: absolute;
-    padding: $space-inset-xl;
+    padding: $willow-space-inset-xl;
     top: 50%;
     transform: translate(-50%, -50%);
     width: 95%;

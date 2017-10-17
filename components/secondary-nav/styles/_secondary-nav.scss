@@ -1,9 +1,9 @@
 @import "default-variables";
 
 &-secondary-nav {
-    background-color: $component-secondary-nav-background-color;
-    border: $component-secondary-nav-border;
-    margin: $space-stack-l;
+    background-color: $willow-component-secondary-nav-background-color;
+    border: $willow-component-secondary-nav-border;
+    margin: $willow-space-stack-l;
     
     @import "heading";
     @import "list";

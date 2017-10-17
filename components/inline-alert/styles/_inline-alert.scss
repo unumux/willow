@@ -1,22 +1,22 @@
 @import "default-variables";
 
 &-alert {
-    background-color: $component-inline-alert-background-color;
-    border-radius: $component-inline-alert-border-radius;
-    color: $component-inline-alert-text-color;
-    margin: $space-stack;
-    padding: $space-inset-l;
-    padding-left: $space-xxl;
+    background-color: $willow-component-inline-alert-background-color;
+    border-radius: $willow-component-inline-alert-border-radius;
+    color: $willow-component-inline-alert-text-color;
+    margin: $willow-space-stack;
+    padding: $willow-space-inset-l;
+    padding-left: $willow-space-xxl;
     position: relative;
 
     &::before {
-        @include icon($component-inline-alert-icon);
+        @include icon($willow-component-inline-alert-icon);
 
         background-repeat: no-repeat;
         background-size: contain;
         content: "";
-        left: $space-l;
-        margin-top: $space-xs; 
+        left: $willow-space-l;
+        margin-top: $willow-space-xs; 
         position: absolute;
     }
 
@@ -25,28 +25,28 @@
 }
 
 &-alert--positive {
-    background-color: $component-inline-alert-positive-background-color;
-    color: $component-inline-alert-positive-text-color;
+    background-color: $willow-component-inline-alert-positive-background-color;
+    color: $willow-component-inline-alert-positive-text-color;
 
     &::before {
-        @include icon($component-inline-alert-positive-icon);
+        @include icon($willow-component-inline-alert-positive-icon);
     }
 }
 
 &-alert--warning {
-    background-color: $component-inline-alert-warning-background-color;
-    color: $component-inline-alert-warning-text-color;
+    background-color: $willow-component-inline-alert-warning-background-color;
+    color: $willow-component-inline-alert-warning-text-color;
 
     &::before {
-        @include icon($component-inline-alert-warning-icon);
+        @include icon($willow-component-inline-alert-warning-icon);
     }
 }
 
 &-alert--negative {
-    background-color: $component-inline-alert-negative-background-color;
-    color: $component-inline-alert-negative-text-color;
+    background-color: $willow-component-inline-alert-negative-background-color;
+    color: $willow-component-inline-alert-negative-text-color;
 
     &::before {
-        @include icon($component-inline-alert-negative-icon);
+        @include icon($willow-component-inline-alert-negative-icon);
     }
 }

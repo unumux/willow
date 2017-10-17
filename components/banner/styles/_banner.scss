@@ -3,11 +3,11 @@
 &-banner {
     @include full-bleed;
     
-    background-color: $component-banner-background-color;
+    background-color: $willow-component-banner-background-color;
     background-repeat: no-repeat; 
     background-size: cover;
-    color: $component-banner-text-color;
-    margin-bottom: $space;
+    color: $willow-component-banner-text-color;
+    margin-bottom: $willow-space;
     padding-bottom: space(4);
     padding-top: space(4);
     position: relative;

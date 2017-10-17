@@ -1,13 +1,13 @@
 &__item {
-    @include set-text-style($text-style-content-2);
+    @include set-text-style($willow-text-style-content-2);
     
     display: inline-block;
     margin: 0;
     
     &::after {
         content: "/";
-        margin-left: $space;
-        margin-right: $space;
+        margin-left: $willow-space;
+        margin-right: $willow-space;
     }
 }
 

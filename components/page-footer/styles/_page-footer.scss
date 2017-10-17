@@ -4,13 +4,13 @@
     @include full-bleed;
     
     align-items: center;
-    background-color: $component-page-footer-background-color;
+    background-color: $willow-component-page-footer-background-color;
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
     flex-wrap: wrap;
-    padding-bottom: $space-xl;
-    padding-top: $space-l;
+    padding-bottom: $willow-space-xl;
+    padding-top: $willow-space-l;
 
     @media screen and (min-width: breakpoint(medium)) {
         flex-direction: row;

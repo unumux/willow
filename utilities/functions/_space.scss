@@ -5,9 +5,9 @@
     }
 
     @if $scale < 1 {
-        @return $base * pow($golden-inverse, floor(1 / $scale));
+        @return $willow-base * pow($willow-golden-inverse, floor(1 / $scale));
     }
 
-    @return $base * pow($golden, $scale);
+    @return $willow-base * pow($willow-golden, $scale);
 }
  

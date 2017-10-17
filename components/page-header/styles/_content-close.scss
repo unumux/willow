@@ -1,22 +1,22 @@
 &__content-close {
-    @include set-text-style($text-style-heading-4);
+    @include set-text-style($willow-text-style-heading-4);
 
-    color: $component-page-header-content-close-color;
+    color: $willow-component-page-header-content-close-color;
     display: none;
     text-decoration: none;
 
     &:visited {
-        color: $component-page-header-content-close-color-visited;
+        color: $willow-component-page-header-content-close-color-visited;
         text-decoration: none;
     }
 
     &:hover {
-        color: $component-page-header-content-close-color-hover;
+        color: $willow-component-page-header-content-close-color-hover;
         text-decoration: none;
     }
     
     &:active {
-        color: $component-page-header-content-close-color-active;
+        color: $willow-component-page-header-content-close-color-active;
         text-decoration: none;
     }
 

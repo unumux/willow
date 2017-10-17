@@ -1,5 +1,5 @@
 @mixin make-grid() {
-    margin: $space-stack-l;
+    margin: $willow-space-stack-l;
 
     @media screen and (min-width: breakpoint(sm, $grid-breakpoints)) {
         align-items: stretch;
@@ -9,20 +9,20 @@
     }
 }
 
-@mixin cols($items: 1) {
-    flex-basis: calc(#{100/$items}% - #{$space} + (#{$space}/#{$items}));
+@mixin cols($willow-items: 1) {
+    flex-basis: calc(#{100/$willow-items}% - #{$willow-space} + (#{$willow-space}/#{$willow-items}));
 
-    &:nth-child(#{$items}n) {
+    &:nth-child(#{$willow-items}n) {
         margin-right: 0;
     }
 
-    &:nth-child(-n+#{$items}) {
+    &:nth-child(-n+#{$willow-items}) {
         margin-top: 0;
     }
 }
 
 @mixin make-grid-item() {
-    margin-top: $space;
+    margin-top: $willow-space;
     
     &:first-child {
         margin-top: 0;
@@ -32,7 +32,7 @@
         flex-shrink: 0;
         flex-grow: 0;
         display: flex;
-        margin-right: $space;
+        margin-right: $willow-space;
 
         &:last-child {
             margin-right: 0;
