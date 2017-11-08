@@ -1,6 +1,10 @@
 @import "default-variables";
 
-&-banner {
+@import "../../../utilities/mixins/full-width";
+@import "../../../utilities/mixins/full-bleed";
+@import "../../../utilities/vendors/bootstrap-grid";
+
+.willow-banner {
     @include full-bleed;
     
     background-color: $component-banner-background-color;

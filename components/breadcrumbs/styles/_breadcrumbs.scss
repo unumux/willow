@@ -1,6 +1,18 @@
 @import "default-variables";
 
-&-breadcrumbs {
+@import "../../../utilities/mixins/full-width";
+@import "../../../utilities/mixins/full-bleed";
+@import "../../../utilities/mixins/set-text-style";
+
+@import "../../../utilities/classes/sr-only";
+
+@import "../../../variables/constants/fonts";
+@import "../../../variables/constants/spacing";
+@import "../../../variables/constants/maps/text-styles";
+
+// @import "../../../base-elements/_base-elements.scss";
+
+.willow-breadcrumbs {
     @include full-bleed;
 
     background-color: $component-breadcrumb-background-color;

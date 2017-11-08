@@ -1,6 +1,6 @@
 .willow {
     @import "./banner/styles/banner";
-    @import "./breadcrumbs/styles/breadcrumbs";
+    // @import "./breadcrumbs/styles/breadcrumbs";
     @import "./button/styles/button";
     @import "./cards/styles/cards";
     @import "./dialog/styles/dialog";
@@ -18,3 +18,5 @@
     @import "./skip-nav/styles/skip-nav";
     @import "./styling-context/styles/styling-context";
 }
+
+@import "./breadcrumbs/styles/breadcrumbs";
