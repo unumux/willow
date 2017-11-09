@@ -1,5 +1,15 @@
 @import "default-variables";
 
+@import "../../../variables/constants/_fonts.scss";
+@import "../../../variables/constants/_spacing.scss";
+
+@import "../../../utilities/functions/_strip-unit.scss";
+@import "../../../utilities/functions/_line-height.scss";
+
+@import "../../../utilities/mixins/_set-text-style.scss";
+
+@import "../../../variables/constants/maps/_text-styles.scss";
+
 .willow-secondary-nav {
     background-color: $component-secondary-nav-background-color;
     border: $component-secondary-nav-border;

@@ -2,6 +2,10 @@
 
 @import "../../../utilities/mixins/full-width";
 @import "../../../utilities/mixins/full-bleed";
+
+@import "../../../utilities/functions/strip-unit";
+@import "../../../utilities/functions/_line-height.scss";
+
 @import "../../../utilities/mixins/set-text-style";
 
 @import "../../../utilities/classes/sr-only";
