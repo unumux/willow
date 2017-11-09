@@ -1,19 +1,9 @@
 @import "default-variables";
-
-@import "../../../utilities/mixins/_full-width.scss";
-@import "../../../utilities/mixins/_full-bleed.scss";
 @import "../../../utilities/functions/_breakpoint.scss";
-
-@import "../../../variables/constants/_spacing.scss";
-
-@import "../../../utilities/functions/_strip-unit.scss";
-@import "../../../utilities/functions/_line-height.scss";
-
+@import "../../../utilities/mixins/_full-bleed.scss";
 @import "../../../utilities/mixins/_set-text-style.scss";
-
-@import "../../../variables/constants/_fonts.scss";
+@import "../../../variables/constants/_spacing.scss";
 @import "../../../variables/constants/maps/_text-styles.scss";
-@import "../../../variables/constants/maps/_breakpoints.scss";
 
 .willow-page-header {
     @include full-bleed;

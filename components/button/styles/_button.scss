@@ -1,19 +1,12 @@
 @import "default-variables";
 @import "variable-maps";
 
-@import "../../../variables/constants/fonts";
-@import "../../../utilities/functions/space";
-@import "../../../utilities/functions/pow";
-@import "../../../variables/constants/spacing";
-
-@import "../../../utilities/functions/strip-unit";
-@import "../../../utilities/functions/line-height";
-@import "../../../utilities/mixins/set-text-style";
-@import "../../../utilities/mixins/set-button-style";
-
-@import "../../../variables/constants/maps/text-styles";
-
 @import "../../../base-elements/default-variables";
+
+@import "../../../variables/constants/spacing";
+@import "../../../utilities/mixins/set-text-style";
+@import "../../../variables/constants/maps/text-styles";
+@import "../../../utilities/mixins/set-button-style";
 
 
 .willow-button {

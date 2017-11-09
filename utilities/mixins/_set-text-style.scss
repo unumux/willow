@@ -1,3 +1,6 @@
+@import "../functions/breakpoint";
+@import "../../variables/constants/maps/breakpoints";
+
 @mixin set-text-style($style) {
     font-family: map-get($style, family);
     font-size: map-get($style, mobile-size);

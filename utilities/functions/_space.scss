@@ -1,3 +1,5 @@
+@import "pow";
+
 @function space($scale: 1) {
     @if type-of($scale) != "number" {
         @warn "`#{$scale}` is not a number. The 'space' function requires a number";
@@ -10,4 +12,3 @@
 
     @return $base * pow($golden, $scale);
 }
- 

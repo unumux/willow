@@ -1,14 +1,10 @@
 @import "default-variables";
-
+@import "../../../variables/constants/spacing";
 @import "../../../utilities/functions/space";
-@import "../../../utilities/functions/pow";
-
-@import "../../../utilities/mixins/full-width";
+@import "../../../utilities/functions/breakpoint";
 @import "../../../utilities/mixins/full-bleed";
-
 @import "../../../utilities/vendors/bootstrap-grid";
 
-@import "../../../variables/constants/spacing";
 
 .willow-banner {
     @include full-bleed;
