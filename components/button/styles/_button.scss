@@ -1,6 +1,16 @@
 @import "default-variables";
 @import "variable-maps";
 
+@import "../../../utilities/mixins/set-text-style";
+@import "../../../utilities/mixins/set-button-style";
+
+@import "../../../variables/constants/fonts";
+@import "../../../variables/constants/maps/text-styles";
+@import "../../../variables/constants/spacing";
+
+@import "../../../base-elements/default-variables";
+
+
 .willow-button {
     @include set-text-style($text-style-heading-4);
     @include set-button-style($neutral, "default");
