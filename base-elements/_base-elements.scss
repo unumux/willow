@@ -1,6 +1,8 @@
 @import "normalize";
 @import "default-variables";
 
+@import "../utilities/mixins/_set-text-style.scss";
+
 @at-root {
     html {
         box-sizing: border-box;
