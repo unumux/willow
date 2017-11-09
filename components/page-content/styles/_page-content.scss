@@ -1,5 +1,9 @@
 @import "default-variables";
 
+@import "../../../utilities/functions/pow";
+@import "../../../utilities/functions/_space.scss";
+@import "../../../variables/constants/_spacing.scss";
+
 .willow-page-content {
     padding-bottom: $space-l;
     padding-top: $space-l;
