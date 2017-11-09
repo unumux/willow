@@ -1,3 +1,5 @@
+@import "../default-variables";
+
 @mixin make-grid() {
     margin: $space-stack-l;
 

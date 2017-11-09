@@ -1,3 +1,18 @@
+@import "../default-variables";
+
+@import "../../../../variables/constants/fonts";
+@import "../../../../utilities/functions/space";
+@import "../../../../utilities/functions/pow";
+
+@import "../../../../variables/constants/spacing";
+@import "../../../../variables/constants/maps/breakpoints";
+@import "../../../../variables/constants/maps/text-styles";
+
+@import "../../../../utilities/vendors/bootstrap-grid";
+@import "../../../../utilities/mixins/set-text-style";
+
+
+
 .willow-card {
     border-radius: $component-card-border-radius;
     box-shadow: 1px 3px 10px $component-card-box-shadow-color;
