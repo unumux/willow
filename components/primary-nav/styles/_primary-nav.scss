@@ -1,5 +1,14 @@
 @import "default-variables";
 
+@import "../../../variables/constants/_spacing.scss";
+
+@import "../../../utilities/mixins/_set-text-style.scss";
+
+@import "../../../variables/constants/_fonts.scss";
+@import "../../../variables/constants/maps/_text-styles.scss";
+
+@import "../../../utilities/classes/sr-only";
+
 .willow-primary-nav {
     @import "heading";
     @import "list";
