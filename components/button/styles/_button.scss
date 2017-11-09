@@ -1,7 +1,7 @@
 @import "default-variables";
 @import "variable-maps";
 
-&-button {
+.willow-button {
     @include set-text-style($text-style-heading-4);
     @include set-button-style($neutral, "default");
 
@@ -39,7 +39,7 @@
     }
 }
 
-&-button--primary {
+.willow-button--primary {
     @include set-button-style($primary, "default");
 
     &:focus {
@@ -64,7 +64,7 @@
     }
 }
 
-&-button--negative {
+.willow-button--negative {
     @include set-button-style($negative, "default");
 
     &:focus {
@@ -89,7 +89,7 @@
     }
 }
 
-&-button--positive {
+.willow-button--positive {
     @include set-button-style($positive, "default");
 
     &:focus {
@@ -114,7 +114,7 @@
     }
 }
 
-&-button--ghost {
+.willow-button--ghost {
     @include set-button-style($ghost, "default");
 
     &:focus {
@@ -139,7 +139,7 @@
     }
 }
 
-&-button--ghost-inverse {
+.willow-button--ghost-inverse {
     @include set-button-style($ghost-inverse, "default");
 
     &:focus {
@@ -164,7 +164,7 @@
     }
 }
 
-&-button--cta {
+.willow-button--cta {
     @include set-button-style($cta, "default");
     padding: $space-inset-squish-l;
 
@@ -190,7 +190,7 @@
     }
 }
 
-&-button--inline {
+.willow-button--inline {
     display: inline-block;
     width: auto;
 }

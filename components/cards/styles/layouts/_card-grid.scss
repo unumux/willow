@@ -48,10 +48,10 @@
     }
 }
 
-&-card-grid {
+.willow-card-grid {
     @include make-grid();
 }
 
-&-card-grid__item {
+.willow-card-grid__item {
     @include make-grid-item();
 }

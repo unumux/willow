@@ -1,22 +1,19 @@
-.willow {
-    @import "./banner/styles/banner";
-    // @import "./breadcrumbs/styles/breadcrumbs";
-    @import "./button/styles/button";
-    @import "./cards/styles/cards";
-    @import "./dialog/styles/dialog";
-    @import "./footer-nav/styles/footer-nav";
-    @import "./global-alert/styles/global-alert";
-    @import "./icons/styles/icons";
-    @import "./inline-alert/styles/inline-alert";
-    @import "./logo-link/styles/logo-link";
-    @import "./modal/styles/modal";
-    @import "./page-content/styles/page-content";
-    @import "./page-footer/styles/page-footer";
-    @import "./page-header/styles/page-header";
-    @import "./primary-nav/styles/primary-nav";
-    @import "./secondary-nav/styles/secondary-nav";
-    @import "./skip-nav/styles/skip-nav";
-    @import "./styling-context/styles/styling-context";
-}
-
+// Imports for all Willow Components
+@import "./banner/styles/banner";
 @import "./breadcrumbs/styles/breadcrumbs";
+@import "./button/styles/button";
+@import "./cards/styles/cards";
+@import "./dialog/styles/dialog";
+@import "./footer-nav/styles/footer-nav";
+@import "./global-alert/styles/global-alert";
+@import "./icons/styles/icons";
+@import "./inline-alert/styles/inline-alert";
+@import "./logo-link/styles/logo-link";
+@import "./modal/styles/modal";
+@import "./page-content/styles/page-content";
+@import "./page-footer/styles/page-footer";
+@import "./page-header/styles/page-header";
+@import "./primary-nav/styles/primary-nav";
+@import "./secondary-nav/styles/secondary-nav";
+@import "./skip-nav/styles/skip-nav";
+@import "./styling-context/styles/styling-context";

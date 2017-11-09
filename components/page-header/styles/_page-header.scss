@@ -1,6 +1,6 @@
 @import "default-variables";
 
-&-page-header {
+.willow-page-header {
     @include full-bleed;
 
     background-color: $component-page-header-background-color;

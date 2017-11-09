@@ -1,4 +1,4 @@
-&-card {
+.willow-card {
     border-radius: $component-card-border-radius;
     box-shadow: 1px 3px 10px $component-card-box-shadow-color;
     color: $component-card-text-color;
@@ -25,7 +25,7 @@
     @import "action";
 }
 
-&-card[href]{
+.willow-card[href]{
     transform: scale(1);
     transition: 0.2s transform;
     
