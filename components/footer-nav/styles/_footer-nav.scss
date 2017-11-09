@@ -1,4 +1,9 @@
 @import "default-variables";
+@import "../../../utilities/vendors/bootstrap-grid";
+@import "../../../utilities/mixins/set-text-style";
+@import "../../../variables/constants/maps/text-styles";
+
+@import "../../../variables/constants/spacing";
 
 .willow-footer-nav {
     @import "heading";
