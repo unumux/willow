@@ -1,4 +1,11 @@
+@import "../../../base-elements/default-variables";
+@import "../../../variables/constants/maps/icons";
 @import "default-variables";
+
+@import "../../../utilities/mixins/full-bleed";
+@import "../../../variables/constants/spacing";
+@import "../../../utilities/mixins/set-text-style";
+@import "../../../variables/constants/maps/text-styles";
 
 .willow-alert {
     background-color: $component-inline-alert-background-color;
