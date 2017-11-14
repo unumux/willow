@@ -5,6 +5,6 @@
 
 // moved from base-elements.scss file
 // to allow easier overriding of this setting
-:last-child {
-    margin-bottom: 0;
+:first-child {
+    margin-top: 0;
 }

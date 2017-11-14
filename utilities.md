@@ -97,7 +97,7 @@ A glossary of utility [classes](#classes), [functions](#functions) and [mixins](
 
     // in your styles
     .my-component {
-        margin-bottom: space(2);
+        margin-top: space(2);
         // returns 4.1886rem
     }
 

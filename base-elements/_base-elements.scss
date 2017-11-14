@@ -88,11 +88,11 @@ a {
 
 ol,
 ul {
-    margin-bottom: $space;
+    margin-top: $space;
 
     ol,
     ul {
-        margin-bottom: 0;
+        margin-top: 0;
     }
 }
 
@@ -173,32 +173,32 @@ blockquote {
     border-left: 2px solid $component-blockquote-border-color;
     color: $component-blockquote-text-color;
     font-weight: $component-blockquote-font-weight;
-    margin-bottom: $space;
+    margin-top: $space;
     margin-left: $space-l;
     margin-right: $space-l;
     padding: $space-inset-squish;
 }
 
 hr {
-    margin-bottom: $space;
+    margin-top: $space;
 }
 
 figure {
-    margin-bottom: $space;
+    margin-top: $space;
     padding: $space-inset-squish-xl;
 }
 
 pre {
     color: $component-body-text-color-monospace;
     font-family: $component-body-text-monospace;
-    margin-bottom: $space;
+    margin-top: $space;
     overflow-x: scroll;
 }
 
 code {
     color: $component-body-text-color-monospace;
     font-family: $component-body-text-monospace;    
-    margin-bottom: $space;
+    margin-top: $space;
 }
 
 kbd,

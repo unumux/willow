@@ -1,0 +1,15 @@
+$butters: (
+    willow-banner,
+    willow-breadcrumbs,
+    willow-global-alert,
+    willow-page-header,
+    willow-inline-alert
+);
+
+@each $item in $butters {
+    @each $item2 in $butters {
+        .#{$item} + .#{$item2} {
+            margin-top: 0;
+        }
+    }
+}
