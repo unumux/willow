@@ -1,11 +1,4 @@
-@import "default-variables";
-
-@import "../../../utilities/classes/sr-only";
-@import "../../../utilities/functions/_breakpoint.scss";
-@import "../../../utilities/mixins/_set-text-style.scss";
-@import "../../../variables/constants/_spacing.scss";
-@import "../../../variables/constants/maps/_text-styles.scss";
-@import "../../../variables/constants/maps/_breakpoints.scss";
+@import "dependencies";
 
 .willow-primary-nav {
     @import "heading";

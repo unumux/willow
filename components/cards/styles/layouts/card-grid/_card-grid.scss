@@ -1,6 +1,4 @@
-@import "../default-variables";
-
-@import "../../../../utilities/functions/breakpoint";
+@import "dependencies";
 
 @mixin make-grid() {
     margin: $space-stack-l;
