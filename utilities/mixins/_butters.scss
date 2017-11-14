@@ -2,8 +2,7 @@ $butters: (
     willow-banner,
     willow-breadcrumbs,
     willow-global-alert,
-    willow-page-header,
-    willow-inline-alert
+    willow-page-header
 );
 
 @each $item in $butters {
