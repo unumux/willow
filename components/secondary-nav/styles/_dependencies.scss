@@ -1,4 +1,5 @@
 @import "default-variables";
-@import "../../../global/mixins/_set-text-style.scss";
-@import "../../../global/variables/constants/maps/_text-styles.scss";
-@import "../../../global/variables/constants/_spacing.scss";
+@import "../../../global/functions/breakpoint";
+@import "../../../global/mixins/set-text-style";
+@import "../../../global/variables/constants/maps/text-styles";
+@import "../../../global/variables/constants/spacing";
