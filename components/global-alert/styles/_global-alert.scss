@@ -2,7 +2,9 @@
 
 &-global-alert {
     @include full-bleed;
-    
+    @include extend-adjacent-sibling;
+    @include make-sibling-adjacent;
+
     background-color: $component-global-alert-background-color;
     color: $component-global-alert-text-color;
     flex-shrink: 0;

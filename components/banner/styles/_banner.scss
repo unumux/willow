@@ -2,7 +2,9 @@
 
 &-banner {
     @include full-bleed;
-    
+    @include extend-adjacent-sibling;
+    @include make-sibling-adjacent;
+
     background-color: $component-banner-background-color;
     background-repeat: no-repeat; 
     background-size: cover;
