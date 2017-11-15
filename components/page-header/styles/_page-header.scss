@@ -2,7 +2,7 @@
 
 &-page-header {
     @include full-bleed;
-    @extend %butter;
+    @extend .butter;
 
     background-color: $component-page-header-background-color;
     display: flex;

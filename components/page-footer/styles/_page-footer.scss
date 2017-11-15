@@ -2,7 +2,7 @@
 
 &-page-footer {
     @include full-bleed;
-    @extend %butter;
+    @extend .butter;
     
     align-items: center;
     background-color: $component-page-footer-background-color;
