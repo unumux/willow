@@ -1,7 +1,7 @@
 @import "default-variables";
-@import "../../../utilities/classes/sr-only";
-@import "../../../utilities/functions/_breakpoint.scss";
-@import "../../../utilities/mixins/_set-text-style.scss";
-@import "../../../variables/constants/_spacing.scss";
-@import "../../../variables/constants/maps/_text-styles.scss";
-@import "../../../variables/constants/maps/_breakpoints.scss";
+@import "../../../global/classes/sr-only";
+@import "../../../global/functions/_breakpoint.scss";
+@import "../../../global/mixins/_set-text-style.scss";
+@import "../../../global/variables/constants/_spacing.scss";
+@import "../../../global/variables/constants/maps/_text-styles.scss";
+@import "../../../global/variables/constants/maps/_breakpoints.scss";

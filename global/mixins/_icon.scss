@@ -1,5 +1,3 @@
-// @import "../../variables/constants/maps/icons";
-
 @mixin icon($type) {
     background-image: map-get($type, icon);
     height: map-get($type, height);

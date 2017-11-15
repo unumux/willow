@@ -1,5 +1,3 @@
-@import "../../variables/constants/maps/breakpoints";
-
 @function breakpoint($breakpoint, $breakpoint-map: $breakpoints) {    
     @if type-of($breakpoint) != "string" 
     or  not map-has-key($breakpoint-map, $breakpoint) {

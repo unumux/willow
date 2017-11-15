@@ -1,6 +1,6 @@
 @import "default-variables";
-@import "../../../utilities/functions/_breakpoint.scss";
-@import "../../../utilities/mixins/_full-bleed.scss";
-@import "../../../utilities/mixins/_set-text-style.scss";
-@import "../../../variables/constants/_spacing.scss";
-@import "../../../variables/constants/maps/_text-styles.scss";
+@import "../../../global/functions/_breakpoint.scss";
+@import "../../../global/mixins/_full-bleed.scss";
+@import "../../../global/mixins/_set-text-style.scss";
+@import "../../../global/variables/constants/_spacing.scss";
+@import "../../../global/variables/constants/maps/_text-styles.scss";
