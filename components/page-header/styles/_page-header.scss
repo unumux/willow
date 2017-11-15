@@ -2,8 +2,7 @@
 
 &-page-header {
     @include full-bleed;
-    @include extend-adjacent-sibling;
-    @include make-sibling-adjacent;
+    @extend %butter;
 
     background-color: $component-page-header-background-color;
     display: flex;

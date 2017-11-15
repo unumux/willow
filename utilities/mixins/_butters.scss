@@ -1,24 +1,5 @@
-// $butters: (
-//     willow-banner,
-//     willow-breadcrumbs,
-//     willow-global-alert,
-//     willow-page-header
-// );
-
-// @each $item in $butters {
-//     @each $item2 in $butters {
-//         .#{$item} + .#{$item2} {
-//             margin-top: 0;
-//         }
-//     }
-// }
-
-@mixin extend-adjacent-sibling() {
-    @extend .adjacent-sibiling;
-}
-
-@mixin make-sibling-adjacent() {
-    & + .adjacent-sibiling {
+%butter {
+    & + & {
         margin-top: 0;
     }
 }

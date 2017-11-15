@@ -2,8 +2,7 @@
 
 &-breadcrumbs {
     @include full-bleed;
-    @include extend-adjacent-sibling;
-    @include make-sibling-adjacent;
+    @extend %butter;
 
     background-color: $component-breadcrumb-background-color;
     margin-top: $space;
