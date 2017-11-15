@@ -1,7 +1,7 @@
 @import "normalize";
 @import "default-variables";
 
-@import "../mixins/_set-text-style.scss";
+@import "../mixins/set-text-style";
 
 @at-root {
     html {
