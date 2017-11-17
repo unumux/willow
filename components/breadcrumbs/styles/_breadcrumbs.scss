@@ -2,7 +2,7 @@
 
 &-breadcrumbs {
     @include full-bleed;
-    @include butter;
+    @extend .butter;
     
     background-color: $component-breadcrumb-background-color;
     margin-top: $space;
