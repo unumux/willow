@@ -2,8 +2,8 @@
 
 &-page-header {
     @include full-bleed;
-    @extend .butter;
-
+    @include butter;
+    
     background-color: $component-page-header-background-color;
     display: flex;
     flex-shrink: 0;

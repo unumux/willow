@@ -1,0 +1,5 @@
+@mixin butter() {
+    & + & {
+        margin-top: 0;
+    }
+}

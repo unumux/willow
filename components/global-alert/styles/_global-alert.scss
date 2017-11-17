@@ -2,8 +2,8 @@
 
 &-global-alert {
     @include full-bleed;
-    @extend .butter;
-
+    @include butter;
+    
     background-color: $component-global-alert-background-color;
     color: $component-global-alert-text-color;
     flex-shrink: 0;
