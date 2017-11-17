@@ -2,7 +2,7 @@
 
 &-banner {
     @include full-bleed;
-    @extend .butter;
+    @include butter;
 
     background-color: $component-banner-background-color;
     background-repeat: no-repeat; 
