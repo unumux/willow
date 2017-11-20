@@ -64,8 +64,25 @@ h6 {
     margin: $space-stack-s;
 }
 
+h1 + h2,
+h2 + h3, 
+h3 + h4, 
+h4 + h5, 
+h5 + h6 {
+    margin-top: 0;
+}
+
+p + h1,
+p + h2,
+p + h3,
+p + h4, 
+p + h5, 
+p + h6 {
+    margin: $space-stack-l;
+}
+
 p {
-    margin: $space-stack;
+    margin: $space-stack-s;
 }
 
 a {
