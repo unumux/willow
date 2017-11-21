@@ -4,6 +4,8 @@ A glossary of utility [classes](#classes), [functions](#functions) and [mixins](
 
 ## Classes
 
+`.butter` : removes margin between two adjacent `.butter` elements or components, allowing them to butt up against one another.
+
 `.flex-grow` : applies flex-grow to a component or element causing it to fill the available space of the parent. _Note: the parent must be a flex parent_
 
 `.sr-only` : visually hides information that is intended only for screen readers.

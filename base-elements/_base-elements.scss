@@ -122,26 +122,17 @@ small {
     @include set-text-style($text-style-content-3);
 }
 
+// 1. Margin-top instead of margin to prevent overriding browser defaults for margin right and left
 blockquote {
     border-left: 2px solid $component-blockquote-border-color;
     color: $component-blockquote-text-color;
     font-weight: $component-blockquote-font-weight;
-    margin-top: $space;
-    margin-left: $space-l;
-    margin-right: $space-l;
+    margin-top: $space; // 1
     padding: $space-inset-squish;
 }
 
 hr {
     margin: $space-stack-l;
-
-    + p,
-    + ol,
-    + ul, 
-    + dl, 
-    + .willow-styling-context {
-        margin: $space-stack-l;
-    }
 }
 
 // 1. Margin-top instead of margin to prevent overriding browser defaults for margin right and left
@@ -160,7 +151,7 @@ pre {
 
 code {
     color: $component-body-text-color-monospace;
-    font-family: $component-body-text-monospace;    
+    font-family: $component-body-text-monospace;
 }
 
 kbd,
