@@ -8,8 +8,8 @@
     color: $component-global-alert-text-color;
     flex-shrink: 0;
     margin-top: $space;
-    padding-bottom: $space;
-    padding-top: $space;
+    padding-bottom: $space-l;
+    padding-top: $space-l;
     position: relative;
 
     @import "heading";
