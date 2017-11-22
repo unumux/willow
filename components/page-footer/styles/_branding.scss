@@ -6,6 +6,10 @@
     margin: $space-stack;
     order: 2;
 
+    &:first-child {
+        margin: $space-stack;
+    }
+
     @media screen and (min-width: breakpoint(medium)) {
         flex-basis: auto;
         margin: 0;
