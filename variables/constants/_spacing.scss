@@ -13,14 +13,14 @@ $space-l: space(1); //25.888
 $space-xl: space(2); //41.886
 $space-xxl: space(3); //67.772
 
-//vertical spacing (margin-bottom) between elements and components
-$space-stack-xxs: 0 0 $space-xxs 0;
-$space-stack-xs: 0 0 $space-xs 0;
-$space-stack-s: 0 0 $space-s 0;
-$space-stack: 0 0 $space 0;
-$space-stack-l: 0 0 $space-l 0;
-$space-stack-xl: 0 0 $space-xl 0;
-$space-stack-xxl: 0 0 $space-xxl 0;
+//vertical spacing (margin-top) between elements and components
+$space-stack-xxs: $space-xxs 0 0 0;
+$space-stack-xs: $space-xs 0 0 0;
+$space-stack-s: $space-s 0 0 0;
+$space-stack: $space 0 0 0;
+$space-stack-l: $space-l 0 0 0;
+$space-stack-xl: $space-xl 0 0 0;
+$space-stack-xxl: $space-xxl 0 0 0;
 
 //horizontal spacing (margin-right) between inline elements and components
 $space-inline-xxs: 0 $space-xxs 0 0;

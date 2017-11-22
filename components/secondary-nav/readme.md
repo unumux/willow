@@ -2,7 +2,6 @@
 
 [Demo](http://codepen.io/team/UnumUX/pen/MpJevo)
 
-
 Secondary Navigation provides navigational links that are separate from links provided by primary and footer navigation. Secondary navigation will appear on some pages of a site but not necessarily all pages. This navigation is meant for links a user may need in relation to their current page and they can link to content on their own page or to different pages. Secondary navigation can also be made up of common helpful links such as _Contact, About, News, Legal, FAQ, etc._
 
 ---
@@ -32,7 +31,7 @@ Secondary Navigation provides navigational links that are separate from links pr
 
 #### _Notes_
 
-- **willow-secondary-nav** should be located within the **willow-page-header__contextual-content** element (a sub-element of the **willow-page-header** component)
+- **willow-secondary-nav** should be located within the **willow-page-content** component.
 - If using more than one **willow-secondary-nav** on a page update the **willow-secondary-nav** elements aria-label attribute to be more descriptive such as "account" or "products"
 - The use of `role="navigation"` with the `<nav>` element ensures that **willow-secondary-nav** is accessible for user agents that do not support HTML5. The use of both `<nav>` and `<role="navigation">` together may create a warning in an [HTML validator](https://validator.w3.org/) but we left this pattern intact for now to cover all of our accessibility bases.
 
