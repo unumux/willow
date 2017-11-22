@@ -57,8 +57,8 @@ There are 2 methods for installing and using **Willow** in a project
 
 #### _Notes_
 
-- This method requires [node](https://nodejs.org) be installed and that your project use a tool to compile the SCSS into CSS, such as Gulp, Webpack or Grunt.
-- This method allows you to import single components instead of the entire library
+- Requires [node](https://nodejs.org) and a tool to compile the SCSS into CSS, such as Gulp, Webpack or Grunt.
+- Allows single components imports instead of the entire library
 
 #### Installation
 
