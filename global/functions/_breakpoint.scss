@@ -1,4 +1,6 @@
 @import "../variables/constants/maps/breakpoints";
+@import "../vendors/bootstrap-variables";
+
 
 @function breakpoint($breakpoint, $breakpoint-map: $breakpoints) {    
     @if type-of($breakpoint) != "string" 

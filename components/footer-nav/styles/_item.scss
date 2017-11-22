@@ -2,16 +2,17 @@
     @include set-text-style($text-style-content-2);
     
     display: inline-block;
-    margin: $space-stack;
+    margin: $space-inline;
 
     &:last-of-type {
-        
         &::after {
             display: none;
         }
     }
 
     @media screen and (min-width: breakpoint(lg, $grid-breakpoints)) {
+        margin-top: 0;
+        
         &::after {
             color: $component-footer-nav-text-color;
             content: "|";
