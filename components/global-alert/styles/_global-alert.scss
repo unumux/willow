@@ -2,10 +2,12 @@
 
 .willow-global-alert {
     @include full-bleed;
+    @extend .butter;
     
     background-color: $component-global-alert-background-color;
     color: $component-global-alert-text-color;
     flex-shrink: 0;
+    margin-top: $space;
     padding-bottom: $space;
     padding-top: $space;
     position: relative;

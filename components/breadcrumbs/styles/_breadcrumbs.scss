@@ -2,8 +2,10 @@
 
 .willow-breadcrumbs {
     @include full-bleed;
-
+    @extend .butter;
+    
     background-color: $component-breadcrumb-background-color;
+    margin-top: $space;
     padding-bottom: $space;
     padding-top: $space;
     

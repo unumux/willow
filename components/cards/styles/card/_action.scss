@@ -1,7 +1,7 @@
 &__action {
     margin: $space-stack-s;
 
-    &:last-of-type {
-        margin-bottom: 0;
+    &:first-of-type {
+        margin-top: 0;
     }
 }
