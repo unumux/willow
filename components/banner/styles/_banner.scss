@@ -1,6 +1,6 @@
-@import "default-variables";
+@import "dependencies";
 
-&-banner {
+.willow-banner {
     @include full-bleed;
     @extend .butter;
 

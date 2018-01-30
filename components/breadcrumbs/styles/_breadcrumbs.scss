@@ -1,6 +1,6 @@
-@import "default-variables";
+@import "dependencies";
 
-&-breadcrumbs {
+.willow-breadcrumbs {
     @include full-bleed;
     @extend .butter;
     

@@ -1,6 +1,8 @@
-@import "default-variables";
+@import "dependencies";
 
-&-page-content {
+.willow-page-content {
+    @extend .butter;
+    
     padding-bottom: $space-l;
     padding-top: $space-l;
 

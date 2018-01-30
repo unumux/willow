@@ -1,6 +1,6 @@
-@import "default-variables";
+@import "dependencies";
 
-&-page-footer {
+.willow-page-footer {
     @include full-bleed;
     @extend .butter;
     
@@ -10,6 +10,7 @@
     flex-direction: column;
     flex-shrink: 0;
     flex-wrap: wrap;
+    margin-top: $space;
     padding-bottom: $space-l;
     padding-top: $space-l;
 

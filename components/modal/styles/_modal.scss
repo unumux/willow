@@ -1,6 +1,6 @@
-@import "default-variables";
+@import "dependencies";
 
-&-modal {
+.willow-modal {
     background-color: $component-modal-overlay-background-color;
     bottom: 0;
     display: none;

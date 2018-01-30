@@ -53,42 +53,54 @@ Willow is built to work with modern browsers
 
 There are 2 methods for installing and using **Willow** in a project
 
-### **Method 1: As an NPM Package**
+### **Method 1: As an NPM Package: SCSS Files**
 
-NOTE: This method requires [node](https://nodejs.org) be installed and that your project use a tool to compile the SCSS into CSS, such as Gulp, Webpack or Grunt.
+#### _Notes_
 
-- Installation
-  - Install **Willow** as a development dependency in your project.
+- Requires [node](https://nodejs.org) and a tool to compile the SCSS into CSS, such as Gulp, Webpack or Grunt.
+- Allows single components imports instead of the entire library
+
+#### Installation
+
+- Install **Willow** as a development dependency in your project.
     ```bash
     npm install --save-dev @unumux/willow
     ```
-  - Optional: To install a provided theme, you will need the [theme's name](#available-themes):
+- Optional: To install a provided theme, you will need the [theme's name](#available-themes):
     ```bash
     npm install --save-dev @unumux/theme-name-goes-here
     ```
 
-- Usage
-  - Include **Willow's** stylesheet in your primary SCSS file.
+#### Usage
+
+- Include the entire library by importing **Willow's** stylesheet in your primary SCSS file.
     ```SCSS
     @import "node_modules/@unumux/willow/styles";
     ```
-  - Optional: To use a provided theme, include the theme's stylesheet in your primary SCSS file **BEFORE the line that imports Willow**:
+- Include single components by importing the component's stylesheet in your primary SCSS file.
+    ```SCSS
+    @import "node_modules/@unumux/willow/components/banner/styles/banner";
+    @import "node_modules/@unumux/willow/components/breadcrumbs/styles/breadcrumbs";
+    ```
+- Optional: To use a provided theme, include the theme's stylesheet in your primary SCSS file **BEFORE the line that imports Willow**:
     ```SCSS
     @import "node_modules/@unumux/theme-name-here/styles";
     @import "node_modules/@unumux/willow/styles";
     ```
-  - Now as you add [**Willow** components](#components) to your HTML your compiler should run and you will see styled components in your browser.
+Now as you add [**Willow** components](#components) to your HTML your compiler should run and you will see styled components in your browser.
 
 ### **Method 2: As Compiled and Minified CSS Files**
 
-- Installation
-  - To use **Willow** without a theme, download **Willow's** minified CSS file and add it to your project's styles folder
-    - [Willow CSS](https://github.com/unumux/willow/releases/download/0.3.0/willow.min.css)
-  - To add a theme, download a theme's minified CSS file, and add it to your project's styles folder. You can delete the **Willow** CSS file if you previously included it.
-    - [Minified CSS Downloads](#minified-css-downloads)
+#### Installation
 
-- Usage
-  - After you include a minified CSS file in your styles folder, you can reference it in your index.html file
+- To use **Willow** without a theme, download **Willow's** minified CSS file and add it to your project's styles folder
+  - [Willow CSS](https://github.com/unumux/willow/releases/download/0.3.0/willow.min.css)
+- To add a theme, download a theme's minified CSS file, and add it to your project's styles folder. You can delete the **Willow** CSS file if you previously included it.
+  - [Minified CSS Downloads](#minified-css-downloads)
+
+#### Usage
+
+- After you include a minified CSS file in your styles folder, you can reference it in your index.html file
     ```HTML
     <!-- If using Willow without a theme -->
     <link rel="stylesheet" href="styles/willow.min.css">
@@ -98,7 +110,8 @@ NOTE: This method requires [node](https://nodejs.org) be installed and that your
     <!-- If using a theme you only need to include the theme's min file -->
     <link rel="stylesheet" href="styles/theme-name.min.css">
     ```
-  - Now as you add [**Willow** components](#components) to your HTML file they will inherit styling
+
+Now as you add [**Willow** components](#components) to your HTML file they will inherit styling
 
 ### **Minified CSS Downloads**
 

@@ -1,6 +1,6 @@
-@import "default-variables";
+@import "dependencies";
 
-&-page-header {
+.willow-page-header {
     @include full-bleed;
     @extend .butter;
     

@@ -1,0 +1,14 @@
+@import "pow";
+
+@function space($scale: 1) {
+    @if type-of($scale) != "number" {
+        @warn "`#{$scale}` is not a number. The 'space' function requires a number";
+        @return false;
+    }
+
+    @if $scale < 1 {
+        @return $base * pow($golden-inverse, floor(1 / $scale));
+    }
+
+    @return $base * pow($golden, $scale);
+}

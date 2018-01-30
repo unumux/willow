@@ -1,6 +1,6 @@
-@import "default-variables";
+@import "dependencies";
 
-&-skip-nav {
+.willow-skip-nav {
     @import "link";
     @extend .butter;
 }
