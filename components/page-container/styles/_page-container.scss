@@ -1,0 +1,10 @@
+@import "./_dependencies.scss";
+
+.willow-page-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $component-page-container-max-width;
+    min-height: 100vh;
+}

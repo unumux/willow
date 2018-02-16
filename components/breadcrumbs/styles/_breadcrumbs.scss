@@ -1,7 +1,7 @@
 @import "dependencies";
 
 .willow-breadcrumbs {
-    @include full-bleed;
+    // @include full-bleed;
     @extend .butter;
     
     background-color: $component-breadcrumb-background-color;

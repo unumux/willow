@@ -17,7 +17,7 @@
     "url": "https://github.com/unumux/willow.git"
   },
   "author": "UnumUX",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/unumux/willow/issues"
   },
@@ -46,7 +46,7 @@
     "stylelint": "^7.5.0"
   },
   "dependencies": {
-    "bootstrap": "4.0.0-beta",
+    "bootstrap": "^4.0.0",
     "normalize.css": "^4.0.0"
   }
 }
