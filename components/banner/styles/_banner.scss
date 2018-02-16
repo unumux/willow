@@ -1,7 +1,6 @@
 @import "dependencies";
 
 .willow-banner {
-    // @include full-bleed;
     @extend .butter;
 
     background-color: $component-banner-background-color;
