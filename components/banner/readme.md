@@ -12,13 +12,15 @@ A banner spans the full width of the screen/viewport. It cannot contain multiple
 
 ```html
 <section class="willow-banner" role="region">
-  <h1 class="willow-banner__heading">Heading Text</h1>
-  <div class="willow-banner__content">
-      <!-- insert components here -->
+  <div class="container">
+    <h1 class="willow-banner__heading">Heading Text</h1>
+    <div class="willow-banner__content">
+        <!-- insert components here -->
+    </div>
+    <ul class="willow-banner__actions">
+        <li class="willow-banner__action"><!-- insert action component here --></li>
+    </ul>
   </div>
-  <ul class="willow-banner__actions">
-      <li class="willow-banner__action"><!-- insert action component here --></li>
-  </ul>
 </section>
 ```
 
@@ -30,12 +32,24 @@ A banner spans the full width of the screen/viewport. It cannot contain multiple
 
 - Required
 - Restrictions
-  - Should Contain: **willow-banner** elements
+  - Should Contain: the Bootstrap `.container` element
 
 #### _Notes_
 
 - The use of `role="region"` with the `<section>` element ensures that **willow-banner** is accessible for user agents that do not support HTML5. The use of both `<section>` and `<role="region">` together may create a warning in an [HTML validator](https://validator.w3.org/) but we left this pattern intact for now to cover all of our accessibility bases.
 - To include a background image on **willow-banner** you will need to target the banner in your SCSS/CSS and set the `background-image` property. If you use the `.willow-banner` class, you will be targeting all banners on the site, so be sure to be more specific by adding your own class to the **willow-banner** component.
+
+---
+
+### container
+
+- Required
+- Restrictions
+  - Should Contain: **willow-banner** elements
+
+#### _Notes_
+
+- The `container` class from Bootstrap is used within **willow-banner** to restrict the width of the component's content while allowing styles applied to the main **willow-banner** block to span the full-width of the [**willow-page-container**](../page-container) component.
 
 ---
 
@@ -73,4 +87,4 @@ A banner spans the full width of the screen/viewport. It cannot contain multiple
 - Optional
 - Repeatable
 - Restrictions
-  - Should Contain: one _actionable_ component (such as [willow-button](../button) or a link)
+  - Should Contain: one _actionable_ component (such as [**willow-button**](../button) or a link)
