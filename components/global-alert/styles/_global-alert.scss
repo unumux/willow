@@ -1,7 +1,6 @@
 @import "dependencies";
 
 .willow-global-alert {
-    @include full-bleed;
     @extend .butter;
     
     background-color: $component-global-alert-background-color;

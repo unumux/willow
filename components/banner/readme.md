@@ -49,7 +49,7 @@ A banner spans the full width of the screen/viewport. It cannot contain multiple
 
 #### _Notes_
 
-- The `container` class from Bootstrap is used within **willow-banner** to restrict the width of the component's content while allowing styles applied to the main **willow-banner** block to span the full-width of the [**willow-page-container**](../page-container) component.
+- The `container` class from Bootstrap is used within **willow-banner** to restrict the width of the component's content while allowing styles applied to the main **willow-banner** block to span the full-width of the [willow-page-container](../page-container) component.
 
 ---
 
@@ -87,4 +87,4 @@ A banner spans the full width of the screen/viewport. It cannot contain multiple
 - Optional
 - Repeatable
 - Restrictions
-  - Should Contain: one _actionable_ component (such as [**willow-button**](../button) or a link)
+  - Should Contain: one _actionable_ component (such as [willow-button](../button) or a link)

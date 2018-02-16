@@ -45,7 +45,7 @@ Breadcrumbs are a specialized secondary navigation that show users their locatio
 
 #### _Notes_
 
-- The `container` class from Bootstrap is used within **willow-breadcrumbs** to restrict the width of the component's content while allowing styles applied to the main **willow-breadcrumbs** block to span the full-width of the [**willow-page-container**](../page-container) component.
+- The `container` class from Bootstrap is used within **willow-breadcrumbs** to restrict the width of the component's content while allowing styles applied to the main **willow-breadcrumbs** block to span the full-width of the [willow-page-container](../page-container) component.
 
 ---
 
