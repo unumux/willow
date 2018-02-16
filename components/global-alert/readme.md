@@ -2,9 +2,7 @@
 
 [Demo](http://codepen.io/team/UnumUX/pen/XMpKpz)
 
-The purpose of a global alert is to communicate a major site or global level message to all users no matter what page they are on or whether they are logged in. Global alerts should be placed at the top of the website so that they appear above the [willow-page-header](../page-header) component on every page. These alerts do not require a user response and can optionally have a close or dismiss button.  If a global alert contains a close button and the user selects to close it, then the message should no longer appear on the current page or any other page. Messages can be errors, warnings, successes, and updates.
-
-_Examples: “Due to the hurricane, our Call Center is currently closed”, “Our Website will undergo scheduled maintenance next Wednesday at 6am”, “Our new amazing service is now available!”_
+The purpose of a global alert is to communicate a major site or global level message to all users no matter what page they are on or whether they are logged in. Global alerts should be placed at the top of the website so that they appear above the [willow-page-header](../page-header) component on every page. These alerts do not require a user response and can optionally have a close or dismiss button.  If a global alert contains a close button and the user selects to close it, then the message should no longer appear on the current page or any other page. Messages can be errors, warnings, successes, and updates. _Examples: “Due to the hurricane, our Call Center is currently closed”, “Our Website will undergo scheduled maintenance next Wednesday at 6am”, “Our new amazing service is now available!”_
 
 ---
 
@@ -77,7 +75,7 @@ _Examples: “Due to the hurricane, our Call Center is currently closed”, “O
 
 #### _Notes_
 
-- **willow-global-alert** should be used only once and be placed immediately after the opening [willow-page-container](../willow-page-container) tag. 
+- **willow-global-alert** should be used only once and be placed immediately after the opening [willow-page-container](../willow-page-container) tag.
 - **willow-global-alert** should come before the[willow-skip-nav](../skip-nav) component
 - The use of `role="alert"` with the `<section>` element ensures that **willow-global-alert** is accessible for user agents that do not support HTML5. The use of both `<section>` and `<role="alert">` together may create a warning in an [HTML validator](https://validator.w3.org/) but we left this pattern intact for now to cover all of our accessibility bases.
 
