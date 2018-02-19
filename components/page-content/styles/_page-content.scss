@@ -1,10 +1,7 @@
 @import "dependencies";
 
 .willow-page-content {
-    @extend .butter;
-    
-    padding-bottom: $space-l;
-    padding-top: $space-l;
 
+    @import "container";
     @import "heading";
 }
