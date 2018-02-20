@@ -4,6 +4,7 @@
     @extend .butter;
     
     background-color: $component-page-header-background-color;
+    margin-top: $space;
 
     @import "container";
     @import "branding";
