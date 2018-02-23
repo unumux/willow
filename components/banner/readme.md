@@ -4,7 +4,7 @@
 
 A banner is a highlighted area of a page used to call out a single piece of information or action. This area is typically styled to stand out visually from the rest of the page’s content and can contain a concise heading, sentence and action component such as a [willow-button](../button).
 
-A banner spans the full width of the screen/viewport. It cannot contain multiple columns. The banner component can have a background image set by the developer. If one is not set a fallback color will be displayed.
+A banner's background spans the full width of the screen/viewport while its content is restricted to the width of the `.container`. It cannot contain multiple columns. The banner component has a default background color but this color can be updated by a developer either by updating the `$component-banner-background-color` variable (which will update all banner backgrounds), or by adding a unique class name to the banner and adding new styling.
 
 ---
 
@@ -37,7 +37,7 @@ A banner spans the full width of the screen/viewport. It cannot contain multiple
 #### _Notes_
 
 - The use of `role="region"` with the `<section>` element ensures that **willow-banner** is accessible for user agents that do not support HTML5. The use of both `<section>` and `<role="region">` together may create a warning in an [HTML validator](https://validator.w3.org/) but we left this pattern intact for now to cover all of our accessibility bases.
-- To include a background image on **willow-banner** you will need to target the banner in your SCSS/CSS and set the `background-image` property. If you use the `.willow-banner` class, you will be targeting all banners on the site, so be sure to be more specific by adding your own class to the **willow-banner** component.
+- To change the background-color on **all** banners you can set the `$component-banner-background-color` variable to a new color value. If you want to change the color for just one or a few banners you can add a unique class to each banner and style the `background-color` property for that class.
 
 ---
 
