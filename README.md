@@ -406,4 +406,4 @@ Found an issue of have an idea for enhancement? Open an [issue](https://github.c
 ## Glossaries
 
 - [Component Modifiers](modifiers.md)
-- [Utitility Classes, Functions and Mixins](utilities.md)
+- [Utility Classes, Functions and Mixins](utilities.md)
