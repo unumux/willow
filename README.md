@@ -6,7 +6,10 @@
 
 - [Components](#components)
 
-- [Layout](#layout)
+- [Page Layout](#page-layout)
+  - [Basics](#basics)
+  - [Creating Page Columns](#creating-page-columns)
+  - [Customizing the Bootstrap Grid](#customizing-the-ootstrap-grid)
 
 - [Understanding Themes](#understanding-themes)
 
@@ -17,7 +20,6 @@
   - [So you need to make a new component](#so-you-need-to-make-a-new-component)
   - [So you need to customize a component](#so-you-need-to-customize-a-component)
   - [So you need to change a theme](#so-you-need-to-change-a-theme)
-  - [So you need to change the Bootstrap grid](#so-you-need-to-change-the-bootstrap-grid)
 
 - [Issues and Feedback](#issues-and-feedback)
 
@@ -131,72 +133,93 @@ Do you have questions or need help with setup? Did you run into errors while fol
 
 ## Components
 
-### Required
+### Layout
 
-- [Layout](#layout)
+- [Page Container](./components/page-container)
+- [Page Header](./components/page-header)
+- [Page Content](./components/page-content)
+- [Page Footer](./components/page-footer)
+- [Grid](./component/grid)
+
+### Navigation
+
+- [Breadcrumbs](./components/breadcrumbs)
+- [Logo Link](./components/logo-link)
+- [Footer Navigation](./components/footer-nav)
+- [Primary Navigation](./components/primary-nav)
+- [Secondary Navigation](./components/secondary-nav)
 - [Skip Link](./components/skip-nav)
 
-### Optional
+### Calls to Action and Alerts
 
 - [Banner](./components/banner)
-- [Breadcrumbs](./components/breadcrumbs)
 - [Button](./components/button)
 - [Cards](./components/cards)
 - [Dialog](./components/dialog)
-- [Footer Navigation](./components/footer-nav)
 - [Global Alerts](./components/global-alert)
-- [Icons](./components/icons)
 - [Inline Alerts](./components/inline-alert)
-- [Logo Link](./components/logo-link)
 - [Modal](./components/modal)
-- [Page Content](./components/page-content)
-- [Page Footer](./components/page-footer)
-- [Page Header](./components/page-header)
-- [Primary Navigation](./components/primary-nav)
-- [Secondary Navigation](./components/secondary-nav)
+
+### Other
+
+- [Icons](./components/icons)
 - [Styling Context](./components/styling-context)
 
 ---
 
-## Layout
+## Page Layout
 
-**Willow** uses [Bootstrap](http://v4-alpha.getbootstrap.com/layout/grid/) to contain the page's content and provide a grid system.
+### Basics
 
-To utilize this, setup a container on your page with `<div class="container"></div>`. All of your content for the page should go inside of this element.
+**Willow** uses a combination of the [willow-page-container](./components/page-container) and [Bootstrap's container](https://getbootstrap.com/docs/4.0/layout/overview/) to handle page layouts.
 
-**Willow** components and your own components can be added directly to this container (meaning you don't have to put everything in a row or column) and they will fill the space.
+[willow-page-container](./components/page-container) makes the page a [flex column](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) which gives the ability to apply the [`.flex-grow` utility class](utilities.md) to any component or row to make it fill extra page height. **willow-page-container** also allows a max-width for styling such as background-colors and images.
 
-To create columns, use the `<div class="row"></div>` element with `<div class="col"></div>` elements. _Note: you will need to determine the correct `col` class name to use, we recommend the [Bootstrap documentation](http://v4-alpha.getbootstrap.com/layout/grid/#grid-options)._
+The [Bootstrap](https://getbootstrap.com/docs/4.0/layout/overview/) container will contain a page's content and provides a [grid system](https://getbootstrap.com/docs/4.0/layout/grid/) for page columns.
+
+To utilize this, start your page with `<div class="willow-page-container"></div>` and place all of your content for the page inside of this component.
+
+### Creating Page Columns
+
+To create page columns, inside of the [willow-page-content component](./components/page-content) add the `<div class="row"></div>` element and `<div class="col"></div>` inside of it. _Note: you will need to determine the correct `col` class name to use [Bootstrap documentation](https://getbootstrap.com/docs/4.0/layout/grid/#grid-options)._
 
 A common example of a column layout would be a page section contains secondary navigation and content.  On a mobile device the secondary navigation needs to be above the content, and on desktop the pieces should be next to each other.
 
 ```html
-<div class="container">
-  <div class="row">
-    <div class="col-lg-3">
-      <!-- insert secondary nav -->
+<div class="willow-page-container">
+  <main class="willow-page-content" id="" role="main">
+    <div class="container">
+      <h1 class="willow-page-content__heading">Heading for content</h1>
+      <div class="row">
+        <div class="col-lg-3">
+          <!-- insert secondary nav -->
+        </div>
+        <div class="col-lg-9">
+          <!-- insert willow-page-content component -->
+        </div>
+      </div>
     </div>
-    <div class="col-lg-9">
-      <!-- insert willow-page-content component -->
-    </div>
-  </div>
+  </main>
 </div>
 ```
 
-### Customize the Bootstrap Grid
+### Customizing the Bootstrap Grid
 
-**Willow** takes the bootstrap breakpoint, container width and gutter values as they come. If you want to update these checkout the section on [customizing the grid](#so-you-need-to-change-the-bootstrap-grid).
+**Willow** takes the bootstrap breakpoint, container width and gutter values as they come. Bootstrap uses [variables](https://getbootstrap.com/docs/4.0/layout/grid/#variables) to control the grid, so you can override these with `SCSS`.
 
-### Willow's Bootstrap Customization
-
-**Willow** adds styles to the `.container` class to make it a [flex column](https://css-tricks.com/snippets/css/a-guide-to-flexbox/). This gives the ability to apply the [utility class](utilities.md) `.flex-grow` to any component or row to make it fill extra page height.
+To update the variables, you declare the variables and override them in your project before you import a theme.
 
 ```scss
-.container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
+// file: my-project/styles/styles.scss
+$grid-gutter-width-base: 40px;
+
+$container-max-widths: (
+  sm: 500px,
+  lg: 900px,
+);
+
+//theme import
+@import "node_modules/@unumux/theme-name-here/styles";
 ```
 
 ---
@@ -266,8 +289,6 @@ There are 3 groups of variables:
 
 [So you need to change a theme](#so-you-need-to-change-a-theme)
 
-[So you need to change the Bootstrap grid](#so-you-need-to-change-the-bootstrap-grid)
-
 ---
 
 ### Recommended SCSS Directory Structure For Your Project
@@ -302,7 +323,7 @@ _Example 1: You want to change the size of all **willow-buttons** everywhere the
 _Example 2: You want to change the background color of positive buttons_
 
 - You would accomplish this by overriding a 'component-specific' variable for the positive buttons
-- Find the variable you want to override by looking at the component's `_default-variables.scss` file located in the styles folder in every component folder. [**Willow** Repo](https://github.com/unumux/willow) 
+- Find the variable you want to override by looking at the component's `_default-variables.scss` file located in the styles folder in every component folder. [**Willow** Repo](https://github.com/unumux/willow)
 - Override the value of that variable in your `_styles.scss` file above the import for the theme
   ```SCSS
   $my-color: #37c0e3;
@@ -344,50 +365,6 @@ Note: Changes to theme variables are used across many components, so tread light
 
 - In your project's SCSS
   - we recommend the `my-project/styles/theme/variables/theme-specific/theme-specific.scss` file
-
----
-
-### So you need to change the Bootstrap grid
-
-Bootstrap uses [variables](https://v4-alpha.getbootstrap.com/layout/grid/#variables) to control the grid. You can override these to customize how the system works.
-
-#### Method 1: Override Variable in your Project
-
-In your main styles file where you import the theme for Willow. You can declare the variables and override them like so:
-
-```scss
-//my-project/styles/styles.scss file
-
-//Override variables above the import of the theme
-$grid-gutter-width-base: 40px;
-
-$container-max-widths: (
-  sm: 500px,
-  lg: 900px,
-);
-
-@import "node_modules/@unumux/theme-name-here/styles";
-
-```
-
-#### Method 2: Override Variables in your Theme
-
-If you are creating your own theme for **Willow** components to use, you can override these variables by:
-
-- In the `theme-name/variables/theme-specific` folder, create a new folder called vendors
-- In the vendors folder create a new partial called _bootstrap.scss
-- In this partial add the bootstrap variables you want to override, and change their values
-- Make sure you import your new file in the _theme-specific.scss file
-
-```scss
-//theme-name/variables/theme-specific/vendors/bootstrap.scss file
-
-$grid-breakpoints: (
-  sm: 506px,
-  lg: 972px
-);
-
-```
 
 ---
 
