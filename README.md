@@ -9,7 +9,7 @@
 - [Page Layout](#page-layout)
   - [Basics](#basics)
   - [Creating Page Columns](#creating-page-columns)
-  - [Customizing the Bootstrap Grid](#customizing-the-ootstrap-grid)
+  - [Customizing the Bootstrap Grid](#customizing-the-bootstrap-grid)
 
 - [Understanding Themes](#understanding-themes)
 
