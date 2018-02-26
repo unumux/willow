@@ -139,7 +139,7 @@ Do you have questions or need help with setup? Did you run into errors while fol
 - [Page Header](./components/page-header)
 - [Page Content](./components/page-content)
 - [Page Footer](./components/page-footer)
-- [Grid](./component/grid)
+- [Grid](./components/grid)
 
 ### Navigation
 
