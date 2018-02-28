@@ -59,7 +59,7 @@ The purpose of a global alert is to communicate a major site or global level mes
 
 - Required
 - Restrictions
-  - Should Contain: the Bootstrap `.container` element
+  - Should Contain: the Bootstrap `.container-fluid` element
 
 #### _Modifiers_
 
@@ -81,7 +81,7 @@ The purpose of a global alert is to communicate a major site or global level mes
 
 ---
 
-### container
+### container-fluid
 
 - Required
 - Restrictions
@@ -89,7 +89,7 @@ The purpose of a global alert is to communicate a major site or global level mes
 
 #### _Notes_
 
-- The `container` class from Bootstrap is used within **willow-global-alert** to restrict the width of the component's content while allowing styles applied to the main **willow-global-alert** block to span the full-width of the [willow-page-container](../page-container) component.
+- The `container-fluid` class from Bootstrap is used within **willow-global-alert** to restrict the width of the component's content while allowing styles applied to the main **willow-global-alert** block to span the full-width of the [willow-page-container](../page-container) component.
 
 ---
 

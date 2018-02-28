@@ -4,7 +4,7 @@
 
 A banner is a highlighted area of a page used to call out a single piece of information or action. This area is typically styled to stand out visually from the rest of the page’s content and can contain a concise heading, sentence and action component such as a [willow-button](../button).
 
-A banner's background spans the full width of the screen/viewport while its content is restricted to the width of the `.container`. It cannot contain multiple columns. The banner component has a default background color but this color can be updated by a developer either by updating the `$component-banner-background-color` variable (which will update all banner backgrounds), or by adding a unique class name to the banner and adding new styling.
+A banner's background spans the full width of the screen/viewport while its content is restricted to the width of the `.container-fluid`. It cannot contain multiple columns. The banner component has a default background color but this color can be updated by a developer either by updating the `$component-banner-background-color` variable (which will update all banner backgrounds), or by adding a unique class name to the banner and adding new styling.
 
 ---
 
@@ -12,7 +12,7 @@ A banner's background spans the full width of the screen/viewport while its cont
 
 ```html
 <section class="willow-banner" role="region">
-  <div class="container">
+  <div class="container-fluid">
     <h1 class="willow-banner__heading">Heading Text</h1>
     <div class="willow-banner__content">
         <!-- insert components here -->
@@ -32,7 +32,7 @@ A banner's background spans the full width of the screen/viewport while its cont
 
 - Required
 - Restrictions
-  - Should Contain: the Bootstrap `.container` element
+  - Should Contain: the Bootstrap `.container-fluid` element
 
 #### _Notes_
 
@@ -41,7 +41,7 @@ A banner's background spans the full width of the screen/viewport while its cont
 
 ---
 
-### container
+### container-fluid
 
 - Required
 - Restrictions
@@ -49,7 +49,7 @@ A banner's background spans the full width of the screen/viewport while its cont
 
 #### _Notes_
 
-- The `container` class from Bootstrap is used within **willow-banner** to restrict the width of the component's content while allowing styles applied to the main **willow-banner** block to span the full-width of the [willow-page-container](../page-container) component.
+- The `container-fluid` class from Bootstrap is used within **willow-banner** to restrict the width of the component's content while allowing styles applied to the main **willow-banner** block to span the full-width of the [willow-page-container](../page-container) component.
 
 ---
 

@@ -10,7 +10,7 @@ Breadcrumbs are a specialized secondary navigation that show users their locatio
 
 ```html
 <nav class="willow-breadcrumbs" role="navigation" aria-label="breadcrumb">
-  <div class="container">
+  <div class="container-fluid">
     <h1 class="willow-breadcrumbs__heading sr-only">You are here:</h1>
     <ol class="willow-breadcrumbs__list">
         <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="" aria-label="">Nav Item 1</a></li>
@@ -29,7 +29,7 @@ Breadcrumbs are a specialized secondary navigation that show users their locatio
 
 - Required
 - Restrictions
-  - Should Contain: the Bootstrap `.container` element
+  - Should Contain: the Bootstrap `.container-fluid` element
 
 #### _Notes_
 
@@ -37,7 +37,7 @@ Breadcrumbs are a specialized secondary navigation that show users their locatio
 
 ---
 
-### container
+### container-fluid
 
 - Required
 - Restrictions
@@ -45,7 +45,7 @@ Breadcrumbs are a specialized secondary navigation that show users their locatio
 
 #### _Notes_
 
-- The `container` class from Bootstrap is used within **willow-breadcrumbs** to restrict the width of the component's content while allowing styles applied to the main **willow-breadcrumbs** block to span the full-width of the [willow-page-container](../page-container) component.
+- The `container-fluid` class from Bootstrap is used within **willow-breadcrumbs** to restrict the width of the component's content while allowing styles applied to the main **willow-breadcrumbs** block to span the full-width of the [willow-page-container](../page-container) component.
 
 ---
 
