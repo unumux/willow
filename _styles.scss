@@ -3,6 +3,23 @@
 
 // moved from base-elements.scss file
 // to allow easier overriding of this setting
-:first-child {
-    margin-top: 0;
-}
+// :first-child {
+//   margin-top: 0;
+// }
+
+/*
+banner - heading | action:first-child
+cards - description > willow-styling-context:first-child | action:first-child
+dialog - heading | content > willow-styling-context:first-child | action:first-child
+modal - heading | content > willow-styling-context:first-child | action:first-child
+alert - heading | content > willow-styling-context:first-child
+secondary-nav - heading
+
+
+global alert headings would be effected by they have margin-top: 0 set
+
+
+headings need margin set to zero directly on themselves
+action need margin set to zero on their first child
+styling context needs margin set to zero on their first child when in certain blocks
+*/
