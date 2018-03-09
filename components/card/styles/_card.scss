@@ -1,6 +1,8 @@
 @import "dependencies";
 
 .willow-card {
+    @include compact;
+
     border-radius: $component-card-border-radius;
     box-shadow: 1px 3px 10px $component-card-box-shadow-color;
     color: $component-card-text-color;

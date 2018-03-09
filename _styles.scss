@@ -1,14 +1,7 @@
 @import "./global/global";
 @import "./components/components";
 
-// moved from base-elements.scss file
-// to allow easier overriding of this setting
-// :first-child {
-//   margin-top: 0;
-// }
-
 /*
-banner - heading | action:first-child
 cards - description > willow-styling-context:first-child | action:first-child
 dialog - heading | content > willow-styling-context:first-child | action:first-child
 modal - heading | content > willow-styling-context:first-child | action:first-child
