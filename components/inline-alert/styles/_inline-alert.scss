@@ -1,6 +1,8 @@
 @import "dependencies";
 
 .willow-alert {
+    @include compact;
+
     background-color: $component-inline-alert-background-color;
     border-radius: $component-inline-alert-border-radius;
     color: $component-inline-alert-text-color;
