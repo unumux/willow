@@ -10,7 +10,7 @@ The **Willow-Page-Header** component should be used on every page of your site (
 
 ```html
 <header class="willow-page-header" role="banner">
-  <div class="container willow-page-header__container">
+  <div class="container-fluid willow-page-header__container">
     <div class="willow-page-header__branding"><!-- insert Willow-Logo-Link Component Here --></div>
     <div class="willow-page-header__content-controls">
         <a class="willow-page-header__content-open" aria-label="Open Menu" href="">menu</a>
@@ -31,7 +31,7 @@ The **Willow-Page-Header** component should be used on every page of your site (
 
 - Required
 - Restrictions
-  - Should Contain: **willow-page-header** elements
+  - Should Contain: the Bootstrap `.container-fluid` element
 
 #### _States_
 
@@ -45,7 +45,7 @@ The **Willow-Page-Header** component should be used on every page of your site (
 
 ---
 
-### container with willow-page-header__container class
+### container-fluid with willow-page-header__container class
 
 - Required
 - Restrictions
@@ -53,8 +53,8 @@ The **Willow-Page-Header** component should be used on every page of your site (
 
 #### _Notes_
 
-- The `container` class from Bootstrap is used within **willow-page-header** to restrict the width of the component's content while allowing styles applied to the main **willow-page-header** block to span the full-width of the [willow-page-container](../page-container) component.
-- The **willow-page-header__container** class is for positioning the footer children. By adding this class the positioning can be controlled without adding overriding styling to the Bootstrap `container` class.
+- The `container-fluid` class from Bootstrap is used within **willow-page-header** to restrict the width of the component's content while allowing styles applied to the main **willow-page-header** block to span the full-width of the [willow-page-container](../page-container) component.
+- The **willow-page-header__container** class is for positioning the footer children. By adding this class the positioning can be controlled without adding overriding styling to the Bootstrap `container-fluid` class.
 
 ---
 

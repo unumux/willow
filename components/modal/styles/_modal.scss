@@ -1,6 +1,8 @@
 @import "dependencies";
 
 .willow-modal {
+    @include compact;
+    
     background-color: $component-modal-overlay-background-color;
     bottom: 0;
     display: none;

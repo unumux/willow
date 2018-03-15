@@ -1,6 +1,8 @@
 @import "dependencies";
 
 .willow-card {
+    @include compact;
+
     border-radius: $component-card-border-radius;
     box-shadow: 1px 3px 10px $component-card-box-shadow-color;
     color: $component-card-text-color;
@@ -8,15 +10,8 @@
     flex-direction: column;
     flex-wrap: nowrap;
     margin: $space-stack-l;
-    max-width: 380px;
     overflow: hidden;
     text-decoration: none;
-
-    .willow-card-grid__item & {
-        flex-grow: 1;
-        flex-shrink: 0;
-        width: 100%;
-    }
 
     @import "image";
     @import "content";

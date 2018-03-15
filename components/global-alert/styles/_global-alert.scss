@@ -2,6 +2,7 @@
 
 .willow-global-alert {
     @extend .butter;
+    @include compact;
     
     background-color: $component-global-alert-background-color;
     color: $component-global-alert-text-color;

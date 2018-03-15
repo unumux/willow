@@ -1,6 +1,8 @@
 @import "dependencies";
 
 .willow-dialog {
+    @include compact; 
+    
     background-color: $component-dialog-overlay-background-color;
     bottom: 0;
     display: none;

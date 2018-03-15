@@ -1,13 +1,11 @@
 # **Willow-Card**
 
-<!-- [Demo](http://codepen.io/team/UnumUX/pen/yMgJbb) -->
-
 **Willow-Card** is a UI design pattern that groups related information visually, resembling a playing card, to encourage users to click or tap to view more details.
 
 **Willow-Card** has 3 key properties:
 
 1. Cards are used for grouping information.
-1. Cards present a summary and link to additional details..
+1. Cards present a summary and link to additional details.
 1. Cards resemble physical cards.
 
 _Note:_ The content in a card should be kept brief. Remember a card should give just enough content to entice a user to click or tap on the card to view more. Truncating content on cards is also acceptable and is represented by adding ellipsis ("...") at the end of the content.
@@ -55,30 +53,6 @@ _Examples: Articles on a news website, products on an eCommerce site, or posts o
 ---
 
 ## Elements
-
-### willow-card-grid
-
-- Optional
-- Restrictions
-  - Should Contain: Multiple **willow-card** components
-
-#### _Notes_
-
-- Cards wrapped in **willow-card-grid** will take the layout of a standard grid that sets its column count based on the device/browser size.
-
----
-
-#### willow-card-columns
-
-- Optional
-- Restrictions
-  - Should Contain: Multiple **willow-card** components
-
-#### _Notes_
-
-- Cards wrapped in **willow-card-columns** will have a column layout that orders them from top to bottom and left to right.
-
----
 
 ### willow-card
 
