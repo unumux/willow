@@ -1,17 +1,2 @@
 @import "./global/global";
 @import "./components/components";
-
-/*
-
-modal - heading | content > willow-styling-context:first-child | action:first-child
-alert - heading | content > willow-styling-context:first-child
-secondary-nav - heading
-
-
-global alert headings would be effected by they have margin-top: 0 set
-
-
-headings need margin set to zero directly on themselves
-action need margin set to zero on their first child
-styling context needs margin set to zero on their first child when in certain blocks
-*/
