@@ -6,9 +6,6 @@
   "scripts": {
     "test": "echo \"No test specified\" && exit 0"
   },
-  "publishConfig": {
-    "access": "public"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/unumux/willow.git"
@@ -22,5 +19,9 @@
   "dependencies": {
     "bootstrap": "^4.0.0",
     "normalize.css": "^8.0.0"
+  },
+  "devDependencies": {
+    "@unumux/stylelint-config-unumux": "2.0.1",
+    "stylelint": "9.1.3"
   }
 }
