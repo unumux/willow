@@ -3,10 +3,12 @@
 
 @import "./node_modules/bootstrap/scss/bootstrap-grid";
 
-// overwrites bootstrap .container-fluid to
-// limit the width of the container to no more than 1140px
+// overwrites bootstrap .container-fluid to limit...
+// the width of the container to no more than 1140px
 // set the side padding to a spacing size in line with Willow ratios
 .container-fluid {
+  flex-basis: 1140px;
+  flex-shrink: 1;
   max-width: 1140px;
   padding-left: $space;
   padding-right: $space;

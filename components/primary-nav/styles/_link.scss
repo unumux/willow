@@ -2,7 +2,8 @@
     background-color: $component-primary-nav-link-background-color;
     color: $component-primary-nav-link-color;
     display: block;
-    padding: $space-inset-l;
+    padding-bottom: $space-l;
+    padding-top: $space-l;
     text-decoration: none;
 
     &:focus {
