@@ -2,10 +2,11 @@
 
 .willow-banner {
     @extend .butter;
+
     @include compact;
 
     background-color: $component-banner-background-color;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-size: cover;
     color: $component-banner-text-color;
     margin-top: $space;
@@ -15,7 +16,7 @@
     text-align: center;
     z-index: 1;
 
-    &:after {
+    &::after {
         background-color: inherit;
         bottom: 0;
         content: "";
@@ -27,7 +28,10 @@
         z-index: -1;
     }
 
-    @import "heading";
+    @media screen and (min-width: 980px) {
+        display: block;
+    }
+
     @import "content";
     @import "actions";
     @import "action";

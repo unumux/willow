@@ -1,12 +1,11 @@
-@import "normalize";
+@import "./node_modules/normalize.css/normalize.css";
 @import "default-variables";
-
 @import "../mixins/set-text-style";
 
 //Wrapping in at-root to ensure these styles are always at the root
 @at-root {
-
     //1. Sets 1em equal to 10px which eases mentally converting font-sizes example: 1.4em = 14px.
+
     html {
         box-sizing: border-box;
         font-size: 62.5%; //1
@@ -28,7 +27,7 @@
         -webkit-font-smoothing: antialiased;
         height: 100%;
         min-height: 100%;
-        
+
         * {
             margin-bottom: 0;
         }
@@ -60,12 +59,13 @@ h6 {
 }
 
 // 2. Lessens margin top on elements that are sibilings of a heading
+
 h1,
 h2,
-h3, 
-h4, 
-h5, 
-h6, {
+h3,
+h4,
+h5,
+h6 {
     margin: $space-stack-l;
 
     + p,
@@ -77,10 +77,11 @@ h6, {
 }
 
 //3. Removes margin from headings that are siblings of another heading
+
 h1 + h2,
-h2 + h3, 
-h3 + h4, 
-h4 + h5, 
+h2 + h3,
+h3 + h4,
+h4 + h5,
 h5 + h6 {
     margin-top: 0; //3
 }
@@ -91,7 +92,7 @@ p {
 
 a {
     color: $component-link-color;
-    
+
     &:visited {
         color: $component-link-color-visited;
     }
@@ -124,6 +125,7 @@ small {
 }
 
 //4. Margin-top instead of margin to prevent overriding browser defaults for margin right and left
+
 blockquote {
     border-left: 2px solid $component-blockquote-border-color;
     color: $component-blockquote-text-color;
@@ -137,6 +139,7 @@ hr {
 }
 
 //5. Margin-top instead of margin to prevent overriding browser defaults for margin right and left
+
 figure {
     margin-top: $space; //5
     padding: $space-inset-squish-xl;
@@ -146,8 +149,8 @@ pre {
     color: $component-body-text-color-monospace;
     font-family: $component-body-text-monospace;
     margin: $space-stack-l;
-    padding: $space-inset-l;
     overflow-x: scroll;
+    padding: $space-inset-l;
 }
 
 code {
@@ -178,6 +181,7 @@ table {
     width: 100%;
 
     //Necessary since table elements need to be wrapped in a container that can scroll on x
+
     &:first-child {
         margin: $space-stack;
     }
@@ -228,7 +232,7 @@ th {
     @include set-text-style($text-style-heading-4);
 }
 
-th, 
+th,
 td {
     display: table-cell;
     padding: $space-inset;
@@ -258,7 +262,7 @@ fieldset {
 }
 
 input,
-select, 
+select,
 textarea {
     background-color: $component-input-background-color;
     border-color: $component-input-border-color;
@@ -268,7 +272,7 @@ textarea {
     margin: $space-stack-s;
     padding: $space-inset-s;
     width: 100%;
-    
+
     &[disabled] {
         background-color: $component-input-background-color-disabled;
         border-color: $component-input-border-color-disabled;
@@ -295,8 +299,8 @@ input[type="range"] {
 }
 
 input[type="color"] {
-    padding: $space-inset-xs;
     height: $component-dropdown-height;
+    padding: $space-inset-xs;
 }
 
 input[type="checkbox"],
@@ -305,7 +309,6 @@ input[type="radio"] {
     box-shadow: inset 0 1px 2px $component-input-box-shadow-color;
     width: auto;
 }
-
 
 input[type="radio"] {
     border-radius: 50%;
@@ -317,7 +320,8 @@ select {
 
 //6. vertical resize cursor to show textarea only resizes vertically - not horizontally (see comment 2)
 //7. textareas should only resize vertically to prevent breaking container horizontally
-//8. prevents extra space beneath the textarea in chrome and safari - https://stackoverflow.com/questions/7144843/extra-space-under-textarea-differs-along-browsers 
+//8. prevents extra space beneath the textarea in chrome and safari - https://stackoverflow.com/questions/7144843/extra-space-under-textarea-differs-along-browsers
+
 textarea {
     cursor: ns-resize; //6
     resize: vertical; //7

@@ -1,21 +1,15 @@
 @mixin gridItem() {
-    margin-top: $component-grid-margin-vertical;
-  
-    &:first-child {
-        margin-top: 0;
-    }
-  
     @include media-breakpoint-up(sm) {
-        flex-shrink: 0;
-        flex-grow: 0;
         display: flex;
+        flex-grow: 0;
+        flex-shrink: 0;
         margin-right: $component-grid-margin-horizontal;
 
         &:last-child {
             margin-right: 0;
         }
     }
-  
+
     @include media-breakpoint-only(sm) {
         @for $i from 1 through 12 {
             .willow-grid--sm-#{$i} & {
@@ -24,11 +18,11 @@
         }
 
         // fallback value
-        .willow-grid:not([class*=willow-grid--sm-]) & {
+        .willow-grid:not([class*="willow-grid--sm-"]) & {
             @include cols(1);
         }
     }
-  
+
     @include media-breakpoint-only(md) {
         @for $i from 1 through 12 {
             .willow-grid--md-#{$i} & {
@@ -37,11 +31,11 @@
         }
 
         // fallback value
-        .willow-grid:not([class*=willow-grid--md-]) & {
+        .willow-grid:not([class*="willow-grid--md-"]) & {
             @include cols(2);
         }
     }
-  
+
     @include media-breakpoint-only(lg) {
         @for $i from 1 through 12 {
             .willow-grid--lg-#{$i} & {
@@ -50,11 +44,11 @@
         }
 
         // fallback value
-        .willow-grid:not([class*=willow-grid--lg-]) & {
+        .willow-grid:not([class*="willow-grid--lg-"]) & {
             @include cols(3);
         }
     }
-  
+
     @include media-breakpoint-up(xl) {
         @for $i from 1 through 12 {
             .willow-grid--xl-#{$i} & {
@@ -63,20 +57,28 @@
         }
 
         // fallback value
-        .willow-grid:not([class*=willow-grid--xl-]) & {
+        .willow-grid:not([class*="willow-grid--xl-"]) & {
             @include cols(4);
         }
     }
+
+    margin-top: $component-grid-margin-vertical;
+
+    &:first-child {
+        margin-top: 0;
+    }
 }
-  
+
 @mixin cols($items: 1) {
-    flex-basis: calc(#{100/$items}% - #{$component-grid-margin-horizontal} + (#{$component-grid-margin-horizontal}/#{$items}));
+    flex-basis: calc(
+        #{100 / $items}% - #{$component-grid-margin-horizontal} + (#{$component-grid-margin-horizontal}/#{$items})
+    );
 
     &:nth-child(#{$items}n) {
         margin-right: 0;
     }
 
-    &:nth-child(-n+#{$items}) {
+    &:nth-child(-n + #{$items}) {
         margin-top: 0;
     }
 }

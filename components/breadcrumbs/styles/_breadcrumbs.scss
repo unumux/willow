@@ -2,14 +2,12 @@
 
 .willow-breadcrumbs {
     @extend .butter;
-    
+
     background-color: $component-breadcrumb-background-color;
     margin-top: $space;
     padding-bottom: $space;
     padding-top: $space;
-    
-    @import "heading";
+
     @import "list";
     @import "item";
-    @import "link";
 }

@@ -12,17 +12,17 @@
         outline: none;
         text-decoration: none;
     }
-   
+
     &:visited {
         color: $component-primary-nav-link-color-visited;
     }
-    
+
     &:hover {
         background-color: $component-primary-nav-link-background-color-hover;
         color: $component-primary-nav-link-color-hover;
         text-decoration: none;
     }
-    
+
     &:active {
         background-color: $component-primary-nav-link-background-color-active;
         color: $component-primary-nav-link-color-active;
@@ -30,7 +30,7 @@
 
     @media screen and (min-width: breakpoint(medium)) {
         @include set-text-style($text-style-heading-4);
-        
+
         padding: $space-inset-squish-l;
     }
 }

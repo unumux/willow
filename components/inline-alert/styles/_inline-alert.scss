@@ -18,12 +18,11 @@
         background-size: contain;
         content: "";
         left: $space-l;
-        margin-top: $space-xs; 
+        margin-top: $space-xs;
         position: absolute;
     }
 
     @import "heading";
-    @import "content";
 }
 
 .willow-alert--positive {
