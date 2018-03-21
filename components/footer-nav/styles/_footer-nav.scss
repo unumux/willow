@@ -1,6 +1,7 @@
 @import "dependencies";
 
 .willow-footer-nav {
+    @import "heading";
     @import "list";
     @import "item";
     @import "link";
