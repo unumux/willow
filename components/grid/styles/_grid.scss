@@ -1,0 +1,16 @@
+@import "dependencies";
+
+@mixin grid() {
+    @include media-breakpoint-up(sm) {
+        align-items: stretch;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
+
+.willow-grid {
+    @include grid;
+
+    @import "item";
+}

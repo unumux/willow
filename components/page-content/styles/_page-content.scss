@@ -1,8 +1,6 @@
-@import "default-variables";
+@import "dependencies";
 
-&-page-content {
-    padding-bottom: $space-l;
-    padding-top: $space-l;
-
+.willow-page-content {
+    @import "container";
     @import "heading";
 }

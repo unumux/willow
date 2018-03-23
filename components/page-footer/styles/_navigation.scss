@@ -2,14 +2,13 @@
     flex-basis: auto;
     flex-grow: 1;
     flex-shrink: 1;
-    margin: $space-stack-xl;    
     max-width: 100%;
     order: 0;
 
     @media screen and (min-width: breakpoint(medium)) {
+        align-items: center;
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
         justify-content: flex-end;
         order: 2;
     }

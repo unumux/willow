@@ -1,0 +1,53 @@
+@import "../../functions/space";
+
+$base: 1.6rem;
+$golden: 1.618;
+$golden-inverse: $golden - 1;
+ 
+////////////////////////////////////////////////////////////////
+// FOR INNER AND OUTER COMPONENT SPACING
+////////////////////////////////////////////////////////////////
+$space-xxs: space(1 / 3); //3.776
+$space-xs: space(1 / 2); //6.110
+$space-s: space(2 / 3); //9.888
+$space: $base; //16
+$space-l: space(1); //25.888
+$space-xl: space(2); //41.886
+$space-xxl: space(3); //67.772
+
+//vertical spacing (margin-top) between elements and components
+$space-stack-xxs: $space-xxs 0 0 0;
+$space-stack-xs: $space-xs 0 0 0;
+$space-stack-s: $space-s 0 0 0;
+$space-stack: $space 0 0 0;
+$space-stack-l: $space-l 0 0 0;
+$space-stack-xl: $space-xl 0 0 0;
+$space-stack-xxl: $space-xxl 0 0 0;
+
+//horizontal spacing (margin-right) between inline elements and components
+$space-inline-xxs: 0 $space-xxs 0 0;
+$space-inline-xs: 0 $space-xs 0 0;
+$space-inline-s: 0 $space-s 0 0;
+$space-inline: 0 $space 0 0;
+$space-inline-l: 0 $space-l 0 0;
+$space-inline-xl: 0 $space-xl 0 0;
+$space-inline-xxl: 0 $space-xxl 0 0;
+
+//surrounding spacing (padding) for components
+$space-inset-xxs: $space-xxs $space-xxs $space-xxs $space-xxs;
+$space-inset-xs: $space-xs $space-xs $space-xs $space-xs;
+$space-inset-s: $space-s $space-s $space-s $space-s;
+$space-inset: $space $space $space $space;
+$space-inset-l: $space-l $space-l $space-l $space-l;
+$space-inset-xl: $space-xl $space-xl $space-xl $space-xl;
+$space-inset-xxl: $space-xxl $space-xxl $space-xxl $space-xxl;
+
+//surrounding spacing (padding) that is smaller on the top and bottom
+$space-inset-squish-xxs: #{$space-xxs / 2} $space-xxs;
+$space-inset-squish-xs: #{$space-xs / 2} $space-xs;
+$space-inset-squish-s: #{$space-s / 2} $space-s;
+$space-inset-squish: #{$space / 2} $space;
+$space-inset-squish-l: #{$space-l / 2} $space-l;
+$space-inset-squish-xl: #{$space-xl / 2} $space-xl;
+$space-inset-squish-xxl: #{$space-xxl / 2} $space-xxl;
+////////////////////////////////////////////////////////////////

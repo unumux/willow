@@ -1,6 +1,6 @@
-@import "default-variables";
+@import "dependencies";
 
-&-footer-nav {
+.willow-footer-nav {
     @import "heading";
     @import "list";
     @import "item";

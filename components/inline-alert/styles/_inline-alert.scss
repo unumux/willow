@@ -1,6 +1,8 @@
-@import "default-variables";
+@import "dependencies";
 
-&-alert {
+.willow-alert {
+    @include compact;
+
     background-color: $component-inline-alert-background-color;
     border-radius: $component-inline-alert-border-radius;
     color: $component-inline-alert-text-color;
@@ -16,7 +18,7 @@
         background-size: contain;
         content: "";
         left: $space-l;
-        margin-top: $space-xs; 
+        margin-top: $space-xs;
         position: absolute;
     }
 
@@ -24,7 +26,7 @@
     @import "content";
 }
 
-&-alert--positive {
+.willow-alert--positive {
     background-color: $component-inline-alert-positive-background-color;
     color: $component-inline-alert-positive-text-color;
 
@@ -33,7 +35,7 @@
     }
 }
 
-&-alert--warning {
+.willow-alert--warning {
     background-color: $component-inline-alert-warning-background-color;
     color: $component-inline-alert-warning-text-color;
 
@@ -42,7 +44,7 @@
     }
 }
 
-&-alert--negative {
+.willow-alert--negative {
     background-color: $component-inline-alert-negative-background-color;
     color: $component-inline-alert-negative-text-color;
 

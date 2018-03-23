@@ -1,6 +1,6 @@
-@import "default-variables";
+@import "dependencies";
 
-&-primary-nav {
+.willow-primary-nav {
     @import "heading";
     @import "list";
     @import "item";

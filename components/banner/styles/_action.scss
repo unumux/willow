@@ -1,12 +1,12 @@
 &__action {
     display: block;
     margin: $space-stack;
-    
+
     @media screen and (min-width: breakpoint(sm, $grid-breakpoints)) {
         display: inline-block;
         font-size: inherit;
         margin: $space-inline;
-        
+
         &:last-of-type {
             margin-right: 0;
         }

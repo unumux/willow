@@ -1,52 +1,44 @@
 {
   "name": "@unumux/willow",
-  "version": "0.3.0",
+  "version": "0.0.0-semantic-release",
   "description": "component library",
   "main": "_index.scss",
   "scripts": {
-    "start": "gulp",
-    "test": "gulp test && node build.js",
-    "commit": "git-cz",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
-  },
-  "publishConfig": {
-    "access": "public"
+    "test": "echo \"No test specified\" && exit 0",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "commit": "git cz",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/unumux/willow.git"
   },
   "author": "UnumUX",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/unumux/willow/issues"
   },
   "homepage": "https://github.com/unumux/willow#readme",
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-conventional-changelog"
-    }
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "normalize.css": "^8.0.0"
   },
   "devDependencies": {
-    "@unumux/eslint-config-unumux": "^1.0.1",
-    "@unumux/stylelint-config-unumux": "^1.0.1",
-    "babel-eslint": "^5.0.0",
-    "babel-preset-es2015": "^6.6.0",
-    "babel-register": "^6.7.2",
-    "browser-sync": "^2.11.2",
-    "cheerio": "^0.22.0",
-    "commitizen": "2.9.5",
-    "cz-conventional-changelog": "1.2.0",
-    "eslint": "^1.10.3",
-    "glob": "^7.1.1",
-    "gulp": "github:gulpjs/gulp#4.0",
-    "gulp-sass": "^2.2.0",
-    "gulp-stylelint": "^1.0.0-beta.0",
-    "semantic-release": "^6.3.2",
-    "stylelint": "^7.5.0"
+    "@commitlint/cli": "6.1.3",
+    "@commitlint/config-conventional": "6.1.3",
+    "@unumux/stylelint-config-unumux": "2.0.1",
+    "commitizen": "2.9.6",
+    "cz-conventional-changelog": "2.1.0",
+    "husky": "0.14.3",
+    "semantic-release": "^15.1.4",
+    "semantic-release-cli": "3.6.4",
+    "stylelint": "9.1.3",
+    "travis-deploy-once": "4.4.1"
   },
-  "dependencies": {
-    "bootstrap": "4.0.0-beta",
-    "normalize.css": "^4.0.0"
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

@@ -10,14 +10,18 @@ The **Willow-Page-Header** component should be used on every page of your site (
 
 ```html
 <header class="willow-page-header" role="banner">
-    <div class="willow-page-header__branding"><!-- insert Willow-Logo-Link Component Here --></div>
-    <div class="willow-page-header__content-controls">
-        <a class="willow-page-header__content-open" aria-label="Open Menu" href="">menu</a>
-        <a class="willow-page-header__content-close" aria-label="Close Menu" href="">close</a>
+  <div class="container-fluid">
+    <div class="willow-page-header__container">
+      <div class="willow-page-header__branding"><!-- insert Willow-Logo-Link Component Here --></div>
+      <div class="willow-page-header__content-controls">
+          <a class="willow-page-header__content-open" aria-label="Open Menu" href="#">menu</a>
+          <a class="willow-page-header__content-close" aria-label="Close Menu" href="#">close</a>
+      </div>
+      <div class="willow-page-header__content">
+          <div class="willow-page-header__navigation"><!-- insert Willow-Primary-Nav Component Here --></div>
+      </div>
     </div>
-    <div class="willow-page-header__content">
-        <div class="willow-page-header__navigation"><!-- insert Willow-Primary-Nav Component Here --></div>
-    </div>
+  </div>
 </header>
 ```
 
@@ -29,7 +33,7 @@ The **Willow-Page-Header** component should be used on every page of your site (
 
 - Required
 - Restrictions
-  - Should Contain: **willow-page-header** elements
+  - Should Contain: the Bootstrap `.container-fluid` element
 
 #### _States_
 
@@ -43,6 +47,29 @@ The **Willow-Page-Header** component should be used on every page of your site (
 
 ---
 
+### container-fluid
+
+- Required
+- Restrictions
+  - Should Contain: **willow-page-header__container**
+
+#### _Notes_
+
+- The `container-fluid` class from Bootstrap is used within **willow-page-header** to restrict the width of the component's content while allowing styles applied to the main **willow-page-header** block to span the full-width of the [willow-page-container](../page-container) component.
+
+---
+
+### willow-page-header__container
+
+- Required
+- Restrictions
+  - Should Contain: **willow-page-header** elements
+
+#### _Notes_
+
+- The **willow-page-header__container** class is for positioning the header children.
+
+---
 ### willow-page-header__branding
 
 - Required

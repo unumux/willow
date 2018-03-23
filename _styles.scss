@@ -1,10 +1,2 @@
-@import "./variables/variables";
-@import "./utilities/utilities";
-@import "./base-elements/base-elements";
+@import "./global/global";
 @import "./components/components";
-
-// moved from base-elements.scss file
-// to allow easier overriding of this setting
-:last-child {
-    margin-bottom: 0;
-}

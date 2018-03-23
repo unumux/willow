@@ -10,7 +10,7 @@ $component-button-background-color-visited: #888 !default;
 $component-button-background-color-hover: #888 !default;
 $component-button-background-color-active: #888 !default;
 $component-button-background-color-focus: #888 !default;
-$component-button-background-color-disabled: #ddd!default;
+$component-button-background-color-disabled: #ddd !default;
 
 // Text
 $component-button-text-color: #fff !default;
@@ -60,10 +60,10 @@ $component-button-primary-border-disabled: transparent !default;
 // =============================================================================
 // Backgrounds
 $component-button-positive-background-color: #61a044 !default;
-$component-button-positive-background-color-visited: #61a044!default;
+$component-button-positive-background-color-visited: #61a044 !default;
 $component-button-positive-background-color-hover: #4a8a2c !default;
 $component-button-positive-background-color-active: #3b781e !default;
-$component-button-positive-background-color-focus: #61a044!default;
+$component-button-positive-background-color-focus: #61a044 !default;
 $component-button-positive-background-color-disabled: #ddd !default;
 
 // Text
@@ -128,7 +128,7 @@ $component-button-ghost-text-color-active: #000 !default;
 $component-button-ghost-text-color-focus: #333 !default;
 $component-button-ghost-text-color-disabled: #666 !default;
 
-// Borders 
+// Borders
 $component-button-ghost-border: 2px solid #fff !default;
 $component-button-ghost-border-visited: 2px solid transparent !default;
 $component-button-ghost-border-hover: 2px solid transparent !default;
@@ -141,10 +141,10 @@ $component-button-ghost-border-disabled: transparent !default;
 // =============================================================================
 // Backgrounds
 $component-button-ghost-inverse-background-color: transparent !default;
-$component-button-ghost-inverse-background-color-visited: rgba(0, 0, 0, 0.70) !default;
-$component-button-ghost-inverse-background-color-hover: rgba(0, 0, 0, 0.70) !default;
+$component-button-ghost-inverse-background-color-visited: rgba(0, 0, 0, 0.7) !default;
+$component-button-ghost-inverse-background-color-hover: rgba(0, 0, 0, 0.7) !default;
 $component-button-ghost-inverse-background-color-active: #000 !default;
-$component-button-ghost-inverse-background-color-focus: rgba(0, 0, 0, 0.30) !default;
+$component-button-ghost-inverse-background-color-focus: rgba(0, 0, 0, 0.3) !default;
 $component-button-ghost-inverse-background-color-disabled: #ddd !default;
 
 // Text
@@ -155,7 +155,7 @@ $component-button-ghost-inverse-text-color-active: #fff !default;
 $component-button-ghost-inverse-text-color-focus: #fff !default;
 $component-button-ghost-inverse-text-color-disabled: #666 !default;
 
-// Borders 
+// Borders
 $component-button-ghost-inverse-border: 2px solid #000 !default;
 $component-button-ghost-inverse-border-visited: 2px solid transparent !default;
 $component-button-ghost-inverse-border-hover: 2px solid transparent !default;

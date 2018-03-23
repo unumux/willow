@@ -1,10 +1,12 @@
-@import "default-variables";
+@import "dependencies";
 
-&-secondary-nav {
+.willow-secondary-nav {
+    @include compact;
+
     background-color: $component-secondary-nav-background-color;
     border: $component-secondary-nav-border;
     margin: $space-stack-l;
-    
+
     @import "heading";
     @import "list";
     @import "item";

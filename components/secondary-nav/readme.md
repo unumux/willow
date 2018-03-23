@@ -2,7 +2,6 @@
 
 [Demo](http://codepen.io/team/UnumUX/pen/MpJevo)
 
-
 Secondary Navigation provides navigational links that are separate from links provided by primary and footer navigation. Secondary navigation will appear on some pages of a site but not necessarily all pages. This navigation is meant for links a user may need in relation to their current page and they can link to content on their own page or to different pages. Secondary navigation can also be made up of common helpful links such as _Contact, About, News, Legal, FAQ, etc._
 
 ---

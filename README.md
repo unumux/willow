@@ -6,7 +6,10 @@
 
 - [Components](#components)
 
-- [Layout](#layout)
+- [Page Layout](#page-layout)
+  - [Basics](#basics)
+  - [Creating Page Columns](#creating-page-columns)
+  - [Customizing the Bootstrap Grid](#customizing-the-bootstrap-grid)
 
 - [Understanding Themes](#understanding-themes)
 
@@ -17,7 +20,6 @@
   - [So you need to make a new component](#so-you-need-to-make-a-new-component)
   - [So you need to customize a component](#so-you-need-to-customize-a-component)
   - [So you need to change a theme](#so-you-need-to-change-a-theme)
-  - [So you need to change the Bootstrap grid](#so-you-need-to-change-the-bootstrap-grid)
 
 - [Issues and Feedback](#issues-and-feedback)
 
@@ -53,42 +55,54 @@ Willow is built to work with modern browsers
 
 There are 2 methods for installing and using **Willow** in a project
 
-### **Method 1: As an NPM Package**
+### **Method 1: As an NPM Package: SCSS Files**
 
-NOTE: This method requires [node](https://nodejs.org) be installed and that your project use a tool to compile the SCSS into CSS, such as Gulp, Webpack or Grunt.
+#### _Notes_
 
-- Installation
-  - Install **Willow** as a development dependency in your project.
+- Requires [node](https://nodejs.org) and a tool to compile the SCSS into CSS, such as Gulp, Webpack or Grunt.
+- Allows single components imports instead of the entire library
+
+#### Installation
+
+- Install **Willow** as a development dependency in your project.
     ```bash
     npm install --save-dev @unumux/willow
     ```
-  - Optional: To install a provided theme, you will need the [theme's name](#available-themes):
+- Optional: To install a provided theme, you will need the [theme's name](#available-themes):
     ```bash
     npm install --save-dev @unumux/theme-name-goes-here
     ```
 
-- Usage
-  - Include **Willow's** stylesheet in your primary SCSS file.
+#### Usage
+
+- Include the entire library by importing **Willow's** stylesheet in your primary SCSS file.
     ```SCSS
     @import "node_modules/@unumux/willow/styles";
     ```
-  - Optional: To use a provided theme, include the theme's stylesheet in your primary SCSS file **BEFORE the line that imports Willow**:
+- Include single components by importing the component's stylesheet in your primary SCSS file.
+    ```SCSS
+    @import "node_modules/@unumux/willow/components/banner/styles/banner";
+    @import "node_modules/@unumux/willow/components/breadcrumbs/styles/breadcrumbs";
+    ```
+- Optional: To use a provided theme, include the theme's stylesheet in your primary SCSS file **BEFORE the line that imports Willow**:
     ```SCSS
     @import "node_modules/@unumux/theme-name-here/styles";
     @import "node_modules/@unumux/willow/styles";
     ```
-  - Now as you add [**Willow** components](#components) to your HTML your compiler should run and you will see styled components in your browser.
+Now as you add [**Willow** components](#components) to your HTML your compiler should run and you will see styled components in your browser.
 
 ### **Method 2: As Compiled and Minified CSS Files**
 
-- Installation
-  - To use **Willow** without a theme, download **Willow's** minified CSS file and add it to your project's styles folder
-    - [Willow CSS](https://github.com/unumux/willow/releases/download/0.3.0/willow.min.css)
-  - To add a theme, download a theme's minified CSS file, and add it to your project's styles folder. You can delete the **Willow** CSS file if you previously included it.
-    - [Minified CSS Downloads](#minified-css-downloads)
+#### Installation
 
-- Usage
-  - After you include a minified CSS file in your styles folder, you can reference it in your index.html file
+- To use **Willow** without a theme, download **Willow's** minified CSS file and add it to your project's styles folder
+  - [Willow CSS](https://github.com/unumux/willow/releases/download/0.3.0/willow.min.css)
+- To add a theme, download a theme's minified CSS file, and add it to your project's styles folder. You can delete the **Willow** CSS file if you previously included it.
+  - [Minified CSS Downloads](#minified-css-downloads)
+
+#### Usage
+
+- After you include a minified CSS file in your styles folder, you can reference it in your index.html file
     ```HTML
     <!-- If using Willow without a theme -->
     <link rel="stylesheet" href="styles/willow.min.css">
@@ -98,7 +112,8 @@ NOTE: This method requires [node](https://nodejs.org) be installed and that your
     <!-- If using a theme you only need to include the theme's min file -->
     <link rel="stylesheet" href="styles/theme-name.min.css">
     ```
-  - Now as you add [**Willow** components](#components) to your HTML file they will inherit styling
+
+Now as you add [**Willow** components](#components) to your HTML file they will inherit styling
 
 ### **Minified CSS Downloads**
 
@@ -118,72 +133,88 @@ Do you have questions or need help with setup? Did you run into errors while fol
 
 ## Components
 
-### Required
+### Layout
 
-- [Layout](#layout)
+- [Page Container](./components/page-container)
+- [Page Header](./components/page-header)
+- [Page Content](./components/page-content)
+- [Page Footer](./components/page-footer)
+- [Grid](./components/grid)
+
+### Navigation
+
+- [Breadcrumbs](./components/breadcrumbs)
+- [Logo Link](./components/logo-link)
+- [Footer Navigation](./components/footer-nav)
+- [Primary Navigation](./components/primary-nav)
+- [Secondary Navigation](./components/secondary-nav)
 - [Skip Link](./components/skip-nav)
 
-### Optional
+### Calls to Action and Alerts
 
 - [Banner](./components/banner)
-- [Breadcrumbs](./components/breadcrumbs)
 - [Button](./components/button)
 - [Cards](./components/cards)
 - [Dialog](./components/dialog)
-- [Footer Navigation](./components/footer-nav)
 - [Global Alerts](./components/global-alert)
-- [Icons](./components/icons)
 - [Inline Alerts](./components/inline-alert)
-- [Logo Link](./components/logo-link)
 - [Modal](./components/modal)
-- [Page Content](./components/page-content)
-- [Page Footer](./components/page-footer)
-- [Page Header](./components/page-header)
-- [Primary Navigation](./components/primary-nav)
-- [Secondary Navigation](./components/secondary-nav)
+
+### Other
+
+- [Icons](./components/icons)
 - [Styling Context](./components/styling-context)
 
 ---
 
-## Layout
+## Page Layout
 
-**Willow** uses [Bootstrap](http://v4-alpha.getbootstrap.com/layout/grid/) to contain the page's content and provide a grid system.
+### Basics
 
-To utilize this, setup a container on your page with `<div class="container"></div>`. All of your content for the page should go inside of this element.
+**Willow** uses a combination of the [willow-page-container](./components/page-container) and [Bootstrap's fluid container](https://getbootstrap.com/docs/4.0/layout/overview/) to handle page layouts.
 
-**Willow** components and your own components can be added directly to this container (meaning you don't have to put everything in a row or column) and they will fill the space.
+[willow-page-container](./components/page-container) makes the page a [flex column](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) which gives the ability to apply the [`.flex-grow` utility class](utilities.md) to any component or row to make it fill extra page height. **willow-page-container** also allows a max-width for styling such as background-colors and images.
 
-To create columns, use the `<div class="row"></div>` element with `<div class="col"></div>` elements. _Note: you will need to determine the correct `col` class name to use, we recommend the [Bootstrap documentation](http://v4-alpha.getbootstrap.com/layout/grid/#grid-options)._
+The [Bootstrap](https://getbootstrap.com/docs/4.0/layout/overview/) fluid container contains a page's content to a certain width and provides a [grid system](https://getbootstrap.com/docs/4.0/layout/grid/) for page columns.
+
+To utilize these layout helpers, start your page with `<div class="willow-page-container"></div>` and place all of your content for the page inside of this component. 
+
+### Creating Page Columns
+
+To create page columns, use the Bootstrap `<div class="container-fluid">` element and add `<div class="row"></div>` and `<div class="col"></div>` as needed. _Note: you will need to determine the correct `col` class name to use [Bootstrap documentation](https://getbootstrap.com/docs/4.0/layout/grid/#grid-options)._
 
 A common example of a column layout would be a page section contains secondary navigation and content.  On a mobile device the secondary navigation needs to be above the content, and on desktop the pieces should be next to each other.
 
 ```html
-<div class="container">
-  <div class="row">
-    <div class="col-lg-3">
-      <!-- insert secondary nav -->
+<div class="willow-page-container">
+  <main class="willow-page-content" id="" role="main">
+    <div class="container-fluid">
+      <h1 class="willow-page-content__heading">Heading for content</h1>
+      <div class="row">
+        <div class="col-lg-3">
+          <!-- insert secondary nav -->
+        </div>
+        <div class="col-lg-9">
+          <!-- insert willow-page-content component -->
+        </div>
+      </div>
     </div>
-    <div class="col-lg-9">
-      <!-- insert willow-page-content component -->
-    </div>
-  </div>
+  </main>
 </div>
 ```
 
-### Customize the Bootstrap Grid
+### Customizing the Bootstrap Grid
 
-**Willow** takes the bootstrap breakpoint, container width and gutter values as they come. If you want to update these checkout the section on [customizing the grid](#so-you-need-to-change-the-bootstrap-grid).
+Bootstrap provides documentation about [customizing the grid](https://getbootstrap.com/docs/4.0/layout/grid/#customizing-the-grid)
 
-### Willow's Bootstrap Customization
-
-**Willow** adds styles to the `.container` class to make it a [flex column](https://css-tricks.com/snippets/css/a-guide-to-flexbox/). This gives the ability to apply the [utility class](utilities.md) `.flex-grow` to any component or row to make it fill extra page height.
+_Note: To update bootstrap grid variables, you have to do this before you import a Willow theme._
 
 ```scss
-.container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
+// file: my-project/styles/styles.scss
+$grid-columns: 10;
+
+//theme import
+@import "node_modules/@unumux/theme-name-here/styles";
 ```
 
 ---
@@ -253,8 +284,6 @@ There are 3 groups of variables:
 
 [So you need to change a theme](#so-you-need-to-change-a-theme)
 
-[So you need to change the Bootstrap grid](#so-you-need-to-change-the-bootstrap-grid)
-
 ---
 
 ### Recommended SCSS Directory Structure For Your Project
@@ -289,7 +318,7 @@ _Example 1: You want to change the size of all **willow-buttons** everywhere the
 _Example 2: You want to change the background color of positive buttons_
 
 - You would accomplish this by overriding a 'component-specific' variable for the positive buttons
-- Find the variable you want to override by looking at the component's `_default-variables.scss` file located in the styles folder in every component folder. [**Willow** Repo](https://github.com/unumux/willow) 
+- Find the variable you want to override by looking at the component's `_default-variables.scss` file located in the styles folder in every component folder. [**Willow** Repo](https://github.com/unumux/willow)
 - Override the value of that variable in your `_styles.scss` file above the import for the theme
   ```SCSS
   $my-color: #37c0e3;
@@ -334,50 +363,6 @@ Note: Changes to theme variables are used across many components, so tread light
 
 ---
 
-### So you need to change the Bootstrap grid
-
-Bootstrap uses [variables](https://v4-alpha.getbootstrap.com/layout/grid/#variables) to control the grid. You can override these to customize how the system works.
-
-#### Method 1: Override Variable in your Project
-
-In your main styles file where you import the theme for Willow. You can declare the variables and override them like so:
-
-```scss
-//my-project/styles/styles.scss file
-
-//Override variables above the import of the theme
-$grid-gutter-width-base: 40px;
-
-$container-max-widths: (
-  sm: 500px,
-  lg: 900px,
-);
-
-@import "node_modules/@unumux/theme-name-here/styles";
-
-```
-
-#### Method 2: Override Variables in your Theme
-
-If you are creating your own theme for **Willow** components to use, you can override these variables by:
-
-- In the `theme-name/variables/theme-specific` folder, create a new folder called vendors
-- In the vendors folder create a new partial called _bootstrap.scss
-- In this partial add the bootstrap variables you want to override, and change their values
-- Make sure you import your new file in the _theme-specific.scss file
-
-```scss
-//theme-name/variables/theme-specific/vendors/bootstrap.scss file
-
-$grid-breakpoints: (
-  sm: 506px,
-  lg: 972px
-);
-
-```
-
----
-
 ### Main Variables That Can Be Overridden
 
 ...
@@ -393,4 +378,4 @@ Found an issue of have an idea for enhancement? Open an [issue](https://github.c
 ## Glossaries
 
 - [Component Modifiers](modifiers.md)
-- [Utitility Classes, Functions and Mixins](utilities.md)
+- [Utility Classes, Functions and Mixins](utilities.md)
