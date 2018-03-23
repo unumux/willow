@@ -10,10 +10,12 @@ A component for positioning/layout purposes. **Willow-Page-Footer** should only 
 
 ```html
 <footer class="willow-page-footer" role="contentinfo">
-  <div class="container-fluid willow-page-footer__container">
-    <div class="willow-page-footer__branding"><!-- insert Willow-Logo-Link Component --></div>
-    <div class="willow-page-footer__navigation"><!-- insert Willow-Footer-Nav Component Here --></div>
-    <small class="willow-page-footer__copyright"><!-- insert copyright text here --></small>
+  <div class="container-fluid">
+    <div class="willow-page-footer__container">
+      <div class="willow-page-footer__branding"><!-- insert Willow-Logo-Link Component --></div>
+      <div class="willow-page-footer__navigation"><!-- insert Willow-Footer-Nav Component Here --></div>
+      <small class="willow-page-footer__copyright"><!-- insert copyright text here --></small>
+    </div>
   </div>
 </footer>
 ```
@@ -34,16 +36,27 @@ A component for positioning/layout purposes. **Willow-Page-Footer** should only 
 
 ---
 
-### container-fluid with willow-page-footer__container class
+### container-fluid
 
 - Required
 - Restrictions
-  - Should Contain: **willow-page-footer** elements
+  - Should Contain: **willow-page-footer__container**
 
 #### _Notes_
 
 - The `container-fluid` class from Bootstrap is used within **willow-page-footer** to restrict the width of the component's content while allowing styles applied to the main **willow-page-footer** block to span the full-width of the [willow-page-container](../page-container) component.
-- The **willow-page-footer__container** class is for positioning the footer children. By adding this class the positioning can be controlled without adding overriding styling to the Bootstrap `container-fluid` class.
+
+---
+
+### willow-page-footer__container
+
+  - Required
+  - Restrictions
+    - Should Contain: **willow-page-footer** elements
+
+#### _Notes_
+
+- The **willow-page-footer__container** is for positioning the footer children.
 
 ---
 
