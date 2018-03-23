@@ -7,7 +7,8 @@
     "test": "echo \"No test specified\" && exit 0",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "commit": "git cz",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
   },
   "repository": {
     "type": "git",
