@@ -22,12 +22,12 @@
     @import "action";
 }
 
-.willow-card[href]{
+.willow-card[href] {
     transform: scale(1);
     transition: 0.2s transform;
-    
+
     &:visited,
-    &:hover, 
+    &:hover,
     &:active {
         color: $component-card-text-color;
     }

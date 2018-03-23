@@ -34,7 +34,8 @@
     &[disabled],
     &[data-disabled="true"] {
         @include set-button-style($neutral, "disabled");
-        cursor: $component-cursor-disabled;        
+
+        cursor: $component-cursor-disabled;
     }
 }
 
@@ -165,6 +166,7 @@
 
 .willow-button--cta {
     @include set-button-style($cta, "default");
+
     padding: $space-inset-squish-l;
 
     &:focus {

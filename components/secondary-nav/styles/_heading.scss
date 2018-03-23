@@ -1,10 +1,11 @@
 // willow-secondary-nav__heading hidden by default with sr-only
 // styling here applied if the sr-only class is removed
+
 &__heading {
     @include set-text-style($text-style-heading-4);
-        
+
     background-color: $component-secondary-nav-heading-background-color;
     color: $component-secondary-nav-heading-color;
-    padding: $space-inset;
     margin-bottom: 0;
+    padding: $space-inset;
 }

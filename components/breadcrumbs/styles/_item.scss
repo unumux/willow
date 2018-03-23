@@ -1,9 +1,9 @@
 &__item {
     @include set-text-style($text-style-content-2);
-    
+
     display: inline-block;
     margin: 0;
-    
+
     &::after {
         content: "/";
         margin-left: $space;

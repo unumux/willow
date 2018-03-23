@@ -2,17 +2,13 @@
     display: block;
     margin: $space-stack;
 
-    // :first-child {
-    //     margin: 0;
-    // }
-    
-    @media screen and (min-width: breakpoint(sm, $grid-breakpoints)) {        
+    @media screen and (min-width: breakpoint(sm, $grid-breakpoints)) {
         display: inline-block;
         font-size: inherit;
         margin: $space-inline;
-        
+
         &:last-of-type {
             margin-right: 0;
         }
     }
-}   
+}
