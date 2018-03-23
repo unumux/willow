@@ -33,7 +33,8 @@
     "husky": "0.14.3",
     "semantic-release": "^15.1.4",
     "semantic-release-cli": "3.6.4",
-    "stylelint": "9.1.3"
+    "stylelint": "9.1.3",
+    "travis-deploy-once": "4.4.1"
   },
   "config": {
     "commitizen": {
