@@ -10,6 +10,9 @@
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/unumux/willow.git"
