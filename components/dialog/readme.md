@@ -1,6 +1,6 @@
 # **Willow-Dialog**
 
-[Demo](https://unumux.github.io/willow-testing-site/)
+[Demo](https://unumux.github.io/willow-testing-site/components/dialog.html)
 
 **Willow-Dialog** is a small window that overlays (pops up over) the content of a webpage. Dialogs communicate information to a user and can prompt them with questions that **do not** require a response. If any of your questions require an answer use the [willow-modal](../modal) component instead. The dialog should disappear if the user has completed the task or action, pressed the `esc` key, or clicked outside of the dialog.
 
