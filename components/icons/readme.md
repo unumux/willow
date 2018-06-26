@@ -1,6 +1,6 @@
 # **Willow-Icon**
 
-[Demo](https://unumux.github.io/willow-testing-site/)
+[Demo](https://unumux.github.io/willow-testing-site/components/icons.html)
 
 **Willow-Icons** are symbols that can be used to convey information and help users comprehend directions, actions, messages and interfaces.
 
