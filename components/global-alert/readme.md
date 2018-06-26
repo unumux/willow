@@ -1,6 +1,6 @@
 # **Willow-Global-Alert**
 
-[Demo](http://codepen.io/team/UnumUX/pen/XMpKpz)
+[Demo](https://unumux.github.io/willow-testing-site/)
 
 The purpose of a global alert is to communicate a major site or global level message to all users no matter what page they are on or whether they are logged in. Global alerts should be placed at the top of the website so that they appear above the [willow-page-header](../page-header) component on every page. These alerts do not require a user response and can optionally have a close or dismiss button.  If a global alert contains a close button and the user selects to close it, then the message should no longer appear on the current page or any other page. Messages can be errors, warnings, successes, and updates. _Examples: “Due to the hurricane, our Call Center is currently closed”, “Our Website will undergo scheduled maintenance next Wednesday at 6am”, “Our new amazing service is now available!”_
 
