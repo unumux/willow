@@ -35,7 +35,7 @@ The library consists of semantic and accessible markup for a variety of componen
 
 ### **Willow** is...
 
-- written to meet UnumUX [CSS/SCSS](https://github.com/unumux/ux-standards/wiki/CSS-&-SCSS-Standards) and [Accessibility](https://unumux.github.io/enterprise-accessibility-standards/) Standards
+- written to meet UnumUX [CSS/SCSS](https://unumux.github.io/enterprise-css-standards/index.html) and [Accessibility](https://unumux.github.io/enterprise-accessibility-standards/) Standards
 - influenced by the principles of:
   - [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) : small, independent - atomic - parts, can be combined into larger molecular structures. Molecular structures can be combined into larger organisms, which can then serve as the foundation for templates and full pages
   - [BEM](http://getbem.com) : a naming convention that makes front-end code easier to read, understand, work with, maintain and scale
