@@ -13,6 +13,7 @@ A banner's background spans the full width of the screen/viewport while its cont
 ```html
 <section class="willow-banner" role="region">
   <div class="container-fluid">
+    <div class="willow-banner__icon"></div>
     <h1 class="willow-banner__heading">Heading Text</h1>
     <div class="willow-banner__content">
         <!-- insert components here -->
@@ -50,6 +51,18 @@ A banner's background spans the full width of the screen/viewport while its cont
 #### _Notes_
 
 - The `container-fluid` class from Bootstrap is used within **willow-banner** to restrict the width of the component's content while allowing styles applied to the main **willow-banner** block to span the full-width of the [willow-page-container](../page-container) component.
+
+---
+
+### willow-banner__icon
+
+- Optional
+- Restrictions
+  - Should Contain: Nothing
+
+#### _Notes_
+
+- To include an icon image in **willow-banner__icon** you will need to add your own class to the element and target that in your SCSS/CSS and set the `background-image` property. Adding a new class allows the icon to be different on each banner. If you set the background image using the `.willow-banner__icon` class every banner on your site will have the same icon.
 
 ---
 
