@@ -1,7 +1,5 @@
 # **Willow-Logo-Link**
 
-[Demo](http://codepen.io/team/UnumUX/pen/RpKRpm)
-
 **Willow-Logo-Link** is a component for displaying a logo and makes the entire logo into a link to the site's home page.
 
 ---

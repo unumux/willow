@@ -1,6 +1,6 @@
 # **Willow-Page-Footer**
 
-[Demo](http://codepen.io/team/UnumUX/pen/yMgJXb)
+[Demo](https://unumux.github.io/willow-testing-site/components/page-footer.html)
 
 A component for positioning/layout purposes. **Willow-Page-Footer** should only be used once per page and should be placed immediately after [willow-page-content](../page-content). This component should contain footer content such as copyright, legal information and footer navigation.
 

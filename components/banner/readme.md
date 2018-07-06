@@ -1,6 +1,6 @@
 # **Willow-Banner**
 
-[Demo](http://codepen.io/team/UnumUX/pen/YZNzQM)
+[Demo](https://unumux.github.io/willow-testing-site/components/banner.html)
 
 A banner is a highlighted area of a page used to call out a single piece of information or action. This area is typically styled to stand out visually from the rest of the page’s content and can contain a concise heading, sentence and action component such as a [willow-button](../button).
 

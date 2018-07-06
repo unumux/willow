@@ -1,6 +1,6 @@
 # **Willow-Inline-Alert**
 
-[Demo](http://codepen.io/team/UnumUX/pen/yMgJMM)
+[Demo](https://unumux.github.io/willow-testing-site/components/inline-alert.html)
 
 An inline alert is a highlighted message related to the content of the current page or to the user’s current process. Inline alerts may or may not require the user to respond to a question. Messages can include error messages, warnings, alerts and success messages.
 
