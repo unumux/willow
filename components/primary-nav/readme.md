@@ -1,6 +1,6 @@
 # **Willow-Primary-Nav**
 
-[Demo](http://codepen.io/team/UnumUX/pen/gmgMxY)
+[Demo](https://unumux.github.io/willow-testing-site/components/page-header.html)
 
 Primary Navigation is meant to move the user to primary sections of the website or app. It should reside within the [willow-page-header](../page-header) component by default. This navigation should take precedence over any other forms of navigation on the page. Links in the primary navigation should not be a repeat of secondary navigation.
 
