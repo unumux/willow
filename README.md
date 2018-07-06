@@ -154,7 +154,7 @@ Do you have questions or need help with setup? Did you run into errors while fol
 
 - [Banner](./components/banner)
 - [Button](./components/button)
-- [Cards](./components/cards)
+- [Cards](./components/card)
 - [Dialog](./components/dialog)
 - [Global Alerts](./components/global-alert)
 - [Inline Alerts](./components/inline-alert)
