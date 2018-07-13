@@ -1,7 +1,5 @@
 # **Willow-Page-Content**
 
-[Demo](http://codepen.io/team/UnumUX/pen/vxgKmM)
-
 A component for positioning/layout purposes.  **Willow-Page-Content** should only be used once per page and should be placed immediately after [willow-page-header](../page-header) and before the [willow-page-footer](../page-footer). This component should contain the main content of a page and page-related items such as secondary navigation. **Willow-Page-Content** should not contain the willow-page-header or willow-page-footer.
 
 ---

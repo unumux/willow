@@ -1,7 +1,5 @@
 # **Willow-Skip-Nav**
 
-[Demo](http://codepen.io/team/UnumUX/pen/YZNWxM)
-
 The Skip Navigation or Skip Link is an accessibility component that allows motor and sight impaired users to skip navigation and scroll to to content identified as the main content of the page. This is also useful for sighted users relying on the keyboard for navigation.
 
 The **willow-skip-nav** is hidden visibly until a user navigates or focuses on the component with their keyboard, at which point it will be displayed.
