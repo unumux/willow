@@ -1,12 +1,12 @@
 //Default/Info
-$component-global-alert-background-color: #888 !default;
-$component-global-alert-text-color: #000 !default;
+$component-global-alert-background-color: $color-middle !default;
+$component-global-alert-text-color: $color-dark !default;
 //Positive
-$component-global-alert-positive-background-color: #888 !default;
-$component-global-alert-positive-text-color: #000 !default;
+$component-global-alert-positive-background-color: $color-positive !default;
+$component-global-alert-positive-text-color: $color-dark !default;
 //Warning
-$component-global-alert-warning-background-color: #888 !default;
-$component-global-alert-warning-text-color: #000 !default;
+$component-global-alert-warning-background-color: $color-warning !default;
+$component-global-alert-warning-text-color: $color-dark !default;
 //Negative
-$component-global-alert-negative-background-color: #888 !default;
-$component-global-alert-negative-text-color: #000 !default;
+$component-global-alert-negative-background-color: $color-negative !default;
+$component-global-alert-negative-text-color: $color-dark !default;

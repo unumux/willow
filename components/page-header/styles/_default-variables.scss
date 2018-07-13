@@ -1,14 +1,14 @@
-$component-page-header-background-color: #333 !default;
-$component-page-header-navigation-border-color: #444 !default;
+$component-page-header-background-color: $color-middle !default;
+$component-page-header-navigation-border-color: $color-middle !default;
 //Menu Close Text and Icon
-$component-page-header-content-close-color: #fff !default;
-$component-page-header-content-close-color-hover: #fff !default;
-$component-page-header-content-close-color-active: #fff !default;
-$component-page-header-content-close-color-visited: #fff !default;
-$component-page-header-content-close-color-focus: #fff !default;
+$component-page-header-content-close-color: $color-light !default;
+$component-page-header-content-close-color-hover: $color-light !default;
+$component-page-header-content-close-color-active: $color-light !default;
+$component-page-header-content-close-color-visited: $color-light !default;
+$component-page-header-content-close-color-focus: $color-light !default;
 //Menu Open Text and Icon
-$component-page-header-content-open-color: #fff !default;
-$component-page-header-content-open-color-hover: #fff !default;
-$component-page-header-content-open-color-active: #fff !default;
-$component-page-header-content-open-color-visited: #fff !default;
-$component-page-header-content-open-color-focus: #fff !default;
+$component-page-header-content-open-color: $color-light !default;
+$component-page-header-content-open-color-hover: $color-light !default;
+$component-page-header-content-open-color-active: $color-light !default;
+$component-page-header-content-open-color-visited: $color-light !default;
+$component-page-header-content-open-color-focus: $color-light !default;

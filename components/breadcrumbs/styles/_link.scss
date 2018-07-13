@@ -1,2 +1,15 @@
 &__link {
+    color: $component-breadcrumb-link-color;
+
+    &:visited {
+        color: $component-breadcrumb-link-color-visited;
+    }
+
+    &:hover {
+        color: $component-breadcrumb-link-color-hover;
+    }
+
+    &:active {
+        color: $component-breadcrumb-link-color-active;
+    }
 }
