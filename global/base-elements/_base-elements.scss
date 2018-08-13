@@ -213,9 +213,10 @@ tbody {
     tr:nth-child(odd) {
         background-color: $component-table-row-background-color-odd;
     }
-
+    
     tr:nth-child(even) {
         background-color: $component-table-row-background-color-even;
+        color: $component-table-body-text-color-inverse;
     }
 }
 
