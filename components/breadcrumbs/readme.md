@@ -100,3 +100,7 @@ Breadcrumbs are a specialized secondary navigation that show users their locatio
 
 - **willow-breadcrumbs__link** elements require an `href` value that links to the page they reference
 - **willow-breadcrumbs__link** elements need an `aria-label` value if the text content of the link doesn't clearly represent where the user will go after clicking the link
+
+---
+
+## [Variables](./styles/_default-variables.scss)
