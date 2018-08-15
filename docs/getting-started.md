@@ -46,7 +46,7 @@ There are 2 methods for installing and using **Willow** in a project
     @import "node_modules/@unumux/theme-name-here/styles";
     @import "node_modules/@unumux/willow/styles";
     ```
-Now as you add [**Willow** components](#components) to your HTML your compiler should run and you will see styled components in your browser.
+Now as you add [**Willow** components](./docs/components-page-layout-examples.md#components) to your HTML your compiler should run and you will see styled components in your browser.
 
 ### **Method 2: As Compiled and Minified CSS Files**
 
@@ -70,7 +70,7 @@ Now as you add [**Willow** components](#components) to your HTML your compiler s
     <link rel="stylesheet" href="styles/theme-name.min.css">
     ```
 
-Now as you add [**Willow** components](#components) to your HTML file they will inherit styling
+Now as you add [**Willow** components](./docs/components-page-layout-examples.md#components) to your HTML file they will inherit styling
 
 ### **Minified CSS Downloads**
 
