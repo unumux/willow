@@ -96,7 +96,7 @@ Use a `<button>` becuase the primary purpose of these buttons is often the actio
 
 ---
 
-## Variables
+## [Variables](./styles/_default-variables.scss)
 
 `$component-button-border-radius` : sets `border-radius` property on **willow-button**
 

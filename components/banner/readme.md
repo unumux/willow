@@ -85,7 +85,7 @@ A banner's background spans the full width of the screen/viewport while its cont
 
 ---
 
-## Variables
+## [Variables](./styles/_default-variables.scss)
 
 `$component-banner-background-color` : sets `background-color` property on **willow-banner**
 

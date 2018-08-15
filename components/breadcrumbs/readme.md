@@ -104,3 +104,5 @@ Breadcrumbs are a specialized secondary navigation that show users their locatio
 ---
 
 ## [Variables](./styles/_default-variables.scss)
+
+`$component-breadcrumb-background-color` : sets `background-color` property on **willow-breadcrumbs**
