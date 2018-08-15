@@ -1,4 +1,4 @@
-# **Willow**
+# Willow
 
 - [Introduction](#introduction)
 
@@ -7,7 +7,6 @@
 
 - [Components, Page Layout & Example Pages](./docs/components-page-layout-examples)
   - [Components](./docs/components-page-layout-examples#components)
-    - [Component Modifiers](./docs/component-modifiers)
   - [Page Layout](./docs/components-page-layout-examples#page-layout)
     - [Basics](./docs/components-page-layout-examples#basics)
     - [Creating Page Columns](./docs/components-page-layout-examples#creating-page-columns)
@@ -17,15 +16,15 @@
   - [Understanding Themes](./docs/themeing#understanding-themes)
   - [Available Themes](./docs/themeing#available-themes)
 
-- [Customizing](#customizing)
-  - [Recommended SCSS Directory Structure For Your Project](#recommended-scss-directory-structure-for-your-project)
-  - [So you need to make a new component](#so-you-need-to-make-a-new-component)
-  - [So you need to customize a component](#so-you-need-to-customize-a-component)
-  - [So you need to change a theme](#so-you-need-to-change-a-theme)
+- [Customizing](./docs/customizing)
+  - [Recommended SCSS Directory Structure For Your Project](./docs/customizing#recommended-scss-directory-structure-for-your-project)
+  - [So you need to make a new component](./docs/customizing#so-you-need-to-make-a-new-component)
+  - [So you need to customize a component](./docs/customizing#so-you-need-to-customize-a-component)
+  - [So you need to change a theme](./docs/customizing#so-you-need-to-change-a-theme)
 
 - [Issues and Feedback](#issues-and-feedback)
 
-- Glossaries
+- [Glossaries](#glossaries)
   - [Component Modifiers](./docs/component-modifiers)
   - [Utilities](./docs/utilities)
 
@@ -51,15 +50,21 @@ Willow is built to work with modern browsers
 - Internet Explorer 10, 11 and Edge
 - Chrome, Safari, Firefox
 
+[Back to top](#willow)
+
 ---
 
 ## Issues and Feedback
 
 Found an issue of have an idea for enhancement? Open an [issue](https://github.com/unumux/willow/issues/new).
 
+[Back to top](#willow)
+
 ---
 
 ## Glossaries
 
-- [Component Modifiers](modifiers.md)
-- [Utility Classes, Functions and Mixins](utilities.md)
+- [Component Modifiers](./docs/modifiers)
+- [Utility Classes, Functions and Mixins](./docs/utilities)
+
+[Back to top](#willow)
