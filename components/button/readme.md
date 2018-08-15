@@ -95,237 +95,62 @@ Use a `<button>` becuase the primary purpose of these buttons is often the actio
 
 ---
 
+## Mixins
+
+**willow-button** uses the `set-button-style` mixin to apply styles to a button based on the button type ($modifier) and $state (ie. hover, focus, active, visited).
+
+[See the `set-button-style` details](../../utilities.md#set-button-stylemodifier-state)
+
+---
+
 ## [Variables](./styles/_default-variables.scss)
 
-`$component-button-border-radius` : sets `border-radius` property on **willow-button**
+**willow-button** variables exist for each button type (default, primary, positive, negative, ghost, ghost-inverse), and for each state within each button type (default, visited, hover, active, focus, disabled). So there are a lot of button variables.
 
-`$component-button-border-color` : sets `border-color` property on **willow-button**
+To keep styles concise, a [variable map](./styles/_variable-maps.scss) organizes button variables into groups based on button type and the `set-button-style` mixin is used in the button SCSS files to get variables from this map and set them to the correct style property.
 
-Default Buttons
+### Variables for all buttons:
 
-`$component-button-background-color` : sets `background-color` property on **willow-button**
+- `$component-button-border-radius` : sets `border-radius` property on **willow-button**
+- `$component-button-border-color` : sets `border-color` property in the `$component-button-border` variable
 
-`$component-button-background-color-visited` : sets `background-color` property on **willow-button:visited**
+### Variables for the default button:
 
-`$component-button-background-color-hover` : sets `background-color` property on **willow-button:hover**
+`background-color` property
 
-`$component-button-background-color-active` : sets `background-color` property on **willow-button:active**
+- `$component-button-background-color` : set on **willow-button**
+- `$component-button-background-color-visited` : set on **willow-button:visited**
+- `$component-button-background-color-hover` : set on **willow-button:hover**
+- `$component-button-background-color-active` : set on **willow-button:active**
+- `$component-button-background-color-focus` : set on **willow-button:focus**
+- `$component-button-background-color-disabled` : set on **willow-button[disabled]**
 
-`$component-button-background-color-focus` : sets `background-color` property on **willow-button:focus**
+`color` property
 
-`$component-button-background-color-disabled` : sets `background-color` property on **willow-button[disabled]**
+- `$component-button-text-color` : set on **willow-button**
+- `$component-button-text-color-visited` : set on **willow-button:visited**
+- `$component-button-text-color-hover` : set on **willow-button:hover**
+- `$component-button-text-color-active` : set on **willow-button:active**
+- `$component-button-text-color-focus` : set on **willow-button:focus**
+- `$component-button-text-color-disabled` : set on **willow-button:disabled**
 
-`$component-button-text-color` : sets `color` property on **willow-button**
+`border` properties
 
-`$component-button-text-color-visited` : sets `color` property on **willow-button:visited**
+- `$component-button-border` : set on **willow-button**
+- `$component-button-border-visited` : set on **willow-button:visited**
+- `$component-button-border-hover` : set on **willow-button:hover**
+- `$component-button-border-active` : set on **willow-button:active**
+- `$component-button-border-focus` : set on **willow-button:focus**
+- `$component-button-border-disabled` : set on **willow-button:disabled*
 
-`$component-button-text-color-hover` : sets `color` property on **willow-button:hover**
+### Variables for other types of buttons will follow this naming convention:
 
-`$component-button-text-color-active` : sets `color` property on **willow-button:active**
+`$component-button-[type name]-[property-name]-[state]`
 
-`$component-button-text-color-focus` : sets `color` property on **willow-button:focus**
+Examples:
 
-`$component-button-text-color-disabled` : sets `color` property on **willow-button:disabled**
+- `$component-button-primary-background-color`
+- `$component-button-positive-background-color:visited`
+- `$component-button-negative-background-color:focus`
 
-`$component-button-border` : sets `border` properties on **willow-button**
-
-`$component-button-border-visited` : sets `border` properties on **willow-button:visited**
-
-`$component-button-border-hover` : sets `border` properties on **willow-button:hover**
-
-`$component-button-border-active` : sets `border` properties on **willow-button:active**
-
-`$component-button-border-focus` : sets `border` properties on **willow-button:focus**
-
-`$component-button-border-disabled` : sets `border` properties on **willow-button:disabled**
-
-Primary Buttons
-
-`$component-button-primary-background-color` : sets `background-color` property on **willow-button--primary**
-
-`$component-button-primary-background-color-visited` : sets `background-color` property on **willow-button--primary:visited**
-
-`$component-button-primary-background-color-hover` : sets `background-color` property on **willow-button--primary:hover**
-
-`$component-button-primary-background-color-active` : sets `background-color` property on **willow-button--primary:active**
-
-`$component-button-primary-background-color-focus` : sets `background-color` property on **willow-button--primary:focus**
-
-`$component-button-primary-background-color-disabled` : sets `background-color` property on **willow-button--primary[disabled]**
-
-`$component-button-primary-text-color` : sets `color` property on **willow-button--primary**
-
-`$component-button-primary-text-color-visited` : sets `color` property on **willow-button--primary:visited**
-
-`$component-button-primary-text-color-hover` : sets `color` property on **willow-button--primary:hover**
-
-`$component-button-primary-text-color-active` : sets `color` property on **willow-button--primary:active**
-
-`$component-button-primary-text-color-focus` : sets `color` property on **willow-button--primary:focus**
-
-`$component-button-primary-text-color-disabled` : sets `color` property on **willow-button--primary[disabled]**
-
-`$component-button-primary-border` : sets `border` property on **willow-button--primary**
-
-`$component-button-primary-border-visited` : sets `border` property on **willow-button--primary:visited**
-
-`$component-button-primary-border-hover` : sets `border` property on **willow-button--primary:hover**
-
-`$component-button-primary-border-active` : sets `border` property on **willow-button--primary:active**
-
-`$component-button-primary-border-focus` : sets `border` property on **willow-button--primary:focus**
-
-`$component-button-primary-border-disabled` : sets `border` property on **willow-button--primary[disabled]**
-
-Positive Buttons
-
-`$component-button-positive-background-color` : sets `background-color` property on **willow-button--positive**
-
-`$component-button-positive-background-color-visited` : sets `background-color` property on **willow-button--positive:visited**
-
-`$component-button-positive-background-color-hover` : sets `background-color` property on **willow-button--positive:hover**
-
-`$component-button-positive-background-color-active` : sets `background-color` property on **willow-button--positive:active**
-
-`$component-button-positive-background-color-focus` : sets `background-color` property on **willow-button--positive:focus**
-
-`$component-button-positive-background-color-disabled` : sets `background-color` property on **willow-button--positive[disabled]**
-
-`$component-button-positive-text-color` : sets `color` property on **willow-button--positive**
-
-`$component-button-positive-text-color-visited` : sets `color` property on **willow-button--positive:visited**
-
-`$component-button-positive-text-color-hover` : sets `color` property on **willow-button--positive:hover**
-
-`$component-button-positive-text-color-active` : sets `color` property on **willow-button--positive:active**
-
-`$component-button-positive-text-color-focus` : sets `color` property on **willow-button--positive:focus**
-
-`$component-button-positive-text-color-disabled` : sets `color` property on **willow-button--positive[disabled]**
-
-`$component-button-positive-border` : sets `border` property on **willow-button--positive**
-
-`$component-button-positive-border-visited` : sets `border` property on **willow-button--positive:visited**
-
-`$component-button-positive-border-hover` : sets `border` property on **willow-button--positive:hover**
-
-`$component-button-positive-border-active` : sets `border` property on **willow-button--positive:active**
-
-`$component-button-positive-border-focus` : sets `border` property on **willow-button--positive:focus**
-
-`$component-button-positive-border-disabled` : sets `border` property on **willow-button--positive[disabled]**
-
-Negative Buttons
-
-`$component-button-negative-background-color` : sets `background-color` property on **willow-button--negative**
-
-`$component-button-negative-background-color-visited` : sets `background-color` property on **willow-button--negative:visited**
-
-`$component-button-negative-background-color-hover` : sets `background-color` property on **willow-button--negative:hover**
-
-`$component-button-negative-background-color-active` : sets `background-color` property on **willow-button--negative:active**
-
-`$component-button-negative-background-color-focus` : sets `background-color` property on **willow-button--negative:focus**
-
-`$component-button-negative-background-color-disabled` : sets `background-color` property on **willow-button--negative[disabled]**
-
-`$component-button-negative-text-color` : sets `color` property on **willow-button--negative**
-
-`$component-button-negative-text-color-visited` : sets `color` property on **willow-button--negative:visited**
-
-`$component-button-negative-text-color-hover` : sets `color` property on **willow-button--negative:hover**
-
-`$component-button-negative-text-color-active` : sets `color` property on **willow-button--negative:active**
-
-`$component-button-negative-text-color-focus` : sets `color` property on **willow-button--negative:focus**
-
-`$component-button-negative-text-color-disabled` : sets `color` property on **willow-button--negative[disabled]**
-
-`$component-button-negative-border` : sets `border` property on **willow-button--negative**
-
-`$component-button-negative-border-visited` : sets `border` property on **willow-button--negative:visited**
-
-`$component-button-negative-border-hover` : sets `border` property on **willow-button--negative:hover**
-
-`$component-button-negative-border-active` : sets `border` property on **willow-button--negative:active**
-
-`$component-button-negative-border-focus` : sets `border` property on **willow-button--negative:focus**
-
-`$component-button-negative-border-disabled` : sets `border` property on **willow-button--negative[disabled]**
-
-Ghost Button
-
-`$component-button-ghost-background-color` : sets `background-color` property on **willow-button--ghost**
-
-`$component-button-ghost-background-color-visited` : sets `background-color` property on **willow-button--ghost:visited**
-
-`$component-button-ghost-background-color-hover` : sets `background-color` property on **willow-button--ghost:hover**
-
-`$component-button-ghost-background-color-active` : sets `background-color` property on **willow-button--ghost:active**
-
-`$component-button-ghost-background-color-focus` : sets `background-color` property on **willow-button--ghost:focus**
-
-`$component-button-ghost-background-color-disabled` : sets `background-color` property on **willow-button--ghost[disabled]**
-
-`$component-button-ghost-text-color` : sets `color` property on **willow-button--ghost**
-
-`$component-button-ghost-text-color-visited` : sets `color` property on **willow-button--ghost:visited**
-
-`$component-button-ghost-text-color-hover` : sets `color` property on **willow-button--ghost:hover**
-
-`$component-button-ghost-text-color-active` : sets `color` property on **willow-button--ghost:active**
-
-`$component-button-ghost-text-color-focus` : sets `color` property on **willow-button--ghost:focus**
-
-`$component-button-ghost-text-color-disabled` : sets `color` property on **willow-button--ghost[disabled]**
-
-`$component-button-ghost-border` : sets `border` property on **willow-button--ghost**
-
-`$component-button-ghost-border-visited` : sets `border` property on **willow-button--ghost:visited**
-
-`$component-button-ghost-border-hover` : sets `border` property on **willow-button--ghost:hover**
-
-`$component-button-ghost-border-active` : sets `border` property on **willow-button--ghost:active**
-
-`$component-button-ghost-border-focus` : sets `border` property on **willow-button--ghost:focus**
-
-`$component-button-ghost-border-disabled` : sets `border` property on **willow-button--ghost[disabled]**
-
-Inverse Ghost Button
-
-`$component-button-ghost-inverse-background-color` : sets `background-color` property on **willow-button--ghost-inverse**
-
-`$component-button-ghost-inverse-background-color-visited` : sets `background-color` property on **willow-button--ghost-inverse:visited**
-
-`$component-button-ghost-inverse-background-color-hover` : sets `background-color` property on **willow-button--ghost-inverse:hover**
-
-`$component-button-ghost-inverse-background-color-active` : sets `background-color` property on **willow-button--ghost-inverse:active**
-
-`$component-button-ghost-inverse-background-color-focus` : sets `background-color` property on **willow-button--ghost-inverse:focus**
-
-`$component-button-ghost-inverse-background-color-disabled` : sets `background-color` property on **willow-button--ghost-inverse[disabled]**
-
-`$component-button-ghost-inverse-text-color` : sets `color` property on **willow-button--ghost-inverse**
-
-`$component-button-ghost-inverse-text-color-visited` : sets `color` property on **willow-button--ghost-inverse:visited**
-
-`$component-button-ghost-inverse-text-color-hover` : sets `color` property on **willow-button--ghost-inverse:hover**
-
-`$component-button-ghost-inverse-text-color-active` : sets `color` property on **willow-button--ghost-inverse:active**
-
-`$component-button-ghost-inverse-text-color-focus` : sets `color` property on **willow-button--ghost-inverse:focus**
-
-`$component-button-ghost-inverse-text-color-disabled` : sets `color` property on **willow-button--ghost-inverse[disabled]**
-
-`$component-button-ghost-inverse-border` : sets `border` property on **willow-button--ghost-inverse**
-
-`$component-button-ghost-inverse-border-visited` : sets `border` property on **willow-button--ghost-inverse:visited**
-
-`$component-button-ghost-inverse-border-hover` : sets `border` property on **willow-button--ghost-inverse:hover**
-
-`$component-button-ghost-inverse-border-active` : sets `border` property on **willow-button--ghost-inverse:active**
-
-`$component-button-ghost-inverse-border-focus` : sets `border` property on **willow-button--ghost-inverse:focus**
-
-`$component-button-ghost-inverse-border-disabled` : sets `border` property on **willow-button--ghost-inverse[disabled]**
-
+Find the full list of **willow-button** variables [here](./styles/_default-variables.scss).
