@@ -1,4 +1,4 @@
-[Back to Main Readme](../readme.md)
+[Back to Main Readme](../README.md)
 
 # Customizing
 
