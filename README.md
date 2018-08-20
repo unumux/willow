@@ -1,6 +1,11 @@
 # Willow
 
+<details>
+  <summary>Table of Contents</summary>
+
 - [Introduction](#introduction)
+  - [Requirements](#requirements)
+  - [Browser Support](#browser-support)
 
 - [Getting Started](./docs/getting-started.md)
   - [Installation and Usage](./docs/getting-started.md#installation-and-usage)
@@ -28,29 +33,33 @@
   - [Component Modifiers](./docs/component-modifiers.md)
   - [Utilities](./docs/utilities.md)
 
+</details>
+
 ---
 
 ## Introduction
 
 **Willow** is a library of reusable user interface components built with front-end code (HTML and SCSS) to allow for faster, more consistent product development.
 
-The library consists of semantic and accessible markup for a variety of components that can be paired with your own custom theme or a provided [theme](#available-themes) to give components a consistent and branded appearance.
+The library consists of semantic and accessible markup for a variety of components that can be paired with your own custom theme or a provided [theme](./docs/themeing.md#available-themes) to give components a consistent and branded appearance.
+
+### Requirements
+
+Willow requires [node](https://nodejs.org) and a tool to compile the SCSS into CSS, such as Gulp, Webpack or Grunt.
 
 ### **Willow** is...
 
-- written to meet UnumUX [CSS/SCSS](https://unumux.github.io/enterprise-css-standards/index.html) and [Accessibility](https://unumux.github.io/enterprise-accessibility-standards/) Standards
+- written to meet Unum [CSS/SCSS](https://unumux.github.io/enterprise-css-standards/index.html) and [Accessibility](https://unumux.github.io/enterprise-accessibility-standards/) Standards
 - influenced by the principles of:
   - [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) : small, independent - atomic - parts, can be combined into larger molecular structures. Molecular structures can be combined into larger organisms, which can then serve as the foundation for templates and full pages
   - [BEM](http://getbem.com) : a naming convention that makes front-end code easier to read, understand, work with, maintain and scale
 
 ### Browser Support
 
-Willow is built to work with modern browsers
-
 - Internet Explorer 10, 11 and Edge
 - Chrome, Safari, Firefox
 
-[Back to top](#willow)
+([Back to top](#willow))
 
 ---
 
@@ -58,7 +67,7 @@ Willow is built to work with modern browsers
 
 Found an issue of have an idea for enhancement? Open an [issue](https://github.com/unumux/willow/issues/new).
 
-[Back to top](#willow)
+([Back to top](#willow))
 
 ---
 
@@ -67,4 +76,4 @@ Found an issue of have an idea for enhancement? Open an [issue](https://github.c
 - [Component Modifiers](./docs/modifiers.md)
 - [Utility Classes, Functions and Mixins](./docs/utilities.md)
 
-[Back to top](#willow)
+([Back to top](#willow))
