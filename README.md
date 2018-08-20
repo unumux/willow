@@ -59,15 +59,11 @@ Willow requires [node](https://nodejs.org) and a tool to compile the SCSS into C
 - Internet Explorer 10, 11 and Edge
 - Chrome, Safari, Firefox
 
-([Back to top](#willow))
-
 ---
 
 ## Issues and Feedback
 
 Found an issue of have an idea for enhancement? Open an [issue](https://github.com/unumux/willow/issues/new).
-
-([Back to top](#willow))
 
 ---
 
