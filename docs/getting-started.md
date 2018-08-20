@@ -47,8 +47,8 @@
       @import "node_modules/@unumux/willow/styles";
       ```
 
-- Step Six - put some components on a page
-Now as you add [**Willow** components](./docs/components-page-layout-examples.md#components) to your HTML your compiler should run and you will see styled components in your browser.
+- Step Six
+  - Now add [**Willow** components](./docs/components-page-layout-examples.md#components) to your HTML, run your style compiling tool and you should see styled components in your browser.
 
 ## Need Help
 
