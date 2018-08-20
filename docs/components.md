@@ -1,6 +1,6 @@
 [Back to Main Readme](../README.md)
 
-# Components, Page Layout & Example Pages
+# Components
 
 - [Components](#components)
   - [Component Modifiers](./component-modifiers.md)
@@ -41,7 +41,7 @@
   - [Icons](./components/icons)
   - [Styling Context](./components/styling-context)
 
-[Component Modifiers](./component-modifiers.md)
+- [Component Modifiers](./component-modifiers.md)
 
 ---
 
