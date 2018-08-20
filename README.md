@@ -10,12 +10,12 @@
 - [Getting Started](./docs/getting-started.md)
   - [Installation and Usage](./docs/getting-started.md#installation-and-usage)
 
-- [Components, Page Layout & Example Pages](./docs/components-page-layout-examples.md)
-  - [Components](./docs/components-page-layout-examples.md#components)
-  - [Page Layout](./docs/components-page-layout-examples.md#page-layout)
-    - [Basics](./docs/components-page-layout-examples.md#basics)
-    - [Creating Page Columns](./docs/components-page-layout-examples.md#creating-page-columns)
-    - [Customizing the Bootstrap Grid](./docs/components-page-layout-examples.md#customizing-the-bootstrap-grid)
+- [Components, Page Layout & Example Pages](./docs/components.md)
+  - [Components](./docs/components.md#components)
+  - [Page Layout](./docs/components.md#page-layout)
+    - [Basics](./docs/components.md#basics)
+    - [Creating Page Columns](./docs/components.md#creating-page-columns)
+    - [Customizing the Bootstrap Grid](./docs/components.md#customizing-the-bootstrap-grid)
 
 - [Themeing](./docs/themeing.md)
   - [Understanding Themes](./docs/themeing.md#understanding-themes)
