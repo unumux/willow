@@ -4,7 +4,7 @@
 
 - [Component List](#component-list)
   - [Component Modifiers](./component-modifiers.md)
-- [A Simple Page](#simple-page)
+- [Starter HTML](#starter-html)
 - [Page Layout Explained](#page-layout-explained)
 - [Creating Page Columns](#creating-page-columns)
   - [Customizing the Bootstrap Grid](#customizing-the-bootstrap-grid)
@@ -58,7 +58,7 @@
 
 ---
 
-## A Simple Page
+## Starter HTML
 
 After [installing and importing](./getting-started.md#installation-and-usage) Willow and an optional theme you're ready to start using Willow HTML.
 
@@ -69,7 +69,7 @@ A page outline boils down to:
   - willow-page-content
   - willow-page-footer
 
-Here is an example a basic page with Willow page/layout components:
+Here is an example of starter HTML with Willow page/layout components:
 
 ```HTML
 <!DOCTYPE html>

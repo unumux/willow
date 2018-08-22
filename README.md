@@ -7,11 +7,11 @@
 - [Getting Started](./docs/getting-started.md)
   - [Installation and Usage](./docs/getting-started.md#installation-and-usage)
 
-- [Components, Page Layout & Example Pages](./docs/components.md)
+- [Components and Getting Started with Willow HTML](./docs/components.md)
   - [Components](./docs/components.md#components)
-  - [Page Layout](./docs/components.md#page-layout)
-    - [Basics](./docs/components.md#basics)
-    - [Creating Page Columns](./docs/components.md#creating-page-columns)
+  - [Starter HTML](./docs/components.md#starter-html)
+  - [Page Layout Explained](./docs/components.md#page-layout-explained)
+  - [Creating Page Columns](./docs/components.md#creating-page-columns)
     - [Customizing the Bootstrap Grid](./docs/components.md#customizing-the-bootstrap-grid)
 
 - [Themeing](./docs/themeing.md)
