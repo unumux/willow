@@ -5,9 +5,8 @@
 - [Component List](#component-list)
   - [Component Modifiers](./component-modifiers.md)
 - [A Simple Page](#simple-page)
-- [Page Layout](#page-layout)
-  - [Basics](#basics)
-  - [Creating Page Columns](#creating-page-columns)
+- [Page Layout Explained](#page-layout-explained)
+- [Creating Page Columns](#creating-page-columns)
   - [Customizing the Bootstrap Grid](#customizing-the-bootstrap-grid)
 
 ---
@@ -70,7 +69,7 @@ A page outline boils down to:
   - willow-page-content
   - willow-page-footer
 
-Here is an example of laying out your first page with Willow components:
+Here is an example a basic page with Willow page/layout components:
 
 ```HTML
 <!DOCTYPE html>
@@ -140,9 +139,7 @@ Check out the [example site](https://unumux.github.io/willow-testing-site/exampl
 
 ---
 
-## Page Layout
-
-### Basics
+## Page Layout Explained
 
 **Willow** uses a combination of the [willow-page-container](./components/page-container) and [Bootstrap's fluid container](https://getbootstrap.com/docs/4.0/layout/overview/) to handle page layouts.
 
@@ -152,7 +149,9 @@ Check out the [example site](https://unumux.github.io/willow-testing-site/exampl
 
 The [Bootstrap](https://getbootstrap.com/docs/4.0/layout/overview/) `.container-fluid` element contains a page's content to a certain width and provides a [grid system](https://getbootstrap.com/docs/4.0/layout/grid/) for page columns.
 
-### Creating Page Columns
+---
+
+## Creating Page Columns
 
 To create page columns, use the Bootstrap `<div class="container-fluid">` element and add `<div class="row"></div>` and `<div class="col"></div>` as needed. _Note: you will need to determine the correct `col` class name to use [Bootstrap documentation](https://getbootstrap.com/docs/4.0/layout/grid/#grid-options)._
 
@@ -189,5 +188,3 @@ $grid-columns: 10;
 //theme import
 @import "node_modules/@unumux/theme-name-here/styles";
 ```
-
----

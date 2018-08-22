@@ -1,8 +1,5 @@
 # Willow
 
-<details>
-  <summary>Table of Contents</summary>
-
 - [Introduction](#introduction)
   - [Requirements](#requirements)
   - [Browser Support](#browser-support)
@@ -32,8 +29,6 @@
 - [Glossaries](#glossaries)
   - [Component Modifiers](./docs/component-modifiers.md)
   - [Utilities](./docs/utilities.md)
-
-</details>
 
 ---
 
