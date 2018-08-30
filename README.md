@@ -4,10 +4,29 @@
   - [Requirements](#requirements)
   - [Browser Support](#browser-support)
 
-- [Getting Started](./docs/getting-started.md)
-  - [Installation and Usage](./docs/getting-started.md#installation-and-usage)
-  - [Help](./docs/getting-started.md#help)
+- [Docs](./docs/readme.md)
+  - [Getting Started](./docs/getting-started.md)
+    - [Installation and Usage](./docs/getting-started.md#installation-and-usage)
+    - [Help](./docs/getting-started.md#help)
+  - [Components](./docs/components.md)
+    - [List](./docs/components.md#list)
+    - [Related Links](./docs/components.md#related-links)
+  - Deeper Dives
+    - [Page Layout](./docs/page-layout.md#page-layout)
+      - [Basics](./docs/page-layout.md#basics)
+      - [Creating Page Columns](./docs/page-layout.md#creating-page-columns)
+      - [Customizing the Bootstrap Grid](./docs/page-layout.md#customizing-the-bootstrap-grid)
 
+    - [Theming](./docs/theming.md)
+      - [Understanding Themes](./docs/theming.md#understanding-themes)
+      - [Available Themes](./docs/theming.md#available-themes)
+
+    - [Customizing](./docs/customizing.md)
+      - [Recommended SCSS Directory Structure For Your Project](./docs/customizing.md#recommended-scss-directory-structure-for-your-project)
+      - [So you need to make a new component](./docs/customizing.md#so-you-need-to-make-a-new-component)
+      - [So you need to customize a component](./docs/customizing.md#so-you-need-to-customize-a-component)
+      - [So you need to change a theme](./docs/customizing.md#so-you-need-to-change-a-theme)
+  
 - [Tutorials](./docs/tutorials/readme.md)
   - [Make a page](./docs/tutorials/make-a-page.md)
     - [Setup](./docs/tutorials/make-a-page.md#setup)
@@ -20,26 +39,6 @@
   - Customize an existing theme
   - Contribute to Willow
 
-- [Components](./docs/components.md)
-  - [List](./docs/components.md#list)
-  - [Related Links](./docs/components.md#related-links)
-
-- Deeper Dives
-  - [Page Layout](./docs/page-layout.md#page-layout)
-    - [Basics](./docs/page-layout.md#basics)
-    - [Creating Page Columns](./docs/page-layout.md#creating-page-columns)
-    - [Customizing the Bootstrap Grid](./docs/page-layout.md#customizing-the-bootstrap-grid)
-  
-  - [Theming](./docs/theming.md)
-    - [Understanding Themes](./docs/theming.md#understanding-themes)
-    - [Available Themes](./docs/theming.md#available-themes)
-  
-  - [Customizing](./docs/customizing.md)
-    - [Recommended SCSS Directory Structure For Your Project](./docs/customizing.md#recommended-scss-directory-structure-for-your-project)
-    - [So you need to make a new component](./docs/customizing.md#so-you-need-to-make-a-new-component)
-    - [So you need to customize a component](./docs/customizing.md#so-you-need-to-customize-a-component)
-    - [So you need to change a theme](./docs/customizing.md#so-you-need-to-change-a-theme)
-  
 - [Issues and Feedback](#issues-and-feedback)
 
 - [Glossaries](#glossaries)

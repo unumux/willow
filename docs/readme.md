@@ -1,4 +1,6 @@
-# Documentation
+[Back to Main Readme](../README.md) > Docs
+
+# Docs
 
 - [Getting Started](./getting-started.md)
   - [Installation and Usage](./getting-started.md#installation-and-usage)
@@ -39,3 +41,5 @@
 - [Glossaries](#glossaries)
   - [Component Modifiers](./component-modifiers.md)
   - [Utilities](./utilities.md)
+
+  ([Back to top](#docs))
