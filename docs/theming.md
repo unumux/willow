@@ -1,6 +1,6 @@
-[Back to Main Readme](../README.md)
+[Back to Main Readme](../README.md) > [Docs](./readme.md) > Theming
 
-# Themeing
+# Theming
 
 - [Understanding Themes](#understanding-themes)
 - [Available Themes](#available-themes)
@@ -53,6 +53,8 @@ There are 3 groups of variables:
     $component-button-negative-background-color: $theme-action-negative !default;
     ```
 
+---
+
 ## Available Themes
 
 |         Theme Name         | Documentation                                               |
@@ -60,3 +62,4 @@ There are 3 groups of variables:
 |     theme-unum-default     |[docs](https://github.com/unumux/theme-unum-default)         |
 | theme-coloniallife-default |[docs](https://github.com/unumux/theme-coloniallife-default) |
 
+([Back to top](#theming))

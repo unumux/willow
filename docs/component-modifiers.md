@@ -1,4 +1,4 @@
-[Back to Main Readme](../README.md)
+[Back to Main Readme](../README.md) > [Docs](./readme.md) > Modifier Glossary
 
 # Modifier Glossary
 
@@ -103,3 +103,5 @@ A glossary of modifiers used by Willow components and links to examples
 `--warning-inverse` : displays a yield symbol to signify something that needs attention but in an inverse color
 
 - [Willow Icons](./components/icons)
+
+([Back to top](#modifier-glossary))

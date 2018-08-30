@@ -1,4 +1,4 @@
-[Back to Main Readme](../README.md)
+[Back to Main Readme](../README.md) > [Docs](./readme.md) > Customizing
 
 # Customizing
 
@@ -83,3 +83,5 @@ Note: Changes to theme variables are used across many components, so tread light
 
 - In your project's SCSS
   - we recommend the `my-project/styles/theme/variables/theme-specific/theme-specific.scss` file
+
+([Back to top](#customizing))

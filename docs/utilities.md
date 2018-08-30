@@ -1,8 +1,12 @@
-[Back to Main Readme](../README.md)
+[Back to Main Readme](../README.md) > [Docs](./readme.md) > Utility Glossary
 
 # Utility Glossary
 
-A glossary of utility [classes](#classes), [functions](#functions) and [mixins](#mixins) in the **Willow** library.
+- [classes](#classes)
+- [functions](#functions)
+- [mixins](#mixins)
+
+---
 
 ## Classes
 
@@ -292,3 +296,5 @@ A glossary of utility [classes](#classes), [functions](#functions) and [mixins](
         border: 0;
     */
 ```
+
+([Back to top](#utility-glossary))

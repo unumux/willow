@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Demo Website</title>
+    <!-- PRIMARY STYLESHEET -->
+    <link id="stylesheet" rel="stylesheet" href="../styles/styles.min.css">
+</head>
+
+<body>
+    <!-- PAGE COMPONENT -->
+    <div class="willow-page-container">
+        <!-- SKIP NAV COMPONENT -->
+        <div class="willow-skip-nav">
+            <a href="#mainContent" class="willow-skip-nav__link" aria-label="skip to main content">Skip to Content</a>
+        </div>
+        <!-- PAGE HEADER COMPONENT -->
+        <header class="willow-page-header" role="banner">
+            <div class="container-fluid">
+                <div class="willow-page-header__container">
+                <div class="willow-page-header__branding">
+                    <a class="willow-logo-link" href="/" aria-label="go to home page"><img class="willow-logo-link__image" src="https://via.placeholder.com/350x150" alt="Company Logo"></a>
+                </div>
+                <div class="willow-page-header__content-controls">
+                    <a class="willow-page-header__content-open" aria-label="Open Menu" href="#">menu</a>
+                    <a class="willow-page-header__content-close" aria-label="Close Menu" href="#">close</a>
+                </div>
+                <div class="willow-page-header__content">
+                    <div class="willow-page-header__navigation">
+                        <nav class="willow-primary-nav" role="navigation" aria-label="primary">
+                            <h1 class="willow-primary-nav__heading sr-only">Site Primary Menu</h1>
+                            <ul class="willow-primary-nav__list">
+                                <li class="willow-primary-nav__item">
+                                    <a class="willow-primary-nav__link" href="/">Home</a>
+                                </li>
+                                <li class="willow-primary-nav__item">
+                                    <a class="willow-primary-nav__link" href="/components.html" aria-label="See available components">Components</a>
+                                </li>
+                                <li class="willow-primary-nav__item">
+                                    <a class="willow-primary-nav__link" href="/example-pages.html">Example Pages</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- PAGE CONTENT COMPONENT -->
+        <main class="willow-page-content" id="mainContent" role="main">
+            <!-- insert components here -->
+        </main>
+
+        <!-- PAGE FOOTER COMPONENT -->
+        <footer class="willow-page-footer" role="contentinfo">
+            <div class="container-fluid">
+                <div class="willow-page-footer__container">
+                    <div class="willow-page-footer__branding">
+                        <a class="willow-logo-link" href="/" aria-label="go to home page"><img class="willow-logo-link__image" src="https://via.placeholder.com/350x150" alt="Company Logo"></a>
+                    </div>
+                    <div class="willow-page-footer__navigation">
+                        <nav class="willow-footer-nav" role="navigation" aria-label="footer">
+                            <h1 class="willow-footer-nav__heading sr-only">Site Footer Menu</h1>
+                            <ul class="willow-footer-nav__list">
+                                <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="/">Home</a></li>
+                                <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="/components.html" aria-label="See available components">Components</a></li>
+                                <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="/example-pages.html">Example Pages</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <small class="willow-page-footer__copyright">Here is an example of a copyright. 2018.</small>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- PRIMARY SCRIPT FILE -->
+    <script src="../scripts/site.min.js"></script>
+</body>
+
+</html>
