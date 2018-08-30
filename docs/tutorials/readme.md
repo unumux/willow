@@ -5,7 +5,7 @@
 Here are some basic guides to using Willow.  
 
 - [Make a page](./make-a-page.md)
-  - [Core setup](./make-a-page.md#setup)
+  - [Setup](./make-a-page.md#setup)
   - [Adding common components](./make-a-page.md#add-common-components)
   - [Adding more components](./make-a-page.md#add-more-components)
   - Maybe more sections here ....

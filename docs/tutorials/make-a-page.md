@@ -4,6 +4,13 @@
 
 In this tutorial we'll create a simple HTML page.
 
+- [Setup](#setup)
+- [Adding common components](#add-common-components)
+- [Adding more components](#add-more-components)
+- Maybe more sections here ....
+
+---
+
 ## Setup
 
 We'll start by setting up a basic page
@@ -157,7 +164,7 @@ So now you have a page with some basic components in place.  Now we'll add some 
 </header>
 ```
 
-## Let's improve the footer
+### Let's improve the footer
 
 1. Let's add a logo to our page footer. Add **willow-logo-link** within the page footers's branding container - [copy the HTML](../../components/logo-link/readme.md#html-snippet)
 2. Review and update willow-logo-link's attributes as needed
@@ -189,7 +196,7 @@ So now you have a page with some basic components in place.  Now we'll add some 
 </footer>
 ```
 
-## Let's add some page content
+### Let's add some page content
 
 To Be Continued...
 
