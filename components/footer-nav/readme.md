@@ -82,14 +82,14 @@ _Example Page Links: Sitemap, Frequently Asked Questions, Legal, Privacy Policy,
 
 ## [Variables](./styles/_default-variables.scss)
 
-$component-footer-nav-text-color : sets `` property on **willow-footer-nav__item::after**
+`$component-footer-nav-text-color` : sets `color` property on **willow-footer-nav__item::after**
 
-$component-footer-nav-link-color : sets `color` property on **willow-footer-nav__link**
+`$component-footer-nav-link-color` : sets `color` property on **willow-footer-nav__link**
 
-$component-footer-nav-link-color-hover : sets `color` property on **willow-footer-nav__link:hover**
+`$component-footer-nav-link-color-hover` : sets `color` property on **willow-footer-nav__link:hover**
 
-$component-footer-nav-link-color-focus : not used
+`$component-footer-nav-link-color-focus` : not used
 
-$component-footer-nav-link-color-active : sets `color` property on **willow-footer-nav__link:active**
+`$component-footer-nav-link-color-active` : sets `color` property on **willow-footer-nav__link:active**
 
-$component-footer-nav-link-color-visited : sets `color` property on **willow-footer-nav__link:visited**
+`$component-footer-nav-link-color-visited` : sets `color` property on **willow-footer-nav__link:visited**

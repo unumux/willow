@@ -36,4 +36,4 @@ A component for positioning/layout purposes.  **Willow-Page-Container** should o
 
 ## [Variables](./styles/_default-variables.scss)
 
-$component-page-container-max-width : sets `max-width` property on **willow-page-container**
+`$component-page-container-max-width` : sets `max-width` property on **willow-page-container**

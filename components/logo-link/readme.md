@@ -41,4 +41,4 @@
 
 ## [Variables](./styles/_default-variables.scss)
 
-$component-logo-link-image-height : sets `height` property on **willow-logo-link__image**
+`$component-logo-link-image-height` : sets `height` property on **willow-logo-link__image**

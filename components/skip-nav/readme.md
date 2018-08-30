@@ -45,3 +45,13 @@ The **willow-skip-nav** is hidden visibly until a user navigates or focuses on t
 ---
 
 ## [Variables](./styles/_default-variables.scss)
+
+`$component-skip-nav-background-color` : sets `background-color` property on **willow-skip-nav__link**
+
+`$component-skip-nav-link-color` : sets `color` property on **willow-skip-nav__link**
+
+`$component-skip-nav-link-color-hover` : sets `color` property on **willow-skip-nav__link:hover**
+
+`$component-skip-nav-link-color-active` : sets `color` property on **willow-skip-nav__link:active**
+
+`$component-skip-nav-link-color-visited` : sets `color` property on **willow-skip-nav__link:visited**

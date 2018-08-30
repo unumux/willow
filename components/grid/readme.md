@@ -66,6 +66,6 @@ _Willow-grid_ is a component for laying out other components in rows and columns
 
 ## [Variables](./styles/_default-variables.scss)
 
-$component-grid-margin-horizontal : sets `margin-right` property on **willow-grid__item** above the `sm` breakpoint
+`$component-grid-margin-horizontal` : sets `margin-right` property on **willow-grid__item** above the `sm` breakpoint
 
-$component-grid-margin-vertical : sets `margin-top` property on **willow-grid__item**
+`$component-grid-margin-vertical` : sets `margin-top` property on **willow-grid__item**

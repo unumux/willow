@@ -86,30 +86,30 @@ Secondary Navigation provides navigational links that are separate from links pr
 
 ## [Variables](./styles/_default-variables.scss)
 
-$component-secondary-nav-background-color : sets `background-color` property on **willow-secondary-nav**
+`$component-secondary-nav-background-color` : sets `background-color` property on **willow-secondary-nav**
 
-$component-secondary-nav-border : sets `border` property on **willow-secondary-nav**
+`$component-secondary-nav-border` : sets `border` property on **willow-secondary-nav**
 
-$component-secondary-nav-link-color : sets `color` property on **willow-secondary-nav__link**
+`$component-secondary-nav-link-color` : sets `color` property on **willow-secondary-nav__link**
 
-$component-secondary-nav-link-color-hover : sets `color` property on **willow-secondary-nav__link:hover**
+`$component-secondary-nav-link-color-hover` : sets `color` property on **willow-secondary-nav__link:hover**
 
-$component-secondary-nav-link-color-focus : sets `color` property on **willow-secondary-nav__link:focus**
+`$component-secondary-nav-link-color-focus` : sets `color` property on **willow-secondary-nav__link:focus**
 
-$component-secondary-nav-link-color-visited : sets `color` property on **willow-secondary-nav__link:visited**
+`$component-secondary-nav-link-color-visited` : sets `color` property on **willow-secondary-nav__link:visited**
 
-$component-secondary-nav-link-color-active : sets `color` property on **willow-secondary-nav__link:active** and **willow-secondary-nav__link--active**
+`$component-secondary-nav-link-color-active` : sets `color` property on **willow-secondary-nav__link:active** and **willow-secondary-nav__link--active**
 
-$component-secondary-nav-link-background-color : sets `background-color` property on **willow-secondary-nav__link**
+`$component-secondary-nav-link-background-color` : sets `background-color` property on **willow-secondary-nav__link**
 
-$component-secondary-nav-link-background-color-hover : sets `background-color` property on **willow-secondary-nav__link:hover**
+`$component-secondary-nav-link-background-color-hover` : sets `background-color` property on **willow-secondary-nav__link:hover**
 
-$component-secondary-nav-link-background-color-active : sets `background-color` property on **willow-secondary-nav__link:active** and **willow-secondary-nav__link--active**
+`$component-secondary-nav-link-background-color-active` : sets `background-color` property on **willow-secondary-nav__link:active** and **willow-secondary-nav__link--active**
 
-$component-secondary-nav-link-background-color-focus : sets `background-color` property on **willow-secondary-nav__link:focus**
+`$component-secondary-nav-link-background-color-focus` : sets `background-color` property on **willow-secondary-nav__link:focus**
 
-$component-secondary-nav-link-border-color-active : sets `color` property in `border` shorthand on **willow-secondary-nav:active**  and **willow-secondary-nav__link--active**
+`$component-secondary-nav-link-border-color-active` : sets `color` property in `border` shorthand on **willow-secondary-nav:active**  and **willow-secondary-nav__link--active**
 
-$component-secondary-nav-heading-background-color : sets `background-color` property on **willow-secondary-nav__heading**
+`$component-secondary-nav-heading-background-color` : sets `background-color` property on **willow-secondary-nav__heading**
 
-$component-secondary-nav-heading-color : sets `color` property on **willow-secondary-nav__heading**
+`$component-secondary-nav-heading-color` : sets `color` property on **willow-secondary-nav__heading**

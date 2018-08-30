@@ -45,6 +45,6 @@ A component for positioning/layout purposes.  **Willow-Page-Content** should onl
 
 ## [Variables](./styles/_default-variables.scss)
 
-$component-page-content-container-padding-bottom : sets `` property on **willow-page-content__container**
+`$component-page-content-container-padding-bottom` : sets `` property on **willow-page-content__container**
 
-$component-page-content-container-padding-top : sets `` property on **willow-page-content__container**
+`$component-page-content-container-padding-top` : sets `` property on **willow-page-content__container**

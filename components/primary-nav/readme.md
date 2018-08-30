@@ -89,22 +89,22 @@ Primary Nav should contain a limited number of items, the shorter the better for
 
 ## [Variables](./styles/_default-variables.scss)
 
-$component-primary-nav-link-color : sets `color` property on **willow-primary-nav__link**
+`$component-primary-nav-link-color`` : sets `color` property on **willow-primary-nav__link**
 
-$component-primary-nav-link-color-visited : sets `color` property on **willow-primary-nav__link:visited**
+`$component-primary-nav-link-color-visited` : sets `color` property on **willow-primary-nav__link:visited**
 
-$component-primary-nav-link-color-hover : sets `color` property on **willow-primary-nav__link:hover**
+`$component-primary-nav-link-color-hover` : sets `color` property on **willow-primary-nav__link:hover**
 
-$component-primary-nav-link-color-active : sets `color` property on **willow-primary-nav__link:active** and **willow-primary-nav_link--active**
+`$component-primary-nav-link-color-active` : sets `color` property on **willow-primary-nav__link:active** and **willow-primary-nav_link--active**
 
-$component-primary-nav-link-color-focus : sets `color` property on **willow-primary-nav__link:focus**
+`$component-primary-nav-link-color-focus` : sets `color` property on **willow-primary-nav__link:focus**
 
-$component-primary-nav-link-background-color : sets `background-color` property on **willow-primary-nav__link**
+`$component-primary-nav-link-background-color` : sets `background-color` property on **willow-primary-nav__link**
 
-$component-primary-nav-link-background-color-visited : sets `background-color` property on **willow-primary-nav__link:visited**
+`$component-primary-nav-link-background-color-visited` : sets `background-color` property on **willow-primary-nav__link:visited**
 
-$component-primary-nav-link-background-color-hover : sets `background-color` property on **willow-primary-nav__link:hover**
+`$component-primary-nav-link-background-color-hover` : sets `background-color` property on **willow-primary-nav__link:hover**
 
-$component-primary-nav-link-background-color-active : sets `background-color` property on **willow-primary-nav__link:active** and **willow-primary-nav_link--active**
+`$component-primary-nav-link-background-color-active` : sets `background-color` property on **willow-primary-nav__link:active** and **willow-primary-nav_link--active**
 
-$component-primary-nav-link-background-color-focus : sets `background-color` property on **willow-primary-nav__link:focus**
+`$component-primary-nav-link-background-color-focus` : sets `background-color` property on **willow-primary-nav__link:focus**
