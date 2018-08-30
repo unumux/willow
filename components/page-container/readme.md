@@ -31,3 +31,9 @@ A component for positioning/layout purposes.  **Willow-Page-Container** should o
   ```
 
 - The width of **willow-page-container** is controlled by the `$component-page-container-max-width` variable. This variable is set to none in **Willow** but can be updated in themes or in your project SCSS.
+
+---
+
+## [Variables](./styles/_default-variables.scss)
+
+$component-page-container-max-width : sets `max-width` property on **willow-page-container**

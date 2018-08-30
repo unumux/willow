@@ -70,3 +70,7 @@
 - Required
 - Restrictions
   - Should Contain: one _actionable_ component
+
+---
+
+## [Variables](./styles/_default-variables.scss)

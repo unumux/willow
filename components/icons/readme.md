@@ -77,3 +77,9 @@ When **Willow-Icons** are used inside of actionable components or elements, such
 
 - **willow-icon** requires the addition of a modifier or no icon will appear
 - if used to convey meaning in side of an actionable component or element, the `title` attribute should be added to the icon element and given a value to explain the purpose. `<button><span class="willow-icon--menu-close" title="Close Menu"></span></button>`
+
+---
+
+## Variables
+
+None

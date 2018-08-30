@@ -40,3 +40,11 @@ A component for positioning/layout purposes.  **Willow-Page-Content** should onl
 
 - **willow-page-content__heading** is visible by default, and even if it is hidden it is required to meet accessibility standards
 - To hide the **willow-page-content__heading** add the `sr-only` utility class to the element
+
+---
+
+## [Variables](./styles/_default-variables.scss)
+
+$component-page-content-container-padding-bottom : sets `` property on **willow-page-content__container**
+
+$component-page-content-container-padding-top : sets `` property on **willow-page-content__container**

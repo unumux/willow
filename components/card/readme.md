@@ -152,3 +152,21 @@ _Examples: Articles on a news website, products on an eCommerce site, or posts o
 ## Resources
 
 Laubheimer, Page. "Cards: UI-Component Definition." Nielsen Norman Group. [https://www.nngroup.com/articles/cards-component/](https://www.nngroup.com/articles/cards-component/) (accessed August 7, 2017).
+
+---
+
+## [Variables](./styles/_default-variables.scss)
+
+$component-card-border-radius : sets `border-radius` property on **willow-card**
+
+$component-card-box-shadow-color : sets `box-shadow` color property on **willow-card**
+
+$component-card-content-background-color : sets `background-color` property on **willow-card__content**
+
+$component-card-icon-height : sets `height` property on **willow-card__icon**
+
+$component-card-image-height : sets `height` property on **willow-card__image**
+
+$component-card-image-height-sm : sets `height` property on **willow-card__image** above the `md` breakpoint
+
+$component-card-text-color : sets `color` property on **willow-card** and **willow-card[href]:visited/hover/active**
