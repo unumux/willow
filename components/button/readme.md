@@ -66,32 +66,33 @@ Use a `<button>` becuase the primary purpose of these buttons is often the actio
 - Required
 - Restrictions
   - Should Contain: text
-- _Modifiers_
 
-  `--primary` : use to call attention to a primary or common action such as _Learn More_
+#### _Modifiers_
 
-  `--positive`: use to signify a positive action such as _Submit Form_
+`--primary` : use to call attention to a primary or common action such as _Learn More_
 
-  `--negative`: use to signify a negative action such as _Delete Account_
+`--positive`: use to signify a positive action such as _Submit Form_
 
-  `--cta` : use to emphasize a button by making it larger and the primary call to action color
+`--negative`: use to signify a negative action such as _Delete Account_
 
-  `--inline` : use to restrict a button's width based on its content
+`--cta` : use to emphasize a button by making it larger and the primary call to action color
 
-  `--ghost` : use for deemphasized actions to create a button outline that is filled with color on hover, focus and active actions
+`--inline` : use to restrict a button's width based on its content
 
-  `--ghost-inverse` : use for deemphasized actions to create a button outline that is filled with color on hover, focus and active actions
+`--ghost` : use for deemphasized actions to create a button outline that is filled with color on hover, focus and active actions
 
-- _States_
+`--ghost-inverse` : use for deemphasized actions to create a button outline that is filled with color on hover, focus and active actions
 
-  `<button disabled>` : disables `<button>`
+#### _States_
 
-  `<a data-disabled="true">` : disables `<a>` button
+`<button disabled>` : disables `<button>`
 
-- _Notes_
+`<a data-disabled="true">` : disables `<a>` button
 
-  - Buttons created with `<a>` tags require an `href` value that triggers an action or navigation
-  - Buttons created with `<a>` tags need an `aria-label` value if the text content of the link doesn't clearly represent where the user will go after clicking the link
+#### _Notes_
+
+- Buttons created with `<a>` tags require an `href` value that triggers an action or navigation
+- Buttons created with `<a>` tags need an `aria-label` value if the text content of the link doesn't clearly represent where the user will go after clicking the link
 
 ---
 
