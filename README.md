@@ -35,7 +35,7 @@ The library consists of semantic and accessible markup for a variety of componen
 
 ### **Willow** is...
 
-- written to meet UnumUX [CSS/SCSS](https://github.com/unumux/ux-standards/wiki/CSS-&-SCSS-Standards) and [Accessibility](https://unumux.github.io/enterprise-accessibility-standards/) Standards
+- written to meet UnumUX [CSS/SCSS](https://unumux.github.io/enterprise-css-standards/index.html) and [Accessibility](https://unumux.github.io/enterprise-accessibility-standards/) Standards
 - influenced by the principles of:
   - [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) : small, independent - atomic - parts, can be combined into larger molecular structures. Molecular structures can be combined into larger organisms, which can then serve as the foundation for templates and full pages
   - [BEM](http://getbem.com) : a naming convention that makes front-end code easier to read, understand, work with, maintain and scale
@@ -154,7 +154,7 @@ Do you have questions or need help with setup? Did you run into errors while fol
 
 - [Banner](./components/banner)
 - [Button](./components/button)
-- [Cards](./components/cards)
+- [Cards](./components/card)
 - [Dialog](./components/dialog)
 - [Global Alerts](./components/global-alert)
 - [Inline Alerts](./components/inline-alert)
@@ -288,7 +288,7 @@ There are 3 groups of variables:
 
 ### Recommended SCSS Directory Structure For Your Project
 
-We recommend you setup your project's styling folders and files using this project [pattern](https://github.com/unumux/standard-project-structure).
+We recommend you setup your project's styling folders and files using this project [pattern](https://github.com/unumux/willow-testing-site).
 
 ---
 

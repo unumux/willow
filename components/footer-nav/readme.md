@@ -1,7 +1,5 @@
 # **Willow-Footer-Nav**
 
-[Demo](http://codepen.io/team/UnumUX/pen/VpPjmq)
-
 Footer navigation is typically a combination of the links in the site's primary navigation plus links to items that users commonly search for or use. Footer navigation should be located within the [willow-page-footer](../page-footer) component and the links in this navigation should be consistent on every page of the site.
 
 _Example Page Links: Sitemap, Frequently Asked Questions, Legal, Privacy Policy, Terms & Conditions, and Print Page._

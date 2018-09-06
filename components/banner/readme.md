@@ -1,6 +1,6 @@
 # **Willow-Banner**
 
-[Demo](http://codepen.io/team/UnumUX/pen/YZNzQM)
+[Demo](https://unumux.github.io/willow-testing-site/components/banner.html)
 
 A banner is a highlighted area of a page used to call out a single piece of information or action. This area is typically styled to stand out visually from the rest of the page’s content and can contain a concise heading, sentence and action component such as a [willow-button](../button).
 
@@ -13,6 +13,7 @@ A banner's background spans the full width of the screen/viewport while its cont
 ```html
 <section class="willow-banner" role="region">
   <div class="container-fluid">
+    <div class="willow-banner__icon"></div>
     <h1 class="willow-banner__heading">Heading Text</h1>
     <div class="willow-banner__content">
         <!-- insert components here -->
@@ -50,6 +51,19 @@ A banner's background spans the full width of the screen/viewport while its cont
 #### _Notes_
 
 - The `container-fluid` class from Bootstrap is used within **willow-banner** to restrict the width of the component's content while allowing styles applied to the main **willow-banner** block to span the full-width of the [willow-page-container](../page-container) component.
+
+---
+
+### willow-banner__icon
+
+- Optional
+- Restrictions
+  - Should Contain: Nothing
+
+#### _Notes_
+
+- To include an icon image in **willow-banner__icon** you will need to add your own class to the element and target that in your SCSS/CSS and set the `background-image` property. Adding a new class allows the icon to be different on each banner. If you set the background image using the `.willow-banner__icon` class every banner on your site will have the same icon.
+- Additionally, if your icon is populated dynamically via a CMS, you can use a style attribute to set the icon. This can be done in this way: `<div class="willow-banner__icon" style="background-image: url(...)"></div>`
 
 ---
 

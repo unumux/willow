@@ -1,6 +1,6 @@
 # **Willow-Modal**
 
-[Demo](http://codepen.io/team/UnumUX/pen/yMgJbb)
+[Demo](https://unumux.github.io/willow-testing-site/components/modal.html)
 
 **Willow-Modal** is a small window that overlays (pops up over) the content of a webpage in order to draw the user’s attention to crucial information that requires action. The modal will halt the user from continuing until they provide the required action. Unlike the [willow-dialog](../dialog) component, the modal cannot be closed by pressing escape or clicking outside of the window.
 
