@@ -203,13 +203,7 @@ A common example of a column layout would be a page section contains secondary n
 </div>
 ```
 
-<<<<<<< HEAD
-### Customize the Bootstrap Grid
-
-**Willow** takes the bootstrap breakpoint, container width and gutter values as they come. If you want to update these checkout the [Bootstrap Docs](https://v4-alpha.getbootstrap.com/layout/grid/#customizing-the-grid) and our section on [customizing the grid](#so-you-need-to-change-the-grid).
-=======
 ### Customizing the Bootstrap Grid
->>>>>>> develop
 
 Bootstrap provides documentation about [customizing the grid](https://getbootstrap.com/docs/4.0/layout/grid/#customizing-the-grid)
 
@@ -369,49 +363,7 @@ Note: Changes to theme variables are used across many components, so tread light
 
 ---
 
-<<<<<<< HEAD
-### So you need to change the Bootstrap grid
-
-Bootstrap uses [variables](https://v4-alpha.getbootstrap.com/layout/grid/#variables) to control the grid. You can override these to customize how the system works.
-
-#### Method 1: Override Variables in your Project
-
-In your main styles file where you import the theme for Willow. You can declare the variables and override them like so:
-
-```scss
-//my-project/styles/styles.scss file
-
-//Override variables above the import of the theme
-$grid-gutter-width-base: 40px;
-
-$container-max-widths: (
-  sm: 500px,
-  lg: 900px,
-);
-
-@import "node_modules/@unumux/theme-name-here/styles";
-
-```
-
-#### Method 2: Override Variables in your Theme
-
-If you are creating your own theme for **Willow** components to use, you can override these variables by:
-
-- In the `theme-name/variables/theme-specific` folder, create a new folder called vendors
-- In the vendors folder create a new partial called _bootstrap.scss
-- In this partial add the bootstrap variables you want to override, and change their values
-- Make sure you import your new file in the _theme-specific.scss file
-
-```scss
-//theme-name/variables/theme-specific/vendors/bootstrap.scss file
-
-$grid-breakpoints: (
-  sm: 506px,
-  lg: 972px
-);
-=======
 ### Main Variables That Can Be Overridden
->>>>>>> develop
 
 ...
 
