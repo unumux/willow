@@ -301,7 +301,7 @@ You can customize **Willow** components via two methods
 _Example 1: You want to change the background color of all **willow-banners** everywhere they appear_
 
 - You accomplish this by overriding a 'component-specific' variable for **willow-banner**
-- Review available component variables in the component's readme or `./styles/_default-variables.scss`. For our example the [Banner Variables are here](./components/banner/style/_default-variables.scss)
+- Review available component variables in the component's readme or `./styles/_default-variables.scss`. For our example the [Banner Variables are here](./components/banner/styles/_default-variables.scss)
 - Override the value of the variable in your `_styles.scss` file above the import for Willow (see example 1)
   - **Note**: If you want to use a color for a theme, you need to override the variable after the theme import but before the Willow import (see example 2)
 
