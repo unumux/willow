@@ -1,41 +1,34 @@
-@mixin base() {    
+@import "dependencies";
+
+.willow-global-alert {
+    @extend .butter;
+
+    @include compact;
+
     background-color: $component-global-alert-background-color;
     color: $component-global-alert-text-color;
     flex-shrink: 0;
-    padding-bottom: space(1);
-    padding-top: space(1);
+    margin-top: $space;
+    padding-bottom: $space-l;
+    padding-top: $space-l;
     position: relative;
-}
-
-&-global-alert {
-    @include base;
-    @include full-bleed;
-
-    &--positive {
-        @include base;
-        @include full-bleed;
-
-        background-color: $component-global-alert-positive-background-color;
-        color: $component-global-alert-positive-text-color;
-    }
-
-    &--warning {
-        @include base;
-        @include full-bleed;
-
-        background-color: $component-global-alert-warning-background-color;
-        color: $component-global-alert-warning-text-color;
-    }
-
-    &--negative {
-        @include base;
-        @include full-bleed;
-        
-        background-color: $component-global-alert-negative-background-color;
-        color: $component-global-alert-negative-text-color;
-    }
 
     @import "heading";
     @import "content";
     @import "close";
+}
+
+.willow-global-alert--positive {
+    background-color: $component-global-alert-positive-background-color;
+    color: $component-global-alert-positive-text-color;
+}
+
+.willow-global-alert--warning {
+    background-color: $component-global-alert-warning-background-color;
+    color: $component-global-alert-warning-text-color;
+}
+
+.willow-global-alert--negative {
+    background-color: $component-global-alert-negative-background-color;
+    color: $component-global-alert-negative-text-color;
 }

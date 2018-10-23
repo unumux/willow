@@ -1,12 +1,6 @@
----
-component: willow-dialog
-collection: 
-    - component
-    - information
----
 # **Willow-Dialog**
 
-[Demo](http://codepen.io/team/UnumUX/pen/JWEKRZ)
+[Demo](https://unumux.github.io/willow-testing-site/components/dialog.html)
 
 **Willow-Dialog** is a small window that overlays (pops up over) the content of a webpage. Dialogs communicate information to a user and can prompt them with questions that **do not** require a response. If any of your questions require an answer use the [willow-modal](../modal) component instead. The dialog should disappear if the user has completed the task or action, pressed the `esc` key, or clicked outside of the dialog.
 
@@ -116,3 +110,13 @@ _Examples: errors, warnings, to collect data, to inform users of important infor
 #### _Notes_
 
 - completing the actionable component should record the response and trigger the **willow-dialog** to close
+
+---
+
+## [Variables](./styles/_default-variables.scss)
+
+`$component-dialog-background-color` : sets `background-color` property on **willow-dialog__container**
+
+`$component-dialog-border-radius` : sets `border-radius` property on **willow-dialog__container**
+
+`$component-dialog-overlay-background-color` : sets `background-color` property on **willow-dialog**

@@ -1,14 +1,10 @@
-@mixin base() {
+&__actions {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     list-style: none;
-    padding-bottom: space(1);
+    padding-bottom: $space;
     padding-left: 0;
     padding-right: 0;
-    padding-top: space(1);
-}
-
-&__actions {
-    @include base;
+    padding-top: $space;
 }

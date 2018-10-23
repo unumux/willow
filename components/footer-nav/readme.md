@@ -1,12 +1,4 @@
----
-component: willow-footer-nav
-collection: 
-    - component
-    - navigation
----
 # **Willow-Footer-Nav**
-
-[Demo](http://codepen.io/team/UnumUX/pen/VpPjmq)
 
 Footer navigation is typically a combination of the links in the site's primary navigation plus links to items that users commonly search for or use. Footer navigation should be located within the [willow-page-footer](../page-footer) component and the links in this navigation should be consistent on every page of the site.
 
@@ -18,11 +10,11 @@ _Example Page Links: Sitemap, Frequently Asked Questions, Legal, Privacy Policy,
 
 ```html
 <nav class="willow-footer-nav" role="navigation" aria-label="footer">
-    <h1 class="willow-footer-nav__heading sr-only">Site Footer Menu</h1>
-    <ul class="willow-footer-nav__list">
-        <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 1</a></li>
-        <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 2</a></li>
-    </ul>
+  <h1 class="willow-footer-nav__heading sr-only">Site Footer Menu</h1>
+  <ul class="willow-footer-nav__list">
+      <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 1</a></li>
+      <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 2</a></li>
+  </ul>
 </nav>
 ```
 
@@ -85,3 +77,19 @@ _Example Page Links: Sitemap, Frequently Asked Questions, Legal, Privacy Policy,
 
 - **willow-footer-nav__link** requires an `href` value that links to the pages they reference
 - **willow-footer-nav__link** elements need `aria-label` value if the text content of the link doesn't clearly represent where the user will go after clicking the link
+
+---
+
+## [Variables](./styles/_default-variables.scss)
+
+`$component-footer-nav-text-color` : sets `color` property on **willow-footer-nav__item::after**
+
+`$component-footer-nav-link-color` : sets `color` property on **willow-footer-nav__link**
+
+`$component-footer-nav-link-color-hover` : sets `color` property on **willow-footer-nav__link:hover**
+
+`$component-footer-nav-link-color-focus` : not used
+
+`$component-footer-nav-link-color-active` : sets `color` property on **willow-footer-nav__link:active**
+
+`$component-footer-nav-link-color-visited` : sets `color` property on **willow-footer-nav__link:visited**

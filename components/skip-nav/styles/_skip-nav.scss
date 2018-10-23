@@ -1,8 +1,7 @@
-@mixin base() {
-}
+@import "dependencies";
 
-&-skip-nav {
-    @include base;
-
+.willow-skip-nav {
     @import "link";
+
+    @extend .butter;
 }

@@ -1,12 +1,4 @@
----
-component: willow-primary-nav
-collection: 
-    - component
-    - navigation
----
 # **Willow-Primary-Nav**
-
-[Demo](http://codepen.io/team/UnumUX/pen/gmgMxY)
 
 Primary Navigation is meant to move the user to primary sections of the website or app. It should reside within the [willow-page-header](../page-header) component by default. This navigation should take precedence over any other forms of navigation on the page. Links in the primary navigation should not be a repeat of secondary navigation.
 
@@ -20,9 +12,15 @@ Primary Nav should contain a limited number of items, the shorter the better for
 <nav class="willow-primary-nav" role="navigation" aria-label="primary">
     <h1 class="willow-primary-nav__heading sr-only">Site Primary Menu</h1>
     <ul class="willow-primary-nav__list">
-        <li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="" aria-label="">Menu Item 1</a></li>
-        <li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="" aria-label="">Menu Item 2</a></li>
-        <li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="" aria-label="">Menu Item 3</a></li>
+        <li class="willow-primary-nav__item">
+          <a class="willow-primary-nav__link" href="" aria-label="">Menu Item 1</a>
+        </li>
+        <li class="willow-primary-nav__item">
+          <a class="willow-primary-nav__link" href="" aria-label="">Menu Item 2</a>
+        </li>
+        <li class="willow-primary-nav__item">
+          <a class="willow-primary-nav__link" href="" aria-label="">Menu Item 3</a>
+        </li>
     </ul>
 </nav>
 ```
@@ -86,3 +84,27 @@ Primary Nav should contain a limited number of items, the shorter the better for
 
 - **willow-primary-nav__link** requires an `href` that links to the pages they reference
 - **willow-primary-nav__link** elements need an `aria-label` value if the text content of the link doesn't clearly represent where the user will go after clicking the link
+
+---
+
+## [Variables](./styles/_default-variables.scss)
+
+`$component-primary-nav-link-color` : sets `color` property on **willow-primary-nav__link**
+
+`$component-primary-nav-link-color-visited` : sets `color` property on **willow-primary-nav__link:visited**
+
+`$component-primary-nav-link-color-hover` : sets `color` property on **willow-primary-nav__link:hover**
+
+`$component-primary-nav-link-color-active` : sets `color` property on **willow-primary-nav__link:active** and **willow-primary-nav_link--active**
+
+`$component-primary-nav-link-color-focus` : sets `color` property on **willow-primary-nav__link:focus**
+
+`$component-primary-nav-link-background-color` : sets `background-color` property on **willow-primary-nav__link**
+
+`$component-primary-nav-link-background-color-visited` : sets `background-color` property on **willow-primary-nav__link:visited**
+
+`$component-primary-nav-link-background-color-hover` : sets `background-color` property on **willow-primary-nav__link:hover**
+
+`$component-primary-nav-link-background-color-active` : sets `background-color` property on **willow-primary-nav__link:active** and **willow-primary-nav_link--active**
+
+`$component-primary-nav-link-background-color-focus` : sets `background-color` property on **willow-primary-nav__link:focus**

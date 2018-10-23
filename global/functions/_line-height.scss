@@ -1,0 +1,10 @@
+// calculate line height for a provided font-size
+// requires rem value - 1.2rem vs 12px
+
+@import "strip-unit";
+
+@function line-height($font-size) {
+    $increment: ($max-line-height - $min-line-height) / ($max-font-size - $min-font-size);
+
+    @return $min-line-height + (($max-font-size - strip-unit($font-size)) * $increment);
+}

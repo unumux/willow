@@ -1,12 +1,4 @@
----
-component: willow-logo-link
-collection: 
-    - component
-    - navigation
----
 # **Willow-Logo-Link**
-
-[Demo](http://codepen.io/team/UnumUX/pen/RpKRpm)
 
 **Willow-Logo-Link** is a component for displaying a logo and makes the entire logo into a link to the site's home page.
 
@@ -44,3 +36,9 @@ collection:
 
 - **willow-logo-link__image** requires a `src` attribute value that is the path or url to the desired image
 - In order to be accessible, **willow-logo-link__image** requires an `alt` attribute value that describes the image
+
+---
+
+## [Variables](./styles/_default-variables.scss)
+
+`$component-logo-link-image-height` : sets `height` property on **willow-logo-link__image**

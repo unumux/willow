@@ -1,9 +1,6 @@
-@mixin base() {
-}
+@import "dependencies";
 
-&-footer-nav {
-    @include base;
-    
+.willow-footer-nav {
     @import "heading";
     @import "list";
     @import "item";

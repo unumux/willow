@@ -1,4 +1,4 @@
-@mixin base() {
+&__content-close {
     @include set-text-style($text-style-heading-4);
 
     color: $component-page-header-content-close-color;
@@ -14,7 +14,7 @@
         color: $component-page-header-content-close-color-hover;
         text-decoration: none;
     }
-    
+
     &:active {
         color: $component-page-header-content-close-color-active;
         text-decoration: none;
@@ -29,8 +29,4 @@
             display: none;
         }
     }
-}
-
-&__content-close {
-    @include base;
 }

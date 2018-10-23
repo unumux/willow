@@ -1,4 +1,8 @@
-@mixin base() {
+@import "dependencies";
+
+.willow-dialog {
+    @include compact;
+
     background-color: $component-dialog-overlay-background-color;
     bottom: 0;
     display: none;
@@ -11,10 +15,6 @@
     &[data-dialog-close="false"] {
         display: block;
     }
-}
-
-&-dialog {
-    @include base;
 
     @import "container";
     @import "heading";

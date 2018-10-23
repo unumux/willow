@@ -1,6 +1,6 @@
-@mixin base() {
-    @include set-text-style($text-style-content-1);
+&__content {
     @include full-width;
+    @include set-text-style($text-style-content-1);
 
     border-top: 2px solid $component-page-header-navigation-border-color;
     display: none;
@@ -15,22 +15,18 @@
     [data-content-open="false"] & {
         display: none;
     }
-    
+
     @media screen and (min-width: breakpoint(medium)) {
-        border-top: none;        
+        border-top: none;
         display: block;
         flex-basis: auto;
         margin-bottom: 0;
         margin-left: 0;
-        margin-top: 0;
         margin-right: 0;
+        margin-top: 0;
 
         [data-content-open="false"] & {
             display: block;
         }
     }
-}
-
-&__content {
-    @include base;
 }

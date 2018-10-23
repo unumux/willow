@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Success@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M13,26 C20.1797017,26 26,20.1797017 26,13 C26,5.82029825 20.1797017,0 13,0 C5.82029825,0 0,5.82029825 0,13 C0,20.1797017 5.82029825,26 13,26 Z M8.95992676,11.9723346 C8.39212679,11.4117585 7.47642537,11.4166768 6.91654901,11.9852334 C6.35612073,12.5514211 6.36148456,13.4664022 6.92952015,14.0272109 L10.5862334,17.6391451 C10.8606977,17.9093882 11.2249742,18.0555556 11.6015195,18.0555556 C11.9817284,18.0555556 12.3498281,17.9054196 12.6242949,17.6309528 L19.8030723,10.4066675 C20.3658052,9.84104901 20.3631261,8.92657002 19.7972643,8.36359527 C19.2315718,7.8022423 18.3186109,7.8058103 17.7559102,8.36851104 L11.5916853,14.5714455 L8.95992676,11.9723346 Z" id="path-1"></path>
+    </defs>
+    <g id="Components" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-281.000000, -449.000000)">
+            <g id="Silver-balck" transform="translate(57.000000, 428.000000)">
+                <g id="Success" transform="translate(224.000000, 21.000000)">
+                    <g id="Path">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#061724" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

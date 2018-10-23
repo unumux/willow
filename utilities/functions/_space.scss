@@ -1,8 +1,0 @@
-@function space($multiplier: 1) {
-    @if type-of($multiplier) != "number" {
-        @warn "`#{$multiplier}` is not a number. The 'space' function requires a number";
-        @return false;
-    }
-
-    @return $base-size * $multiplier;
-}

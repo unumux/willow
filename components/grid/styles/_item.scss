@@ -1,39 +1,88 @@
-@mixin flexWidths($items: 1) {
-    flex-basis: calc(#{100/$items}% - 24px);
-
-    &:nth-child(#{$items}n) {
-        margin-right: 0;
-    }
-}
-
-@mixin base() {
-    margin-bottom: space(2);
-
-    @media screen and (min-width: breakpoint(small)) {
+@mixin gridItem() {
+    @include media-breakpoint-up(sm) {
+        display: flex;
         flex-grow: 0;
         flex-shrink: 0;
-        margin-right: space(2);
+        margin-right: $component-grid-margin-horizontal;
 
         &:last-child {
             margin-right: 0;
         }
     }
 
-    @media screen and (min-width: breakpoint(small)) and (max-width: breakpoint(medium)) {
-        @include flexWidths(2);
+    @include media-breakpoint-only(sm) {
+        @for $i from 1 through 12 {
+            .willow-grid--sm-#{$i} & {
+                @include cols($i);
+            }
+        }
+
+        // fallback value
+        .willow-grid:not([class*="willow-grid--sm-"]) & {
+            @include cols(1);
+        }
     }
 
-    @media screen and (min-width: breakpoint(medium)) and (max-width: breakpoint(large)) {
-        @include flexWidths(3);
+    @include media-breakpoint-only(md) {
+        @for $i from 1 through 12 {
+            .willow-grid--md-#{$i} & {
+                @include cols($i);
+            }
+        }
+
+        // fallback value
+        .willow-grid:not([class*="willow-grid--md-"]) & {
+            @include cols(2);
+        }
     }
 
-    @media screen and (min-width: breakpoint(large)) {
-        @include flexWidths(4);
+    @include media-breakpoint-only(lg) {
+        @for $i from 1 through 12 {
+            .willow-grid--lg-#{$i} & {
+                @include cols($i);
+            }
+        }
+
+        // fallback value
+        .willow-grid:not([class*="willow-grid--lg-"]) & {
+            @include cols(3);
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        @for $i from 1 through 12 {
+            .willow-grid--xl-#{$i} & {
+                @include cols($i);
+            }
+        }
+
+        // fallback value
+        .willow-grid:not([class*="willow-grid--xl-"]) & {
+            @include cols(4);
+        }
+    }
+
+    margin-top: $component-grid-margin-vertical;
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+@mixin cols($items: 1) {
+    flex-basis: calc(
+        #{100 / $items}% - #{$component-grid-margin-horizontal} + (#{$component-grid-margin-horizontal}/#{$items})
+    );
+
+    &:nth-child(#{$items}n) {
+        margin-right: 0;
+    }
+
+    &:nth-child(-n + #{$items}) {
+        margin-top: 0;
     }
 }
 
 &__item {
-    @include base;
-
-    @import "styling-contexts/item";
+    @include gridItem;
 }

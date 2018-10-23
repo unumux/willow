@@ -1,12 +1,6 @@
----
-component: willow-modal
-collection: 
-    - component
-    - information
----
 # **Willow-Modal**
 
-[Demo](http://codepen.io/team/UnumUX/pen/yMgJbb)
+[Demo](https://unumux.github.io/willow-testing-site/components/modal.html)
 
 **Willow-Modal** is a small window that overlays (pops up over) the content of a webpage in order to draw the user’s attention to crucial information that requires action. The modal will halt the user from continuing until they provide the required action. Unlike the [willow-dialog](../dialog) component, the modal cannot be closed by pressing escape or clicking outside of the window.
 
@@ -114,3 +108,13 @@ _Examples: Confirming deletion of information, entering an email address to down
 #### _Notes_
 
 - completing the actionable component should record the response and trigger the **willow-modal** to close
+
+---
+
+## [Variables](./styles/_default-variables.scss)
+
+`$component-modal-background-color` : sets `background-color` property on **willow-modal__container**
+
+`$component-modal-border-radius` : sets `border-radius` property on **willow-modal__container**
+
+`$component-modal-overlay-background-color` : sets `background-color` property on **willow-modal**

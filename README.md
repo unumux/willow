@@ -1,10 +1,3 @@
----
-title: Component Library
-collection: 
-  - index
-  - home
-permalink: false
----
 # **Willow**
 
 - [Introduction](#introduction)
@@ -13,7 +6,10 @@ permalink: false
 
 - [Components](#components)
 
-- [Layout](#layout)
+- [Page Layout](#page-layout)
+  - [Basics](#basics)
+  - [Creating Page Columns](#creating-page-columns)
+  - [Customizing the Bootstrap Grid](#customizing-the-bootstrap-grid)
 
 - [Understanding Themes](#understanding-themes)
 
@@ -24,9 +20,10 @@ permalink: false
   - [So you need to make a new component](#so-you-need-to-make-a-new-component)
   - [So you need to customize a component](#so-you-need-to-customize-a-component)
   - [So you need to change a theme](#so-you-need-to-change-a-theme)
-  - [So you need to change the Bootstrap grid](#so-you-need-to-change-the-bootstrap-grid)
 
 - [Issues and Feedback](#issues-and-feedback)
+
+- [Glossaries](#glossaries)
 
 ---
 
@@ -34,54 +31,99 @@ permalink: false
 
 **Willow** is a library of reusable user interface components built with front-end code (HTML and SCSS) to allow for faster, more consistent product development.
 
-The library consists of semantic and accessible markup for a variety of components that can be paired with a [theme](#available-themes) to give components a consistent and branded appearance.
+The library consists of semantic and accessible markup for a variety of components that can be paired with your own custom theme or a provided [theme](#available-themes) to give components a consistent and branded appearance.
 
 ### **Willow** is...
 
-- written to meet UnumUX [CSS/SCSS](https://github.com/unumux/ux-standards/wiki/CSS-&-SCSS-Standards) and [Accessibility](https://unumux.github.io/enterprise-accessibility-standards/) Standards
-- built to work with all modern browsers (IE 10, Chrome, Firefox, Safari)
+- written to meet UnumUX [CSS/SCSS](https://unumux.github.io/enterprise-css-standards/index.html) and [Accessibility](https://unumux.github.io/enterprise-accessibility-standards/) Standards
 - influenced by the principles of:
   - [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) : small, independent - atomic - parts, can be combined into larger molecular structures. Molecular structures can be combined into larger organisms, which can then serve as the foundation for templates and full pages
   - [BEM](http://getbem.com) : a naming convention that makes front-end code easier to read, understand, work with, maintain and scale
+
+### Browser Support
+
+Willow is built to work with modern browsers
+
+- Internet Explorer 10, 11 and Edge
+- Chrome, Safari, Firefox
 
 ---
 
 ## Installation and Usage
 
-There are 2 methods for installing and using **Willow** for your project
+**Willow** components come styled with default colors and font stylings, so the library can be installed and utilized without a theme. Using **Willow** without a theme will produce components styled in grayscale colors and simple/common fonts - somewhat like a [wireframe](https://en.wikipedia.org/wiki/Website_wireframe).
 
-### Method 1: NPM
+There are 2 methods for installing and using **Willow** in a project
 
-If you have [node](https://nodejs.org) on your machine, you can use npm to install **Willow** themes and components.
+### **Method 1: As an NPM Package: SCSS Files**
 
-- Installation
-  - Install a Theme as a development dependency for your project. You will need the [theme's name](#available-themes):
+#### _Notes_
+
+- Requires [node](https://nodejs.org) and a tool to compile the SCSS into CSS, such as Gulp, Webpack or Grunt.
+- Allows single components imports instead of the entire library
+
+#### Installation
+
+- Install **Willow** as a development dependency in your project.
+    ```bash
+    npm install --save-dev @unumux/willow
+    ```
+- Optional: To install a provided theme, you will need the [theme's name](#available-themes):
     ```bash
     npm install --save-dev @unumux/theme-name-goes-here
     ```
 
-- Usage
-  - Include the theme in your project's primary SCSS file. You will need the [theme's name](#available-themes):
+#### Usage
+
+- Include the entire library by importing **Willow's** stylesheet in your primary SCSS file.
+    ```SCSS
+    @import "node_modules/@unumux/willow/styles";
+    ```
+- Include single components by importing the component's stylesheet in your primary SCSS file.
+    ```SCSS
+    @import "node_modules/@unumux/willow/components/banner/styles/banner";
+    @import "node_modules/@unumux/willow/components/breadcrumbs/styles/breadcrumbs";
+    ```
+- Optional: To use a provided theme, include the theme's stylesheet in your primary SCSS file **BEFORE the line that imports Willow**:
     ```SCSS
     @import "node_modules/@unumux/theme-name-here/styles";
+    @import "node_modules/@unumux/willow/styles";
+    ```
+Now as you add [**Willow** components](#components) to your HTML your compiler should run and you will see styled components in your browser.
+
+### **Method 2: As Compiled and Minified CSS Files**
+
+#### Installation
+
+- To use **Willow** without a theme, download **Willow's** minified CSS file and add it to your project's styles folder
+  - [Willow CSS](https://github.com/unumux/willow/releases/download/0.3.0/willow.min.css)
+- To add a theme, download a theme's minified CSS file, and add it to your project's styles folder. You can delete the **Willow** CSS file if you previously included it.
+  - [Minified CSS Downloads](#minified-css-downloads)
+
+#### Usage
+
+- After you include a minified CSS file in your styles folder, you can reference it in your index.html file
+    ```HTML
+    <!-- If using Willow without a theme -->
+    <link rel="stylesheet" href="styles/willow.min.css">
     ```
 
-    - Then as you add [**Willow** components](#components) to your HTML file they will inherit styling
-
-### Method 2: Compiled and Minified CSS Files
-
-- Installation
-  - Download a theme's CSS file, and add it to your project's styles folder
-    - [Available Themes](#available-themes)
-
-- Usage
-  - After you include the CSS file in your styles folder, you can reference it in your index.html file
     ```HTML
+    <!-- If using a theme you only need to include the theme's min file -->
     <link rel="stylesheet" href="styles/theme-name.min.css">
     ```
-  - Then as you add [**Willow** components](#components) to your HTML file they will inherit styling
 
-### Need Installation Help
+Now as you add [**Willow** components](#components) to your HTML file they will inherit styling
+
+### **Minified CSS Downloads**
+
+|            File            | CSS Download |
+|:-------------------------- |:------------:|
+|Willow                      |[willow.min.css](https://github.com/unumux/willow/releases/download/0.3.0/willow.min.css)|
+|Unum Theme                  |[theme-unum-default.min.css](https://github.com/unumux/theme-unum-default/releases/download/0.5.0/theme-unum-default.min.css)|
+|Colonial Life Theme         |[theme-coloniallife-default.min.css](https://github.com/unumux/theme-coloniallife-default/releases/download/0.6.0/theme-coloniallife-default.min.css)|
+
+### **Need Installation Help**
 
 Do you have questions or need help with setup? Did you run into errors while following these instructions? Feel free to open an issue here:
 
@@ -91,80 +133,94 @@ Do you have questions or need help with setup? Did you run into errors while fol
 
 ## Components
 
-### Required
+### Layout
 
-- [Layout](#layout)
-- [Skip Link](./components/skip-nav)
-
-### Optional
-
-- [Banner](./components/banner)
-- [Breadcrumbs](./components/breadcrumbs)
-- [Button](./components/button)
-- [Dialog](./components/dialog)
-- [Footer Navigation](./components/footer-nav)
-- [Global Alerts](./components/global-alert)
-- [Icons](./components/icons)
-- [Inline Alerts](./components/inline-alert)
-- [Logo Link](./components/logo-link)
-- [Modal](./components/modal)
+- [Page Container](./components/page-container)
+- [Page Header](./components/page-header)
 - [Page Content](./components/page-content)
 - [Page Footer](./components/page-footer)
-- [Page Header](./components/page-header)
+- [Grid](./components/grid)
+
+### Navigation
+
+- [Breadcrumbs](./components/breadcrumbs)
+- [Logo Link](./components/logo-link)
+- [Footer Navigation](./components/footer-nav)
 - [Primary Navigation](./components/primary-nav)
 - [Secondary Navigation](./components/secondary-nav)
+- [Skip Link](./components/skip-nav)
+
+### Calls to Action and Alerts
+
+- [Banner](./components/banner)
+- [Button](./components/button)
+- [Cards](./components/card)
+- [Dialog](./components/dialog)
+- [Global Alerts](./components/global-alert)
+- [Inline Alerts](./components/inline-alert)
+- [Modal](./components/modal)
+
+### Other
+
+- [Icons](./components/icons)
 - [Styling Context](./components/styling-context)
-- [Summary](./components/summary)
 
 ---
 
-## Layout
+## Page Layout
 
-**Willow** uses [Bootstrap](http://v4-alpha.getbootstrap.com/layout/grid/) to contain the page's content and provide a grid system.
+### Basics
 
-To utilize this, setup a container on your page with `<div class="container"></div>`. All of your content for the page should go inside of this element.
+**Willow** uses a combination of the [willow-page-container](./components/page-container) and [Bootstrap's fluid container](https://getbootstrap.com/docs/4.0/layout/overview/) to handle page layouts.
 
-**Willow** components and your own components can be added directly to this container (meaning you don't have to put everything in a row or column) and they will fill the space.
+[willow-page-container](./components/page-container) makes the page a [flex column](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) which gives the ability to apply the [`.flex-grow` utility class](utilities.md) to any component or row to make it fill extra page height. **willow-page-container** also allows a max-width for styling such as background-colors and images.
 
-To create columns, use the `<div class="row"></div>` element with `<div class="col"></div>` elements. _Note: you will need to determine the correct `col` class name to use, we recommend the [Bootstrap documentation](http://v4-alpha.getbootstrap.com/layout/grid/#grid-options)._
+The [Bootstrap](https://getbootstrap.com/docs/4.0/layout/overview/) fluid container contains a page's content to a certain width and provides a [grid system](https://getbootstrap.com/docs/4.0/layout/grid/) for page columns.
+
+To utilize these layout helpers, start your page with `<div class="willow-page-container"></div>` and place all of your content for the page inside of this component. 
+
+### Creating Page Columns
+
+To create page columns, use the Bootstrap `<div class="container-fluid">` element and add `<div class="row"></div>` and `<div class="col"></div>` as needed. _Note: you will need to determine the correct `col` class name to use [Bootstrap documentation](https://getbootstrap.com/docs/4.0/layout/grid/#grid-options)._
 
 A common example of a column layout would be a page section contains secondary navigation and content.  On a mobile device the secondary navigation needs to be above the content, and on desktop the pieces should be next to each other.
 
 ```html
-<div class="container">
-  <div class="row">
-    <div class="col-lg-3">
-      <!-- insert secondary nav -->
+<div class="willow-page-container">
+  <main class="willow-page-content" id="" role="main">
+    <div class="container-fluid">
+      <h1 class="willow-page-content__heading">Heading for content</h1>
+      <div class="row">
+        <div class="col-lg-3">
+          <!-- insert secondary nav -->
+        </div>
+        <div class="col-lg-9">
+          <!-- insert willow-page-content component -->
+        </div>
+      </div>
     </div>
-    <div class="col-lg-9">
-      <!-- insert willow-page-content component -->
-    </div>
-  </div>
+  </main>
 </div>
 ```
 
+<<<<<<< HEAD
 ### Customize the Bootstrap Grid
 
 **Willow** takes the bootstrap breakpoint, container width and gutter values as they come. If you want to update these checkout the [Bootstrap Docs](https://v4-alpha.getbootstrap.com/layout/grid/#customizing-the-grid) and our section on [customizing the grid](#so-you-need-to-change-the-grid).
+=======
+### Customizing the Bootstrap Grid
+>>>>>>> develop
 
-### Willow's Bootstrap Customization
+Bootstrap provides documentation about [customizing the grid](https://getbootstrap.com/docs/4.0/layout/grid/#customizing-the-grid)
 
-**Willow** adds styles to the `.container` class to make it a [flex column](https://css-tricks.com/snippets/css/a-guide-to-flexbox/). This gives the ability to apply the [utility class](utilities.md) `.flex-grow` to any component or row to make it fill extra page height.
-
-```scss
-.container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-```
-
-**Willow** also adds margin to the bottom of each column with the following:
+_Note: To update bootstrap grid variables, you have to do this before you import a Willow theme._
 
 ```scss
-.col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-lg, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-md, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-sm, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-xl, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
-  margin-bottom: space(1);
-}
+// file: my-project/styles/styles.scss
+$grid-columns: 10;
+
+//theme import
+@import "node_modules/@unumux/theme-name-here/styles";
 ```
 
 ---
@@ -172,6 +228,8 @@ A common example of a column layout would be a page section contains secondary n
 ## Understanding Themes
 
 Themes for **Willow** only contain SCSS variables. These variables are then used in the **Willow** library components which makes them theme-able.
+
+**Willow** comes with default settings for all necessary variables, so the library can be installed and utilized without a theme. Using **Willow** without a theme will produce components styled in grayscale colors and simple/common fonts - somewhat like a [wireframe](https://en.wikipedia.org/wiki/Website_wireframe).  You can choose to override these styles by [importing a theme](#installation-and-usage) or by creating your own them that sets new values for the variables.
 
 There are 3 groups of variables:
 
@@ -215,11 +273,10 @@ There are 3 groups of variables:
 
 ## Available Themes
 
-|         Theme Name         | Documentation                                               | CSS Download |
-|:-------------------------- |:-----------------------------------------------------------:|:------------:|
-|  theme-enterprise-default  |[docs](https://github.com/unumux/theme-enterprise-default)   |[theme-enterprise-default.min.css](https://github.com/unumux/theme-enterprise-default/releases/download/0.2.8/theme-enterprise-default.min.css)|
-|     theme-unum-default     |[docs](https://github.com/unumux/theme-unum-default)         |[theme-unum-default.min.css](https://github.com/unumux/theme-unum-default/releases/download/0.2.9/theme-unum-default.min.css)|
-| theme-coloniallife-default |[docs](https://github.com/unumux/theme-coloniallife-default) |[theme-coloniallife-default.min.css](https://github.com/unumux/theme-coloniallife-default/releases/download/0.2.9/theme-coloniallife-default.min.css)|
+|         Theme Name         | Documentation                                               |
+|:-------------------------- |:-----------------------------------------------------------:|
+|     theme-unum-default     |[docs](https://github.com/unumux/theme-unum-default)         |
+| theme-coloniallife-default |[docs](https://github.com/unumux/theme-coloniallife-default) |
 
 ---
 
@@ -233,13 +290,11 @@ There are 3 groups of variables:
 
 [So you need to change a theme](#so-you-need-to-change-a-theme)
 
-[So you need to change the Bootstrap grid](#so-you-need-to-change-the-bootstrap-grid)
-
 ---
 
 ### Recommended SCSS Directory Structure For Your Project
 
-We recommend you setup your project's styling folders and files using this project [pattern](https://github.com/unumux/standard-project-structure).
+We recommend you setup your project's styling folders and files using this project [pattern](https://github.com/unumux/willow-testing-site).
 
 ---
 
@@ -255,7 +310,7 @@ _Example 1: You want to change the size of all **willow-buttons** everywhere the
 - **Note**: This method may require targeting multiple component versions such as willow-button and willow-button--primary
 
 ```SCSS
-// file: styles/components/overrides/willow/button/_button.scss
+// file: my-project/styles/components/overrides/willow/button/_button.scss
 .willow-button,
 .willow-button--primary,
 .willow-button--positive,
@@ -269,9 +324,9 @@ _Example 1: You want to change the size of all **willow-buttons** everywhere the
 _Example 2: You want to change the background color of positive buttons_
 
 - You would accomplish this by overriding a 'component-specific' variable for the positive buttons
-- Find the variable you want to override in the theme repo specifically in the `theme-name/variables/component-specific/_component-name.scss` file
+- Find the variable you want to override by looking at the component's `_default-variables.scss` file located in the styles folder in every component folder. [**Willow** Repo](https://github.com/unumux/willow)
 - Override the value of that variable in your `_styles.scss` file above the import for the theme
-  ```scss
+  ```SCSS
   $my-color: #37c0e3;
   $component-button-positive-background-color: $my-color;
 
@@ -299,21 +354,22 @@ _Example: I want to change just the **willow-button** that is in my **willow-mod
 
 ### So you need to make a new component
 
-You can make your own components and utilize variables from the **Willow** themes to make your component have the same look and feel.
+You can make your own components and utilize variables from **Willow** to make your component have the same look and feel.
 
 ---
 
 ### So you need to change a theme
 
-Themes are created to allow you to override the values of variables from your own SCSS.
+Themes are made with `!default` flags to allow you to override the values with your own SCSS.
 
-Note: Changes to theme variables will be inherited throughout the html across many components, so tread lightly.
+Note: Changes to theme variables are used across many components, so tread lightly.
 
 - In your project's SCSS
-  - we recommend the `styles/theme/variables/theme-specific/theme-specific.scss` file
+  - we recommend the `my-project/styles/theme/variables/theme-specific/theme-specific.scss` file
 
 ---
 
+<<<<<<< HEAD
 ### So you need to change the Bootstrap grid
 
 Bootstrap uses [variables](https://v4-alpha.getbootstrap.com/layout/grid/#variables) to control the grid. You can override these to customize how the system works.
@@ -353,12 +409,9 @@ $grid-breakpoints: (
   sm: 506px,
   lg: 972px
 );
-
-```
-
----
-
+=======
 ### Main Variables That Can Be Overridden
+>>>>>>> develop
 
 ...
 
@@ -367,3 +420,10 @@ $grid-breakpoints: (
 ## Issues and Feedback
 
 Found an issue of have an idea for enhancement? Open an [issue](https://github.com/unumux/willow/issues/new).
+
+---
+
+## Glossaries
+
+- [Component Modifiers](modifiers.md)
+- [Utility Classes, Functions and Mixins](utilities.md)

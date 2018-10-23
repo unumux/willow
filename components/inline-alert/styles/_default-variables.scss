@@ -1,0 +1,17 @@
+$component-inline-alert-border-radius: $component-border-radius-small !default;
+//Default/Info
+$component-inline-alert-background-color: #aaa !default;
+$component-inline-alert-text-color: #000 !default;
+$component-inline-alert-icon: $icon-info-inverse !default;
+//Positive
+$component-inline-alert-positive-background-color: #aaa !default;
+$component-inline-alert-positive-text-color: #000 !default;
+$component-inline-alert-positive-icon: $icon-success-inverse !default;
+//Negative
+$component-inline-alert-negative-background-color: #aaa !default;
+$component-inline-alert-negative-text-color: #000 !default;
+$component-inline-alert-negative-icon: $icon-error-inverse !default;
+//Warning
+$component-inline-alert-warning-background-color: #aaa !default;
+$component-inline-alert-warning-icon: $icon-warning-inverse !default;
+$component-inline-alert-warning-text-color: #000 !default;

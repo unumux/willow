@@ -1,13 +1,6 @@
----
-component: willow-secondary-nav
-collection: 		
-    - component 		
-    - navigation
----
 # **Willow-Secondary-Nav**
 
-[Demo](http://codepen.io/team/UnumUX/pen/MpJevo)
-
+[Demo](https://unumux.github.io/willow-testing-site/components/secondary-nav.html)
 
 Secondary Navigation provides navigational links that are separate from links provided by primary and footer navigation. Secondary navigation will appear on some pages of a site but not necessarily all pages. This navigation is meant for links a user may need in relation to their current page and they can link to content on their own page or to different pages. Secondary navigation can also be made up of common helpful links such as _Contact, About, News, Legal, FAQ, etc._
 
@@ -38,7 +31,7 @@ Secondary Navigation provides navigational links that are separate from links pr
 
 #### _Notes_
 
-- **willow-secondary-nav** should be located within the **willow-page-header__contextual-content** element (a sub-element of the **willow-page-header** component)
+- **willow-secondary-nav** should be located within the **willow-page-content** component.
 - If using more than one **willow-secondary-nav** on a page update the **willow-secondary-nav** elements aria-label attribute to be more descriptive such as "account" or "products"
 - The use of `role="navigation"` with the `<nav>` element ensures that **willow-secondary-nav** is accessible for user agents that do not support HTML5. The use of both `<nav>` and `<role="navigation">` together may create a warning in an [HTML validator](https://validator.w3.org/) but we left this pattern intact for now to cover all of our accessibility bases.
 
@@ -88,3 +81,35 @@ Secondary Navigation provides navigational links that are separate from links pr
 
 - **willow-secondary-nav__link** elements require an `href` that links to the page it references
 - **willow-secondary-nav__link** elements need an `aria-label` attribute value if the text content of the link doesn't clearly represent where the user will go after clicking the link
+
+---
+
+## [Variables](./styles/_default-variables.scss)
+
+`$component-secondary-nav-background-color` : sets `background-color` property on **willow-secondary-nav**
+
+`$component-secondary-nav-border` : sets `border` property on **willow-secondary-nav**
+
+`$component-secondary-nav-link-color` : sets `color` property on **willow-secondary-nav__link**
+
+`$component-secondary-nav-link-color-hover` : sets `color` property on **willow-secondary-nav__link:hover**
+
+`$component-secondary-nav-link-color-focus` : sets `color` property on **willow-secondary-nav__link:focus**
+
+`$component-secondary-nav-link-color-visited` : sets `color` property on **willow-secondary-nav__link:visited**
+
+`$component-secondary-nav-link-color-active` : sets `color` property on **willow-secondary-nav__link:active** and **willow-secondary-nav__link--active**
+
+`$component-secondary-nav-link-background-color` : sets `background-color` property on **willow-secondary-nav__link**
+
+`$component-secondary-nav-link-background-color-hover` : sets `background-color` property on **willow-secondary-nav__link:hover**
+
+`$component-secondary-nav-link-background-color-active` : sets `background-color` property on **willow-secondary-nav__link:active** and **willow-secondary-nav__link--active**
+
+`$component-secondary-nav-link-background-color-focus` : sets `background-color` property on **willow-secondary-nav__link:focus**
+
+`$component-secondary-nav-link-border-color-active` : sets `color` property in `border` shorthand on **willow-secondary-nav:active**  and **willow-secondary-nav__link--active**
+
+`$component-secondary-nav-heading-background-color` : sets `background-color` property on **willow-secondary-nav__heading**
+
+`$component-secondary-nav-heading-color` : sets `color` property on **willow-secondary-nav__heading**

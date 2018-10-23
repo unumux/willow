@@ -1,7 +1,3 @@
-@mixin base() {
-
-}
-
 &__content {
-    @include base;
+    margin: $space-stack-s;
 }

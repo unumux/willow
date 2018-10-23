@@ -1,12 +1,6 @@
----
-component: willow-page-header
-collection: 
-    - component
-    - misc
----
 # **Willow-Page-Header**
 
-[Demo](http://codepen.io/team/UnumUX/pen/qrRNjM)
+[Demo](https://unumux.github.io/willow-testing-site/components/page-header.html)
 
 The **Willow-Page-Header** component should be used on every page of your site (no more than once) and contain the main header content for the site such as [willow-logo-link](../logo-link) and [willow-primary-nav](../primary-nav).
 
@@ -16,14 +10,18 @@ The **Willow-Page-Header** component should be used on every page of your site (
 
 ```html
 <header class="willow-page-header" role="banner">
-    <div class="willow-page-header__branding"><!-- insert Willow-Logo-Link Component Here --></div>
-    <div class="willow-page-header__content-controls">
-        <a class="willow-page-header__content-open" aria-label="Open Menu" href="">menu</a>
-        <a class="willow-page-header__content-close" aria-label="Close Menu"href="">close</a>
+  <div class="container-fluid">
+    <div class="willow-page-header__container">
+      <div class="willow-page-header__branding"><!-- insert Willow-Logo-Link Component Here --></div>
+      <div class="willow-page-header__content-controls">
+          <a class="willow-page-header__content-open" aria-label="Open Menu" href="#">menu</a>
+          <a class="willow-page-header__content-close" aria-label="Close Menu" href="#">close</a>
+      </div>
+      <div class="willow-page-header__content">
+          <div class="willow-page-header__navigation"><!-- insert Willow-Primary-Nav Component Here --></div>
+      </div>
     </div>
-    <div class="willow-page-header__content">
-        <div class="willow-page-header__navigation"><!-- insert Willow-Primary-Nav Component Here --></div>
-    </div>
+  </div>
 </header>
 ```
 
@@ -35,7 +33,7 @@ The **Willow-Page-Header** component should be used on every page of your site (
 
 - Required
 - Restrictions
-  - Should Contain: **willow-page-header** elements
+  - Should Contain: the Bootstrap `.container-fluid` element
 
 #### _States_
 
@@ -49,6 +47,29 @@ The **Willow-Page-Header** component should be used on every page of your site (
 
 ---
 
+### container-fluid
+
+- Required
+- Restrictions
+  - Should Contain: **willow-page-header__container**
+
+#### _Notes_
+
+- The `container-fluid` class from Bootstrap is used within **willow-page-header** to restrict the width of the component's content while allowing styles applied to the main **willow-page-header** block to span the full-width of the [willow-page-container](../page-container) component.
+
+---
+
+### willow-page-header__container
+
+- Required
+- Restrictions
+  - Should Contain: **willow-page-header** elements
+
+#### _Notes_
+
+- The **willow-page-header__container** class is for positioning the header children.
+
+---
 ### willow-page-header__branding
 
 - Required
@@ -106,3 +127,31 @@ The **Willow-Page-Header** component should be used on every page of your site (
 - Required
 - Restrictions
   - Should Contain: one [willow-primary-nav](../primary-nav) component
+
+---
+
+## [Variables](./styles/_default-variables.scss)
+
+`$component-page-header-background-color` : sets `background-color` property on **willow-page-header**
+
+`$component-page-header-navigation-border-color` : sets `color` property in `border` shorthand on **willow-page-header__content**
+
+`$component-page-header-content-close-color` : sets `color` property on **willow-page-header__content-close**
+
+`$component-page-header-content-close-color-hover` : sets `color` property on **willow-page-header__content-close:hover**
+
+`$component-page-header-content-close-color-active` : sets `color` property on **willow-page-header__content-close:active**
+
+`$component-page-header-content-close-color-visited` : sets `color` property on **willow-page-header__content-close:visited**
+
+`$component-page-header-content-close-color-focus` : sets `color` property on **willow-page-header__content-close:focus**
+
+`$component-page-header-content-open-color` : sets `color` property on **willow-page-header__content-open**
+
+`$component-page-header-content-open-color-hover` : sets `color` property on **willow-page-header__content-open:hover**
+
+`$component-page-header-content-open-color-active` : sets `color` property on **willow-page-header__content-open:active**
+
+`$component-page-header-content-open-color-visited` : sets `color` property on **willow-page-header__content-open:visited**
+
+`$component-page-header-content-open-color-focus` : sets `color` property on **willow-page-header__content-open:focus**

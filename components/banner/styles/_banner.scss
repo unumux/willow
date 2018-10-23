@@ -1,16 +1,22 @@
-@mixin base() {    
+@import "dependencies";
+
+.willow-banner {
+    @extend .butter;
+
+    @include compact;
+
     background-color: $component-banner-background-color;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-size: cover;
     color: $component-banner-text-color;
-    margin-bottom: space(3);
-    padding-bottom: space(10);
-    padding-top: space(8);
+    margin-top: $space;
+    padding-bottom: space(4);
+    padding-top: space(4);
     position: relative;
     text-align: center;
     z-index: 1;
 
-    &:after {
+    &::after {
         background-color: inherit;
         bottom: 0;
         content: "";
@@ -22,15 +28,7 @@
         z-index: -1;
     }
 
-    > :last-child {
-        margin-bottom: 0;
-    }
-}
-
-&-banner {
-    @include base;
-    @include full-bleed;
-
+    @import "icon";
     @import "heading";
     @import "content";
     @import "actions";

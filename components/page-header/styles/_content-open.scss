@@ -1,9 +1,9 @@
-@mixin base() {
+&__content-open {
     @include set-text-style($text-style-heading-4);
 
     color: $component-page-header-content-open-color;
     text-decoration: none;
-    
+
     &:visited {
         color: $component-page-header-content-open-color-visited;
         text-decoration: none;
@@ -13,7 +13,7 @@
         color: $component-page-header-content-open-color-hover;
         text-decoration: none;
     }
-    
+
     &:active {
         color: $component-page-header-content-open-color-active;
         text-decoration: none;
@@ -22,12 +22,8 @@
     [data-content-open="true"] & {
         display: none;
     }
-    
+
     @media screen and (min-width: breakpoint(medium)) {
         display: none;
     }
-}
-
-&__content-open {
-    @include base;
 }

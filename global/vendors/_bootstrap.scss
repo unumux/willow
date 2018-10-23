@@ -1,0 +1,17 @@
+// Dependencies
+@import "../variables/constants/spacing";
+
+//Bootstrap Grid (which pulls in the required bootstrap variables, functions etc)
+//Documentation: https://v4-alpha.getbootstrap.com/layout/grid/
+@import "./node_modules/bootstrap/scss/bootstrap-grid";
+
+// Customizations
+// overwrites bootstrap .container-fluid to limit...
+// the width of the container to no more than 1140px
+// set the side padding to a spacing size in line with Willow ratios
+
+.container-fluid {
+    max-width: 1140px;
+    padding-left: $space;
+    padding-right: $space;
+}

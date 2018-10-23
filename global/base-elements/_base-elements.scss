@@ -1,0 +1,328 @@
+@import "default-variables";
+@import "../mixins/set-text-style";
+
+//Wrapping in at-root to ensure these styles are always at the root
+@at-root {
+    //1. Sets 1em equal to 10px which eases mentally converting font-sizes example: 1.4em = 14px.
+
+    html {
+        box-sizing: border-box;
+        font-size: 62.5%; //1
+        height: 100%;
+    }
+
+    *,
+    ::before,
+    ::after {
+        box-sizing: inherit;
+    }
+
+    body {
+        @include set-text-style($component-body-style-default);
+
+        background-color: $component-body-background-color;
+        color: $component-body-text-color;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        height: 100%;
+        min-height: 100%;
+
+        * {
+            margin-bottom: 0;
+        }
+    }
+}
+
+h1 {
+    @include set-text-style($text-style-heading-1);
+}
+
+h2 {
+    @include set-text-style($text-style-heading-2);
+}
+
+h3 {
+    @include set-text-style($text-style-heading-3);
+}
+
+h4 {
+    @include set-text-style($text-style-heading-4);
+}
+
+h5 {
+    @include set-text-style($text-style-heading-5);
+}
+
+h6 {
+    @include set-text-style($text-style-heading-6);
+}
+
+// 2. Lessens margin top on elements that are sibilings of a heading
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: $space-stack-l;
+
+    + p,
+    + ol,
+    + ul,
+    + dl {
+        margin: $space-stack-xxs; // 2
+    }
+}
+
+//3. Removes margin from headings that are siblings of another heading
+
+h1 + h2,
+h2 + h3,
+h3 + h4,
+h4 + h5,
+h5 + h6 {
+    margin-top: 0; //3
+}
+
+p {
+    margin: $space-stack;
+}
+
+a {
+    color: $component-link-color;
+
+    &:visited {
+        color: $component-link-color-visited;
+    }
+
+    &:hover {
+        color: $component-link-color-hover;
+    }
+
+    &:active {
+        color: $component-link-color-active;
+    }
+}
+
+ol,
+ul {
+    margin-top: $space;
+
+    ol,
+    ul {
+        margin-top: 0;
+    }
+}
+
+ul {
+    list-style-type: $list-style-type;
+}
+
+small {
+    @include set-text-style($text-style-content-3);
+}
+
+//4. Margin-top instead of margin to prevent overriding browser defaults for margin right and left
+
+blockquote {
+    border-left: 2px solid $component-blockquote-border-color;
+    color: $component-blockquote-text-color;
+    font-weight: $component-blockquote-font-weight;
+    margin-top: $space; //4
+    padding: $space-inset-squish;
+}
+
+hr {
+    margin: $space-stack-l;
+}
+
+//5. Margin-top instead of margin to prevent overriding browser defaults for margin right and left
+
+figure {
+    margin-top: $space; //5
+    padding: $space-inset-squish-xl;
+}
+
+pre {
+    color: $component-body-text-color-monospace;
+    font-family: $component-body-text-monospace;
+    margin: $space-stack-l;
+    overflow-x: scroll;
+    padding: $space-inset-l;
+}
+
+code {
+    color: $component-body-text-color-monospace;
+    font-family: $component-body-text-monospace;
+}
+
+kbd,
+samp {
+    color: $component-body-text-color-monospace;
+    font-family: $component-body-text-monospace;
+}
+
+mark {
+    background-color: $component-highlighted-text-background-color;
+    color: $component-highlighted-text-color;
+}
+
+video {
+    max-width: 100%;
+}
+
+table {
+    border: $component-border-width solid $component-table-border-color;
+    border-collapse: collapse;
+    display: table;
+    margin: $space-stack;
+    width: 100%;
+
+    //Necessary since table elements need to be wrapped in a container that can scroll on x
+
+    &:first-child {
+        margin: $space-stack;
+    }
+}
+
+thead {
+    background-color: $component-table-header-background-color;
+    color: $component-table-header-text-color;
+    display: table-header-group;
+}
+
+tbody {
+    color: $component-table-body-text-color;
+    display: table-row-group;
+}
+
+tfoot {
+    display: table-footer-group;
+}
+
+col {
+    display: table-column;
+}
+
+colgroup {
+    display: table-column-group;
+}
+
+tbody {
+    tr:nth-child(odd) {
+        background-color: $component-table-row-background-color-odd;
+    }
+
+    tr:nth-child(even) {
+        background-color: $component-table-row-background-color-even;
+    }
+}
+
+tr {
+    display: table-row;
+}
+
+caption {
+    display: table-caption;
+}
+
+th {
+    @include set-text-style($text-style-heading-4);
+}
+
+th,
+td {
+    display: table-cell;
+    padding: $space-inset;
+    text-align: left;
+}
+
+form {
+    background-color: $component-form-background-color;
+    border-radius: $component-border-radius;
+    margin: $space-stack;
+    padding: $component-form-padding;
+}
+
+label {
+    @include set-text-style($text-style-heading-5);
+
+    display: block;
+    margin: $space-stack-xs;
+}
+
+legend {
+    @include set-text-style($text-style-heading-5);
+}
+
+fieldset {
+    margin: $space-stack;
+}
+
+input,
+select,
+textarea {
+    background-color: $component-input-background-color;
+    border-color: $component-input-border-color;
+    border-radius: $component-border-radius;
+    border-style: solid;
+    border-width: $component-input-border-width;
+    margin: $space-stack-s;
+    padding: $space-inset-s;
+    width: 100%;
+
+    &[disabled] {
+        background-color: $component-input-background-color-disabled;
+        border-color: $component-input-border-color-disabled;
+        cursor: $component-cursor-disabled;
+    }
+
+    &:invalid {
+        background-color: $component-input-background-color-invalid;
+        border-color: $component-input-border-color-invalid;
+        box-shadow: none;
+    }
+}
+
+input[type="range"],
+input[type="file"] {
+    display: block;
+    width: auto;
+}
+
+input[type="range"] {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+input[type="color"] {
+    height: $component-dropdown-height;
+    padding: $space-inset-xs;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    border-width: 1px;
+    box-shadow: inset 0 1px 2px $component-input-box-shadow-color;
+    width: auto;
+}
+
+input[type="radio"] {
+    border-radius: 50%;
+}
+
+select {
+    height: $component-dropdown-height;
+}
+
+//6. vertical resize cursor to show textarea only resizes vertically - not horizontally (see comment 2)
+//7. textareas should only resize vertically to prevent breaking container horizontally
+//8. prevents extra space beneath the textarea in chrome and safari - https://stackoverflow.com/questions/7144843/extra-space-under-textarea-differs-along-browsers
+
+textarea {
+    cursor: ns-resize; //6
+    resize: vertical; //7
+    vertical-align: top; //8
+}

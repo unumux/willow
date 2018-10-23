@@ -1,24 +1,14 @@
-@mixin base {
-    align-items: center;
+@import "dependencies";
+
+.willow-page-footer {
+    @extend .butter;
+
     background-color: $component-page-footer-background-color;
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    flex-wrap: wrap;
-    padding-bottom: space(1);
-    padding-top: space(1);
+    margin-top: $space;
+    padding-bottom: $space-l;
+    padding-top: $space-l;
 
-    @media screen and (min-width: breakpoint(medium)) {
-        flex-direction: row;
-        padding-bottom: space(3);
-        padding-top: space(2);
-    }
-}
-
-&-page-footer {
-    @include base;
-    @include full-bleed;
-
+    @import "container";
     @import "branding";
     @import "copyright";
     @import "navigation";

@@ -1,9 +1,11 @@
-@mixin base() {
+&__list {
+    font-size: 0;
     list-style: none;
     margin: 0;
     padding: 0;
-}
+    text-align: center;
 
-&__list {
-    @include base;
+    @media screen and (min-width: breakpoint(lg, $grid-breakpoints)) {
+        text-align: right;
+    }
 }

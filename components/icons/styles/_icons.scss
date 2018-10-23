@@ -1,79 +1,64 @@
-@mixin base() {
+@import "dependencies";
+
+.willow-icon {
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
     vertical-align: middle;
 }
 
-&-icon {
+.willow-icon--menu {
+    @include icon($icon-menu);
+}
 
-    &--menu {
-        @include base;
-        @include icon($icon-menu);
-    }
+.willow-icon--menu-inverse {
+    @include icon($icon-menu-inverse);
+}
 
-    &--menu-inverse {
-        @include base;
-        @include icon($icon-menu-inverse);
-    }
+.willow-icon--menu-close {
+    @include icon($icon-menu-close);
+}
 
-    &--menu-close {
-        @include base;
-        @include icon($icon-menu-close);
-    }
+.willow-icon--menu-close-inverse {
+    @include icon($icon-menu-close-inverse);
+}
 
-    &--menu-close-inverse {
-        @include base;
-        @include icon($icon-menu-close-inverse);
-    }
+.willow-icon--close {
+    @include icon($icon-close);
+}
 
-    &--close {
-        @include base;
-        @include icon($icon-close);
-    }
+.willow-icon--close-inverse {
+    @include icon($icon-close-inverse);
+}
 
-    &--close-inverse {
-        @include base;
-        @include icon($icon-close-inverse);
-    }
+.willow-icon--info {
+    @include icon($icon-info);
+}
 
-    &--info {
-        @include base;
-        @include icon($icon-info);
-    }
+.willow-icon--info-inverse {
+    @include icon($icon-info-inverse);
+}
 
-    &--info-inverse {
-        @include base;
-        @include icon($icon-info-inverse);
-    }
+.willow-icon--success {
+    @include icon($icon-success);
+}
 
-    &--success {
-        @include base;
-        @include icon($icon-success);
-    }
+.willow-icon--success-inverse {
+    @include icon($icon-success-inverse);
+}
 
-    &--success-inverse {
-        @include base;
-        @include icon($icon-success-inverse);
-    }
+.willow-icon--warning {
+    @include icon($icon-warning);
+}
 
-    &--warning {
-        @include base;
-        @include icon($icon-warning);
-    }
+.willow-icon--warning-inverse {
+    @include icon($icon-warning-inverse);
+}
 
-    &--warning-inverse {
-        @include base;
-        @include icon($icon-warning-inverse);
-    }
+.willow-icon--error {
+    @include icon($icon-error);
+}
 
-    &--error {
-        @include base;
-        @include icon($icon-error);
-    }
-
-    &--error-inverse {
-        @include base;
-        @include icon($icon-error-inverse);
-    }
+.willow-icon--error-inverse {
+    @include icon($icon-error-inverse);
 }

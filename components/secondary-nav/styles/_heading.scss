@@ -1,15 +1,11 @@
-@mixin base() {
-    @include set-text-style($text-style-heading-4);
-        
-    background-color: $component-secondary-nav-heading-background-color;
-    color: $component-secondary-nav-heading-color;
-    padding-bottom: space(1);
-    padding-left: space(1);
-    padding-right: space(1);
-    padding-top: space(1);
-    margin-bottom: 0;
-}
+// willow-secondary-nav__heading hidden by default with sr-only
+// styling here applied if the sr-only class is removed
 
 &__heading {
-    @include base;
+    @include set-text-style($text-style-heading-4);
+
+    background-color: $component-secondary-nav-heading-background-color;
+    color: $component-secondary-nav-heading-color;
+    margin-bottom: 0;
+    padding: $space-inset;
 }

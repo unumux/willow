@@ -1,0 +1,97 @@
+// =============================================================================
+//      TEXT STYLE PROPERTY SETS
+//
+//      Use with set-text-style mixin to set properties on a component or element
+//      Example: @include set-text-style($text-style-heading-2);
+//
+// =============================================================================
+
+@import "../fonts";
+@import "../../../functions/line-height";
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//      HEADING STYLES
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+$text-style-heading-1: (
+  family: $font-family-primary,
+  desktop-size: $font-size-4xl,
+  desktop-line-height: line-height($font-size-4xl),
+  mobile-size: $font-size-3xl,
+  mobile-line-height: line-height($font-size-3xl),
+  weight: 400
+) !default;
+  
+$text-style-heading-2: (
+  family: $font-family-primary,
+  desktop-size: $font-size-2xl,
+  desktop-line-height: line-height($font-size-2xl),
+  mobile-size: $font-size-xl,
+  mobile-line-height: line-height($font-size-xl),
+  weight: 400
+) !default;
+  
+$text-style-heading-3: (
+  family: $font-family-secondary,
+  desktop-size: $font-size-xl,
+  desktop-line-height: line-height($font-size-xl),
+  mobile-size: $font-size-l,
+  mobile-line-height: line-height($font-size-l),
+  weight: 600
+) !default;
+
+$text-style-heading-4: (
+  family: $font-family-secondary,
+  desktop-size: $font-size-l,
+  desktop-line-height: line-height($font-size-l),
+  mobile-size: $font-size,
+  mobile-line-height: line-height($font-size),
+  weight: 600
+) !default;
+
+$text-style-heading-5: (
+  family: $font-family-secondary,
+  desktop-size: $font-size,
+  desktop-line-height: line-height($font-size),
+  mobile-size: $font-size,
+  mobile-line-height: line-height($font-size),
+  weight: 600
+) !default;
+
+$text-style-heading-6: (
+  family: $font-family-secondary,
+  desktop-size: $font-size-s,
+  desktop-line-height: line-height($font-size-s),
+  mobile-size: $font-size-s,
+  mobile-line-height: line-height($font-size-s),
+  weight: 600
+) !default;
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//      STANDARD CONTENT STYLES
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+$text-style-content-1: (
+  family: $font-family-secondary,
+  desktop-size: $font-size,
+  desktop-line-height: line-height($font-size),
+  mobile-size: $font-size,
+  mobile-line-height: line-height($font-size),
+  weight: 400
+) !default;
+
+$text-style-content-2: (
+  family: $font-family-secondary,
+  desktop-size: $font-size-s,
+  desktop-line-height: line-height($font-size-s),
+  mobile-size: $font-size-s,
+  mobile-line-height: line-height($font-size-s),
+  weight: 400
+) !default;
+
+$text-style-content-3: (
+  family: $font-family-secondary,
+  desktop-size: $font-size-xs,
+  desktop-line-height: line-height($font-size-xs),
+  mobile-size: $font-size-xs,
+  mobile-line-height: line-height($font-size-xs),
+  weight: 400
+) !default;

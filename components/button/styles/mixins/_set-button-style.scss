@@ -1,0 +1,37 @@
+@mixin set-button-style($modifier, $state) {
+    @if $state == "default" {
+        background-color: map-get($modifier, bg);
+        border: map-get($modifier, border);
+        color: map-get($modifier, color);
+    }
+
+    @if $state == "focus" {
+        background-color: map-get($modifier, bg-focus);
+        border: map-get($modifier, border-focus);
+        color: map-get($modifier, color-focus);
+    }
+
+    @if $state == "visited" {
+        background-color: map-get($modifier, bg-visited);
+        border: map-get($modifier, border-visited);
+        color: map-get($modifier, color-visited);
+    }
+
+    @if $state == "hover" {
+        background-color: map-get($modifier, bg-hover);
+        border: map-get($modifier, border-hover);
+        color: map-get($modifier, color-hover);
+    }
+
+    @if $state == "active" {
+        background-color: map-get($modifier, bg-active);
+        border: map-get($modifier, border-active);
+        color: map-get($modifier, color-active);
+    }
+
+    @if $state == "disabled" {
+        background-color: map-get($modifier, bg-disabled);
+        border: map-get($modifier, border-disabled);
+        color: map-get($modifier, color-disabled);
+    }
+}

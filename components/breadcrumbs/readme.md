@@ -1,13 +1,6 @@
----
-component: willow-breadcrumb
-collection: 
-    - component
-    - navigation
-permalink: false
----
 # **Willow-Breadcrumb**
 
-[Demo](http://codepen.io/team/UnumUX/pen/aJpbyK)
+[Demo](https://unumux.github.io/willow-testing-site/components/breadcrumbs.html)
 
 Breadcrumbs are a specialized secondary navigation that show users their location within a section of the website. The purpose is to plot the user's path back to their starting point. Breadcrumbs are typically used when there is a large volume of organized content.
 
@@ -17,12 +10,14 @@ Breadcrumbs are a specialized secondary navigation that show users their locatio
 
 ```html
 <nav class="willow-breadcrumbs" role="navigation" aria-label="breadcrumb">
+  <div class="container-fluid">
     <h1 class="willow-breadcrumbs__heading sr-only">You are here:</h1>
     <ol class="willow-breadcrumbs__list">
         <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="" aria-label="">Nav Item 1</a></li>
         <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="" aria-label="">Nav Item 2</a></li>
-        <li class="willow-breadcrumbs__item--active">Current Item</li>
+        <li class="willow-breadcrumbs__item willow-breadcrumbs__item--active">Current Item</li>
     </ol>
+  </div>
 </nav>
 ```
 
@@ -34,11 +29,23 @@ Breadcrumbs are a specialized secondary navigation that show users their locatio
 
 - Required
 - Restrictions
-  - Should Contain: **willow-breadcrumbs** elements
+  - Should Contain: the Bootstrap `.container-fluid` element
 
 #### _Notes_
 
 - The use of `role="navigation"` with the `<nav>` element ensures that **willow-breadcrumbs** is accessible for user agents that do not support HTML5. The use of both `<nav>` and `<role="navigation">` together may create a warning in an [HTML validator](https://validator.w3.org/) but we left this pattern intact for now to cover all of our accessibility bases.
+
+---
+
+### container-fluid
+
+- Required
+- Restrictions
+  - Should Contain: **willow-breadcrumbs** elements
+
+#### _Notes_
+
+- The `container-fluid` class from Bootstrap is used within **willow-breadcrumbs** to restrict the width of the component's content while allowing styles applied to the main **willow-breadcrumbs** block to span the full-width of the [willow-page-container](../page-container) component.
 
 ---
 
@@ -93,3 +100,9 @@ Breadcrumbs are a specialized secondary navigation that show users their locatio
 
 - **willow-breadcrumbs__link** elements require an `href` value that links to the page they reference
 - **willow-breadcrumbs__link** elements need an `aria-label` value if the text content of the link doesn't clearly represent where the user will go after clicking the link
+
+---
+
+## [Variables](./styles/_default-variables.scss)
+
+`$component-breadcrumb-background-color` : sets `background-color` property on **willow-breadcrumbs**

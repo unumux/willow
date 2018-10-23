@@ -1,9 +1,7 @@
-@mixin base() {
-    display: block;
-}
+@import "dependencies";
 
-&-logo-link {
-    @include base;
+.willow-logo-link {
+    display: block;
 
     @import "image";
 }

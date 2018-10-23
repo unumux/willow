@@ -1,28 +1,81 @@
 # Modifier Glossary
 
-A list of modifiers used by Willow components
+A glossary of modifiers used by Willow components and links to examples
 
-`--active` : identifies the current item
+`--active` : identifies the current item or page
 
 - [Willow Breadcrumbs](./components/breadcrumbs)
+- [Willow Primary Nav](./components/primary-nav)
 
-`--primary` : calls attention to a primary or common action
+`--close` : displays a close icon for global alerts and dialogs
+
+- [Willow Icons](./components/icons)
+
+`--close-inverse` : same as `--close` but in an inverse color
+
+- [Willow Icons](./components/icons)
+
+`--cta`: use to emphasize a button by making it larger and the primary call to action color
 
 - [Willow Button](./components/button)
+
+`--error` : displays an exclamation point icon to signify an error
+
+- [Willow Icons](./components/icons)
+
+`--error-inverse` : same as `--error` but in an inverse color
+
+- [Willow Icons](./components/icons)
+
+`--ghost`: use for deemphasized actions to create a button outline that is filled with color on hover, focus and active actions
+
+- [Willow Button](./components/button)
+
+`--ghost-inverse`: use for deemphasized actions to create a button outline that is filled with color on hover, focus and active actions
+
+- [Willow Button](./components/button)
+
+`--info` : displays an information or i symbol to mark something for consideration
+
+- [Willow Icons](./components/icons)
+
+`--info-inverse` : same as `--info` but in an inverse color
+
+- [Willow Icons](./components/icons)
+
+`--inline`: use to restrict a button's width based on its content
+
+- [Willow Button](./components/button)
+
+`--menu-close` : displays a close icon that should only be used on menus
+
+- [Willow Icons](./components/icons)
+
+`--menu-close-inverse` : same as `--menu-close` but in an inverse color
+
+- [Willow Icons](./components/icons)
+
+`--menu` : displays a collapsed menu icon often called a hamburger
+
+- [Willow Icons](./components/icons)
+
+`--menu-inverse` : same as `--menu` but in an inverse color
+
+- [Willow Icons](./components/icons)
+
+`--negative`: signifies a negative actions or feedback
+
+- [Willow Button](./components/button)
+- [Willow Global Alert](./components/global-alert)
 
 `--positive`: signifies a positive actions or feedback
 
 - [Willow Button](./components/button)
 - [Willow Global Alert](./components/global-alert)
 
-`--warning`: signifies a warning feedback
-
-- [Willow Global Alert](./components/global-alert)
-
-`--negative`: signifies a negative actions or feedback
+`--primary` : calls attention to a primary or common action
 
 - [Willow Button](./components/button)
-- [Willow Global Alert](./components/global-alert)
 
 `--sr-only` : hides content
 
@@ -32,30 +85,19 @@ A list of modifiers used by Willow components
 - [Willow Modal](./components/modal)
 - [Willow Icons](./components/icons)
 
-`--menu` : displays a collapsed menu icon often called a hamburger
-
-`--menu-inverse` : same as `--menu` but in an inverse color
-
-`--menu-close` : displays a close icon that should only be used on menus
-
-`--menu-close-inverse` : same as `--menu-close` but in an inverse color
-
-`--close` : displays a close icon for global alerts and dialogs
-
-`--close-inverse` : same as `--close` but in an inverse color
-
-`--info` : displays an information or i symbol to mark something for consideration
-
-`--info-inverse` : same as `--info` but in an inverse color
-
 `--success` : displays a checkmark to signify success or completion
+
+- [Willow Icons](./components/icons)
 
 `--success-inverse` : same as `--success` but in an inverse color
 
-`--warning` : displays a yield symbol to signify something that needs attention
+- [Willow Icons](./components/icons)
 
-`--warning-inverse` : same as `--warning` but in an inverse color
+`--warning`: signifies a warning feedback or displays a yield symbol to signify something that needs attention
 
-`--error` : displays an exclamation point icon to signify an error
+- [Willow Global Alert](./components/global-alert)
+- [Willow Icons](./components/icons)
 
-`--error-inverse` : same as `--error` but in an inverse color
+`--warning-inverse` : displays a yield symbol to signify something that needs attention but in an inverse color
+
+- [Willow Icons](./components/icons)

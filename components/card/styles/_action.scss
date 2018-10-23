@@ -1,0 +1,7 @@
+&__action {
+    margin: $space-stack-s;
+
+    &:first-of-type {
+        margin-top: 0;
+    }
+}

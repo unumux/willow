@@ -1,0 +1,97 @@
+@import "../variables/constants/spacing";
+@import "../variables/constants/maps/text-styles";
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//      OVERLAY
+//      used by modals and dialogs... and more things in the future
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+$component-overlay-background-color: rgba(#000, 0.8) !default;
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//      DISABLED CURSOR
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+$component-cursor-disabled: not-allowed !default; //is this helpful?
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//      COMPONENT BACKGROUNDS
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+$component-body-background-color: #fff !default;
+$component-body-background-color-secondary: #888 !default;
+$component-body-background-color-em: #333 !default;
+
+$component-border-color: #888 !default;
+$component-border-color-inverse: #fff !default;
+$component-border-color-secondary: #333 !default;
+$component-border-color-disabled: #555 !default;
+
+$component-body-text-color: #000 !default;
+$component-body-text-color-secondary: #333 !default;
+$component-body-text-color-inverse: #fff !default;
+$component-body-text-color-disabled: #aaa !default;
+
+$component-blockquote-text-color: $component-body-text-color !default;
+$component-blockquote-font-weight: 600 !default;
+$component-blockquote-border-color: $component-border-color-secondary !default;
+
+$component-link-color: #666 !default;
+$component-link-color-hover: #666 !default;
+$component-link-color-focus: #666 !default;
+$component-link-color-active: #666 !default;
+$component-link-color-visited: #666 !default;
+
+$component-link-color-inverse: #bbb !default;
+$component-link-color-inverse-hover: #bbb !default;
+$component-link-color-inverse-focus: #bbb !default;
+$component-link-color-inverse-active: #bbb !default;
+$component-link-color-inverse-visited: #bbb !default;
+
+$component-table-header-background-color: #000 !default;
+$component-table-row-background-color-odd: #fff !default;
+$component-table-row-background-color-even: #bbb !default;
+$component-table-border-color: #888 !default;
+$component-table-body-text-color: #000 !default;
+$component-table-header-text-color: #fff !default;
+
+// >>>>>>>>> Default Text Style Property Set
+$component-body-style-default: $text-style-content-1 !default;
+
+// >>>>>>>>> Highlighted Text
+$component-highlighted-text-background-color: #333 !default;
+$component-highlighted-text-color: #fff !default;
+
+// >>>>>>>>> Monospace Text
+$component-body-text-monospace: $font-family-monospace !default;
+$component-body-text-color-monospace: #555 !default;
+
+$component-border-radius-small: 3px !default;
+$component-border-radius: 4px !default;
+$component-border-radius-large: 5px !default;
+
+$component-border-width: 1px !default;
+
+$content-max-width: 1170px !default;
+
+$list-style-type: disc !default;
+
+//// FORMS ////////////////////////////////////////////////////////////////////////////////////////////////
+$component-form-background-color: #eee !default;
+$component-form-padding: $space-inset !default;
+
+$component-input-border-color: #555 !default;
+$component-input-border-color-disabled: #555 !default;
+$component-input-border-color-invalid: #000 !default;
+$component-input-border-color-valid: #aaa !default;
+
+$component-input-border-width: 2px !default;
+
+$component-input-background-color: #fff !default;
+$component-input-background-color-checked: #000 !default;
+$component-input-background-color-disabled: transparent !default;
+$component-input-background-color-invalid: rgba(#000, 0.15) !default;
+$component-input-background-color-valid: rgba(#000, 0.15) !default;
+
+$component-input-box-shadow-color: rgba(#000, 0.4) !default;
+
+$component-dropdown-height: 45px !default;
+$component-input-height: 25px !default;
+$component-input-width: 25px !default;

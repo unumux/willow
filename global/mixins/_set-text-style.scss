@@ -1,0 +1,14 @@
+@import "../functions/breakpoint";
+@import "../variables/constants/maps/breakpoints";
+
+@mixin set-text-style($style) {
+    font-family: map-get($style, family);
+    font-size: map-get($style, mobile-size);
+    font-weight: map-get($style, weight);
+    line-height: map-get($style, mobile-line-height);
+    
+    @media screen and (min-width: breakpoint(medium)) {
+        font-size: map-get($style, desktop-size);
+        line-height: map-get($style, desktop-line-height);
+    }
+}

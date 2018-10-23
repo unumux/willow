@@ -1,11 +1,6 @@
----
-component: willow-icon
-collection:
-    - component
----
 # **Willow-Icon**
 
-[Demo](http://codepen.io/team/UnumUX/pen/gmXRWg)
+[Demo](https://unumux.github.io/willow-testing-site/components/icons.html)
 
 **Willow-Icons** are symbols that can be used to convey information and help users comprehend directions, actions, messages and interfaces.
 
@@ -20,7 +15,21 @@ When **Willow-Icons** are used inside of actionable components or elements, such
 ## HTML Snippet
 
 ```html
-<span class="willow-icon"></span>
+<!-- modified versions -->
+<span class="willow-icon willow-icon--menu"></span>
+<span class="willow-icon willow-icon--menu-inverse"></span>
+<span class="willow-icon willow-icon--menu-close"></span>
+<span class="willow-icon willow-icon--menu-close-inverse"></span>
+<span class="willow-icon willow-icon--close"></span>
+<span class="willow-icon willow-icon--close-inverse"></span>
+<span class="willow-icon willow-icon--info"></span>
+<span class="willow-icon willow-icon--info-inverse"></span>
+<span class="willow-icon willow-icon--success"></span>
+<span class="willow-icon willow-icon--success-inverse"></span>
+<span class="willow-icon willow-icon--warning"></span>
+<span class="willow-icon willow-icon--warning-inverse"></span>
+<span class="willow-icon willow-icon--error"></span>
+<span class="willow-icon willow-icon--error-inverse"></span>
 ```
 
 ---
@@ -68,3 +77,9 @@ When **Willow-Icons** are used inside of actionable components or elements, such
 
 - **willow-icon** requires the addition of a modifier or no icon will appear
 - if used to convey meaning in side of an actionable component or element, the `title` attribute should be added to the icon element and given a value to explain the purpose. `<button><span class="willow-icon--menu-close" title="Close Menu"></span></button>`
+
+---
+
+## Variables
+
+None

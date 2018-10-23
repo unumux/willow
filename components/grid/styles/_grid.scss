@@ -1,15 +1,16 @@
-@mixin base() {
-    margin-bottom: space(2);
+@import "dependencies";
 
-    @media screen and (min-width: breakpoint(small)) {
+@mixin grid() {
+    @include media-breakpoint-up(sm) {
         align-items: stretch;
         display: flex;
         flex-wrap: wrap;
+        justify-content: flex-start;
     }
 }
 
-&-grid {
-    @include base;
-    
+.willow-grid {
+    @include grid;
+
     @import "item";
 }

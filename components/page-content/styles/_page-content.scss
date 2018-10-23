@@ -1,7 +1,6 @@
-@mixin base {
+@import "dependencies";
 
-}
-
-&-page-content {
-    @include base;
+.willow-page-content {
+    @import "container";
+    @import "heading";
 }

@@ -1,10 +1,7 @@
-@mixin base() {
+&__close {
     background-color: transparent;
     border: 0;
     cursor: pointer;
     float: right;
-}
-
-&__close {
-    @include base;
+    padding: $space-inset-s;
 }
