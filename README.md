@@ -298,12 +298,44 @@ You can customize **Willow** components via two methods
 
 #### Method 1: Change the look of a component globally
 
-_Example 1: You want to change the size of all **willow-buttons** everywhere they appear_
+_Example 1: You want to change the background color of all **willow-banners** everywhere they appear_
+
+- You accomplish this by overriding a 'component-specific' variable for **willow-banner**
+- Review available component variables in the component's readme or `./styles/_default-variables.scss`. For our example the [Banner Variables are here](./components/banner/style/_default-variables.scss)
+- Override the value of the variable in your `_styles.scss` file above the import for Willow (see example 1)
+  - **Note**: If you want to use a color for a theme, you need to override the variable after the theme import but before the Willow import (see example 2)
+
+  ```SCSS
+  //Example 1:
+  
+  $my-color: #37c0e3;
+  $component-banner-background-color: $my-color;
+
+  @import "node_modules/@unumux/willow/styles";
+  ```
+
+  ```SCSS
+  //Example 2:
+  @import "node_modules/@unumux/theme-naame/styles";
+  
+  $component-banner-background-color: $theme-base;
+
+  @import "node_modules/@unumux/willow/styles";
+  ```
+
+_Example 2: You want to change the size of all **willow-buttons** everywhere they appear_
 
 - In your SCSS/CSS, select the component's class name and add the styling you want
-- **Note**: This method may require targeting multiple component versions such as willow-button and willow-button--primary
+  - **Note**: Your selector needs to come after the line where you import the Willow in order for your styling to "win"
+  - **Note**: This method may require targeting multiple component versions such as willow-button and willow-button--primary
 
 ```SCSS
+// it's recommended you keep your override styles together and organized by library and component
+
+// file: my-project/styles/styles.scss
+@import "node_modules/@unumux/willow/styles";
+@import "./components/overrides/willow/button/button"; // importing overrides after Willow in order to "win"
+
 // file: my-project/styles/components/overrides/willow/button/_button.scss
 .willow-button,
 .willow-button--primary,
@@ -315,31 +347,33 @@ _Example 1: You want to change the size of all **willow-buttons** everywhere the
 }
 ```
 
-_Example 2: You want to change the background color of positive buttons_
-
-- You would accomplish this by overriding a 'component-specific' variable for the positive buttons
-- Find the variable you want to override by looking at the component's `_default-variables.scss` file located in the styles folder in every component folder. [**Willow** Repo](https://github.com/unumux/willow)
-- Override the value of that variable in your `_styles.scss` file above the import for the theme
-  ```SCSS
-  $my-color: #37c0e3;
-  $component-button-positive-background-color: $my-color;
-
-  @import "node_modules/@unumux/theme-name-here/styles";
-  ```
-
 #### Method 2: Change the look of only one instances of a component
 
-_Example: I want to change just the **willow-button** that is in my **willow-modal**_
+_Example: I want to change just the **willow-button** that is in the banner on my home page_
 
 - Add a unique class to the specific component(s) you want to change then select that class and add your styling
 
 ```HTML
-<button class="willow-button modal-button">
+<!-- file: index.html -->
+<section class="willow-banner" role="region">
+  <div class="container-fluid">
+    <div class="willow-banner__icon"></div>
+    <h1 class="willow-banner__heading">Special Demo Banner</h1>
+    <div class="willow-banner__content">
+        <div class="willow-styling-context">
+            <p>Here's a banner with a special button. This button is only on this banner on this page.</p>
+        </div>
+    </div>
+    <ul class="willow-banner__actions">
+        <li class="willow-banner__action"><button class="willow-button home-special-button">I am special</button></li>
+    </ul>
+  </div>
+</section>
 ```
 
 ```SCSS
-// file: styles/components/button/_button.scss
-.modal-button {
+// file: styles/components/overrides/willow/button/_button.scss
+.home-special-button {
   background-color: orange;
 }
 ```
