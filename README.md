@@ -288,7 +288,7 @@ There are 3 groups of variables:
 
 ### Recommended SCSS Directory Structure For Your Project
 
-We recommend you setup your project's styling folders and files using this project [pattern](https://github.com/unumux/standard-project-structure).
+We recommend you setup your project's styling folders and files using this project [pattern](https://github.com/unumux/willow-testing-site).
 
 ---
 

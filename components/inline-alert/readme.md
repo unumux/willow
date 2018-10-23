@@ -84,3 +84,33 @@ _Examples: Presented on the user’s account page - “Your account is about to 
 - Required
 - Restrictions
   - Should Contain: one or more components
+
+---
+
+## [Variables](./styles/_default-variables.scss)
+
+`$component-inline-alert-border-radius` : sets `border-radius` property on **willow-alert**
+
+`$component-inline-alert-background-color` : sets `background-color` property on **willow-alert**
+
+`$component-inline-alert-text-color` : sets `color` property on **willow-alert**
+
+`$component-inline-alert-icon` : passed to the `icon` mixin which sets the `background-image`, `height` and `width` on **willow-alert::before**
+
+`$component-inline-alert-positive-background-color` : sets `background-color` property on **willow-alert--positive**
+
+`$component-inline-alert-positive-text-color` : sets `color` property on **willow-alert--positive**
+
+`$component-inline-alert-positive-icon` : passed to the `icon` mixin which sets the `background-image`, `height` and `width` on **willow-alert--positive::before**
+
+`$component-inline-alert-negative-background-color` : sets `background-color` property on **willow-alert--negative**
+
+`$component-inline-alert-negative-text-color` : sets `color` property on **willow-alert--negative**
+
+`$component-inline-alert-negative-icon` : passed to the `icon` mixin which sets the `background-image`, `height` and `width` on **willow-alert--negative::before**
+
+`$component-inline-alert-warning-background-color` : sets `background-color` property on **willow-alert--warning**
+
+`$component-inline-alert-warning-icon` : passed to the `icon` mixin which sets the `background-image`, `height` and `width` on **willow-alert--warning::before**
+
+`$component-inline-alert-warning-text-color` : sets `color` property on **willow-alert--warning**

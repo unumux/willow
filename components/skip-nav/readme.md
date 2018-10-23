@@ -41,3 +41,17 @@ The **willow-skip-nav** is hidden visibly until a user navigates or focuses on t
 
 - Set the `href` value of **willow-skip-nav__link** equal to the `id` value of the [willow-page-content](../page-content) component
 - **willow-skip-nav__link** needs an `aria-label` value if the text content of the link doesn't clearly represent where the user will go after clicking the link
+
+---
+
+## [Variables](./styles/_default-variables.scss)
+
+`$component-skip-nav-background-color` : sets `background-color` property on **willow-skip-nav__link**
+
+`$component-skip-nav-link-color` : sets `color` property on **willow-skip-nav__link**
+
+`$component-skip-nav-link-color-hover` : sets `color` property on **willow-skip-nav__link:hover**
+
+`$component-skip-nav-link-color-active` : sets `color` property on **willow-skip-nav__link:active**
+
+`$component-skip-nav-link-color-visited` : sets `color` property on **willow-skip-nav__link:visited**

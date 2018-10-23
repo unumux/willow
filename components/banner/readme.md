@@ -63,6 +63,7 @@ A banner's background spans the full width of the screen/viewport while its cont
 #### _Notes_
 
 - To include an icon image in **willow-banner__icon** you will need to add your own class to the element and target that in your SCSS/CSS and set the `background-image` property. Adding a new class allows the icon to be different on each banner. If you set the background image using the `.willow-banner__icon` class every banner on your site will have the same icon.
+- Additionally, if your icon is populated dynamically via a CMS, you can use a style attribute to set the icon. This can be done in this way: `<div class="willow-banner__icon" style="background-image: url(...)"></div>`
 
 ---
 
@@ -101,3 +102,15 @@ A banner's background spans the full width of the screen/viewport while its cont
 - Repeatable
 - Restrictions
   - Should Contain: one _actionable_ component (such as [willow-button](../button) or a link)
+
+---
+
+## [Variables](./styles/_default-variables.scss)
+
+`$component-banner-background-color` : sets `background-color` property on **willow-banner**
+
+`$component-banner-text-color` : sets `color` property on **willow-banner**
+
+`$component-banner-icon-height` : sets `height` property on **willow-banner__icon**
+
+`$component-banner-icon-width` : sets `width` property on **willow-banner__icon**
