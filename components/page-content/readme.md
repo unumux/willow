@@ -26,6 +26,7 @@ A component for positioning/layout purposes.  **Willow-Page-Content** should onl
 #### _Notes_
 
 - **willow-page-content** `id` attribute should be set and the [willow-skip-nav](../skip-nav) component should have an `href` equal to this value
+- The `flex-grow` class can be added to this element to make it grow vertically to fill a browser. A related side effect of doing this is that the footer of your page will be at the bottom of the browser window.
 - The use of `role="main"` with the `<main>` element ensures that **willow-page-content** is accessible for user agents that do not support HTML5. The use of both `<main>` and `<role="main">` together may create a warning in an [HTML validator](https://validator.w3.org/) but we left this pattern intact for now to cover all of our accessibility bases.
 
 ---
