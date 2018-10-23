@@ -89,7 +89,7 @@ Primary Nav should contain a limited number of items, the shorter the better for
 
 ## [Variables](./styles/_default-variables.scss)
 
-`$component-primary-nav-link-color`` : sets `color` property on **willow-primary-nav__link**
+`$component-primary-nav-link-color` : sets `color` property on **willow-primary-nav__link**
 
 `$component-primary-nav-link-color-visited` : sets `color` property on **willow-primary-nav__link:visited**
 
