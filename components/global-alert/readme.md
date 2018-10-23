@@ -123,3 +123,23 @@ The purpose of a global alert is to communicate a major site or global level mes
 - Required
 - Restrictions
   - Should Contain: one or more components
+
+---
+
+## [Variables](./styles/_default-variables.scss)
+
+`$component-global-alert-background-color` : sets `background-color` property on **willow-global-alert**
+
+`$component-global-alert-text-color` : sets `color` property on **willow-global-alert**
+
+`$component-global-alert-positive-background-color` : sets `background-color` property on **willow-global-alert--positive**
+
+`$component-global-alert-positive-text-color` : sets `color` property on **willow-global-alert--positive**
+
+`$component-global-alert-warning-background-color` : sets `background-color` property on **willow-global-alert--warning**
+
+`$component-global-alert-warning-text-color` : sets `color` property on **willow-global-alert--warning**
+
+`$component-global-alert-negative-background-color` : sets `background-color` property on **willow-global-alert--negative**
+
+`$component-global-alert-negative-text-color` : sets `color` property on **willow-global-alert--negative**
