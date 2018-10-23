@@ -111,8 +111,12 @@ _Examples: errors, warnings, to collect data, to inform users of important infor
 
 - completing the actionable component should record the response and trigger the **willow-dialog** to close
 
+---
+
 ## [Variables](./styles/_default-variables.scss)
 
 `$component-dialog-background-color` : sets `background-color` property on **willow-dialog__container**
+
 `$component-dialog-border-radius` : sets `border-radius` property on **willow-dialog__container**
+
 `$component-dialog-overlay-background-color` : sets `background-color` property on **willow-dialog**
