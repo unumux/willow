@@ -261,7 +261,7 @@ A glossary of utility [classes](#classes), [functions](#functions) and [mixins](
         font-weight: ...;
         line-height: ...;
 
-        @media screen and (min-width: breakpoint(medium)) {
+        @media screen and (min-width: breakpoint(md)) {
             font-size: ...;
             line-height: ...;
         }

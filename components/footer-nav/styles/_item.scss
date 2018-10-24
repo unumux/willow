@@ -10,7 +10,7 @@
         }
     }
 
-    @media screen and (min-width: breakpoint(lg, $grid-breakpoints)) {
+    @media screen and (min-width: breakpoint(lg)) {
         margin-top: 0;
 
         &::after {
