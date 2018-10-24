@@ -1,11 +1,10 @@
-@import "../variables/constants/spacing";
-@import "../variables/constants/maps/text-styles";
+@import "../theme/variables/constants/constants";
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 //      OVERLAY
 //      used by modals and dialogs... and more things in the future
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-$component-overlay-background-color: rgba($color-dark, 0.8) !default;
+$component-overlay-background-color: rgba($color-black, 0.8) !default;
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 //      DISABLED CURSOR
@@ -15,54 +14,54 @@ $component-cursor-disabled: not-allowed !default; //is this helpful?
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 //      COMPONENT BACKGROUNDS
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-$component-body-background-color: $color-light !default;
-$component-body-background-color-secondary: $color-middle !default;
-$component-body-background-color-em: $color-middle !default;
+$component-body-background-color: $color-white !default;
+$component-body-background-color-secondary: $color-grey !default;
+$component-body-background-color-em: $color-grey !default;
 
-$component-border-color: $color-middle !default;
-$component-border-color-inverse: $color-light !default;
-$component-border-color-secondary: $color-middle !default;
-$component-border-color-disabled: $color-middle !default;
+$component-border-color: $color-grey !default;
+$component-border-color-inverse: $color-white !default;
+$component-border-color-secondary: $color-grey !default;
+$component-border-color-disabled: $color-grey !default;
 
-$component-body-text-color: $color-middle !default;
-$component-body-text-color-secondary: $color-dark !default;
-$component-body-text-color-inverse: $color-light !default;
-$component-body-text-color-disabled: $color-dark !default;
+$component-body-text-color: $color-grey !default;
+$component-body-text-color-secondary: $color-black !default;
+$component-body-text-color-inverse: $color-white !default;
+$component-body-text-color-disabled: $color-black !default;
 
 $component-blockquote-text-color: $component-body-text-color !default;
 $component-blockquote-font-weight: 600 !default;
 $component-blockquote-border-color: $component-border-color-secondary !default;
 
-$component-link-color: $color-dark !default;
-$component-link-color-hover: $color-dark !default;
-$component-link-color-focus: $color-dark !default;
-$component-link-color-active: $color-dark !default;
-$component-link-color-visited: $color-dark !default;
+$component-link-color: $color-black !default;
+$component-link-color-hover: $color-black !default;
+$component-link-color-focus: $color-black !default;
+$component-link-color-active: $color-black !default;
+$component-link-color-visited: $color-black !default;
 
-$component-link-color-inverse: $color-middle !default;
-$component-link-color-inverse-hover: $color-middle !default;
-$component-link-color-inverse-focus: $color-middle !default;
-$component-link-color-inverse-active: $color-middle !default;
-$component-link-color-inverse-visited: $color-middle !default;
+$component-link-color-inverse: $color-grey !default;
+$component-link-color-inverse-hover: $color-grey !default;
+$component-link-color-inverse-focus: $color-grey !default;
+$component-link-color-inverse-active: $color-grey !default;
+$component-link-color-inverse-visited: $color-grey !default;
 
-$component-table-header-background-color: $color-dark !default;
-$component-table-row-background-color-odd: $color-light !default;
-$component-table-row-background-color-even: $color-middle !default;
-$component-table-border-color: $color-middle !default;
-$component-table-body-text-color: $color-dark !default;
-$component-table-body-text-color-inverse: $color-light !default;
-$component-table-header-text-color: $color-light !default;
+$component-table-header-background-color: $color-black !default;
+$component-table-row-background-color-odd: $color-white !default;
+$component-table-row-background-color-even: $color-grey !default;
+$component-table-border-color: $color-grey !default;
+$component-table-body-text-color: $color-black !default;
+$component-table-body-text-color-inverse: $color-white !default;
+$component-table-header-text-color: $color-white !default;
 
 // >>>>>>>>> Default Text Style Property Set
 $component-body-style-default: $text-style-content-1 !default;
 
 // >>>>>>>>> Highlighted Text
-$component-highlighted-text-background-color: $color-middle !default;
-$component-highlighted-text-color: $color-light !default;
+$component-highlighted-text-background-color: $color-grey !default;
+$component-highlighted-text-color: $color-white !default;
 
 // >>>>>>>>> Monospace Text
 $component-body-text-monospace: $font-family-monospace !default;
-$component-body-text-color-monospace: $color-dark !default;
+$component-body-text-color-monospace: $color-black !default;
 
 $component-border-radius-small: 3px !default;
 $component-border-radius: 4px !default;
@@ -75,23 +74,23 @@ $content-max-width: 1170px !default;
 $list-style-type: disc !default;
 
 //// FORMS ////////////////////////////////////////////////////////////////////////////////////////////////
-$component-form-background-color: $color-light !default;
+$component-form-background-color: $color-white !default;
 $component-form-padding: $space-inset !default;
 
-$component-input-border-color: $color-middle !default;
-$component-input-border-color-disabled: $color-middle !default;
-$component-input-border-color-invalid: $color-dark !default;
-$component-input-border-color-valid: $color-middle !default;
+$component-input-border-color: $color-grey !default;
+$component-input-border-color-disabled: $color-grey !default;
+$component-input-border-color-invalid: $color-black !default;
+$component-input-border-color-valid: $color-grey !default;
 
 $component-input-border-width: 2px !default;
 
-$component-input-background-color: $color-light !default;
-$component-input-background-color-checked: $color-dark !default;
+$component-input-background-color: $color-white !default;
+$component-input-background-color-checked: $color-black !default;
 $component-input-background-color-disabled: transparent !default;
-$component-input-background-color-invalid: rgba($color-dark, 0.15) !default;
-$component-input-background-color-valid: rgba($color-dark, 0.15) !default;
+$component-input-background-color-invalid: rgba($color-black, 0.15) !default;
+$component-input-background-color-valid: rgba($color-black, 0.15) !default;
 
-$component-input-box-shadow-color: rgba($color-dark, 0.4) !default;
+$component-input-box-shadow-color: rgba($color-black, 0.4) !default;
 
 $component-dropdown-height: 45px !default;
 $component-input-height: 25px !default;

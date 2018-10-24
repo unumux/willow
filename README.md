@@ -231,7 +231,7 @@ There are 3 groups of variables:
   - These variables are a fixed value, that is not expected to change and that is not abstracted. Primarily used for color and font settings.
     ```scss
     // theme-name/variables/constants/_colors.scss file
-    $color-light: $color-light;
+    $color-white: $color-white;
     $color-bahama-blue: #285a83;
     $color-razzmatazz: #f22672;
 
@@ -243,11 +243,11 @@ There are 3 groups of variables:
   - These variables are assigned values from Constant variables and begin the processes of giving purpose and priority to our colors and abstracting the variables.
     ```scss
     // theme-name/variables/_theme-specific.scss
-    $theme-base: $color-light;
+    $theme-base: $color-white;
     $theme-primary: $color-bahama-blue;
     $theme-action: $color-bahama-blue;
     $theme-action-negative: $color-razzmatazz;
-    $theme-text-inverse: $color-light;
+    $theme-text-inverse: $color-white;
     ```
 
 - Component-Specific

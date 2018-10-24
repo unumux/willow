@@ -5,20 +5,20 @@ $component-button-border-color: transparent !default;
 //      NEUTRAL BUTTONS
 // =============================================================================
 // Backgrounds
-$component-button-background-color: $color-middle !default;
-$component-button-background-color-visited: $color-middle !default;
-$component-button-background-color-hover: $color-middle !default;
-$component-button-background-color-active: $color-middle !default;
-$component-button-background-color-focus: $color-middle !default;
-$component-button-background-color-disabled: $color-middle !default;
+$component-button-background-color: $color-grey !default;
+$component-button-background-color-visited: $color-grey !default;
+$component-button-background-color-hover: $color-grey !default;
+$component-button-background-color-active: $color-grey !default;
+$component-button-background-color-focus: $color-grey !default;
+$component-button-background-color-disabled: $color-grey !default;
 
 // Text
-$component-button-text-color: $color-light !default;
-$component-button-text-color-visited: $color-light !default;
-$component-button-text-color-hover: $color-light !default;
-$component-button-text-color-active: $color-light !default;
-$component-button-text-color-focus: $color-light !default;
-$component-button-text-color-disabled: $color-dark !default;
+$component-button-text-color: $color-white !default;
+$component-button-text-color-visited: $color-white !default;
+$component-button-text-color-hover: $color-white !default;
+$component-button-text-color-active: $color-white !default;
+$component-button-text-color-focus: $color-white !default;
+$component-button-text-color-disabled: $color-black !default;
 
 // Border
 $component-button-border: 1px solid transparent !default;
@@ -32,20 +32,20 @@ $component-button-border-disabled: transparent !default;
 //      PRIMARY BUTTONS
 // =============================================================================
 // Backgrounds
-$component-button-primary-background-color: $color-middle !default;
-$component-button-primary-background-color-visited: $color-middle !default;
-$component-button-primary-background-color-hover: $color-middle !default;
-$component-button-primary-background-color-active: $color-middle !default;
-$component-button-primary-background-color-focus: $color-middle !default;
-$component-button-primary-background-color-disabled: $color-middle !default;
+$component-button-primary-background-color: $color-grey !default;
+$component-button-primary-background-color-visited: $color-grey !default;
+$component-button-primary-background-color-hover: $color-grey !default;
+$component-button-primary-background-color-active: $color-grey !default;
+$component-button-primary-background-color-focus: $color-grey !default;
+$component-button-primary-background-color-disabled: $color-grey !default;
 
 // Text
-$component-button-primary-text-color: $color-light !default;
-$component-button-primary-text-color-visited: $color-light !default;
-$component-button-primary-text-color-hover: $color-light !default;
-$component-button-primary-text-color-active: $color-light !default;
-$component-button-primary-text-color-focus: $color-light !default;
-$component-button-primary-text-color-disabled: $color-middle !default;
+$component-button-primary-text-color: $color-white !default;
+$component-button-primary-text-color-visited: $color-white !default;
+$component-button-primary-text-color-hover: $color-white !default;
+$component-button-primary-text-color-active: $color-white !default;
+$component-button-primary-text-color-focus: $color-white !default;
+$component-button-primary-text-color-disabled: $color-grey !default;
 
 // Borders
 $component-button-primary-border: 1px solid transparent !default;
@@ -59,20 +59,20 @@ $component-button-primary-border-disabled: transparent !default;
 //      POSITIVE BUTTONS
 // =============================================================================
 // Backgrounds
-$component-button-positive-background-color: $color-positive !default;
-$component-button-positive-background-color-visited: $color-positive !default;
-$component-button-positive-background-color-hover: $color-positive !default;
-$component-button-positive-background-color-active: $color-positive !default;
-$component-button-positive-background-color-focus: $color-positive !default;
-$component-button-positive-background-color-disabled: $color-middle !default;
+$component-button-positive-background-color: $color-green !default;
+$component-button-positive-background-color-visited: $color-green !default;
+$component-button-positive-background-color-hover: $color-green !default;
+$component-button-positive-background-color-active: $color-green !default;
+$component-button-positive-background-color-focus: $color-green !default;
+$component-button-positive-background-color-disabled: $color-grey !default;
 
 // Text
-$component-button-positive-text-color: $color-light !default;
-$component-button-positive-text-color-visited: $color-light !default;
-$component-button-positive-text-color-hover: $color-light !default;
-$component-button-positive-text-color-active: $color-light !default;
-$component-button-positive-text-color-focus: $color-light !default;
-$component-button-positive-text-color-disabled: $color-middle !default;
+$component-button-positive-text-color: $color-white !default;
+$component-button-positive-text-color-visited: $color-white !default;
+$component-button-positive-text-color-hover: $color-white !default;
+$component-button-positive-text-color-active: $color-white !default;
+$component-button-positive-text-color-focus: $color-white !default;
+$component-button-positive-text-color-disabled: $color-grey !default;
 
 // Borders
 $component-button-positive-border: 1px solid transparent !default;
@@ -86,20 +86,20 @@ $component-button-positive-border-disabled: transparent !default;
 //      NEGATIVE BUTTONS
 // =============================================================================
 // Backgrounds
-$component-button-negative-background-color: $color-negative !default;
-$component-button-negative-background-color-visited: $color-negative !default;
-$component-button-negative-background-color-hover: $color-negative !default;
-$component-button-negative-background-color-active: $color-negative !default;
-$component-button-negative-background-color-focus: $color-negative !default;
-$component-button-negative-background-color-disabled: $color-middle !default;
+$component-button-negative-background-color: $color-red !default;
+$component-button-negative-background-color-visited: $color-red !default;
+$component-button-negative-background-color-hover: $color-red !default;
+$component-button-negative-background-color-active: $color-red !default;
+$component-button-negative-background-color-focus: $color-red !default;
+$component-button-negative-background-color-disabled: $color-grey !default;
 
 // Text
-$component-button-negative-text-color: $color-light !default;
-$component-button-negative-text-color-visited: $color-light !default;
-$component-button-negative-text-color-hover: $color-light !default;
-$component-button-negative-text-color-active: $color-light !default;
-$component-button-negative-text-color-focus: $color-light !default;
-$component-button-negative-text-color-disabled: $color-middle !default;
+$component-button-negative-text-color: $color-white !default;
+$component-button-negative-text-color-visited: $color-white !default;
+$component-button-negative-text-color-hover: $color-white !default;
+$component-button-negative-text-color-active: $color-white !default;
+$component-button-negative-text-color-focus: $color-white !default;
+$component-button-negative-text-color-disabled: $color-grey !default;
 
 // Borders
 $component-button-negative-border: 1px solid transparent !default;
@@ -114,22 +114,22 @@ $component-button-negative-border-disabled: transparent !default;
 // =============================================================================
 // Backgrounds
 $component-button-ghost-background-color: transparent !default;
-$component-button-ghost-background-color-visited: $color-light !default;
-$component-button-ghost-background-color-hover: $color-light !default;
-$component-button-ghost-background-color-active: $color-light !default;
-$component-button-ghost-background-color-focus: $color-light !default;
-$component-button-ghost-background-color-disabled: $color-light !default;
+$component-button-ghost-background-color-visited: $color-white !default;
+$component-button-ghost-background-color-hover: $color-white !default;
+$component-button-ghost-background-color-active: $color-white !default;
+$component-button-ghost-background-color-focus: $color-white !default;
+$component-button-ghost-background-color-disabled: $color-white !default;
 
 // Text
-$component-button-ghost-text-color: $color-light !default;
-$component-button-ghost-text-color-visited: $color-middle !default;
-$component-button-ghost-text-color-hover: $color-middle !default;
-$component-button-ghost-text-color-active: $color-dark !default;
-$component-button-ghost-text-color-focus: $color-middle !default;
-$component-button-ghost-text-color-disabled: $color-middle !default;
+$component-button-ghost-text-color: $color-white !default;
+$component-button-ghost-text-color-visited: $color-grey !default;
+$component-button-ghost-text-color-hover: $color-grey !default;
+$component-button-ghost-text-color-active: $color-black !default;
+$component-button-ghost-text-color-focus: $color-grey !default;
+$component-button-ghost-text-color-disabled: $color-grey !default;
 
 // Borders
-$component-button-ghost-border: 2px solid $color-light !default;
+$component-button-ghost-border: 2px solid $color-white !default;
 $component-button-ghost-border-visited: 2px solid transparent !default;
 $component-button-ghost-border-hover: 2px solid transparent !default;
 $component-button-ghost-border-active: 2px solid transparent !default;
@@ -143,20 +143,20 @@ $component-button-ghost-border-disabled: transparent !default;
 $component-button-ghost-inverse-background-color: transparent !default;
 $component-button-ghost-inverse-background-color-visited: rgba(0, 0, 0, 0.7) !default;
 $component-button-ghost-inverse-background-color-hover: rgba(0, 0, 0, 0.7) !default;
-$component-button-ghost-inverse-background-color-active: $color-dark !default;
+$component-button-ghost-inverse-background-color-active: $color-black !default;
 $component-button-ghost-inverse-background-color-focus: rgba(0, 0, 0, 0.3) !default;
-$component-button-ghost-inverse-background-color-disabled: $color-middle !default;
+$component-button-ghost-inverse-background-color-disabled: $color-grey !default;
 
 // Text
-$component-button-ghost-inverse-text-color: $color-dark !default;
-$component-button-ghost-inverse-text-color-visited: $color-light !default;
-$component-button-ghost-inverse-text-color-hover: $color-light !default;
-$component-button-ghost-inverse-text-color-active: $color-light !default;
-$component-button-ghost-inverse-text-color-focus: $color-light !default;
-$component-button-ghost-inverse-text-color-disabled: $color-middle !default;
+$component-button-ghost-inverse-text-color: $color-black !default;
+$component-button-ghost-inverse-text-color-visited: $color-white !default;
+$component-button-ghost-inverse-text-color-hover: $color-white !default;
+$component-button-ghost-inverse-text-color-active: $color-white !default;
+$component-button-ghost-inverse-text-color-focus: $color-white !default;
+$component-button-ghost-inverse-text-color-disabled: $color-grey !default;
 
 // Borders
-$component-button-ghost-inverse-border: 2px solid $color-dark !default;
+$component-button-ghost-inverse-border: 2px solid $color-black !default;
 $component-button-ghost-inverse-border-visited: 2px solid transparent !default;
 $component-button-ghost-inverse-border-hover: 2px solid transparent !default;
 $component-button-ghost-inverse-border-active: 2px solid transparent !default;
