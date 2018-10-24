@@ -24,7 +24,7 @@
         display: block;
     }
 
-    @media screen and (min-width: breakpoint(medium)) {
+    @media screen and (min-width: breakpoint(md)) {
         [data-content-open="true"] & {
             display: none;
         }

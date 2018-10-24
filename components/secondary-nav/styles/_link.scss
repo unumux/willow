@@ -28,7 +28,7 @@
         color: $component-secondary-nav-link-color-active;
     }
 
-    @media screen and (min-width: breakpoint(medium)) {
+    @media screen and (min-width: breakpoint(md)) {
         margin-bottom: 0;
     }
 }

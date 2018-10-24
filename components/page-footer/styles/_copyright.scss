@@ -8,7 +8,7 @@
     text-align: center;
     width: 100%;
 
-    @media screen and (min-width: breakpoint(medium)) {
+    @media screen and (min-width: breakpoint(md)) {
         flex-basis: 100%;
         text-align: left;
     }

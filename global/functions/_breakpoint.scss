@@ -1,8 +1,7 @@
-@import "../theme/variables/constants/maps/breakpoints";
 @import "../vendors/bootstrap-variables";
 
 
-@function breakpoint($breakpoint, $breakpoint-map: $breakpoints) {    
+@function breakpoint($breakpoint, $breakpoint-map: $grid-breakpoints) {    
     @if type-of($breakpoint) != "string" 
     or  not map-has-key($breakpoint-map, $breakpoint) {
         @warn "`#{$breakpoint} is not a string or a valid key in the '$breakpoints' map.";
