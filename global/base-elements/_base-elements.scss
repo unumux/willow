@@ -3,11 +3,9 @@
 
 //Wrapping in at-root to ensure these styles are always at the root
 @at-root {
-    //1. Sets 1em equal to 10px which eases mentally converting font-sizes example: 1.4em = 14px.
-
     html {
         box-sizing: border-box;
-        font-size: 62.5%; //1
+        font-size: 62.5%; // sets 1em equal to 10px which eases mentally converting font-sizes example: 1.4em = 14px.
         height: 100%;
     }
 
@@ -57,8 +55,6 @@ h6 {
     @include set-text-style($text-style-heading-6);
 }
 
-// 2. Lessens margin top on elements that are sibilings of a heading
-
 h1,
 h2,
 h3,
@@ -71,18 +67,17 @@ h6 {
     + ol,
     + ul,
     + dl {
-        margin: $space-stack-xxs; // 2
+        margin: $space-stack-xxs; // lessens margin top on elements that are sibilings of a heading
+
     }
 }
-
-//3. Removes margin from headings that are siblings of another heading
 
 h1 + h2,
 h2 + h3,
 h3 + h4,
 h4 + h5,
 h5 + h6 {
-    margin-top: 0; //3
+    margin-top: 0; // removes margin from headings that are siblings of another heading
 }
 
 p {
@@ -123,13 +118,11 @@ small {
     @include set-text-style($text-style-content-3);
 }
 
-//4. Margin-top instead of margin to prevent overriding browser defaults for margin right and left
-
 blockquote {
     border-left: 2px solid $component-blockquote-border-color;
     color: $component-blockquote-text-color;
     font-weight: $component-blockquote-font-weight;
-    margin-top: $space; //4
+    margin-top: $space; // margin-top instead of margin to prevent overriding browser defaults for margin right and left
     padding: $space-inset-squish;
 }
 
@@ -137,10 +130,8 @@ hr {
     margin: $space-stack-l;
 }
 
-//5. Margin-top instead of margin to prevent overriding browser defaults for margin right and left
-
 figure {
-    margin-top: $space; //5
+    margin-top: $space; // margin-top instead of margin to prevent overriding browser defaults for margin right and left
     padding: $space-inset-squish-xl;
 }
 
@@ -179,7 +170,7 @@ table {
     margin: $space-stack;
     width: 100%;
 
-    //Necessary since table elements need to be wrapped in a container that can scroll on x
+    // necessary since table elements need to be wrapped in a container that can scroll on x
 
     &:first-child {
         margin: $space-stack;
@@ -318,12 +309,8 @@ select {
     height: $component-dropdown-height;
 }
 
-//6. vertical resize cursor to show textarea only resizes vertically - not horizontally (see comment 2)
-//7. textareas should only resize vertically to prevent breaking container horizontally
-//8. prevents extra space beneath the textarea in chrome and safari - https://stackoverflow.com/questions/7144843/extra-space-under-textarea-differs-along-browsers
-
 textarea {
-    cursor: ns-resize; //6
-    resize: vertical; //7
-    vertical-align: top; //8
+    cursor: ns-resize; // vertical resize cursor to show textarea only resizes vertically - not horizontally (see next comment)
+    resize: vertical; // textareas should only resize vertically to prevent breaking container horizontally
+    vertical-align: top; // prevents extra space beneath the textarea in chrome and safari - https://stackoverflow.com/questions/7144843/extra-space-under-textarea-differs-along-browsers
 }
