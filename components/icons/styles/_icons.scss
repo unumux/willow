@@ -1,5 +1,11 @@
 @import "dependencies";
 
+@mixin deprecated-icon($type) {
+    background-image: map-get($type, icon);
+    height: map-get($type, height);
+    width: map-get($type, width);
+}
+
 .willow-icon {
     background-repeat: no-repeat;
     background-size: contain;
@@ -8,57 +14,57 @@
 }
 
 .willow-icon--menu {
-    @include icon($icon-menu);
+    @include deprecated-icon($icon-menu);
 }
 
 .willow-icon--menu-inverse {
-    @include icon($icon-menu-inverse);
+    @include deprecated-icon($icon-menu-inverse);
 }
 
 .willow-icon--menu-close {
-    @include icon($icon-menu-close);
+    @include deprecated-icon($icon-menu-close);
 }
 
 .willow-icon--menu-close-inverse {
-    @include icon($icon-menu-close-inverse);
+    @include deprecated-icon($icon-menu-close-inverse);
 }
 
 .willow-icon--close {
-    @include icon($icon-close);
+    @include deprecated-icon($icon-close);
 }
 
 .willow-icon--close-inverse {
-    @include icon($icon-close-inverse);
+    @include deprecated-icon($icon-close-inverse);
 }
 
 .willow-icon--info {
-    @include icon($icon-info);
+    @include deprecated-icon($icon-info);
 }
 
 .willow-icon--info-inverse {
-    @include icon($icon-info-inverse);
+    @include deprecated-icon($icon-info-inverse);
 }
 
 .willow-icon--success {
-    @include icon($icon-success);
+    @include deprecated-icon($icon-success);
 }
 
 .willow-icon--success-inverse {
-    @include icon($icon-success-inverse);
+    @include deprecated-icon($icon-success-inverse);
 }
 
 .willow-icon--warning {
-    @include icon($icon-warning);
+    @include deprecated-icon($icon-warning);
 }
 
 .willow-icon--warning-inverse {
-    @include icon($icon-warning-inverse);
+    @include deprecated-icon($icon-warning-inverse);
 }
 
 .willow-icon--error {
-    @include icon($icon-error);
+    @include deprecated-icon($icon-error);
 }
 
 .willow-icon--error-inverse {
-    @include icon($icon-error-inverse);
+    @include deprecated-icon($icon-error-inverse);
 }
