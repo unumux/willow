@@ -90,7 +90,8 @@ The **Willow-Page-Header** component should be used on every page of your site (
 
 - Required
 - Restrictions
-  - Should Contain: text and/or a [willow-icon](../icons) component
+  - Should Contain: text
+  - Can Also Contain: icon
 
 #### _Notes_
 
@@ -104,7 +105,8 @@ The **Willow-Page-Header** component should be used on every page of your site (
 
 - Required
 - Restrictions
-  - Should Contain: text and/or a [willow-icon](../icons) component
+  - Should Contain: text
+  - Can Also Contain: icon
 
 #### _Notes_
 

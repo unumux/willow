@@ -1,54 +1,37 @@
 @import "dependencies";
 
 .willow-alert {
-    @include compact;
-
+    align-items: flex-start;
     background-color: $component-inline-alert-background-color;
     border-radius: $component-inline-alert-border-radius;
     color: $component-inline-alert-text-color;
+    display: none;
+    flex-wrap: nowrap;
     margin: $space-stack;
     padding: $space-inset-l;
-    padding-left: $space-xxl;
-    position: relative;
 
-    &::before {
-        @include icon($component-inline-alert-icon);
-
-        background-repeat: no-repeat;
-        background-size: contain;
-        content: "";
-        left: $space-l;
-        margin-top: $space-xs;
-        position: absolute;
+    &[data-alert-is-open="true"] {
+        display: flex;
     }
 
+    @import "icon";
+    @import "content-container";
     @import "heading";
     @import "content";
+    @import "close";
 }
 
 .willow-alert--positive {
     background-color: $component-inline-alert-positive-background-color;
     color: $component-inline-alert-positive-text-color;
-
-    &::before {
-        @include icon($component-inline-alert-positive-icon);
-    }
 }
 
 .willow-alert--warning {
     background-color: $component-inline-alert-warning-background-color;
     color: $component-inline-alert-warning-text-color;
-
-    &::before {
-        @include icon($component-inline-alert-warning-icon);
-    }
 }
 
 .willow-alert--negative {
     background-color: $component-inline-alert-negative-background-color;
     color: $component-inline-alert-negative-text-color;
-
-    &::before {
-        @include icon($component-inline-alert-negative-icon);
-    }
 }

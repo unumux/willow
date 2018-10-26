@@ -1,5 +1,12 @@
 &__heading {
     @include set-text-style($text-style-heading-3);
 
-    margin-top: 0;
+    margin: $space-inline-s;
+    margin-top: calc((1 - #{$font-size-xl}) * 0.5rem); // removes the top space from the line-height
+        
+    @media screen and (min-width: breakpoint(md)) {
+        margin-top: calc((1 - #{$font-size-xl}) * 0.5rem); // removes the top space from the line-height - desktop edition
+    }
 }
+
+// Link for where this negative top margin came from : https://medium.com/codyhouse/line-height-crop-a-simple-css-formula-to-remove-top-space-from-your-text-9c3de06d7c6f
