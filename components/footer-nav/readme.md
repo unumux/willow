@@ -42,7 +42,7 @@ _Example Page Links: Sitemap, Frequently Asked Questions, Legal, Privacy Policy,
 
 #### _Notes_
 
-- **willow-footer-nav__heading** is hidden by default with the `sr-only` utility class, and is required to meet accessibility standards
+- **willow-footer-nav__heading** is hidden by default with the [`sr-only`](../../utilities.md) utility class, and is required to meet accessibility standards
 
 ---
 

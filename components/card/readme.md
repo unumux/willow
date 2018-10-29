@@ -119,7 +119,7 @@ _Examples: Articles on a news website, products on an eCommerce site, or posts o
 #### _Notes_
 
 - **willow-card__heading** is visible by default and even if it is hidden, it is required to meet accessibility standards
-- To hide the **willow-card__heading** add the `sr-only` utility class to the element
+- To hide the **willow-card__heading** add the [`sr-only`](../../utilities.md) utility class to the element
 
 ---
 

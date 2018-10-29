@@ -45,7 +45,7 @@ Secondary Navigation provides navigational links that are separate from links pr
 
 #### _Notes_
 
-- **willow-secondary-nav__heading** is hidden by default with the `sr-only` utility class, and is required to meet accessibility standards
+- **willow-secondary-nav__heading** is hidden by default with the [`sr-only`](../../utilities.md) utility class, and is required to meet accessibility standards
 - Replace the text in this element with text that helps a user understand the context of this menu. _e.g. "Product Page Menu, About Page Menu"_
 
 ---

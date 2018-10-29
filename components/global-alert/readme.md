@@ -156,7 +156,7 @@ The purpose of a global alert is to communicate a major site or global level mes
 #### _Notes_
 
 - **willow-global-alert__heading** is visible by default, and even if it is hidden it is required to meet accessibility standards
-- To hide the **willow-global-alert__heading** add the `sr-only` utility class to the element
+- To hide the **willow-global-alert__heading** add the [`sr-only`](../../utilities.md) utility class to the element
 
 ---
 

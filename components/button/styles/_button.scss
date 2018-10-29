@@ -35,7 +35,7 @@
     &[data-disabled="true"] {
         @include set-button-style($neutral, "disabled");
 
-        cursor: $component-cursor-disabled;
+        cursor: $component-button-cursor-disabled;
     }
 }
 

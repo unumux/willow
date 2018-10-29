@@ -49,7 +49,7 @@ Primary Nav should contain a limited number of items, the shorter the better for
 
 #### _Notes_
 
-- **willow-primary-nav__heading** is hidden by default with the `sr-only` utility class, and is required to meet accessibility standards
+- **willow-primary-nav__heading** is hidden by default with the [`sr-only`](../../utilities.md) utility class, and is required to meet accessibility standards
 
 ---
 

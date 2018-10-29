@@ -1,5 +1,6 @@
-@import "../../../global/theme/constants/constants";
+@import "../../../global/constants/constants";
 @import "../../../global/base-elements/default-variables";
-@import "default-variables";
 @import "../../../global/mixins/set-text-style";
 @import "../../../global/mixins/compact";
+@import "../../../global/functions/breakpoint";
+@import "default-variables";

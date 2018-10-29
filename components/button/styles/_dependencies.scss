@@ -1,6 +1,6 @@
-@import "../../../global/theme/constants/constants";
-@import "default-variables";
-@import "variable-maps";
-@import "../../../global/base-elements/default-variables";
+@import "../../../global/constants/colors";
+@import "../../../global/constants/spacing";
+@import "../../../global/constants/typography";
 @import "../../../global/mixins/set-text-style";
 @import "./mixins/set-button-style";
+@import "default-variables";
