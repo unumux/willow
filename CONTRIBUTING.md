@@ -54,7 +54,7 @@ To work on Willow install these global packages:
         - This command will prompt you with a number of questions you need to answer
             - Type of change you've made - Choose from a list of pre-defined types
             - Scope of the work - One-word to define where the work was done, use `*` if there are multiple scopes
-            - Short Description - Limited to 72 characters. No capital letters. [Impreative tense](https://en.wikipedia.org/wiki/Imperative_mood). Example: Update banner text styles
+            - Short Description - Limited to 72 characters. No capital letters. [Imperative tense](https://en.wikipedia.org/wiki/Imperative_mood). Example: update banner text styles
             - Long Description
             - Are there any breaking changes?
             - Does this commit close an issue on Github?
