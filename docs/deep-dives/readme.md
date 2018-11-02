@@ -18,4 +18,3 @@ Use these when you want the longer explanations behind the way things work in Wi
   - [So you need to make a new component](./customizing.md#so-you-need-to-make-a-new-component)
   - [So you need to customize a component](./customizing.md#so-you-need-to-customize-a-component)
   - [So you need to change a theme](./customizing.md#so-you-need-to-change-a-theme)
-  s
