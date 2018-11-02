@@ -20,10 +20,10 @@
 - [Components](./components.md)
 
 - [Deep Dives](./deep-dives/readme.md)
-  - [Page Layout](./page-layout.md#page-layout)
-    - [Basics](./page-layout.md#basics)
-    - [Creating Page Columns](./page-layout.md#creating-page-columns)
-    - [Customizing the Bootstrap Grid](./page-layout.md#customizing-the-bootstrap-grid)
+  - [Page Layout](./deep-dives/page-layout.md#page-layout)
+    - [Basics](./deep-dives/page-layout.md#basics)
+    - [Creating Page Columns](./deep-dives/page-layout.md#creating-page-columns)
+    - [Customizing the Bootstrap Grid](./deep-dives/page-layout.md#customizing-the-bootstrap-grid)
   
   - [Theming](./theming.md)
     - [Understanding Themes](./theming.md#understanding-themes)
