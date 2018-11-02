@@ -12,4 +12,4 @@ Some basic guides to using Willow.
 - [Make a theme](./make-a-theme.md)
 - [Customize an existing component](./customize-component.md)
 - [Customize an existing theme](./customize-theme.md)
-- [Contribute to Willow](../../CONTRIBUTING.md)
+- [Contribute to or Maintain Willow](../../CONTRIBUTING.md)

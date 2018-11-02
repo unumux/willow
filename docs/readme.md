@@ -15,7 +15,7 @@
   - [Make a theme](./tutorials/make-a-theme.md)
   - [Customize an existing component](./tutorials/customize-component.md)
   - [Customize an existing theme](./tutorials/customize-theme.md)
-  - [Contribute to Willow](../CONTRIBUTING.md)
+  - [Contribute to or Maintain Willow](../CONTRIBUTING.md)
 
 - [Components](./components.md)
 
