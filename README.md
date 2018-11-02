@@ -12,7 +12,7 @@
     - [Make a page](./docs/tutorials/make-a-page.md)
     - [Make a component](./docs/tutorials/make-a-component.md)
     - [Make a theme](./docs/tutorials/make-a-theme.md)
-    - [Customize an existing component](./cdocs/tutorials/customize-component.md)
+    - [Customize an existing component](./docs/tutorials/customize-component.md)
     - [Customize an existing theme](./docs/tutorials/customize-theme.md)
     - [Contribute to or Maintain Willow](./CONTRIBUTING.md)
   - [Components](./docs/components.md)
