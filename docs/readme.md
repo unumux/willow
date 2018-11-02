@@ -11,10 +11,10 @@
     - [Setup](./tutorials/make-a-page.md#setup)
     - [Adding common components](./tutorials/make-a-page.md#add-common-components)
     - [Adding more components](./tutorials/make-a-page.md#add-more-components)
-  - [Make a component](./tutorials/make-a-component.md)
-  - [Make a theme](./tutorials/make-a-theme.md)
-  - [Customize an existing component](./tutorials/customize-component.md)
-  - [Customize an existing theme](./tutorials/customize-theme.md)
+  - [Make a component](./tutorials/make-a-component.md)*
+  - [Make a theme](./tutorials/make-a-theme.md)*
+  - [Customize an existing component](./tutorials/customize-component.md)*
+  - [Customize an existing theme](./tutorials/customize-theme.md)*
   - [Contribute to or Maintain Willow](../CONTRIBUTING.md)
 
 - [Components](./components.md)
@@ -39,4 +39,6 @@
   - [Component Modifiers](./component-modifiers.md)
   - [Utilities](./utilities.md)
 
-  ([Back to top](#docs))
+*Pages are a work in progress
+
+([Back to top](#docs))
