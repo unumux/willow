@@ -17,11 +17,11 @@
 - [Components](./components.md)
 
 - [Deep Dives](./deep-dives/readme.md)
-  - [Page Layout](./deep-dives/page-layout.md#page-layout)
+  - [Page Layout](./deep-dives/page-layout.md)
   - [Theming](./deep-dives/theming.md)
   - [Customizing](./deep-dives/customizing.md)
   
-- [Glossaries](#glossaries)
+- Glossaries
   - [Component Modifiers](./component-modifiers.md)
   - [Utilities](./utilities.md)
 
