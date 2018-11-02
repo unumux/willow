@@ -10,11 +10,11 @@
     - [Help](./docs/getting-started.md#help)
   - [Basic Tutorials](./docs/tutorials/readme.md)
     - [Make a page](./docs/tutorials/make-a-page.md)
-    - Make a component
-    - Make a theme
-    - Customize an existing component
-    - Customize an existing theme
-    - Contribute to Willow
+    - [Make a component](./docs/tutorials/make-a-component.md)
+    - [Make a theme](./docs/tutorials/make-a-theme.md)
+    - [Customize an existing component](./cdocs/tutorials/ustomize-component.md)
+    - [Customize an existing theme](./docs/tutorials/customize-theme.md)
+    - [Contribute to Willow](./CONTRIBUTING.md)
   - [Components](./docs/components.md)
   - [Deep Dives](./docs/deep-dives/readme.md)
     - [Page Layout](./docs/page-layout.md#page-layout)

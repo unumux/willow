@@ -11,12 +11,11 @@
     - [Setup](./tutorials/make-a-page.md#setup)
     - [Adding common components](./tutorials/make-a-page.md#add-common-components)
     - [Adding more components](./tutorials/make-a-page.md#add-more-components)
-    - Maybe more sections here ....
-  - Make a component
-  - Make a theme
-  - Customize an existing component
-  - Customize an existing theme
-  - Contribute to Willow
+  - [Make a component](./tutorials/make-a-component.md)
+  - [Make a theme](./tutorials/make-a-theme.md)
+  - [Customize an existing component](./tutorials/customize-component.md)
+  - [Customize an existing theme](./tutorials/customize-theme.md)
+  - [Contribute to Willow](../CONTRIBUTING.md)
 
 - [Components](./components.md)
 
