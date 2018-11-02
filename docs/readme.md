@@ -18,8 +18,8 @@
 
 - [Deep Dives](./deep-dives/readme.md)
   - [Page Layout](./deep-dives/page-layout.md#page-layout)
-  - [Theming](./theming.md)
-  - [Customizing](./customizing.md)
+  - [Theming](./deep-dives/theming.md)
+  - [Customizing](./deep-dives/customizing.md)
   
 - [Glossaries](#glossaries)
   - [Component Modifiers](./component-modifiers.md)
