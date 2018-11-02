@@ -17,7 +17,7 @@
     - [Contribute to or Maintain Willow](./CONTRIBUTING.md)
   - [Components](./docs/components.md)
   - [Deep Dives](./docs/deep-dives/readme.md)
-    - [Page Layout](./docs/deep-dives/page-layout.md#page-layout)
+    - [Page Layout](./docs/deep-dives/page-layout.md)
     - [Theming](./docs/deep-dives/theming.md)
     - [Customizing](./docs/deep-dives/customizing.md)
 

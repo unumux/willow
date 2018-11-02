@@ -8,9 +8,6 @@
 
 - [Tutorials](./tutorials/readme.md)
   - [Make a page](./tutorials/make-a-page.md)
-    - [Setup](./tutorials/make-a-page.md#setup)
-    - [Adding common components](./tutorials/make-a-page.md#add-common-components)
-    - [Adding more components](./tutorials/make-a-page.md#add-more-components)
   - [Make a component](./tutorials/make-a-component.md)*
   - [Make a theme](./tutorials/make-a-theme.md)*
   - [Customize an existing component](./tutorials/customize-component.md)*
