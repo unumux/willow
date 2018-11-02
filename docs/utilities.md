@@ -2,9 +2,9 @@
 
 # Utility Glossary
 
-- [classes](#classes)
-- [functions](#functions)
-- [mixins](#mixins)
+- [Classes](#classes)
+- [Functions](#functions)
+- [Mixins](#mixins)
 
 ---
 
@@ -138,41 +138,21 @@
 
 ## Mixins
 
-### `icon($type)`
+### `compact()`
 
-- sets properties and values for an icon based on the component and it's modifier
-
-- possible `$type` values:
-  - $icon-menu
-  - $icon-menu-inverse
-  - $icon-menu-close
-  - $icon-menu-close-inverse
-  - $icon-close
-  - $icon-close-inverse
-  - $icon-info
-  - $icon-info-inverse
-  - $icon-success
-  - $icon-success-inverse
-  - $icon-warning
-  - $icon-warning-inverse
-  - $icon-error
-  - $icon-error-inverse
+- removes margin-top for all first-children within an element
 
 - Example:
 
 ```SCSS
-    .my-alert--positive {
-        &:before {
-            @include icon($icon-success);
-
-        }
+    .my-card {
+        @include compact;
     }
 
     /*
-        properties set:
-        background-image: ...;
-        height: ...;
-        width: ...;
+        :first-child {
+            margin-top: 0;
+        }
     */
 ```
 
@@ -267,7 +247,7 @@
         font-weight: ...;
         line-height: ...;
 
-        @media screen and (min-width: breakpoint(medium)) {
+        @media screen and (min-width: breakpoint(md)) {
             font-size: ...;
             line-height: ...;
         }

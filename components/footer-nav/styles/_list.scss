@@ -5,7 +5,7 @@
     padding: 0;
     text-align: center;
 
-    @media screen and (min-width: breakpoint(lg, $grid-breakpoints)) {
+    @media screen and (min-width: breakpoint(lg)) {
         text-align: right;
     }
 }

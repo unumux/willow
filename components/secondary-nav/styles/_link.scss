@@ -28,7 +28,7 @@
         color: $component-secondary-nav-link-color-active;
     }
 
-    @media screen and (min-width: breakpoint(medium)) {
+    @media screen and (min-width: breakpoint(md)) {
         margin-bottom: 0;
     }
 }
@@ -36,6 +36,7 @@
 &__link--active {
     background-color: $component-secondary-nav-link-background-color-active;
     border-left: 4px solid $component-secondary-nav-link-border-color-active;
+    color: $component-secondary-nav-link-color-active-item;
 
     &:focus {
         background-color: $component-secondary-nav-link-background-color-active;

@@ -73,6 +73,10 @@
     flex-basis: calc(
         #{100 / $items}% - #{$component-grid-margin-horizontal} + (#{$component-grid-margin-horizontal}/#{$items})
     );
+    
+    width: calc(
+        #{100 / $items}% - #{$component-grid-margin-horizontal} + (#{$component-grid-margin-horizontal}/#{$items})
+    );
 
     &:nth-child(#{$items}n) {
         margin-right: 0;

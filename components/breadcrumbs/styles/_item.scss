@@ -1,6 +1,7 @@
 &__item {
     @include set-text-style($text-style-content-2);
 
+    color: $component-breadcrumb-text-color;
     display: inline-block;
     margin: 0;
 

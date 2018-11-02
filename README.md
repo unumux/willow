@@ -8,7 +8,7 @@
   - [Getting Started](./docs/getting-started.md)
     - [Installation and Usage](./docs/getting-started.md#installation-and-usage)
     - [Help](./docs/getting-started.md#help)
-  - [Tutorials](./docs/tutorials/readme.md)
+  - [Basic Tutorials](./docs/tutorials/readme.md)
     - [Make a page](./docs/tutorials/make-a-page.md)
     - Make a component
     - Make a theme
@@ -16,9 +16,7 @@
     - Customize an existing theme
     - Contribute to Willow
   - [Components](./docs/components.md)
-    - [List](./docs/components.md#list)
-    - [Related Links](./docs/components.md#related-links)
-  - Deeper Dives
+  - [Deep Dives](./docs/deep-dives/readme.md)
     - [Page Layout](./docs/page-layout.md#page-layout)
     - [Theming](./docs/theming.md)
     - [Customizing](./docs/customizing.md)

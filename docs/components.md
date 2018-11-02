@@ -2,14 +2,7 @@
 
 # Components
 
-- [List](#list)
-- [Related Links](#related-links)
-
----
-
-## List
-
-- For Page or Component Layout:
+- For Layout (Page or Component):
   - [Page Container](./components/page-container)
   - [Page Header](./components/page-header)
   - [Page Content](./components/page-content)

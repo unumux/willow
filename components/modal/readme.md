@@ -108,3 +108,13 @@ _Examples: Confirming deletion of information, entering an email address to down
 #### _Notes_
 
 - completing the actionable component should record the response and trigger the **willow-modal** to close
+
+---
+
+## [Variables](./styles/_default-variables.scss)
+
+`$component-modal-background-color` : sets `background-color` property on **willow-modal__container**
+
+`$component-modal-border-radius` : sets `border-radius` property on **willow-modal__container**
+
+`$component-modal-overlay-background-color` : sets `background-color` property on **willow-modal**

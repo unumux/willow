@@ -5,7 +5,7 @@
     flex-shrink: 0;
     flex-wrap: wrap;
 
-    @media screen and (min-width: breakpoint(medium)) {
+    @media screen and (min-width: breakpoint(md)) {
         flex-direction: row;
     }
 }

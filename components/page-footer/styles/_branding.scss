@@ -10,7 +10,7 @@
         margin: $space-stack;
     }
 
-    @media screen and (min-width: breakpoint(medium)) {
+    @media screen and (min-width: breakpoint(md)) {
         flex-basis: auto;
         margin: 0;
         order: 1;

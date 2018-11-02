@@ -47,7 +47,7 @@ We'll start by setting up a basic page
 </html>
 ```
 
-## Add Common Components
+## Add Common Layout Components
 
 Pages usually have a header and footer so now we'll add those components. We will also add an area for our page's content, and the Skip Nav component to make our website accesible.
 

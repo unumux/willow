@@ -19,10 +19,8 @@
   - Contribute to Willow
 
 - [Components](./components.md)
-  - [List](./components.md#list)
-  - [Related Links](./components.md#related-links)
 
-- Deeper Dives
+- [Deep Dives](./deep-dives/readme.md)
   - [Page Layout](./page-layout.md#page-layout)
     - [Basics](./page-layout.md#basics)
     - [Creating Page Columns](./page-layout.md#creating-page-columns)

@@ -127,3 +127,31 @@ The **Willow-Page-Header** component should be used on every page of your site (
 - Required
 - Restrictions
   - Should Contain: one [willow-primary-nav](../primary-nav) component
+
+---
+
+## [Variables](./styles/_default-variables.scss)
+
+`$component-page-header-background-color` : sets `background-color` property on **willow-page-header**
+
+`$component-page-header-navigation-border-color` : sets `color` property in `border` shorthand on **willow-page-header__content**
+
+`$component-page-header-content-close-color` : sets `color` property on **willow-page-header__content-close**
+
+`$component-page-header-content-close-color-hover` : sets `color` property on **willow-page-header__content-close:hover**
+
+`$component-page-header-content-close-color-active` : sets `color` property on **willow-page-header__content-close:active**
+
+`$component-page-header-content-close-color-visited` : sets `color` property on **willow-page-header__content-close:visited**
+
+`$component-page-header-content-close-color-focus` : sets `color` property on **willow-page-header__content-close:focus**
+
+`$component-page-header-content-open-color` : sets `color` property on **willow-page-header__content-open**
+
+`$component-page-header-content-open-color-hover` : sets `color` property on **willow-page-header__content-open:hover**
+
+`$component-page-header-content-open-color-active` : sets `color` property on **willow-page-header__content-open:active**
+
+`$component-page-header-content-open-color-visited` : sets `color` property on **willow-page-header__content-open:visited**
+
+`$component-page-header-content-open-color-focus` : sets `color` property on **willow-page-header__content-open:focus**
