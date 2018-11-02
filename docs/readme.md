@@ -18,19 +18,8 @@
 
 - [Deep Dives](./deep-dives/readme.md)
   - [Page Layout](./deep-dives/page-layout.md#page-layout)
-    - [Basics](./deep-dives/page-layout.md#basics)
-    - [Creating Page Columns](./deep-dives/page-layout.md#creating-page-columns)
-    - [Customizing the Bootstrap Grid](./deep-dives/page-layout.md#customizing-the-bootstrap-grid)
-  
   - [Theming](./theming.md)
-    - [Understanding Themes](./theming.md#understanding-themes)
-    - [Available Themes](./theming.md#available-themes)
-  
   - [Customizing](./customizing.md)
-    - [Recommended SCSS Directory Structure For Your Project](./customizing.md#recommended-scss-directory-structure-for-your-project)
-    - [So you need to make a new component](./customizing.md#so-you-need-to-make-a-new-component)
-    - [So you need to customize a component](./customizing.md#so-you-need-to-customize-a-component)
-    - [So you need to change a theme](./customizing.md#so-you-need-to-change-a-theme)
   
 - [Glossaries](#glossaries)
   - [Component Modifiers](./component-modifiers.md)
