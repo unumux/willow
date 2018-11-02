@@ -23,7 +23,7 @@
 
 - [Issues and Feedback](#issues-and-feedback)
 
-- [Glossaries](#glossaries)
+- Glossaries
   - [Component Modifiers](./docs/component-modifiers.md)
   - [Utilities](./docs/utilities.md)
 
