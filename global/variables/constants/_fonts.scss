@@ -1,12 +1,8 @@
 @import "../../functions/line-height";
 
-@import url('https://fonts.googleapis.com/css?family=Oswald:300,400');
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
-@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
-
-$font-family-primary: "Oswald", "helvetica", "arial", "sans-serif" !default;
-$font-family-secondary: "Open Sans", "helvetica", "arial", "sans-serif" !default;
-$font-family-monospace: "Source Code Pro", monospace !default;
+$font-family-primary: "arial", "sans-serif" !default;
+$font-family-secondary: "arial", "sans-serif" !default;
+$font-family-monospace: monospace !default;
 
 $font-ratio: 1.2;
 
