@@ -12,31 +12,45 @@ _Examples: Presented on the user’s account page - “Your account is about to 
 
 ```html
 <section class="willow-alert" role="alert">
-    <h1 class="willow-alert__heading">Heading Text</h1>
-    <div class="willow-alert__content">
-        <!-- insert components here -->
+    <div class="willow-alert__icon"><!-- insert icon here --></div>
+    <div class="willow-alert__content-container">
+        <a class="willow-alert__close" href="#"><!-- insert close text and optional icon here --></a>
+        <h1 class="willow-alert__heading"><!-- insert heading text here --></h1>
+        <div class="willow-alert__content">
+            <!-- insert components here -->
+        </div>
     </div>
 </section>
 
 <!-- modified versions -->
 <section class="willow-alert willow-alert--positive" role="alert">
-    <h1 class="willow-alert__heading">Heading Text</h1>
-    <div class="willow-alert__content">
-        <!-- insert components here -->
+    <div class="willow-alert__icon"><!-- insert icon here --></div>
+    <div class="willow-alert__content-container">
+        <a class="willow-alert__close" href="#"><!-- insert close text and optional icon here --></a>
+        <h1 class="willow-alert__heading"><!-- insert heading text here --></h1>
+        <div class="willow-alert__content">
+            <!-- insert components here -->
+        </div>
     </div>
 </section>
-
 <section class="willow-alert willow-alert--warning" role="alert">
-    <h1 class="willow-alert__heading">Heading Text</h1>
-    <div class="willow-alert__content">
-        <!-- insert components here -->
+    <div class="willow-alert__icon"><!-- insert icon here --></div>
+    <div class="willow-alert__content-container">
+        <a class="willow-alert__close" href="#"><!-- insert close text and optional icon here --></a>
+        <h1 class="willow-alert__heading"><!-- insert heading text here --></h1>
+        <div class="willow-alert__content">
+            <!-- insert components here -->
+        </div>
     </div>
 </section>
-
 <section class="willow-alert willow-alert--negative" role="alert">
-    <h1 class="willow-alert__heading">Heading Text</h1>
-    <div class="willow-alert__content">
-        <!-- insert components here -->
+    <div class="willow-alert__icon"><!-- insert icon here --></div>
+    <div class="willow-alert__content-container">
+        <a class="willow-alert__close" href="#"><!-- insert close text and optional icon here --></a>
+        <h1 class="willow-alert__heading"><!-- insert heading text here --></h1>
+        <div class="willow-alert__content">
+            <!-- insert components here -->
+        </div>
     </div>
 </section>
 ```
@@ -59,10 +73,47 @@ _Examples: Presented on the user’s account page - “Your account is about to 
 
 `--warning`: Applies colors to give user a warning
 
+#### _States_
+
+`<div class="willow-alert" data-alert-is-open="true">` : when set to anything other than true the alert will not be shown
+
 #### _Notes_
 
 - The use of `role="alert"` with the `<section>` element ensures that **willow-alert** is accessible for user agents that do not support HTML5. The use of both `<section>` and `<role="alert">` together may create a warning in an [HTML validator](https://validator.w3.org/) but we left this pattern intact for now to cover all of our accessibility bases.
 - **willow-alerts** should be contained in the [willow-page-content](../page-content) component of a site, and will usually appear in forms, dialogs or modals
+
+---
+
+### willow-alert__icon
+
+- Optional
+- Restrictions
+  - Should Contain: icon
+
+---
+
+### willow-alert__content-container
+
+- Required
+- Restrictions
+  - Should Contain: alert content elements (**__heading**, **__content**, and **__close**)
+
+#### _Notes_
+
+- **willow-alert__content-container** contains all content and action items for the alert
+
+---
+
+### willow-alert__close
+
+- Optional
+- Restrictions
+  - Should Contain: text
+  - Can Also Contain: icon
+
+#### _Notes_
+
+- clicking **willow-alert__close** (with mouse or keyboard) should toggle the close state for **willow-alert** and store the fact that the user dismissed the alert - so it does not continue to show after page navigation or refresh.
 
 ---
 
@@ -75,7 +126,7 @@ _Examples: Presented on the user’s account page - “Your account is about to 
 #### _Notes_
 
 - **willow-alert__heading** is visible by default, and even if it is hidden it is required to meet accessibility standards
-- To hide the **willow-alert__heading** add the `sr-only` utility class to the element
+- To hide the **willow-alert__heading** add the [`sr-only`](../../utilities.md) utility class to the element
 
 ---
 

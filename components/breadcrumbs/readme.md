@@ -57,7 +57,7 @@ Breadcrumbs are a specialized secondary navigation that show users their locatio
 
 #### _Notes_
 
-- **willow-breadcrumbs__heading** is hidden by default with the `sr-only` utility class, and is required to meet accessibility standards
+- **willow-breadcrumbs__heading** is hidden by default with the [`sr-only`](../../utilities.md) utility class, and is required to meet accessibility standards
 
 ---
 
