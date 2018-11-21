@@ -1,6 +1,6 @@
 # Contributing and Maintaining
 
-Willow is an NPM package made up of SCSS code. So to work on Willow you may need to put component HTML in another project, import your copy of Willow as a package and compile that project to see how the component looks. In the following instructions we assume you will need an example project for testing, so we walk you through how to use the one we made for you.  
+Willow is an npm package made up of SCSS code. So to work on Willow you may need to put component HTML in another project, import your copy of Willow as a package and compile that project to see how the component looks. In the following instructions we assume you will need an example project for testing, so we walk you through how to use the one we made for you.  
 
 There are times when you may not need to make changes to the example projcect or use it for testing, in those cases just skip the instructions related to the example project.
 
@@ -21,7 +21,7 @@ To work on Willow install these global packages:
     - Make a new branch from the Develop branch
         - From the Willow directory in terminal
             - Run `git checkout develop`
-            - Run `git checkout -b [branch-name]` - replace [branch-name] with something that describes the work you're going
+            - Run `git checkout -b [branch-name]` - replace [branch-name] with something that describes the work you're doing
     - On your new branch run `npm install`
 
 2. Get the latest version of the [example project](https://github.com/unumux/willow-testing-site) (used for testing):
@@ -30,7 +30,7 @@ To work on Willow install these global packages:
         - Run `git clone` or `git pull`
     - Make a new branch from the Master branch
         - From the example project directory in terminal
-            - Run `git checkout -b [branch-name]` - replace [branch-name] with something that describes the work you're going
+            - Run `git checkout -b [branch-name]` - replace [branch-name] with something that describes the work you're doing
     - On your new branch run `npm install`
 
 3. Linking the local Willow and [example project](https://github.com/unumux/willow-testing-site) with [npm link](https://docs.npmjs.com/cli/link)
@@ -38,7 +38,7 @@ To work on Willow install these global packages:
     - From the example project directory in terminal run `npm link @unumux/willow`
     - To check that `npm link` worked
         - Open the local copy of Willow in a code editor
-            - Edit the root style file (`willow/styles/styles.scss`). We suggest an obvious change like:
+            - Edit the root styles file (`willow/styles/styles.scss`). We suggest an obvious change like:
             ```SCSS
                 * {
                     color: red;
@@ -46,7 +46,7 @@ To work on Willow install these global packages:
             ```
         - Open the example project in a code editor
             - Navigate through the node_modules to the `<example-project>/node_modules/@unumux/willow/styles` folder
-            - Look at the style file (`node_modules/@unumux/Willow/styles/styles.scss`) and you should see the new styles you added.
+            - Look at the styles file (`node_modules/@unumux/Willow/styles/styles.scss`) and you should see the new styles you added.
         - Or if you're running the build process on the example project (and it compiled) you should see the changes in your browser after you refresh.
             - Pro Tip: if you don't want to refresh the browser after every Willow change try adding the Willow files you're changing to the watch list of your example project's build.
 
@@ -103,7 +103,7 @@ To work on Willow install these global packages:
         - Run `git clone` or `git pull`
     - Make a new branch from the Master branch
         - From the example project directory in terminal
-            - Run `git checkout -b [branch-name]` - Replace [branch-name] with something that describes the work you're goin
+            - Run `git checkout -b [branch-name]` - Replace [branch-name] with something that describes the work you're doing
     - On your new branch run `npm install`
 
 4. Link the local Willow and [example project](https://github.com/unumux/willow-testing-site) with [npm link](https://docs.npmjs.com/cli/link)
@@ -119,9 +119,9 @@ To work on Willow install these global packages:
 
 ## Maintainers: Builds
 
-Willow uses [Travis CI](https://travis-ci.org/) to run a build, run [semantic-release](https://github.com/semantic-release/semantic-release) and publish new versions of Willow to NPM if necessary.
+Willow uses [Travis CI](https://travis-ci.org/) to run a build, run [semantic-release](https://github.com/semantic-release/semantic-release) and publish new versions of Willow to npm if necessary.
 
-This build is triggered every time pull request is merged. However, only merges to the Master branch will cause a new package release to be pushed to NPM.
+This build is triggered every time pull request is merged. However, only merges to the Master branch will cause a new package release to be pushed to npm.
 
 On Github, in a Willow pull request, there will be a section that shows the checks (build) taking place. There are indicators here that will start yellow and then turn green or red depending on if the build passes or fails. If you have access to the UnumUX Travis CI group you can use the details link here to view the full build log on the Travis site. This log is helpful when the build fails.
 
@@ -132,9 +132,9 @@ You do this by opening a pull request like you did in the above steps, but this 
 
 After opening the pull request for Develop to Master you will see the checks running, watch those to make sure the build does not fail.
 
-Now another maintainer is needed to complete this pull request with a review and merger of the branches. Once that is complete the builds will fully run and a new version of Willow will be released to NPM*.
+Now another maintainer is needed to complete this pull request with a review and merge of the branches. Once that is complete the builds will fully run and a new version of Willow will be released to npm*.
 
-*Willow uses Semantic-Release to analyze the commit messages and determine what the new version number for Willow should be. So there is no need to update that pesky number in the package.json file ever! 
+*Willow uses Semantic-Release to analyze the commit messages and determine what the new version number for Willow should be, so there is no need to update that pesky number in the package.json file!
 
 ## Stylelint info
 
