@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Demo Website</title>
+    <!-- PRIMARY STYLESHEET -->
+    <link id="stylesheet" rel="stylesheet" href="../styles/styles.min.css">
+</head>
+
+<body>
+    <!-- PAGE COMPONENT -->
+    <div class="willow-page-container">
+        <!-- SKIP NAV COMPONENT -->
+        <div class="willow-skip-nav">
+            <a href="#mainContent" class="willow-skip-nav__link" aria-label="skip to main content">Skip to Content</a>
+        </div>
+        <!-- PAGE HEADER COMPONENT -->
+        <header class="willow-page-header" role="banner">
+            <div class="container-fluid">
+                <div class="willow-page-header__container">
+                <div class="willow-page-header__branding">
+                    <a class="willow-logo-link" href="/" aria-label="go to home page"><img class="willow-logo-link__image" src="https://via.placeholder.com/350x150" alt="Company Logo"></a>
+                </div>
+                <div class="willow-page-header__content-controls">
+                    <a class="willow-page-header__content-open" aria-label="Open Menu" href="#">menu</a>
+                    <a class="willow-page-header__content-close" aria-label="Close Menu" href="#">close</a>
+                </div>
+                <div class="willow-page-header__content">
+                    <div class="willow-page-header__navigation">
+                        <nav class="willow-primary-nav" role="navigation" aria-label="primary">
+                            <h1 class="willow-primary-nav__heading sr-only">Site Primary Menu</h1>
+                            <ul class="willow-primary-nav__list">
+                                <li class="willow-primary-nav__item">
+                                    <a class="willow-primary-nav__link" href="/">Home</a>
+                                </li>
+                                <li class="willow-primary-nav__item">
+                                    <a class="willow-primary-nav__link" href="/components.html" aria-label="See available components">Components</a>
+                                </li>
+                                <li class="willow-primary-nav__item">
+                                    <a class="willow-primary-nav__link" href="/example-pages.html">Example Pages</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- PAGE CONTENT COMPONENT -->
+        <main class="willow-page-content" id="mainContent" role="main">
+            <!-- BOOTSTRAP CONTAINER-FLUID -->
+            <div class="container-fluid">
+                <!-- BOOTSTRAP ROW -->
+                <div class="row">
+                    <!-- BOOTSTRAP COLUMN -->
+                    <div class="col-md-3">
+                        <!-- SECONDARY NAV COMPONENT -->
+                        <nav class="willow-secondary-nav" role="navigation" aria-label="secondary">
+                            <h1 class="willow-secondary-nav__heading">Content Item Examples</h1>
+                            <ul class="willow-secondary-nav__list">
+                                <li class="willow-secondary-nav__item"><a class="willow-secondary-nav__link" href="#headings">Headings</a></li>
+                                <li class="willow-secondary-nav__item"><a class="willow-secondary-nav__link" href="#text">Text</a></li>
+                                <li class="willow-secondary-nav__item"><a class="willow-secondary-nav__link" href="#tables">Tables</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- BOOTSTRAP COLUMN -->
+                    <div class="col-md-9">
+                        <!-- CONTENT -->
+                        <section id="headings">
+                            <h1>Here's how headings will look</h1>
+                            <h1>Heading made from an h1 element</h1>
+                            <h2>Heading made from an h2 element</h2>
+                            <h3>Heading made from an h3 element</h3>
+                            <h4>Heading made from an h4 element</h4>
+                            <h5>Heading made from an h5 element</h5>
+                            <h6>Heading made from an h6 element</h6>
+                        </section>
+                        <section id="text">
+                            <h1>Here's how all kinds of inline text elements will look</h1>
+                            <p><code>a, mark, small</code>: Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="#">Doloribus fugiat ex quibusdam</a> nesciunt voluptatibus quam odio, nisi officiis nobis minima quis repellat qui recusandae incidunt architecto eos vero tempora minus accusantiu suscipit exercitationem excepturi doloremque nemo! <mark>Dolor reiciendis recusandae tempore explicabo corporis</mark> doloribus vel sapiente officiis inventore? Fugit nihil veniam porro placeat enim obcaecati beatae. Lorem ipsum, <small>dolor sit amet consectetur adipisicing elit. Expedita quas unde porro exercitationem dolore</small> libero modi, omnis quis mollitia perferendis atque a laborum placeat fugit!</p>
+        
+                            <p><code>blockquote</code>:</p>
+                            <blockquote><p>Iure voluptates quia, vel quis repellendus quo veritatis vero maiores dolore consequatur doloremque commodi expedita, eaque sint! Ipsa inventore adipisci, iusto, iure quod laboriosam autem voluptas dolor.</p></blockquote>
+        
+                            <p><code>ul, ol</code>:</p>
+                            <ul>
+                                <li>List Item</li>
+                                <li><a href="#">Link Item</a></li>
+                                <li>List item with sub items (ordered)
+                                    <ol>
+                                        <li>Sub item</li>
+                                        <li><a href="#">Sub Link Item</a></li>
+                                        <li>Sub item</li>
+                                    </ol>
+                                </li>
+                                <li>List item with sub items (unordered)
+                                    <ul>
+                                        <li>Sub item</li>
+                                        <li><a href="#">Sub Link Item</a></li>
+                                        <li>Sub item</li>
+                                    </ul>
+                                </li>
+                            </ul>
+        
+                            <ol>
+                                <li>List item</li>
+                                <li><a href="#">Link item</a></li>
+                                <li>List item with sub items (ordered)
+                                    <ol>
+                                        <li>Sub item</li>
+                                        <li><a href="#">Link item</a></li>
+                                        <li>Sub item</li>
+                                    </ol>
+                                </li>
+                                <li>List item with sub items (unordered)
+                                <ul>
+                                    <li>Sub item</li>
+                                    <li><a href="#">Link item</a></li>
+                                    <li>Sub item</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </section>
+                        <section id="tables">
+                            <h1>Here's how tables will look</h1>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Column Heading 1</th>
+                                        <th scope="col">Column Heading 2</th>
+                                        <th scope="col">Column Heading 3</th>
+                                        <th scope="col">Column Heading 4</th>
+                                        <th scope="col">Column Heading 5</th>
+                                        <th scope="col">Column Heading 6</th>
+                                        <th scope="col">Column Heading 7</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Item 1</td>
+                                        <td>Item 2</td>
+                                        <td>Item 3</td>
+                                        <td>Item 4</td>
+                                        <td>Item 5</td>
+                                        <td>Item 6</td>
+                                        <td>Item 7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Item 1</td>
+                                        <td>Item 2</td>
+                                        <td>Item 3</td>
+                                        <td>Item 4</td>
+                                        <td>Item 5</td>
+                                        <td>Item 6</td>
+                                        <td>Item 7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Item 1</td>
+                                        <td>Item 2</td>
+                                        <td>Item 3</td>
+                                        <td>Item 4</td>
+                                        <td>Item 5</td>
+                                        <td>Item 6</td>
+                                        <td>Item 7</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- PAGE FOOTER COMPONENT -->
+        <footer class="willow-page-footer" role="contentinfo">
+            <div class="container-fluid">
+                <div class="willow-page-footer__container">
+                    <div class="willow-page-footer__branding">
+                        <a class="willow-logo-link" href="/" aria-label="go to home page"><img class="willow-logo-link__image" src="https://via.placeholder.com/350x150" alt="Company Logo"></a>
+                    </div>
+                    <div class="willow-page-footer__navigation">
+                        <nav class="willow-footer-nav" role="navigation" aria-label="footer">
+                            <h1 class="willow-footer-nav__heading sr-only">Site Footer Menu</h1>
+                            <ul class="willow-footer-nav__list">
+                                <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="/">Home</a></li>
+                                <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="/components.html" aria-label="See available components">Components</a></li>
+                                <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="/example-pages.html">Example Pages</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <small class="willow-page-footer__copyright">Here is an example of a copyright. 2018.</small>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- PRIMARY SCRIPT FILE -->
+    <script src="../scripts/site.min.js"></script>
+</body>
+
+</html>
