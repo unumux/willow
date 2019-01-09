@@ -57,7 +57,7 @@ Breadcrumbs are a specialized secondary navigation that show users their locatio
 
 #### _Notes_
 
-- **willow-breadcrumbs__heading** is hidden by default with the `sr-only` utility class, and is required to meet accessibility standards
+- **willow-breadcrumbs__heading** is hidden by default with the [`sr-only`](../../utilities.md) utility class, and is required to meet accessibility standards
 
 ---
 
@@ -100,3 +100,9 @@ Breadcrumbs are a specialized secondary navigation that show users their locatio
 
 - **willow-breadcrumbs__link** elements require an `href` value that links to the page they reference
 - **willow-breadcrumbs__link** elements need an `aria-label` value if the text content of the link doesn't clearly represent where the user will go after clicking the link
+
+---
+
+## [Variables](./styles/_default-variables.scss)
+
+`$component-breadcrumb-background-color` : sets `background-color` property on **willow-breadcrumbs**

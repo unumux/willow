@@ -1,67 +1,71 @@
-@import "../variables/constants/spacing";
-@import "../variables/constants/maps/text-styles";
+@import "../constants/constants";
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 //      OVERLAY
 //      used by modals and dialogs... and more things in the future
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-$component-overlay-background-color: rgba(#000, 0.8) !default;
+$component-overlay-background-color: rgba($color-willow-black, 0.8) !default;
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 //      DISABLED CURSOR
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 $component-cursor-disabled: not-allowed !default; //is this helpful?
+// this is only used by button and requires all of this file be imported for single import of button to work
+// I am creating a specific variable in button for this so that we don't have to import this file for button to work.
+
+
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 //      COMPONENT BACKGROUNDS
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-$component-body-background-color: #fff !default;
-$component-body-background-color-secondary: #888 !default;
-$component-body-background-color-em: #333 !default;
+$component-body-background-color: $color-willow-white !default;
+$component-body-background-color-secondary: $color-willow-grey !default;
+$component-body-background-color-em: $color-willow-grey !default;
 
-$component-border-color: #888 !default;
-$component-border-color-inverse: #fff !default;
-$component-border-color-secondary: #333 !default;
-$component-border-color-disabled: #555 !default;
+$component-border-color: $color-willow-grey !default;
+$component-border-color-inverse: $color-willow-white !default;
+$component-border-color-secondary: $color-willow-grey !default;
+$component-border-color-disabled: $color-willow-grey !default;
 
-$component-body-text-color: #000 !default;
-$component-body-text-color-secondary: #333 !default;
-$component-body-text-color-inverse: #fff !default;
-$component-body-text-color-disabled: #aaa !default;
+$component-body-text-color: $color-willow-grey !default;
+$component-body-text-color-secondary: $color-willow-black !default;
+$component-body-text-color-inverse: $color-willow-white !default;
+$component-body-text-color-disabled: $color-willow-black !default;
 
 $component-blockquote-text-color: $component-body-text-color !default;
 $component-blockquote-font-weight: 600 !default;
 $component-blockquote-border-color: $component-border-color-secondary !default;
 
-$component-link-color: #666 !default;
-$component-link-color-hover: #666 !default;
-$component-link-color-focus: #666 !default;
-$component-link-color-active: #666 !default;
-$component-link-color-visited: #666 !default;
+$component-link-color: $color-willow-black !default;
+$component-link-color-hover: $color-willow-black !default;
+$component-link-color-focus: $color-willow-black !default;
+$component-link-color-active: $color-willow-black !default;
+$component-link-color-visited: $color-willow-black !default;
 
-$component-link-color-inverse: #bbb !default;
-$component-link-color-inverse-hover: #bbb !default;
-$component-link-color-inverse-focus: #bbb !default;
-$component-link-color-inverse-active: #bbb !default;
-$component-link-color-inverse-visited: #bbb !default;
+$component-link-color-inverse: $color-willow-grey !default;
+$component-link-color-inverse-hover: $color-willow-grey !default;
+$component-link-color-inverse-focus: $color-willow-grey !default;
+$component-link-color-inverse-active: $color-willow-grey !default;
+$component-link-color-inverse-visited: $color-willow-grey !default;
 
-$component-table-header-background-color: #000 !default;
-$component-table-row-background-color-odd: #fff !default;
-$component-table-row-background-color-even: #bbb !default;
-$component-table-border-color: #888 !default;
-$component-table-body-text-color: #000 !default;
-$component-table-header-text-color: #fff !default;
+$component-table-header-background-color: $color-willow-black !default;
+$component-table-row-background-color-odd: $color-willow-white !default;
+$component-table-row-background-color-even: $color-willow-grey !default;
+$component-table-border-color: $color-willow-grey !default;
+$component-table-body-text-color: $color-willow-black !default;
+$component-table-body-text-color-inverse: $color-willow-white !default;
+$component-table-header-text-color: $color-willow-white !default;
 
 // >>>>>>>>> Default Text Style Property Set
 $component-body-style-default: $text-style-content-1 !default;
 
 // >>>>>>>>> Highlighted Text
-$component-highlighted-text-background-color: #333 !default;
-$component-highlighted-text-color: #fff !default;
+$component-highlighted-text-background-color: $color-willow-grey !default;
+$component-highlighted-text-color: $color-willow-white !default;
 
 // >>>>>>>>> Monospace Text
 $component-body-text-monospace: $font-family-monospace !default;
-$component-body-text-color-monospace: #555 !default;
+$component-body-text-color-monospace: $color-willow-black !default;
 
 $component-border-radius-small: 3px !default;
 $component-border-radius: 4px !default;
@@ -74,23 +78,23 @@ $content-max-width: 1170px !default;
 $list-style-type: disc !default;
 
 //// FORMS ////////////////////////////////////////////////////////////////////////////////////////////////
-$component-form-background-color: #eee !default;
+$component-form-background-color: $color-willow-white !default;
 $component-form-padding: $space-inset !default;
 
-$component-input-border-color: #555 !default;
-$component-input-border-color-disabled: #555 !default;
-$component-input-border-color-invalid: #000 !default;
-$component-input-border-color-valid: #aaa !default;
+$component-input-border-color: $color-willow-grey !default;
+$component-input-border-color-disabled: $color-willow-grey !default;
+$component-input-border-color-invalid: $color-willow-black !default;
+$component-input-border-color-valid: $color-willow-grey !default;
 
 $component-input-border-width: 2px !default;
 
-$component-input-background-color: #fff !default;
-$component-input-background-color-checked: #000 !default;
+$component-input-background-color: $color-willow-white !default;
+$component-input-background-color-checked: $color-willow-black !default;
 $component-input-background-color-disabled: transparent !default;
-$component-input-background-color-invalid: rgba(#000, 0.15) !default;
-$component-input-background-color-valid: rgba(#000, 0.15) !default;
+$component-input-background-color-invalid: rgba($color-willow-black, 0.15) !default;
+$component-input-background-color-valid: rgba($color-willow-black, 0.15) !default;
 
-$component-input-box-shadow-color: rgba(#000, 0.4) !default;
+$component-input-box-shadow-color: rgba($color-willow-black, 0.4) !default;
 
 $component-dropdown-height: 45px !default;
 $component-input-height: 25px !default;

@@ -81,3 +81,13 @@ A component for positioning/layout purposes. **Willow-Page-Footer** should only 
 - Optional
 - Restrictions
   - Should Contain: text
+
+---
+
+## [Variables](./styles/_default-variables.scss)
+
+`$component-page-footer-background-color` : sets `background-color` property on **willow-page-footer**
+
+`$component-page-footer-copyright-text-color` : sets `color` property on **willow-page-footer__copyright**
+
+`$component-page-footer-border-color` : not used

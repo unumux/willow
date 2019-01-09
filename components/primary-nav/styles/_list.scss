@@ -6,7 +6,7 @@
     overflow: hidden; // fixes IE bug that adds blank space on :hover
     padding: 0;
 
-    @media screen and (min-width: breakpoint(medium)) {
+    @media screen and (min-width: breakpoint(md)) {
         flex-direction: row;
     }
 }

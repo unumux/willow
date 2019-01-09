@@ -5,7 +5,7 @@
     max-width: 100%;
     order: 0;
 
-    @media screen and (min-width: breakpoint(medium)) {
+    @media screen and (min-width: breakpoint(md)) {
         align-items: center;
         display: flex;
         flex-wrap: wrap;

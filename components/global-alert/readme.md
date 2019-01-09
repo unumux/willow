@@ -9,43 +9,64 @@ The purpose of a global alert is to communicate a major site or global level mes
 ## HTML Snippet
 
 ```html
-<section class="willow-global-alert" role="alert">
-    <div class="container">
-        <button class="willow-global-alert__close">Button Text</button>
-        <h1 class="willow-global-alert__heading">Heading Text</h1>
-        <div class="willow-global-alert__content">
-            <!-- insert components here -->
+<section class="willow-global-alert" data-global-alert-is-open="true" role="alert">
+    <div class="container-fluid">
+        <div class="willow-global-alert__container">
+            <div class="willow-global-alert__icon"><!-- insert icon here --></div>
+            <div class="willow-global-alert__content-container">
+                <a class="willow-global-alert__close" href="#"><!-- insert close text and optional icon here --></a>
+                <h1 class="willow-global-alert__heading"><!-- insert heading text here --></h1>
+                <div class="willow-global-alert__content">
+                    <!-- insert components here -->
+                </div>
+            </div>
         </div>
     </div>
 </section>
+
 
 <!-- modified versions -->
-<section class="willow-global-alert willow-global-alert--positive" role="alert">
-    <div class="container">
-        <button class="willow-global-alert__close">Button Text</button>
-        <h1 class="willow-global-alert__heading">Heading Text</h1>
-        <div class="willow-global-alert__content">
-            <!-- insert components here -->
+<section class="willow-global-alert willow-global-alert--positive" data-global-alert-is-open="true" role="alert">
+    <div class="container-fluid">
+        <div class="willow-global-alert__container">
+            <div class="willow-global-alert__icon"><!-- insert icon here --></div>
+            <div class="willow-global-alert__content-container">
+                <a class="willow-global-alert__close" href="#"><!-- insert close text and optional icon here --></a>
+                <h1 class="willow-global-alert__heading"><!-- insert heading text here --></h1>
+                <div class="willow-global-alert__content">
+                    <!-- insert components here -->
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<section class="willow-global-alert willow-global-alert--warning" role="alert">
-    <div class="container">
-        <button class="willow-global-alert__close">Button Text</button>
-        <h1 class="willow-global-alert__heading">Heading Text</h1>
-        <div class="willow-global-alert__content">
-            <!-- insert components here -->
+<section class="willow-global-alert willow-global-alert--warning" data-global-alert-is-open="true" role="alert">
+    <div class="container-fluid">
+        <div class="willow-global-alert__container">
+            <div class="willow-global-alert__icon"><!-- insert icon here --></div>
+            <div class="willow-global-alert__content-container">
+                <a class="willow-global-alert__close" href="#"><!-- insert close text and optional icon here --></a>
+                <h1 class="willow-global-alert__heading"><!-- insert heading text here --></h1>
+                <div class="willow-global-alert__content">
+                    <!-- insert components here -->
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<section class="willow-global-alert willow-global-alert--negative" role="alert">
-    <div class="container">
-        <button class="willow-global-alert__close">Button Text</button>
-        <h1 class="willow-global-alert__heading">Heading Text</h1>
-        <div class="willow-global-alert__content">
-            <!-- insert components here -->
+<section class="willow-global-alert willow-global-alert--negative" data-global-alert-is-open="true" role="alert">
+    <div class="container-fluid">
+        <div class="willow-global-alert__container">
+            <div class="willow-global-alert__icon"><!-- insert icon here --></div>
+            <div class="willow-global-alert__content-container">
+                <a class="willow-global-alert__close" href="#"><!-- insert close text and optional icon here --></a>
+                <h1 class="willow-global-alert__heading"><!-- insert heading text here --></h1>
+                <div class="willow-global-alert__content">
+                    <!-- insert components here -->
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -71,7 +92,7 @@ The purpose of a global alert is to communicate a major site or global level mes
 
 #### _States_
 
-`<div class="willow-global-alert" data-global-alert-close="true">` : closes the global-alert
+`<div class="willow-global-alert" data-global-alert-is-open="true">` : when set to anything other than true the global-alert will not be shown
 
 #### _Notes_
 
@@ -93,11 +114,32 @@ The purpose of a global alert is to communicate a major site or global level mes
 
 ---
 
+### willow-global-alert__icon
+
+- Optional
+- Restrictions
+  - Should Contain: icon
+
+---
+
+### willow-global-alert__container
+
+- Required
+- Restrictions
+  - Should Contain: alert content elements (**__heading**, **__content**, and **__close**)
+
+#### _Notes_
+
+- **willow-global-alert__container** contains all content and action items for the alert
+
+---
+
 ### willow-global-alert__close
 
 - Optional
 - Restrictions
-  - Should Contain: text and/or [willow-icon](../icons)
+  - Should Contain: text
+  - Can Also Contain: icon
 
 #### _Notes_
 
@@ -114,7 +156,7 @@ The purpose of a global alert is to communicate a major site or global level mes
 #### _Notes_
 
 - **willow-global-alert__heading** is visible by default, and even if it is hidden it is required to meet accessibility standards
-- To hide the **willow-global-alert__heading** add the `sr-only` utility class to the element
+- To hide the **willow-global-alert__heading** add the [`sr-only`](../../utilities.md) utility class to the element
 
 ---
 
@@ -123,3 +165,23 @@ The purpose of a global alert is to communicate a major site or global level mes
 - Required
 - Restrictions
   - Should Contain: one or more components
+
+---
+
+## [Variables](./styles/_default-variables.scss)
+
+`$component-global-alert-background-color` : sets `background-color` property on **willow-global-alert**
+
+`$component-global-alert-text-color` : sets `color` property on **willow-global-alert**
+
+`$component-global-alert-positive-background-color` : sets `background-color` property on **willow-global-alert--positive**
+
+`$component-global-alert-positive-text-color` : sets `color` property on **willow-global-alert--positive**
+
+`$component-global-alert-warning-background-color` : sets `background-color` property on **willow-global-alert--warning**
+
+`$component-global-alert-warning-text-color` : sets `color` property on **willow-global-alert--warning**
+
+`$component-global-alert-negative-background-color` : sets `background-color` property on **willow-global-alert--negative**
+
+`$component-global-alert-negative-text-color` : sets `color` property on **willow-global-alert--negative**

@@ -42,7 +42,7 @@ _Example Page Links: Sitemap, Frequently Asked Questions, Legal, Privacy Policy,
 
 #### _Notes_
 
-- **willow-footer-nav__heading** is hidden by default with the `sr-only` utility class, and is required to meet accessibility standards
+- **willow-footer-nav__heading** is hidden by default with the [`sr-only`](../../utilities.md) utility class, and is required to meet accessibility standards
 
 ---
 
@@ -77,3 +77,19 @@ _Example Page Links: Sitemap, Frequently Asked Questions, Legal, Privacy Policy,
 
 - **willow-footer-nav__link** requires an `href` value that links to the pages they reference
 - **willow-footer-nav__link** elements need `aria-label` value if the text content of the link doesn't clearly represent where the user will go after clicking the link
+
+---
+
+## [Variables](./styles/_default-variables.scss)
+
+`$component-footer-nav-text-color` : sets `color` property on **willow-footer-nav__item::after**
+
+`$component-footer-nav-link-color` : sets `color` property on **willow-footer-nav__link**
+
+`$component-footer-nav-link-color-hover` : sets `color` property on **willow-footer-nav__link:hover**
+
+`$component-footer-nav-link-color-focus` : not used
+
+`$component-footer-nav-link-color-active` : sets `color` property on **willow-footer-nav__link:active**
+
+`$component-footer-nav-link-color-visited` : sets `color` property on **willow-footer-nav__link:visited**

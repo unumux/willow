@@ -1,12 +1,12 @@
-$component-primary-nav-link-color: #fff !default;
-$component-primary-nav-link-color-visited: #fff !default;
-$component-primary-nav-link-color-hover: #fff !default;
-$component-primary-nav-link-color-active: #fff !default;
-$component-primary-nav-link-color-focus: #fff !default;
+$component-primary-nav-link-color: $color-willow-white !default;
+$component-primary-nav-link-color-visited: $color-willow-white !default;
+$component-primary-nav-link-color-hover: $color-willow-white !default;
+$component-primary-nav-link-color-active: $color-willow-white !default;
+$component-primary-nav-link-color-focus: $color-willow-white !default;
 
 //Link Background for Hover and Active
 $component-primary-nav-link-background-color: initial !default;
 $component-primary-nav-link-background-color-visited: inherit !default;
-$component-primary-nav-link-background-color-hover: #555 !default;
+$component-primary-nav-link-background-color-hover: $color-willow-grey !default;
 $component-primary-nav-link-background-color-active: #3a3a3a !default;
-$component-primary-nav-link-background-color-focus: #555 !default;
+$component-primary-nav-link-background-color-focus: $color-willow-grey !default;

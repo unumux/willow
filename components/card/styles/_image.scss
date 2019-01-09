@@ -7,7 +7,7 @@
     overflow: hidden;
     width: 100%;
 
-    @media screen and (min-width: breakpoint(md, $grid-breakpoints)) {
+    @media screen and (min-width: breakpoint(md)) {
         height: $component-card-image-height-sm;
     }
 }

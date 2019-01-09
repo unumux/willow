@@ -24,4 +24,10 @@
 
 #### _Notes_
 
-- **willow-styling-context** should be used inside of any Willow component where you want to place HTML. _Example: You need to add a message to [willow-modal](../modal), so inside of **willow-modal__content** you would add **willow-styling-context** and then be able to add your message using raw HTML. 
+- **willow-styling-context** should be used inside of any Willow component where you want to place HTML. _Example: You need to add a message to [willow-modal](../modal), so inside of **willow-modal__content** you would add **willow-styling-context** and then be able to add your message using raw HTML.
+
+---
+
+## Variables
+
+None

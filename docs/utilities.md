@@ -1,6 +1,12 @@
+[Back to Main Readme](../README.md) > [Docs](./readme.md) > Utility Glossary
+
 # Utility Glossary
 
-A glossary of utility [classes](#classes), [functions](#functions) and [mixins](#mixins) in the **Willow** library.
+- [Classes](#classes)
+- [Functions](#functions)
+- [Mixins](#mixins)
+
+---
 
 ## Classes
 
@@ -132,41 +138,21 @@ A glossary of utility [classes](#classes), [functions](#functions) and [mixins](
 
 ## Mixins
 
-### `icon($type)`
+### `compact()`
 
-- sets properties and values for an icon based on the component and it's modifier
-
-- possible `$type` values:
-  - $icon-menu
-  - $icon-menu-inverse
-  - $icon-menu-close
-  - $icon-menu-close-inverse
-  - $icon-close
-  - $icon-close-inverse
-  - $icon-info
-  - $icon-info-inverse
-  - $icon-success
-  - $icon-success-inverse
-  - $icon-warning
-  - $icon-warning-inverse
-  - $icon-error
-  - $icon-error-inverse
+- removes margin-top for all first-children within an element
 
 - Example:
 
 ```SCSS
-    .my-alert--positive {
-        &:before {
-            @include icon($icon-success);
-
-        }
+    .my-card {
+        @include compact;
     }
 
     /*
-        properties set:
-        background-image: ...;
-        height: ...;
-        width: ...;
+        :first-child {
+            margin-top: 0;
+        }
     */
 ```
 
@@ -261,7 +247,7 @@ A glossary of utility [classes](#classes), [functions](#functions) and [mixins](
         font-weight: ...;
         line-height: ...;
 
-        @media screen and (min-width: breakpoint(medium)) {
+        @media screen and (min-width: breakpoint(md)) {
             font-size: ...;
             line-height: ...;
         }
@@ -290,3 +276,5 @@ A glossary of utility [classes](#classes), [functions](#functions) and [mixins](
         border: 0;
     */
 ```
+
+([Back to top](#utility-glossary))

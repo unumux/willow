@@ -1,7 +1,6 @@
-@import "default-variables";
+@import "../../../global/constants/colors";
+@import "../../../global/constants/spacing";
 @import "../../../global/classes/butter";
 @import "../../../global/mixins/compact";
-@import "../../../global/variables/constants/spacing";
-@import "../../../global/functions/space";
 @import "../../../global/functions/breakpoint";
-@import "../../../global/vendors/bootstrap-variables";
+@import "default-variables";

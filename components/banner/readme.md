@@ -76,7 +76,7 @@ A banner's background spans the full width of the screen/viewport while its cont
 #### _Notes_
 
 - **willow-banner__heading** is visible by default and even if it is hidden, it is required to meet accessibility standards
-- To hide the **willow-banner__heading** add the `sr-only` utility class to the element
+- To hide the **willow-banner__heading** add the [`sr-only`](../../utilities.md) utility class to the element
 
 ---
 
@@ -102,3 +102,15 @@ A banner's background spans the full width of the screen/viewport while its cont
 - Repeatable
 - Restrictions
   - Should Contain: one _actionable_ component (such as [willow-button](../button) or a link)
+
+---
+
+## [Variables](./styles/_default-variables.scss)
+
+`$component-banner-background-color` : sets `background-color` property on **willow-banner**
+
+`$component-banner-text-color` : sets `color` property on **willow-banner**
+
+`$component-banner-icon-height` : sets `height` property on **willow-banner__icon**
+
+`$component-banner-icon-width` : sets `width` property on **willow-banner__icon**

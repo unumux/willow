@@ -1,3 +1,5 @@
 &__content {
-    margin: $space-stack-s;
+    // including compact here instead of on the block willow-alert
+    // this is to allow users to remove the sub-element willow-alert__close without effecting the margin styling
+    @include compact;
 }

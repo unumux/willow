@@ -1,4 +1,6 @@
 @mixin icon($type) {
+    @warn "The `icon` mixin will be deprecated in the next release. Please remove it.";
+
     background-image: map-get($type, icon);
     height: map-get($type, height);
     width: map-get($type, width);

@@ -16,7 +16,7 @@
         display: none;
     }
 
-    @media screen and (min-width: breakpoint(medium)) {
+    @media screen and (min-width: breakpoint(md)) {
         border-top: none;
         display: block;
         flex-basis: auto;

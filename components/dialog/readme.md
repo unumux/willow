@@ -80,7 +80,7 @@ _Examples: errors, warnings, to collect data, to inform users of important infor
 #### _Notes_
 
 - **willow-dialog__heading** is visible by default, and even if it is hidden, it is required to meet accessibility standards
-- To hide the **willow-dialog__heading** add the `sr-only` utility class to the element
+- To hide the **willow-dialog__heading** add the [`sr-only`](../../utilities.md) utility class to the element
 
 ---
 
@@ -110,3 +110,13 @@ _Examples: errors, warnings, to collect data, to inform users of important infor
 #### _Notes_
 
 - completing the actionable component should record the response and trigger the **willow-dialog** to close
+
+---
+
+## [Variables](./styles/_default-variables.scss)
+
+`$component-dialog-background-color` : sets `background-color` property on **willow-dialog__container**
+
+`$component-dialog-border-radius` : sets `border-radius` property on **willow-dialog__container**
+
+`$component-dialog-overlay-background-color` : sets `background-color` property on **willow-dialog**

@@ -79,7 +79,7 @@ _Examples: Confirming deletion of information, entering an email address to down
 #### _Notes_
 
 - **willow-modal__heading** is visible by default, and even if it is hidden, it is required to meet accessibility standards
-- To hide the **willow-modal__heading** add the `sr-only` utility class to the element
+- To hide the **willow-modal__heading** add the [`sr-only`](../../utilities.md) utility class to the element
 
 ---
 
@@ -108,3 +108,13 @@ _Examples: Confirming deletion of information, entering an email address to down
 #### _Notes_
 
 - completing the actionable component should record the response and trigger the **willow-modal** to close
+
+---
+
+## [Variables](./styles/_default-variables.scss)
+
+`$component-modal-background-color` : sets `background-color` property on **willow-modal__container**
+
+`$component-modal-border-radius` : sets `border-radius` property on **willow-modal__container**
+
+`$component-modal-overlay-background-color` : sets `background-color` property on **willow-modal**

@@ -3,16 +3,23 @@
 .willow-global-alert {
     @extend .butter;
 
-    @include compact;
-
+    align-items: flex-start;
     background-color: $component-global-alert-background-color;
     color: $component-global-alert-text-color;
+    display: none;
     flex-shrink: 0;
+    flex-wrap: nowrap;
     margin-top: $space;
     padding-bottom: $space-l;
     padding-top: $space-l;
-    position: relative;
 
+    &[data-global-alert-is-open="true"] {
+        display: block;
+    }
+
+    @import "container";
+    @import "icon";
+    @import "content-container";
     @import "heading";
     @import "content";
     @import "close";
